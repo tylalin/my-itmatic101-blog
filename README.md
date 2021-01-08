@@ -2,7 +2,7 @@
 description: မြန်မာလိုရေးသားချက်များ
 ---
 
-# ITmatic101 Blog
+# နည်းပညာဆိုင်ရာ Blog
 
 ITmatic101 Blog in Myanmar
 

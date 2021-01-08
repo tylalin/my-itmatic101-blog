@@ -1,6 +1,6 @@
 # Table of contents
 
-* [ITmatic101 Blog](README.md)
+* [နည်းပညာဆိုင်ရာ Blog](README.md)
 
 ## Linux
 
