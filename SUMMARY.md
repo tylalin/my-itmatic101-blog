@@ -1,6 +1,6 @@
 # Table of contents
 
-* [\[MY\] ITmatic101 Blog](README.md)
+* [ITmatic101 Blog](README.md)
 
 ## Linux
 
