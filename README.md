@@ -1,5 +1,5 @@
 ---
-description: မြန်မာ
+description: မြန်မာလိုရေးသားချက်များ
 ---
 
 # ITmatic101 Blog
