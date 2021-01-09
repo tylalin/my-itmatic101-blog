@@ -23,6 +23,7 @@
 * [ပြတိုက်ထဲက SysVinit အကြောင်း](linux/about-sysv.md)
 * [Open source သင်ခန်းစာများ အပိုင်း\(၁\)](linux/opensource-lessons-part1.md)
 * [Open source သင်ခန်းစာများ အပိုင်း\(၂\)](linux/opensource-lessons-part2.md)
+* [လေထုညစ်ညမ်းစပြုလာတဲ့ Linux ရဲ့ Ecosystem](linux/polluted-linux-ecosystem.md)
 
 ## Automation
 
