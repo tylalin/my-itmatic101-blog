@@ -36,4 +36,5 @@
 ## others
 
 * [အင်တာနက်မြန်မာစာ ယူနီကုဒ်ဇော်ဂျီ ပြဿနာ](others/my-zg-unicode.md)
+* [CyanogenMod မိတ်ဆက် အပိုင်း\(၁\)](others/cyanogenmod-intro-part1.md)
 
