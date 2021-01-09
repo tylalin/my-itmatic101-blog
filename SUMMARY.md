@@ -16,8 +16,6 @@
 
 * [Untitled](automation/untitled.md)
 
-## General IT
-
 ## Networking
 
 * [Untitled](networking/untitled.md)
