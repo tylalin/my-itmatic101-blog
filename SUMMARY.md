@@ -24,6 +24,7 @@
 * [Open source သင်ခန်းစာများ အပိုင်း\(၁\)](linux/opensource-lessons-part1.md)
 * [Open source သင်ခန်းစာများ အပိုင်း\(၂\)](linux/opensource-lessons-part2.md)
 * [လေထုညစ်ညမ်းစပြုလာတဲ့ Linux ရဲ့ Ecosystem](linux/polluted-linux-ecosystem.md)
+* [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၁\)](linux/linux-certs-part1.md)
 
 ## Automation
 
@@ -35,7 +36,6 @@
 
 ## others
 
-* [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၁\)](others/athonwinthaw-linux-certification-myaaakyaung-apaing-1.md)
 * [အင်တာနက်မြန်မာစာ ယူနီကုဒ်ဇော်ဂျီ ပြဿနာ](others/my-zg-unicode.md)
 * [CyanogenMod မိတ်ဆက် အပိုင်း\(၁\)](others/cyanogenmod-intro-part1.md)
 
