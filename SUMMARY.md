@@ -29,6 +29,7 @@
 * [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၃\)](linux/linux-certs-part3.md)
 * [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၄\)](linux/linux-certs-part4.md)
 * [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၅\)](linux/linux-certs-part5.md)
+* [Linux မှာသုံးတဲ့ GNU General Public License အကြောင်း အပိုင်း\(၁\)](linux/gnu-gpl-part1.md)
 
 ## Automation
 
