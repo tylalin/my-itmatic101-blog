@@ -65,7 +65,9 @@ SamAccountName    : tyla.lin
 SID               : S-1-5-21-3725648376-1897747198-2438019021-1119
 ```
 
-အခုဆိုရင်တော့ Windows AD မှာ သက်ဆိုင်ရာ AD group နဲ့ user တွေကိုပြင်ဆင်ပြီးသွားပါပြီ။ အောက်ကပုံမှာတော့ စာရေးသူရဲ့ network topology အကြမ်းဖြစ်ပါတယ်။![](https://itmatic101.files.wordpress.com/2019/11/3249f-network-topology-1.png)Network topology
+အခုဆိုရင်တော့ Windows AD မှာ သက်ဆိုင်ရာ AD group နဲ့ user တွေကိုပြင်ဆင်ပြီးသွားပါပြီ။ အောက်ကပုံမှာတော့ စာရေးသူရဲ့ network topology အကြမ်းဖြစ်ပါတယ်။
+
+![](https://itmatic101.files.wordpress.com/2019/11/3249f-network-topology-1.png)
 
 Windows AD ရဲ့ domain controller ပေါ်မှာ group နဲ့ user တွေလည်း ဖန်းတီးပြီးပြီ၊ TACACS+ တင်ထားတဲ့ Linux box ကိုလည်း အဲ့ဒီ GNU.NET ဆိုတဲ့ domain ကို join ပြီးသွားပြီဆိုရင် တော့၊ domain user နဲ့ group တွေကို Linux ကနေ မြင်ရ မမြင်ရဆိုတာကို တချက်တော့ verify လုပ်ရပါ့မယ်။ ဒီအဆင့်က အရေးကြီးပါတယ်။ Linux box ကနေ Windows AD ရဲ့ user နဲ့ group ကို မမြင်ရရင်တော့ နည်းနည်းပါးပါး troubleshoot လုပ်ရပါလိမ့်မယ်။ အားလုံးအဆင်ပြေရင်တော့မှ နောက်တဆင့်ကို ဆက်သွားပါ။
 
