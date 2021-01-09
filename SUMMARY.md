@@ -22,6 +22,7 @@
 * [Linux Kernel အကြောင်း သိကောင်းစရာ အပိုင်း \(၃\)](linux/linux-kernel-part3.md)
 * [ပြတိုက်ထဲက SysVinit အကြောင်း](linux/about-sysv.md)
 * [Open source သင်ခန်းစာများ အပိုင်း\(၁\)](linux/open-source-thinkhansamyaa-apaing-1.md)
+* [Open source သင်ခန်းစာများ အပိုင်း\(၂\)](linux/opensource-lessons-part2.md)
 
 ## Automation
 
