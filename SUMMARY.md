@@ -15,6 +15,7 @@
 * [Docker မိတ်ဆက် အပိုင်း\(၁\)](linux/docker-intro-part1.md)
 * [Docker မိတ်ဆက် အပိုင်း\(၂\)](linux/docker-intro-part2.md)
 * [Docker မိတ်ဆက် အပိုင်း\(၃\)](linux/docker-intro-part3.md)
+* [GNU/Linux ကိုဘာလို့ ပြောင်းသုံးသင့်သလဲ](linux/why-gnulinux.md)
 
 ## Automation
 
