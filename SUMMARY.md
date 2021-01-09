@@ -9,6 +9,7 @@
 * [Manjaro Linux အကြောင်းတစေ့တစောင်း](linux/untitled.md)
 * [TACACS+ နဲ့ Windows AD ကိုတွဲပြီး အသုံးပြုနည်း – အပိုင်း \(၁\)](linux/untitled-3.md)
 * [TACACS+ နဲ့ Windows AD ကိုတွဲပြီး အသုံးပြုနည်း – အပိုင်း \(၂\)](linux/untitled-4.md)
+* [FreeRADIUS နဲ့ PPPoE Authentication အပိုင်း \(၁\)](linux/untitled-5.md)
 
 ## Automation
 
