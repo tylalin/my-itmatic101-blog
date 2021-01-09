@@ -18,6 +18,7 @@
 * [GNU/Linux ကိုဘာလို့ ပြောင်းသုံးသင့်သလဲ](linux/why-gnulinux.md)
 * [GNU/Linux မှာသုံးတဲ့ CLI ကိုဘယ်လိုခေါ်ကြသလဲ](linux/gnulinux-cli-names.md)
 * [Linux Kernel အကြောင်း သိကောင်းစရာ အပိုင်း \(၁\)](linux/linux-kernel-part1.md)
+* [Linux Kernel အကြောင်း သိကောင်းစရာ အပိုင်း \(၂\)](linux/linux-kernel-part2.md)
 
 ## Automation
 
