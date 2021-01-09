@@ -48,4 +48,5 @@
 * [CyanogenMod မိတ်ဆက် အပိုင်း\(၁\)](others/cyanogenmod-intro-part1.md)
 * [WikiLeaks ဆိုသည်မှာ အပိုင်း \(၁\)](others/wikileaks-part1.md)
 * [WikiLeaks ဆိုသည်မှာ အပိုင်း \(၂\)](others/wikileaks-part2.md)
+* [WikiLeaks ဆိုသည်မှာ အပိုင်း \(၃\)](others/wikileaks-part3.md)
 
