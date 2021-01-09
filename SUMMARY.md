@@ -11,6 +11,7 @@
 * [TACACS+ နဲ့ Windows AD ကိုတွဲပြီး အသုံးပြုနည်း – အပိုင်း \(၂\)](linux/tac_plus-ad-part2.md)
 * [FreeRADIUS နဲ့ PPPoE Authentication အပိုင်း \(၁\)](linux/freeradius-pppoe-part1.md)
 * [FreeRADIUS နဲ့ PPPoE Authentication အပိုင်း \(၂\)](linux/freeradius-pppoe-part2.md)
+* [Ubuntu မှာအလုပ်ဖြစ်သော tool နဲ့ application \(၁၀\) ခုအကြောင်း](linux/ubuntu-mhaalokpayitthaw-tool-ne-application-10-khuakyaung.md)
 
 ## Automation
 
