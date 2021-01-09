@@ -20,3 +20,7 @@
 
 * [Untitled](networking/untitled.md)
 
+## General IT
+
+* [အင်တာနက်မြန်မာစာ ယူနီကုဒ်ဇော်ဂျီ ပြဿနာ](general-it/my-zg-unicode.md)
+
