@@ -20,7 +20,7 @@
 
 * [အဘယ့်ကြောင့် GNS3](networking/why-gns3.md)
 
-## General IT
+## others
 
-* [အင်တာနက်မြန်မာစာ ယူနီကုဒ်ဇော်ဂျီ ပြဿနာ](general-it/my-zg-unicode.md)
+* [အင်တာနက်မြန်မာစာ ယူနီကုဒ်ဇော်ဂျီ ပြဿနာ](others/my-zg-unicode.md)
 
