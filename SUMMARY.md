@@ -26,7 +26,7 @@
 * [လေထုညစ်ညမ်းစပြုလာတဲ့ Linux ရဲ့ Ecosystem](linux/polluted-linux-ecosystem.md)
 * [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၁\)](linux/linux-certs-part1.md)
 * [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၂\)](linux/linux-certs-part2.md)
-* [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၃\)](linux/linux-certs-part2-1.md)
+* [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၃\)](linux/linux-certs-part3.md)
 
 ## Automation
 
