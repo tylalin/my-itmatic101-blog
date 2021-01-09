@@ -25,6 +25,7 @@
 * [Open source သင်ခန်းစာများ အပိုင်း\(၂\)](linux/opensource-lessons-part2.md)
 * [လေထုညစ်ညမ်းစပြုလာတဲ့ Linux ရဲ့ Ecosystem](linux/polluted-linux-ecosystem.md)
 * [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၁\)](linux/linux-certs-part1.md)
+* [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၂\)](linux/linux-certs-part2.md)
 
 ## Automation
 
