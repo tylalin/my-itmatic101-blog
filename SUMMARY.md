@@ -35,6 +35,7 @@
 
 ## others
 
+* [အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၁\)](others/athonwinthaw-linux-certification-myaaakyaung-apaing-1.md)
 * [အင်တာနက်မြန်မာစာ ယူနီကုဒ်ဇော်ဂျီ ပြဿနာ](others/my-zg-unicode.md)
 * [CyanogenMod မိတ်ဆက် အပိုင်း\(၁\)](others/cyanogenmod-intro-part1.md)
 
