@@ -53,6 +53,7 @@
 * [“မှားတဲ့ဘက်မှာ” – အပိုင်း \(၂\)](linux/wrong-side-part2.md)
 * [SELinux မိတ်ဆက်](linux/selinux-intro.md)
 * [Open Source Licenses များအကြောင်း – အပိုင်း \(၁\)](linux/opensource-licenses-part1.md)
+* [Open Source Licenses များအကြောင်း – အပိုင်း \(၂\)](linux/opensource-licenses-part2.md)
 
 ## Automation
 
