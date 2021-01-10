@@ -64,6 +64,7 @@
 
 * [Storage အကြောင်းတစေ့တစောင်း – အပိုင်း\(၁\)](others/storage-part1.md)
 * [Storage အကြောင်းတစေ့တစောင်း – အပိုင်း\(၂\)](others/storage-part2.md)
+* [Storage အကြောင်းတစေ့တစောင်း – အပိုင်း\(၃\)](others/storage-akyaungtsetsaung-apaing-3.md)
 * [အင်တာနက်မြန်မာစာ ယူနီကုဒ်ဇော်ဂျီ ပြဿနာ](others/my-zg-unicode.md)
 * [CyanogenMod မိတ်ဆက် အပိုင်း\(၁\)](others/cyanogenmod-intro-part1.md)
 * [WikiLeaks ဆိုသည်မှာ အပိုင်း \(၁\)](others/wikileaks-part1.md)
