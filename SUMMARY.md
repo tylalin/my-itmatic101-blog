@@ -50,6 +50,7 @@
 * [Open Source ကောက်ကြောင်း – အပိုင်း\( ၂\)](linux/opensource-trace-part2.md)
 * [“မှားတဲ့ဘက်မှာ” – အပိုင်း \(၁\)](linux/wrong-side-part1.md)
 * [“မှားတဲ့ဘက်မှာ” – အပိုင်း \(၂\)](linux/wrong-side-part2.md)
+* [SELinux မိတ်ဆက်](linux/selinux-intro.md)
 
 ## Automation
 
