@@ -11,6 +11,7 @@
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၅\)](linux/fedora.md)
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၆\)](linux/opensuse.md)
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၇\)](linux/luthonmyaa-yaepansathaw-gnu-linux-distro-myaa-apaing-7.md)
+* [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၈\)](linux/luthonmyaa-yaepansathaw-gnu-linux-distro-myaa-apaing-8.md)
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၉\)](linux/pclinuxos.md)
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၁၀\)](linux/slackware.md)
 * [Manjaro Linux အကြောင်းတစေ့တစောင်း](linux/manjaro.md)
