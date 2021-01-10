@@ -62,6 +62,7 @@
 
 ## others
 
+* [ZeroTier မိတ်ဆက်](others/zerotier-intro.md)
 * [နေ့စဉ်သုံး စိတ်ကြိုက် Application/Software လေးများ](others/fav-apps.md)
 * [Storage အကြောင်းတစေ့တစောင်း – အပိုင်း\(၁\)](others/storage-part1.md)
 * [Storage အကြောင်းတစေ့တစောင်း – အပိုင်း\(၂\)](others/storage-part2.md)
