@@ -4,6 +4,7 @@
 
 ## Linux
 
+* [Linux distro-hopper ခရီးကြမ်း](linux/linux-distro-hopper-journey.md)
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၁\)](linux/mint.md)
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၂\)](linux/ubuntu.md)
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၃\)](linux/debian.md)
