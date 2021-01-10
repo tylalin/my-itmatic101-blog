@@ -54,7 +54,8 @@
 
 ## Automation
 
-* [Untitled](automation/untitled.md)
+* [FTP/TFTP server ပေါ်မှာ network config တွေကို auto backup လုပ်ပုံ – အပိုင်း \(၁\)](automation/net-confg-auto-backup-part1.md)
+* [FTP/TFTP server ပေါ်မှာ network config တွေကို auto backup လုပ်ပုံ – အပိုင်း \(၂\)](automation/net-config-auto-backup-part2.md)
 
 ## Networking
 
