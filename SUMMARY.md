@@ -9,6 +9,7 @@
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၃\)](linux/debian.md)
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၄\)](linux/mageia.md)
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၅\)](linux/fedora.md)
+* [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၆\)](linux/opensuse.md)
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၉\)](linux/pclinuxos.md)
 * [လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း \(၁၀\)](linux/slackware.md)
 * [Manjaro Linux အကြောင်းတစေ့တစောင်း](linux/manjaro.md)
