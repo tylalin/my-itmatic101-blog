@@ -64,6 +64,7 @@
 ## others
 
 * [ZeroTier မိတ်ဆက်](others/zerotier-intro.md)
+* [WireGuard အကြောင်းသိကောင်းစရာ](others/wireguard-intro.md)
 * [SSH Tunneling အကြောင်းသိကောင်းစရာ](others/ssh-tunneling-intro.md)
 * [နေ့စဉ်သုံး စိတ်ကြိုက် Application/Software လေးများ](others/fav-apps.md)
 * [Storage အကြောင်းတစေ့တစောင်း – အပိုင်း\(၁\)](others/storage-part1.md)
