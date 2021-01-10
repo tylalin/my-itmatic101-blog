@@ -55,6 +55,7 @@
 
 ## Automation
 
+* [Bash နဲ့ Network Configuration Management system တစ်ခုတည်ဆောက်ပုံ – အပိုင်း\(၁\)](automation/bash-net-automation-part1.md)
 * [FTP/TFTP server ပေါ်မှာ network config တွေကို auto backup လုပ်ပုံ – အပိုင်း \(၁\)](automation/net-confg-auto-backup-part1.md)
 * [FTP/TFTP server ပေါ်မှာ network config တွေကို auto backup လုပ်ပုံ – အပိုင်း \(၂\)](automation/net-config-auto-backup-part2.md)
 
