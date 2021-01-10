@@ -18,6 +18,7 @@
 * [GNU/Linux Desktop Environment များအကြောင်း အပိုင်း \(၁\)](linux/gnome.md)
 * [GNU/Linux Desktop Environment များအကြောင်း အပိုင်း \(၂\)](linux/kde.md)
 * [GNU/Linux Desktop Environment များအကြောင်း အပိုင်း \(၃\)](linux/budgie.md)
+* [GNU/Linux Desktop Environment များအကြောင်း အပိုင်း \(၄\)](linux/xfce.md)
 * [TACACS+ နဲ့ Windows AD ကိုတွဲပြီး အသုံးပြုနည်း – အပိုင်း \(၁\)](linux/tac_plus-ad-part1.md)
 * [TACACS+ နဲ့ Windows AD ကိုတွဲပြီး အသုံးပြုနည်း – အပိုင်း \(၂\)](linux/tac_plus-ad-part2.md)
 * [FreeRADIUS နဲ့ PPPoE Authentication အပိုင်း \(၁\)](linux/freeradius-pppoe-part1.md)
