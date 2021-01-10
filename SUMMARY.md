@@ -47,6 +47,7 @@
 * [Linux မှာသုံးတဲ့ GNU General Public License အကြောင်း အပိုင်း\(၃\)](linux/gnu-gpl-part3.md)
 * [Linux မှာသုံးတဲ့ GNU General Public License အကြောင်း အပိုင်း\(၄\)](linux/gnu-gpl-part4.md)
 * [Open Source ကောက်ကြောင်း – အပိုင်း\(၁\)](linux/opensource-trace-part1.md)
+* [Open Source ကောက်ကြောင်း – အပိုင်း\( ၂\)](linux/opensource-trace-part2.md)
 
 ## Automation
 
