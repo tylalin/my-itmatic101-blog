@@ -60,6 +60,7 @@
 * [အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code \(IaC\) – အပိုင်း\(၁\)](automation/rough-edges-iac-part1.md)
 * [အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code \(IaC\) – အပိုင်း\(၂\)](automation/rough-edges-iac-part2.md)
 * [ကြုံတွေ့ရသမျှ Network Automation အနုပညာ အပိုင်း\(၁\)](automation/firsthand-network-automation-artform-part1.md)
+* [ကြုံတွေ့ရသမျှ Network Automation အနုပညာ အပိုင်း\(၂\)](automation/firsthand-network-automation-artform-part2.md)
 * [Bash နဲ့ Network Configuration Management system တစ်ခုတည်ဆောက်ပုံ – အပိုင်း\(၁\)](automation/bash-net-automation-part1.md)
 * [Bash နဲ့ Network Configuration Management system တစ်ခုတည်ဆောက်ပုံ – အပိုင်း\(၂\)](automation/bash-net-automation-part2.md)
 * [FTP/TFTP server ပေါ်မှာ network config တွေကို auto backup လုပ်ပုံ – အပိုင်း \(၁\)](automation/net-confg-auto-backup-part1.md)
