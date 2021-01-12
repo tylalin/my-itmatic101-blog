@@ -59,7 +59,7 @@
 
 * [အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code \(IaC\) – အပိုင်း\(၁\)](automation/rough-edges-iac-part1.md)
 * [အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code \(IaC\) – အပိုင်း\(၂\)](automation/rough-edges-iac-part2.md)
-* [အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code \(IaC\) - အပိုင်း\(၃\)](automation/anamthatnaing-thete-infrastructure-as-code-iac-apaing-3.md)
+* [အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code \(IaC\) - အပိုင်း\(၃\)](automation/rough-edges-iac-part3.md)
 * [ကြုံတွေ့ရသမျှ Network Automation အနုပညာ အပိုင်း\(၁\)](automation/firsthand-network-automation-artform-part1.md)
 * [ကြုံတွေ့ရသမျှ Network Automation အနုပညာ အပိုင်း\(၂\)](automation/firsthand-network-automation-artform-part2.md)
 * [ကြုံတွေ့ရသမျှ Network Automation အနုပညာ အပိုင်း\(၃\)](automation/firsthand-network-automation-artform-part3.md)
