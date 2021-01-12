@@ -55,8 +55,9 @@ VagrantfileVagrant.configure("2") do |config|
 end
 ```
 
+{% code title=" bootstrap.sh" %}
 ```text
-bootstrap.shapt-get update
+apt-get update
 apt-get upgrade
 
 apt-get install -y git
@@ -80,6 +81,7 @@ apt-get install -y mysql-server
 apt-get install -y php7.2-mysql
 sudo service apache2 restart
 ```
+{% endcode %}
 
 ဟုတ်ပြီ… အခုအချိန်ထိတော့ VM တစ်ခုကို provider နဲ့ provisioner ကိုအသုံးပြုပြီးတော့ IaC ပုံစံမျိုး တည်ဆောက်ပြသွားတာအဆင်ပြေပါတယ်။ Git repo တွေဘာတွေအသုံးပြုပြီး version control ဆက်လုပ်လို့ရပါပြီ။ သို့သော်… ကိုယ်က Nginx အတွက်ဖြစ်ဖြစ်၊ K8s အတွက်ဖြစ်ဖြစ် cluster တစ်ခုတည်ဆောက်ဖို့အတွက်ဆိုရင်တော့ တစ်လုံးထက်ပိုတဲ့ VM တွေကိုလိုပါပြီ။ ဆိုပါတော့… VM အလုံးရေ ၆ လုံးကို တစ်ပြိုင်နက်တည်း deploy လုပ်ချင်တယ်၊ ၃ လုံးကို Ubuntu လိုချင်ပြီး၊ အခြားသုံးလုံးကိုတော့ CentOS လိုချင်တယ်ဆိုပါတော့ဗျာ။ အောက်မှာတော့… အဲ့ဒီလိုမျိုး mixed cluster လုပ်တဲ့ပုံစံကို ပြပေးထားပါတယ်။
 
