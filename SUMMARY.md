@@ -73,11 +73,11 @@
 
 * [အဘယ့်ကြောင့် GNS3](networking/why-gns3.md)
 * [tcpdump မိတ်ဆက်](networking/tcpdump-intro.md)
+* [ZeroTier မိတ်ဆက်](networking/zerotier-intro.md)
+* [WireGuard အကြောင်းသိကောင်းစရာ](networking/wireguard-intro.md)
 
 ## others
 
-* [ZeroTier မိတ်ဆက်](others/zerotier-intro.md)
-* [WireGuard အကြောင်းသိကောင်းစရာ](others/wireguard-intro.md)
 * [SSH Tunneling အကြောင်းသိကောင်းစရာ](others/ssh-tunneling-intro.md)
 * [နေ့စဉ်သုံး စိတ်ကြိုက် Application/Software လေးများ](others/fav-apps.md)
 * [Keyboard Size တွေအကြောင်းသိသမျှ](others/keyboard-size.md)
