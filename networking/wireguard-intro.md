@@ -11,8 +11,6 @@ WireGuard ကို စာဖတ်သူ တချို့လည်းသိ�
 **Ubuntu ပေါ်မှာ install လုပ်နည်း**
 
 ```text
-$ sudo add-apt-repository ppa:wireguard/wireguard
-$ sudo apt-get update
 $ sudo apt-get install wireguard -y
 ```
 
