@@ -2,7 +2,7 @@
 
 အခုလိုမျိုး Facebook ကို block လိုက် ဟိုဟာကို block လိုက် ဒီဟာကို block လုပ်လိုက်နဲ့ လုပ်နေတဲ့ မြန်မာနိုင်ငံရဲ့ အရေးပေါ်အခြေအနေမျိုးမှာ အသုံးတည့်တဲ့ Wireguard ကို Linode ရဲ့ VPS တစ်ခုမှာ ဘယ်လိုမျိုးကိုယ်တိုင် setup လုပ်ပြီးတော့ ကိုယ့်အသိုင်းအဝိုင်း နဲ့  ရင်းနှီးတဲ့ မိတ်ဆွေအလွယ် သုံးနိုင်အောင် ဘယ်လို setup လုပ်နိုင်သလဲဆိုတာကို မျှဝေလိုပါတယ်။ စာရေးသူ ကိုယ်တိုင်လည်း Singapore မှာ VPS တစ်လုံးကိုယ်တိုင် ထောင်ထားပြီးတော့ အမျိုးတွေနဲ့ အသိမိတ်ဆွေတွေကို ပြန်လည်မျှဝေ သုံးစေခြင်းဖြင့် free VPN ဆိုတဲ့ ရန်ကနေကင်းဝေးအောင် ကူညီနိုင်ပါတယ်။ Free VPN တွေရဲ့ nature အရ free ဖြစ်တဲ့အတွက် တစ်ခုခုကနေ revenue ရမှ ရပ်တည်နိုင်မယ့်  သဘောပါ။ Browsing history တွေ log လုပ်တာပဲဖြစ်ဖြစ်၊ အခြားသော ငွေရှာနိုင်မည့် နည်းလမ်းတွေကို တနည်းမဟုတ် တနည်းနဲ့ လုပ်ရစမြဲမို့ လုံခြုံရေး အပိုင်းမှာ အပြည့်အဝစိတ်ချရတာမျိုး မရှိတာတော့ အမှန်ပါ။ အခုလိုမျိုး မြန်မာနိုင်ငံမှာ စစ်တပ်က အာရုံသိမ်းပြီးတော့ ဗရုတ်သုတ်ခ တွေတစ်ခုပြီးတစ်ခု လျှောက်လုပ်နေတော့ မြန်မာပြည်သူတွေမှာလည်း ရရာ free VPN တွေကို အသုံးပြုရပါတော့တယ်။ နောက်တစ်ခုက free VPN တွေဟာ သုံးတဲ့ လူတွေများလာတာနဲ့ အမျှ သတ်မှတ်ထားတဲ့ bandwidth တွင်းမှာ traffic တွေဟာ အပြိုင်အဆိုင် contend လုပ်တဲ့အတွက် အားလုံးအတွက် နှေးလာပါတော့တယ်။ ကိုယ်ပိုင် VPN server ရှိခြင်းဖြင့် ရနိုင်တဲ့ အကျိုးကျေးဇူးကတော့ ကိုယ်နိုင်သလောက် လူဦးရေအတွက်ကိုသာ VPN connection လာချိတ်တဲ့အတွက် free VPN ထက်မြန်မယ်၊ လုံခြုံစိတ်ချရပါ့မယ်။ နောက်ပြီးတော့ သိပြီးကြတဲ့အတိုင်း Wireguard ဟာ lightweight ဖြစ်တဲ့အတွက် အခြားသော VPN server တွေနဲ့ မတူတာက resource intensive မဖြစ်ပါဘူး။ 
 
-ဟုတ်ပြီ... အကုန်အကျဘယ်လောက်ရှိသလဲဆိုတော့ Linode ကို အကောင့် အသစ်စစဖွင့်ချင်း $100 ဖိုးစာကို ရက် ၆၀အတွက် free ရပါလိမ့်မယ်။ စာရေးသူရဲ့ ကြိုက်နှစ်သက်ဆုံး ဖြစ်တဲ့ Jupiter Broadcast ရဲ့ Linux Action News ကနေပြီးတော့ပေးထားတဲ့ ဒီ link လေး [https://www.linode.com/lp/podcasts/?ifso=lan](https://www.linode.com/lp/podcasts/?ifso=lan) အသုံးပြုတော့ အကောင့်အသစ်ဖွင့်ပြီးတော့ claim လိုက်ရုံပါပဲ။ ဒီ link ကို အသုံးပြုချင်းအားဖြင့်လည်း Linux Action News podcast ကို အထောက်အကူ ပြုရာဖြစ်ပါတယ်။ $100 ဖိုးဆိုတာ Linode မှာအများကြီး သုံးရပါတယ်။ AWS မှာလိုမျိုး pricing structure မရှုပ်ထွေးတဲ့ အတွက် ရိုးရှင်းပါတယ်။ အခြေခံအကျဆုံး $5 VPS တစ်ခုကို Singapore မှာ setup လုပ်တဲ့ပုံစံကို ပြပါ့မယ်။ ပြီးတော့ အဲ့ဒီ VPS ပေါ်မှာ Wireguard ကို install လုပ်ပုံနဲ့ setup လုပ်ပုံကို ပြပါ့မယ်။ $5 တန် VPS ကို အသုံးပြုတဲ့အတွက် VPN user ၁၀ ယောက်ကနေ အယောက် ၃၀ လောက် ထိအတွက်သာကောင်းပါလိမ့်မယ်။ ဒီထက်များမယ်ဆိုရင်တော့... အခြားသော VPS သို့မဟုတ် dedicated VPS လိုမျိုးတွေကို အသုံးပြုရပါလိမ့်မယ်။ စာရေးသူ စမ်းကြည့်သလောက်တော့ Singapore မှာ VPS ကို ထားတာ အခြားသော Asia zone မှာရှိတဲ့ အခြားသော region တွေထက် ကောင်းသော VPN performance ကိုရပါတယ်။ မြန်မာနိုင်ငံနဲ့ အနီးဆုံးဖြစ်တဲ့အပြင် marine fibre backbone ကို ကြည့်လိုက်ရင်ဖြင့် တိုက်ရိုက်ဆက်သွယ်ထားတဲ့ fibre backbone မှာ bandwidth အများဆုံးနိုင်ငံလည်း ဖြစ်ပါတယ်။ ဒီအတွက် Singapore ကို strategically အရ ရွေးချယ်ခဲ့တာလည်းဖြစ်ပါတယ်။ ကဲ... internet ရတုန်းလေး စလိုက်ရအောင်ဗျာ။ 
+ဟုတ်ပြီ... အကုန်အကျဘယ်လောက်ရှိသလဲဆိုတော့ Linode ကို အကောင့် အသစ်စစဖွင့်ချင်း $100 ဖိုးစာကို ရက် ၆၀အတွက် free ရပါလိမ့်မယ်။ စာရေးသူရဲ့ ကြိုက်နှစ်သက်ဆုံး ဖြစ်တဲ့ Jupiter Broadcast ရဲ့ Linux Action News ကနေပြီးတော့ပေးထားတဲ့ ဒီ link လေး [https://www.linode.com/lp/podcasts/?ifso=lan](https://www.linode.com/lp/podcasts/?ifso=lan) အသုံးပြုတော့ အကောင့်အသစ်ဖွင့်ပြီးတော့ claim လိုက်ရုံပါပဲ။ တစ်ခုတော့ ရှိတယ် သုံးလို့ရတဲ့ credit card/debit card တော့လိုပါလိမ့်မယ်။ ဒီ link ကို အသုံးပြုချင်းအားဖြင့်လည်း Linux Action News podcast ကို အထောက်အကူ ပြုရာဖြစ်ပါတယ်။ $100 ဖိုးဆိုတာ Linode မှာအများကြီး သုံးရပါတယ်။ AWS မှာလိုမျိုး pricing structure မရှုပ်ထွေးတဲ့ အတွက် ရိုးရှင်းပါတယ်။ အခြေခံအကျဆုံး $5 VPS တစ်ခုကို Singapore မှာ setup လုပ်တဲ့ပုံစံကို ပြပါ့မယ်။ ပြီးတော့ အဲ့ဒီ VPS ပေါ်မှာ Wireguard ကို install လုပ်ပုံနဲ့ setup လုပ်ပုံကို ပြပါ့မယ်။ $5 တန် VPS ကို အသုံးပြုတဲ့အတွက် VPN user ၁၀ ယောက်ကနေ အယောက် ၃၀ လောက် ထိအတွက်သာကောင်းပါလိမ့်မယ်။ ဒီထက်များမယ်ဆိုရင်တော့... အခြားသော VPS သို့မဟုတ် dedicated VPS လိုမျိုးတွေကို အသုံးပြုရပါလိမ့်မယ်။ စာရေးသူ စမ်းကြည့်သလောက်တော့ Singapore မှာ VPS ကို ထားတာ အခြားသော Asia zone မှာရှိတဲ့ အခြားသော region တွေထက် ကောင်းသော VPN performance ကိုရပါတယ်။ မြန်မာနိုင်ငံနဲ့ အနီးဆုံးဖြစ်တဲ့အပြင် marine fibre backbone ကို ကြည့်လိုက်ရင်ဖြင့် တိုက်ရိုက်ဆက်သွယ်ထားတဲ့ fibre backbone မှာ bandwidth အများဆုံးနိုင်ငံလည်း ဖြစ်ပါတယ်။ ဒီအတွက် Singapore ကို strategically အရ ရွေးချယ်ခဲ့တာလည်းဖြစ်ပါတယ်။ ကဲ... internet ရတုန်းလေး စလိုက်ရအောင်ဗျာ။ 
 
 ### Linode ပေါ်မှာ VPS တစ်ခု ဖန်တီးပုံ
 
@@ -184,4 +184,68 @@ lines 1-17/17 (END)
 အထက်က အဆင့်မှာတော့ /etc/ssh/sshd\_config ဆိုတဲ့ ssh daemon configuration file ကို nano နဲ့ဖြစ်ဖြစ်၊ vim နဲ့ ဖြစ်ဖြစ် edit လုပ်ရပါလိမ့်မယ်။ line number 36 မှာ PermitRootLogin yes ဆိုတဲ့ နေရာမှာ no လို့ပြောင်းပေးပါ။ ဒီတစ်ခုကတော့ root account နဲ့ ssh remote login ပေးမလုပ်ဘူးလို့ sshd ကို ပြောလိုက်တာပါ။ ပြီးရင် line number 60 မှာ PasswordAuthentication yes ကို no လို့ထပ်ပြောင်း ပေးရပါ့မယ်။ ဒါကတော့ password နဲ့ ssh remote login ပေးမလုပ်တော့ဘူးလို့ သတ်မှတ်ပေးလိုက်ပါ။ ဒီအတွက် ကိုယ့်ရဲ့ ssh key ကို root user account ကနေပြီးတော့ ကိုယ့် user အသစ်ရဲ့ /home/tyla/.ssh အောက်မှာ cp နဲ့ copy ကူးယူပြီးတော့ chown နဲ့ ကိုယ်ပိုင် ဖြစ်အောင်ပြောင်းပေးရပါ့မယ်။ ဒီအဆင့်က အရေးကြီးပါတယ်။ ဒီလိုလုပ်ပြီးတဲ့ အခါမှ systemctl restart sshd နဲ့ ssh daemon ကို restart ချပေးလိုက်ပါ။ အခုဆိုရင်တော့... ကိုယ့် account နဲ့ ssh authentication လုပ်ဖို့ အဆင့်သင့်ဖြစ်ပါပြီ။ SSH login လုပ်လို့ ရမရ အရင်ဆုံး စမ်းကြည့်ပါ။ အားလုံး အဆင်ပြေရင်တော့ Wireguard ကို စတင်ပြီးတော့ install လုပ်နိုင်၊ configure လုပ်နိုင်ပါပြီ။ 
 
 ### Wireguard ကို VPS ပေါ်မှာ VPN Server အနေနဲ့ configure လုပ်ပုံ
+
+SSH login နဲ့ ပတ်သတ်ပြီးတော့ အားလုံး အဆင်သင့်ဖြစ်ရင် Wireguard server ပုံစံကို ကိုယ့် VPS ပေါ်မှာ အောက်မှာပြထားတဲ့အတိုင်း configure လုပ်ပြီးတော့ ပြင်ဆင်လိုက်ပါ။ ဒီ link မှာလည်း  [https://my.itmatic101.com/networking/wireguard-intro](https://my.itmatic101.com/networking/wireguard-intro) Wireguard ကို configure လုပ်တဲ့ပုံကို အနည်းငယ်ရှင်းပြီးသားမို့ ဒီမှာတော့ အတိုချုပ်ပြီးတော့ ပဲရှင်းပါတော့မယ်။ 
+
+```text
+tyla@wg-srv:~$ sudo -i
+[sudo] password for tyla:  [Enter your sudoer password]
+# Generating public and private keys under /etc/wireguard directory
+root@wg-srv:~# cd /etc/wireguard/
+root@wg-srv:~# wg genkey | tee privatekey | wg pubkey > publickey
+# Creating wg0.conf file for WireGuard configuration
+root@wg-srv:~# vi wg0.conf
+# this section is for local wg0 interface
+[Interface]
+# local wg0 interface IP address
+Address = 10.1.10.1
+# local wg server node's private key
+PrivateKey = cC6caA87hRNhOYYLFRawzWCOxMHEzzxJCJKibDasPng=
+# default wg listen port
+ListenPort = 51820
+# wg0 up post action on iptabes to activate redirecting all traffic 
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o ens3 -j MASQUERADE
+# wg0 down post action on iptabes to deactivate redirecting all traffic 
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o ens3 -j MASQUERADE
+# this section is for remote peer wg0 interface 
+[Peer]
+# remote peer's wg public key
+PublicKey = LEQj4f1sNfrF7c+7tjTFBQ8GJjL8gog+ozj4QFgYcn8=
+# remote peer's wg0 interface ip address
+AllowedIPs = 10.1.10.2/32
+# activate the wireguard wg0 interface 
+root@wg-srv:~# wg-quick up wg0
+```
+
+### Wireguard ကို client ဘက်မှာ configure လုပ်ပုံ
+
+Wireguard ရဲ့ server ဘက်မှာ ပြင်ဆင်ပြီးရင် ကိုယ်သုံးမယ့် Wireguard client ဘက်မှာလည်း အောက်ကအတိုင်းဆက်လက် configure လုပ်လိုက်ပါ။ Client တစ်ခု ထပ်ပေါင်းထည့်ဖို့လိုတိုင်း အောက်ကအတိုင်း လုပ်ပြီးတော့ server ဘက်အခြမ်းမှာ နောက်ထပ်တိုးထည့်တဲ့ \[Peer\] တစ်ခုအနေနဲ့ သွားထည့်ပေးလိုက်ရုံပါပဲ။  
+
+```text
+tyla@wg-cl-node:~$ sudo -i
+[sudo] password for tyla:  [Enter your sudoer password]
+# Generating public and private keys under /etc/wireguard directory
+root@wg-cl-node:~# cd /etc/wireguard/
+root@wg-cl-node:~# wg genkey | tee privatekey | wg pubkey > publickey
+# Creating wg0.conf file for WireGuard configuration
+root@wg-cl-node:~# vi wg0.conf
+# this section is for local wg0 interface
+[Interface]
+# local wg0 interface ip address
+Address = 10.1.10.2
+# local wg client node's private key
+PrivateKey = aCKXChbpzlvJtdOpnYLmc/fEGH+5W7Tx/ZveSqczYVA=
+# this section is for wireguard server node's wg0 interface 
+[Peer]
+# wireguard server node's public key
+PublicKey = X8pnECl9ha2CX0JI7GsI1ygjRF4Mu1e+Lyira3EE4j0=
+# wireguard server node's public ip address with port number 51820
+Endpoint = 156.215.24.12:51820
+# all traffic redirect thru wireguard server node 
+AllowedIPs = 0.0.0.0/0
+# every 25 seconds to check the wg connection status for persistence 
+PersistentKeepalive = 25
+# activate the wireguard wg0 interface 
+root@wg-cl-node:~# wg-quick up wg0
+```
 
