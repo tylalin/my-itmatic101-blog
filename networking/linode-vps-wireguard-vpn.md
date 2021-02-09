@@ -255,7 +255,21 @@ PersistentKeepalive = 25
 root@wg-cl-node:~# wg-quick up wg0
 ```
 
-အခုဆိုရင်... Wireguard ရဲ့ server ဘက်မှာရော client ဘက်ခြမ်းအတွက်ပါ အဆင်သင့်ဖြစ်ပါပြီ။ Wireguard ဟာ public/private keys တွေနဲ့ authenticate လုပ်တာမို့ ဘာမှထပ်ပြီးတော့ အခြားသော VPN service တွေမှာလို ထပ်ပြီးတော့  configure လုပ်စရာမရှိပါ။ ကိုယ့်ရဲ့ VPS ဟာ public internet မှာ public IP address နဲ့ expose ဖြစ်မှာမို့ Ubuntu ရဲ့ ufw Firewall ကို အသုံးပြုပြီးတော့ port တွေကို limit လုပ်ရပါလိမ့်မယ်။ ဘယ်လို လုပ်လို့ရသလဲဆိုတာကို အောက်မှာ တချက်ကြည့်လိုက်ရအောင်။
+အခုဆိုရင်... Wireguard ရဲ့ server ဘက်မှာရော client ဘက်ခြမ်းအတွက်ပါ အဆင်သင့်ဖြစ်ပါပြီ။ Wireguard ဟာ public/private keys တွေနဲ့ authenticate လုပ်တာမို့ ဘာမှထပ်ပြီးတော့ အခြားသော VPN service တွေမှာလို ထပ်ပြီးတော့  configure လုပ်စရာမရှိပါ။ သူ့ရဲ့ configuration ကဒါပါပဲ။ ကိုယ်လုပ်တာအကုန်မှန်တယ်ဆိုရင်တော့ wg ဆိုတဲ့ command ကို prompt မှာရိုက်ထည့်လိုက်ရင် တဘက်တချက်စီမှာ ကိုယ့်ရဲ့ peer နဲ့ဆိုင်တဲ့ အချက်အလက်တွေကို တွေ့ရမှာပဲဖြစ်ပါတယ်။ နောက်ပြီး wg server နဲ့ client node ကြားမှာ 10.1.10.0 ip ကို ping ကြည့်လို့ရတယ်ဆိုရင် wireguard ရဲ့ connection က စတင် အလုပ်လုပ်ပါပြီ။ WireGuard client node ဘက်မှာ AllowedIPs ကို ကိုယ် route ချင်တဲ့ ip address သို့မဟုတ် subnet ကိုလည်း အောက်မှာလို comma နဲ့ ထက်ပြီးတော့ ပေါင်းထည့်လို့ရပါတယ်။
+
+```text
+AllowedIPs = 10.1.10.1/32, 192.168.0.0/24 
+```
+
+အထက်ကအတိုင်း ထည့်လိုက်ရင်တော့ wg server ရဲ့ IP address နဲ့၊ peer မှာရှိတဲ့ 192.168.0.0/24 ဆိုတဲ့ subnet နဲ့ကိုတာ WireGuard ရဲ့ tunnel ထဲမှာ route လုပ်မယ်လို့ပြောတာဖြစ်ပါတယ်။
+
+နောက်တစ်ခုက… ကိုယ်က WireGuard server node ကို reboot လုပ်တိုင်း wireguard ကို system startup မှာ service တစ်ခုအနေနဲ့ autostart လုပ်ချင်တယ်ဆိုရင်တော့ အောက်ကအတိုင်း systemd ရဲ့ systemctl ကို အသုံးပြုလို့ရပါတယ်။ Wireguard daemon ကို မသုံးလို့ ရပ်ထားချင်ရင် systemctl stop wg-quick@wg0.service နဲ့ restart လုပ်ချင်ရင် systemctl restart wg-quick@wg0.service ဆိုတာတွေကို အသုံးပြုပြီးတော့ daemon ကို systemd ရဲ့ systemctl နဲ့ ထိန်းလို့ရပါတယ်။ တစ်ခုတော့ရှိတယ်.... အပေါ်မှာ သုံးပြထားတဲ့ command တွေထဲမှာ wg-quick up wg0 ဆိုတာအတွက် wg-quick down wg0 ဆိုတဲ့ command ကိုအရင်ဆုံး အသုံးပြုပြီးတော့မှ systemctl command ကိုသုံးပါ။ 
+
+```text
+root@wg-srv-node:~# systemctl enable wg-quick@wg0.service
+```
+
+ကိုယ့်ရဲ့ VPS ဟာ public internet မှာ public IP address နဲ့ expose ဖြစ်မှာမို့ Ubuntu ရဲ့ ufw Firewall ကို အသုံးပြုပြီးတော့ port တွေကို limit လုပ်ရပါလိမ့်မယ်။ ဘယ်လို လုပ်လို့ရသလဲဆိုတာကို အောက်မှာ တချက်ကြည့်လိုက်ရအောင်။
 
 ### Ubuntu မှာ UFW firewall ကို အသုံးပြုပြီးတော့ port တွေကို limit လုပ်ပုံ
 
