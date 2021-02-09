@@ -185,6 +185,12 @@ lines 1-17/17 (END)
 
 ### Wireguard ကို VPS ပေါ်မှာ VPN Server အနေနဲ့ configure လုပ်ပုံ
 
+Wireguard ကိုအောက်က အတိုင်း install လုပ်လိုက်ပါ။ 
+
+```text
+$ sudo apt-get install wireguard -y
+```
+
 SSH login နဲ့ ပတ်သတ်ပြီးတော့ အားလုံး အဆင်သင့်ဖြစ်ရင် Wireguard server ပုံစံကို ကိုယ့် VPS ပေါ်မှာ အောက်မှာပြထားတဲ့အတိုင်း configure လုပ်ပြီးတော့ ပြင်ဆင်လိုက်ပါ။ ဒီ link မှာလည်း  [https://my.itmatic101.com/networking/wireguard-intro](https://my.itmatic101.com/networking/wireguard-intro) Wireguard ကို configure လုပ်တဲ့ပုံကို အနည်းငယ်ရှင်းပြီးသားမို့ ဒီမှာတော့ အတိုချုပ်ပြီးတော့ ပဲရှင်းပါတော့မယ်။ 
 
 ```text
@@ -248,4 +254,8 @@ PersistentKeepalive = 25
 # activate the wireguard wg0 interface 
 root@wg-cl-node:~# wg-quick up wg0
 ```
+
+အခုဆိုရင်... Wireguard ရဲ့ server ဘက်မှာရော client ဘက်ခြမ်းအတွက်ပါ အဆင်သင့်ဖြစ်ပါပြီ။ Wireguard ဟာ public/private keys တွေနဲ့ authenticate လုပ်တာမို့ ဘာမှထပ်ပြီးတော့ အခြားသော VPN service တွေမှာလို ထပ်ပြီးတော့  configure လုပ်စရာမရှိပါ။ ကိုယ့်ရဲ့ VPS ဟာ public internet မှာ public IP address နဲ့ expose ဖြစ်မှာမို့ Ubuntu ရဲ့ ufw Firewall ကို အသုံးပြုပြီးတော့ port တွေကို limit လုပ်ရပါလိမ့်မယ်။ ဘယ်လို လုပ်လို့ရသလဲဆိုတာကို အောက်မှာ တချက်ကြည့်လိုက်ရအောင်။
+
+### Ubuntu မှာ UFW firewall ကို အသုံးပြုပြီးတော့ port တွေကို limit လုပ်ပုံ
 
