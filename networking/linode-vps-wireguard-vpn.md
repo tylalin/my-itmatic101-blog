@@ -269,7 +269,45 @@ AllowedIPs = 10.1.10.1/32, 192.168.0.0/24
 root@wg-srv-node:~# systemctl enable wg-quick@wg0.service
 ```
 
+ကိုယ်က mobile phone မှာ Wireguard app ကို အသုံးပြုတဲအခါမှာ client side ဘက်က configuration တွေကိုကူးယူပြီးတော့ ထည့်ရတာ တော်တော်လေးလက်ဝင်ပါတယ်။ အထူးသဖြင့် public/private keys တွေကိုတစ်ခုချင်းစီရိုက်ထည့်ရတာ မလွယ်ပါဘူး။ အဲ့ဒီအတွက် ကိုယ်ရဲ့ Wireguard client configuration ကို QR Code အနေနဲ့ ပြောင်းပြီးတော့ mobile phone camera နဲ့ scan ဖတ်ပြီးတော့ configure လုပ်ရတာ ပိုပြီးတော့ အဆင်ပြေပါတယ်။ အောက်ကအတိုင်း လိုက်ပြီးတော့ install လုပ်၊ QR code ကို issue လုပ်လို့ ရပါတယ်။ 
+
+```text
+root@wg-cl-node:~# apt install qrencode
+root@wg-cl-node:~# qrencode  -t ansiutf8 < tyla.conf
+```
+
+### Ubuntu မှာ UFW firewall ကို အသုံးပြုပြီးတော့ Wireguard အတွက် port ဖွင့်ပေးပုံ
+
 ကိုယ့်ရဲ့ VPS ဟာ public internet မှာ public IP address နဲ့ expose ဖြစ်မှာမို့ Ubuntu ရဲ့ ufw Firewall ကို အသုံးပြုပြီးတော့ port တွေကို limit လုပ်ရပါလိမ့်မယ်။ ဘယ်လို လုပ်လို့ရသလဲဆိုတာကို အောက်မှာ တချက်ကြည့်လိုက်ရအောင်။
 
-### Ubuntu မှာ UFW firewall ကို အသုံးပြုပြီးတော့ port တွေကို limit လုပ်ပုံ
+UFW ဆိုတာကတော့ Ubuntu ရဲ့ default firewall တစ်ခုပါ။ Uncomplicated Firewall ကို အတိုကောက်ခေါ်ဆိုထားတာလည်းဖြစ်ပါတယ်။ UFW ဟာ iptables ရဲ့ abstraction layer တစ်ခုအနေနဲ့ အပေါ်ကနေ အုပ်ထားပါတယ်။ ကိုယ်က ufw ကို enable မလုပ်ထားရင် သူ့ status က inactive ပါ။ Inactive ဆိုတဲ့နေရာမှာ ufw feature ကို အသုံးမပြုထားဘူးဆိုတဲ့ အဓိပ္ပာယ်ပါ၊ firewall ကို disable လုပ်ထားတာမဟုတ်ပါဘူး။ Underlay မှာတော့ iptables ကို security အရအသုံးပြုထားပါတယ်။ Wireguard အတွက် Ubuntu မှာ ufw သုံးပြီးတော့ ဘယ်လိုမျိုး port ကို ဖွင့်ပေးတဲ့ ပုံကိုကြည့်လိုက်အောင်။ 
+
+```text
+root@wg-srv-node:~# sudo ufw default deny incoming
+Default incoming policy changed to 'deny'
+(be sure to update your rules accordingly)
+
+root@wg-srv-node:~# sudo ufw default allow outgoing
+Default outgoing policy changed to 'allow'
+(be sure to update your rules accordingly)
+
+root@wg-srv-node:~# ufw allow 22/tcp
+root@wg-srv-node:~# ufw allow 51820/udp
+root@wg-srv-node:~# ufw enable
+root@wg-srv-node:~# ufw status verbose
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----          
+51820/udp                  ALLOW IN    Anywhere                  
+22                         ALLOW IN    Anywhere                  
+51820/udp (v6)             ALLOW IN    Anywhere (v6)             
+22 (v6)                    ALLOW IN    Anywhere (v6)             
+
+```
+
+အခုဆိုရင်တော့... Wireguard နဲ့ ssh အတွက် ufw ကိုပြင်ဆင်တာပြီးသွားတာဖြစ်တဲ့အတွက် Wireguard connection ကို စတင်စမ်းသပ်လို့ရပါပြီ။ 
 
