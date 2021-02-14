@@ -26,7 +26,7 @@ WireGuard ကို ဘယ် Linux box မှာမဆို run လို့�
 
 WireGuard ကို setup လုပ်တဲ့ဘက်ကို ပြန်ပြီးတော့လှည့်လိုက်ရအောင်… ကိုယ့်ရဲ့ Linux box လည်း ready၊ ကိုယ့်ရဲ့ home router မှာလည်း ပုံမှာပြထားတဲ့ အတိုင်း port 51820 ကို ကိုယ့်ရဲ့ Linux box ဆီ port forward လုပ်ပြီးရင် WireGuard ကိုစတင် configure လုပ်ဖို့ပဲကျန်ပါတော့တယ်။ အောက်မှာတော့ ဘယ်လို setup လုပ်သလဲဆိုတာဆက်သွားပါ့မယ်။
 
-**WireGuard ကို server node ပေါ်မှာ configure လုပ်ပုံ**
+#### **WireGuard ကို server node ပေါ်မှာ configure လုပ်ပုံ**
 
 ```text
 tyla@wg-srv-node:~$ sudo -i
@@ -101,6 +101,84 @@ AllowedIPs = 10.1.10.1/32, 192.168.0.0/24
 ```text
 root@wg-srv-node:~# systemctl enable wg-quick@wg0.service
 ```
+
+#### Wireguard အတွက် IP Forwarding လုပ်ပုံ
+
+ကိုယ်က  LAN မှာရှိတဲ့ device တွေကို remote access လုပ်ချင်ရင် ဒီအဆင့်က မလိုအပ်ပါဘူး။ ဒါမှမဟုတ်ပဲနဲ့ internet traffic ကိုပါ ကိုယ့် VPN server ကနေထွက်စေချင်ရင်တော့ အောက်ကအတိုင်း ip forwarding ကို ပြင်ပေးရပါလိမ့်မယ်။
+
+```text
+root@wg-srv-node:~# nano /etc/sysctl.conf
+
+#
+# /etc/sysctl.conf - Configuration file for setting system variables
+# See /etc/sysctl.d/ for additional system variables.
+# See sysctl.conf (5) for information.
+#
+
+#kernel.domainname = example.com
+
+# Uncomment the following to stop low-level messages on console
+#kernel.printk = 3 4 1 3
+
+##############################################################3
+# Functions previously found in netbase
+#
+
+# Uncomment the next two lines to enable Spoof protection (reverse-path filter)
+# Turn on Source Address Verification in all interfaces to
+# prevent some spoofing attacks
+#net.ipv4.conf.default.rp_filter=1
+#net.ipv4.conf.all.rp_filter=1
+
+# Uncomment the next line to enable TCP/IP SYN cookies
+# See http://lwn.net/Articles/277146/
+# Note: This may impact IPv6 TCP sessions too
+#net.ipv4.tcp_syncookies=1
+
+# Uncomment the next line to enable packet forwarding for IPv4
+net.ipv4.ip_forward=1
+
+# Uncomment the next line to enable packet forwarding for IPv6
+#  Enabling this option disables Stateless Address Autoconfiguration
+#  based on Router Advertisements for this host
+#net.ipv6.conf.all.forwarding=1
+
+
+###################################################################
+# Additional settings - these settings can improve the network
+# security of the host and prevent against some network attacks
+# including spoofing attacks and man in the middle attacks through
+# redirection. Some network environments, however, require that these
+# settings are disabled so review and enable them as needed.
+#
+# Do not accept ICMP redirects (prevent MITM attacks)
+#net.ipv4.conf.all.accept_redirects = 0
+#net.ipv6.conf.all.accept_redirects = 0
+# _or_
+# Accept ICMP redirects only for gateways listed in our default
+# gateway list (enabled by default)
+# net.ipv4.conf.all.secure_redirects = 1
+#
+# Do not send ICMP redirects (we are not a router)
+#net.ipv4.conf.all.send_redirects = 0
+#
+# Do not accept IP source route packets (we are not a router)
+#net.ipv4.conf.all.accept_source_route = 0
+#net.ipv6.conf.all.accept_source_route = 0
+#
+# Log Martian Packets
+#net.ipv4.conf.all.log_martians = 1
+#
+
+###################################################################
+# Magic system request Key
+# 0=disable, 1=enable all, >1 bitmask of sysrq functions
+# See https://www.kernel.org/doc/html/latest/admin-guide/sysrq.html
+# for what other values do
+#kernel.sysrq=438
+```
+
+Line 30 မှာရှိတဲ့ net.ipv4.ip\_forward=1 ဆိုတဲ့တခုကို uncomment လုပ်ပေးပြီးတော့ 1 လို့ ပြောင်းပေးလိုက်ပါ။
 
 ဒီလောက်ဆိုရင်တော့ WireGuard ကို setup လုပ်ပုံအတွက် လုံလောက်ပြီလို့ စာရေးသူထင်ပါတယ်။ WireGuard မှာ ဒီထက်ပိုပြီးတော့ လုပ်လို့ရတဲ့ဟာ အများကြီးကျန်ပါသေးတယ်။ အကုန်လိုက်ရှင်းရင် အရမ်းရှည်သွားမှာပါ။ အဲဒီတော့… ဒီ post ကို ဒီလောက်နဲ့ပဲ ရပ်လိုက်ပါတော့မယ်။
 
