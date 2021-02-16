@@ -79,6 +79,7 @@
 
 ## others
 
+* [ကိုယ့်လုံခြုံရေးအတွက် အသုံးပြုသင့်တဲ့ toolkit လေးများ](others/privacy-toolkit.md)
 * [SSH Tunneling အကြောင်းသိကောင်းစရာ](others/ssh-tunneling-intro.md)
 * [နေ့စဉ်သုံး စိတ်ကြိုက် Application/Software လေးများ](others/fav-apps.md)
 * [Keyboard Size တွေအကြောင်းသိသမျှ](others/keyboard-size.md)
