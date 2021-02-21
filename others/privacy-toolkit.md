@@ -38,7 +38,7 @@ Android အတွက်တော့ အောက်က link မှာရယူ�
 
 ## 3. Brave Tor anonymity web browser
 
-Onion router
+Brave browser ကတော့ mobile phone တွေရဲ့ iOS နဲ့ Android platform နှစ်ခုလုံးမှာ အသုံးပြုနိုင်သလို၊ PC နဲ့ Mac အတွက်တော့ အကောင်းဆုံးဖြစ်အောင် သုံးလို့ရနိုင်တဲ့ browser တစ်ခုပါ။ Privacy ကို focus လုပ်ထားတဲ့ web browser တစ်ခုဖြစ်ပြီးတော့ Tor ကိုလည်း built-in ထည့်ပေးထားတဲ့ web browser တစ်ခုလည်း ဖြစ်ပါတယ်။ Tor browser ကိုသီးသန့် download လုပ်ပြီးတော့လည်း install လုပ်ပြီး အသုံးပြုနိုင်ပါတယ်။ Brave မှာတော့ ဒီအတိုင်းထည့်ပေးထားတဲ့အတွက် သီးသန့် Tor ကို ထပ်ပြီးတော့ ပေါင်းထည့်စရာမလိုတဲ့အတွက် ပိုပြီးတော့ အဆင်ပြေနိုင်ပါတယ်။ 
 
 ## 4. Tails Portable OS
 
