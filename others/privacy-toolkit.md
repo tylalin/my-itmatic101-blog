@@ -98,7 +98,17 @@ KeePass ကိုတော့ အောက်က link မှာသွားပ�
 
 ## 8. Jitsi Meet audio/video conferencing
 
-conferencing
+Zoom meeting ကို ဒီဘက်ခေတ်မှာ မသိတဲ့သူ မရှိသလောက်ဖြစ်နေပါပြီ။ Zoom ကို video/audio conferencing အတွက်အသုံးပြုနိုင်သော်လည်း free ရတဲ့ account နဲ့ဆိုရင် limitation တွေအများကြီးရှိပါတယ်။ လူဘယ်နှစ်ယောက်ဆို ဘယ်မိနစ်ပဲ conference လုပ်လို့ရတယ်ဆိုတာမျိုးတွေ ရှိပါတယ်။ Enterprise မှာတော့ တော်တော်လေးကို အသုံးပြုကြတဲ့ application တစ်ခုပါ။ စာရေးသူအတွက်တော့ opensource နဲ့ free account မှာ အကန့်အသတ်လည်းနည်းနိုင်သမျှ နည်းရမယ်၊ enterprise offering လည်းရှိရမယ်၊ self-hosted option လည်းရှိရမယ်ဆိုတဲ့ criteria တွေကို အကုန်လိုက်ကြည့်တတ်တဲ့ အကျင့်တစ်ခုကြောင့် Zoom ကိုသုံးဖို့ရာ အဆင်မပြေတော့ပါဘူး။ ဒီ့အတွက် Jitsi Meet ကို audio/video conferencing အတွက်ရွေးချယ်လိုက်ရပါတော့တယ်။ စာရေးသူကိုယ်တိုင်လည်း မိမိအဝန်းအဝိုင်းအတွင်းမှာ အခုလိုမျိုး opensource application လေးတွေကို လူသိများလာအောင် လက်တွေ့မှာအသုံးပြုစေပြီးတော့ community ဆိုင်ရာ non-profit operation တွေကိုလုပ်ဆောင်လေ့ရှိပါတယ်။ လုံခြုံစိတ်ချရပြီးတော့ security feature တွေလည်း Jitsi မှာပါဝင်တာကြောင့် လိုသလိုအသုံးပြုနိုင်ပါတယ်။ User interface မှာလည်း ရိုးရှင်းတဲ့ ပုံစံဖြစ်တာကြောင့် အလွယ်တကူ အသုံးပြုနိုင်ပါတယ်။ Jitsi Meet ကို Linux/Windows PC သို့မဟုတ် MacOS မှာသုံးချင်ရင်တော့ အောက်က link မှာသွားပြီးတော့ meeting တစ်ခုကို အလွယ်ဆုံး အမြန်ဆုံး setup လုပ်လို့ရနိုင်ပါတယ်။
+
+{% embed url="https://meet.jit.si/" %}
+
+iOS device တွေမှာ သုံးချင်ရင်တော့ အောက်က link မှာသွားပြီးတော့ download လုပ်နိုင်ပါတယ်။ 
+
+{% embed url="https://apps.apple.com/us/app/jitsi-meet/id1165103905" %}
+
+Android device တွေမှာ သုံးချင်ရင်တော့ အောက်က link မှာသွားပြီးတော့ download လုပ်ပါ။
+
+{% embed url="https://play.google.com/store/apps/details?id=org.jitsi.meet&hl=en&gl=US" %}
 
 ## 9. VeraCrypt disk encryption
 
