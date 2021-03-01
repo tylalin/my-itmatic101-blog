@@ -60,7 +60,15 @@ Linux/Windows PC နဲ့ MacOS ပေါ်မှာအသုံးပြု�
 
 ## 5. uBlock Origin ad Blocker / Privacy Badger web extension
 
-ad blocker
+Ad blocker လို့ဆိုပေမယ့်လည်း Ad ထက်ပိုတဲ့ အခြားသော malware site တွေကိုလည်း block လုပ်ပေးတဲ့အတွက် ကိုယ်စက်ပေါ်ကို သမာသူတွေက Cross Site Scripting \(XSS\) လိုမျိုး attack ကို launch လုပ်ဖို့ရာအတွက် တော်တော်လေးကို ခက်ခဲသွားပါပြီ။ Linux/Windows PC နဲ့ MacOS လိုမျိုး platform တွေမှာ virus ကိုက်တဲ့အခါကြည့်လိုက်ရင် web browser ကနေပြီး တစ်ခုခုကို download ဆွဲပြီးတော့ install လုပ်လိုက်တာနဲ့ စက်ပျက်သွားတာမျိုးတွေများပါတယ်။ ဒီတော့ Ad blocker နဲ့ Privacy Badger လိုမျိုး web extension တွေက မဖြစ်ခင်ကတည်းက ကြိုတင်တော့ block လုပ်ထားတာဖြစ်တဲ့အတွက် web browser ကနေလာတဲ့ attack တော်တော်များများကို စစ်ချပေးပြီးသားဖြစ်သွားပါတယ်။ လူတိုင်းအသုံးပြုသင့်တဲ့ web extension နှစ်ခုပါ။ Browser တွေတိုင်းမှာလို ရနိုင်တဲ့ web extension တွေမို့ ကိုယ်က firefox ကိုသုံးရင်ဖြစ်ဖြစ် brave browser ကိုသုံးရင်ဖြစ်ဖြစ် add-on သို့မဟုတ် web store တွေမှာသွားပြီးတော့ရှာကြည့်လို့ ရနိုင်ပါတယ်။ 
+
+uBlock Origin ကို အသုံးပြုချင်ရင်တော့ အောက်က link မှာသွားပြီးတော့ add ထည့်လိုက်ပါ
+
+{% embed url="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en" %}
+
+Privacy Badger ကိုသုံးချင်ရင်တော့ ဒီအောက် link ကနေသွားပြီးတော့ add လိုက်ပါ။ 
+
+{% embed url="https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp?hl=en" %}
 
 ## 6. GNU Privacy Guard \(GPG\)
 
