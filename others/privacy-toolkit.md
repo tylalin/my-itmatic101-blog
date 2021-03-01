@@ -42,15 +42,15 @@ Brave browser ကတော့ mobile phone တွေရဲ့ iOS နဲ့ Andr
 
 iOS ကိုအသုံးပြုသူများအတွက်တော့ အောက်က link မှာ app ကို download ဆွဲလို့ရပါတယ်။ [‎](https://apps.apple.com/us/app/brave-private-browser-vpn/id1052879175)
 
-‌[https://apps.apple.com/us/app/brave-private-browser-vpn/id1052879175](https://apps.apple.com/us/app/brave-private-browser-vpn/id1052879175)
+{% embed url="https://apps.apple.com/us/app/brave-private-browser-vpn/id1052879175" %}
 
 Android ကိုအသုံးပြုသူများအတွက်တော့ အောက်က link မှာ app ကို download ဆွဲပါ။
 
-‌[https://play.google.com/store/apps/details?id=com.brave.browser&hl=en\_AU&gl=US](https://play.google.com/store/apps/details?id=com.brave.browser&hl=en_AU&gl=US)
+{% embed url="https://play.google.com/store/apps/details?id=com.brave.browser&hl=en\_AU&gl=US" %}
 
 Linux/Windows PC နဲ့ MacOS ပေါ်မှာအသုံးပြုချင်တယ်ဆိုရင်တော့ အောက်က link မှာ download ဆွဲပြီးတော့ install လုပ်လို့ရပါတယ်။ 
 
-‌[https://brave.com/download/](https://brave.com/download/)
+{% embed url="https://brave.com/download/" %}
 
 ## 4. Tails Portable OS <a id="4-tails-portable-os"></a>
 
