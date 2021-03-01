@@ -38,11 +38,25 @@ Android အတွက်တော့ အောက်က link မှာရယူ�
 
 ## 3. Brave Tor anonymity web browser
 
-Brave browser ကတော့ mobile phone တွေရဲ့ iOS နဲ့ Android platform နှစ်ခုလုံးမှာ အသုံးပြုနိုင်သလို၊ PC နဲ့ Mac အတွက်တော့ အကောင်းဆုံးဖြစ်အောင် သုံးလို့ရနိုင်တဲ့ browser တစ်ခုပါ။ Privacy ကို focus လုပ်ထားတဲ့ web browser တစ်ခုဖြစ်ပြီးတော့ Tor ကိုလည်း built-in ထည့်ပေးထားတဲ့ web browser တစ်ခုလည်း ဖြစ်ပါတယ်။ Tor browser ကိုသီးသန့် download လုပ်ပြီးတော့လည်း install လုပ်ပြီး အသုံးပြုနိုင်ပါတယ်။ Brave မှာတော့ ဒီအတိုင်းထည့်ပေးထားတဲ့အတွက် သီးသန့် Tor ကို ထပ်ပြီးတော့ ပေါင်းထည့်စရာမလိုတဲ့အတွက် ပိုပြီးတော့ အဆင်ပြေနိုင်ပါတယ်။ 
+Brave browser ကတော့ mobile phone တွေရဲ့ iOS နဲ့ Android platform နှစ်ခုလုံးမှာ အသုံးပြုနိုင်သလို၊ PC နဲ့ Mac အတွက်တော့ အကောင်းဆုံးဖြစ်အောင် သုံးလို့ရနိုင်တဲ့ browser တစ်ခုပါ။ Privacy ကို focus လုပ်ထားတဲ့ web browser တစ်ခုဖြစ်ပြီးတော့ Tor ကိုလည်း built-in ထည့်ပေးထားတဲ့ web browser တစ်ခုလည်း ဖြစ်ပါတယ်။ Tor browser ကိုသီးသန့် download လုပ်ပြီးတော့လည်း install လုပ်ပြီး အသုံးပြုနိုင်ပါတယ်။ Brave မှာတော့ ဒီအတိုင်းထည့်ပေးထားတဲ့အတွက် သီးသန့် Tor ကို ထပ်ပြီးတော့ ပေါင်းထည့်စရာမလိုတဲ့အတွက် ပိုပြီးတော့ အဆင်ပြေနိုင်ပါတယ်။ Brave browser ကတော့ mobile phone တွေရဲ့ iOS နဲ့ Android platform နှစ်ခုလုံးမှာ အသုံးပြုနိုင်သလို၊ Linux/Windows PC နဲ့ Mac အတွက်တော့ အကောင်းဆုံးဖြစ်အောင် သုံးလို့ရနိုင်တဲ့ browser တစ်ခုပါ။ Privacy ကို focus လုပ်ထားတဲ့ web browser တစ်ခုဖြစ်ပြီးတော့ Tor ကိုလည်း built-in ထည့်ပေးထားတဲ့ web browser တစ်ခုလည်း ဖြစ်ပါတယ်။ Tor browser ကိုသီးသန့် download လုပ်ပြီးတော့လည်း install လုပ်ပြီး အသုံးပြုနိုင်ပါတယ်။ Brave မှာတော့ ဒီအတိုင်းထည့်ပေးထားတဲ့အတွက် သီးသန့် Tor ကို ထပ်ပြီးတော့ ပေါင်းထည့်စရာမလိုတဲ့အတွက် ပိုပြီးတော့ အဆင်ပြေနိုင်ပါတယ်။ Brave ဟာ Firefox လိုမျိုး privacy ကိုအသားပေးတဲ့ browser မျိုး ဖြစ်တဲ့အတွက် ကိုယ်လုံခြုံရေးနဲ့ ပတ်သတ်တဲ့ feature တွေအများကြီးပါတယ်။ အမြင်အားဖြင့်လည်း လှတဲ့အတွက် စာရေးသူတော့ တော်တော်လေးမျက်စိကျမိပါတယ်။ ‌
 
-## 4. Tails Portable OS
+iOS ကိုအသုံးပြုသူများအတွက်တော့ အောက်က link မှာ app ကို download ဆွဲလို့ရပါတယ်။ [‎](https://apps.apple.com/us/app/brave-private-browser-vpn/id1052879175)
 
-Tails distro for privacy
+‌[https://apps.apple.com/us/app/brave-private-browser-vpn/id1052879175](https://apps.apple.com/us/app/brave-private-browser-vpn/id1052879175)
+
+Android ကိုအသုံးပြုသူများအတွက်တော့ အောက်က link မှာ app ကို download ဆွဲပါ။
+
+‌[https://play.google.com/store/apps/details?id=com.brave.browser&hl=en\_AU&gl=US](https://play.google.com/store/apps/details?id=com.brave.browser&hl=en_AU&gl=US)
+
+Linux/Windows PC နဲ့ MacOS ပေါ်မှာအသုံးပြုချင်တယ်ဆိုရင်တော့ အောက်က link မှာ download ဆွဲပြီးတော့ install လုပ်လို့ရပါတယ်။ 
+
+‌[https://brave.com/download/](https://brave.com/download/)
+
+## 4. Tails Portable OS <a id="4-tails-portable-os"></a>
+
+ဒီတစ်ခုကတော့ CDM သမားတွေပဲဖြစ်ဖြစ်၊ high profile activist တွေပဲဖြစ်ဖြစ်အသုံးပြုသင့်တဲ့ Linux ရဲ့ distro တစ်ခုပါ။ အခုလိုမျိုး စစ်အစိုးရဆန့်ကျင်ရေး လုပ်ငန်းစဉ်တွေကိုလုပ်တဲ့အခါမှာ တနည်းမဟုတ် တနည်းတော့ ကမ္ဘာကြီးနဲ့ ဆက်သွယ်ဖို့လိုပါတယ်။ လိုအပ်တဲ့ သတင်းဖြန့်ချီရေး အတွက်ဖြစ်စေ၊ အခြားသော activist တွေနဲ့ ဆက်သွယ်တာပဲဖြစ်စေ သုံးကိုသုံးသင့်တဲ့ Linux distro တစ်ခုပါ။ ထောက်လှမ်းရေးကောင်းလှပါပြီရဲ့လို့ ပြောတဲ့ အမေရိကန်နိုင်ငံရဲ့ NSA ကိုတောင် မလိမ့်တဘက်လုပ်ပြီးတော့ လိုအပ်တဲ့သတင်းတွေကို Edward Snowden တစ်ယောက် အပြင်ကိုရအောင်ထုတ်နိုင်ခဲ့ပါတယ်။ Tails OS ဟာလည်း သူ့ရဲ့ အကြံပေးချက်တစ်ခုမှာ ထည့်ပြောသွားတာဖြစ်လို့ သေချာပေါက်စိတ်ချလို့ ရနိုင်ပါတယ်။ ပြည်တွင်းမှာရှိတဲ့ နည်းပညာသမားတွေ အနေနဲ့ ကိုယ်နဲ့ နီးစပ်တဲ့ CDM လုပ်တဲ့သူတွေနဲ့ activist တွေ အသုံးပြုနိုင်ဖို့ရာ setup လုပ်ပေးသင်တဲ့ အရာတစ်ခုပါ။ Bootable USB stick တစ်ခုနဲ့ ကိုယ်အဆင်ပြေမယ့် မည်သည့် x86 platform ပေါ်မှာ အလွယ်တကူ run လို့ရတဲ့ distro တစ်ခုပါ။ ဘယ်လိုမျိုး setup လုပ်ရသလဲကိုတော့ ဒီမှာအသေးစိတ် မရှင်းတော့ပါဘူး။ နည်းပညာနယ်ပယ်က နည်းပညာသမားတိုင်း ဘယ်လို setup လုပ်ရမယ်၊ ဘယ်လိုသုံးရသလဲဆိုတာကို သိနိုင်ပါတယ်။ မခက်ပါဘူး။ အခက်အခဲရှိတယ်ဆိုရင်တော့ နီးစပ်ရာ နည်းပညာသမားတွေကို အကူအညီတောင်းပါ။ စာရေးသူကို တိုက်ရိုက်ဆက်သွယ်လျှင်လည်းရပါတယ်။ ရသလောက် ကူညီပေးပါ့မယ်။ Tails OS ကို download လုပ်ပုံ၊ setup လုပ်ပုံကို အောက်က link မှာ documentation ကောင်းကောင်း နဲ့သွားရောက်ပြီးတော့လေ့လာလို့ရနိုင်ပါတယ်။ 
+
+[Tails - Hometails.boum.org](https://tails.boum.org/)‌
 
 ## 5. uBlock Origin ad Blocker / Privacy Badger web extension
 
