@@ -112,7 +112,13 @@ Android device တွေမှာ သုံးချင်ရင်တော့ 
 
 ## 9. VeraCrypt disk encryption
 
-disk encryption=
+GPG လိုမျိုးပဲ encryption လုပ်တဲ့ tool တစ်ခုပါ။ Email နဲ့ file တွေကို encrypt လုပ်ရုံသာမက ကိုယ်ပြေးရင်းလွှားရင်း ကျန်ခဲ့တဲ့ကိုယ်ရဲ့ laptop/PC သို့မဟုတ် mobile phone ထဲက အချက်အလက်တွေကို အလွယ်တကူ ရမယူနိုင်အောင်လို့ disk တစ်ခုလုံးကို encrypt လုပ်သင့်ပါတယ်။ VeraCrypt မှာတော့ virtual encrypted disk တွေကိုလည်း ဖန်တီးနိုင်တာကြောင့် လိုအပ်ပါကအဲ့ဒီ feature ကိုလည်း အသုံးပြုနိုင်ပါတယ်။ Linux/Windows/Mac/iOS/Android တို့မှလည်း disk encryption ကို native လုပ်လို့ရပါတယ်။ ဘယ်လိုလုပ်လို့ ရသလဲဆိုတာကို အောက်က link မှာသွားပြီးတော့လေ့လာလို့ရပါတယ်။ 
+
+{% embed url="https://spreadprivacy.com/how-to-encrypt-devices/" %}
+
+VeraCrypt ကတော့ အထက်မှာပြောသွားတဲ့ အတိုင်း add-on feature တွေပါတဲ့အပြင် free opensource ဖြစ်တာကြောင့် system တွေမှာ built-in ပါလာတဲ့ disk encryption ကိုမသုံးချင်ရင် သုံးလို့ရနိုင်တဲ့ alternative ပါ။ အောက်မှာတော့ VeraCrypt ကို download ဆွဲပြီးတော့ အသုံးပြုနိုင်မယ့် link ပါ။ 
+
+{% embed url="https://www.veracrypt.fr/en/Home.html" %}
 
 ## 10. DBAN data wiping
 
