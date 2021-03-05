@@ -72,7 +72,6 @@
 ## Networking
 
 * [အဘယ့်ကြောင့် GNS3](networking/why-gns3.md)
-* [tcpdump မိတ်ဆက်](networking/tcpdump-intro.md)
 * [ZeroTier မိတ်ဆက်](networking/zerotier-intro.md)
 * [WireGuard အကြောင်းသိကောင်းစရာ](networking/wireguard-intro.md)
 * [Linode VPS မှာကိုယ်ပိုင် Wireguard VPN server တစ်ခုတည်ဆောက်ပုံ](networking/linode-vps-wireguard-vpn.md)
