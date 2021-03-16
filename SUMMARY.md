@@ -57,7 +57,7 @@
 
 ## Automation
 
-* [Wireguard ရဲ့ automated workflow](automation/wireguard-kobaelo-automate-lokthle.md)
+* [Wireguard ရဲ့ automated workflow](automation/wireguard-automated-workflow.md)
 * [အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code \(IaC\) – အပိုင်း\(၁\)](automation/rough-edges-iac-part1.md)
 * [အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code \(IaC\) – အပိုင်း\(၂\)](automation/rough-edges-iac-part2.md)
 * [အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code \(IaC\) - အပိုင်း\(၃\)](automation/rough-edges-iac-part3.md)
