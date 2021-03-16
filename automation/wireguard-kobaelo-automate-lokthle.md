@@ -1,2 +1,2 @@
-# Wireguard ကိုဘယ်လို automate လုပ်သလဲ
+# Wireguard ရဲ့ automated workflow
 
