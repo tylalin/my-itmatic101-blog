@@ -4,5 +4,15 @@
 
 ## ကြိုတင်ပြင်ဆင်ထားရမယ့် အချက်များ 
 
+ပထမဆုံးအနေနဲ့ Linode မှာ ကိုယ် setup လုပ်ထားတဲ့ Wireguard server တစ်ခုအဆင်သင့်ရှိနေရပါ့မယ်။ ပြီးတော့ အဲ့ဒီ server အတွက် wireguard ရဲ့ public နဲ့ private key pair တစ်ခုကို အရင်ဆုံး issue ထုတ်ထားရပါ့မယ်။ အသေးစိတ်လုပ်ပုံကိုတော့ ထပ်မရှင်းတော့ပါဘူး။ အရှေ့က post နှစ်ခုကို မဖတ်ရသေးရင်တော့ အောက်မှာတချက်အရင်သွားဖတ်လို့ရပါတယ်။ 
+
+**Wireguard အကြောင်းသိကောင်းစရာ**
+
+{% embed url="https://my.itmatic101.com/networking/wireguard-intro" %}
+
+**Linode VPS မှာကိုယ်ပိုင် Wireguard VPN server တစ်ခုတည်ဆောက်ပုံ**
+
+{% embed url="https://my.itmatic101.com/networking/linode-vps-wireguard-vpn" %}
+
 
 
