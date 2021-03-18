@@ -14,5 +14,53 @@
 
 {% embed url="https://my.itmatic101.com/networking/linode-vps-wireguard-vpn" %}
 
+အပေါ်က link နှစ်ခုမှာ Wireguard server အတွက် private နဲ့ public key pair ကိုပြင်ဆင်တဲ့ပုံနဲ့ လိုအပ်တဲ့ firewall setting နဲ့ ip forwarding ကို enable လုပ်ပြီးသွားရင် ကျန်တဲ့ client side အတွက် Wireguard configuration နဲ့ ဖုန်းမှာသုံးဖို့အတွက် QR code တွေအများကြီးထုတ်ဖို့ရာအတွက် workflow ကို automate လုပ်လို့ရပါပြီ။ နောက်ပြီးတော့ qrencode ဆိုတဲ့ command ကိုအသုံးပြုဖို့အတွက် သူ့ကိုလည်းအရင်ဆုံး ကြိုပြီးတော့ ကိုယ့်ရဲ့ PC သို့မဟုတ် laptop မှာကြိုပြီးတော့ install လုပ်ရပါလိမ့်မယ်။ ကိုယ်သုံးတဲ့ OS က Linux ဖြစ်ဖို့တော့လိုပါလိမ့်မယ်။ စာရေးသူအတွက်တော့ Ubuntu 20.04 LTS ကို GNOME Desktop နဲ့သုံးပါတယ်။ ဒီနေရာမှာ နှစ်မျိုးလုပ်လို့ရပါတယ်။ အခုသုံးမယ့် bash script ကို ကိုယ့်ရဲ့စက်မှာ wireguard နဲ့ qrencode အရင်သွင်းထားပြီးတော့ လိုအပ်တဲ့ client side QR code တွေကို ကိုယ့်စက်ပေါ်မှာ locally တစ်ခုပြီးတော့ တစ်ခုထုတ်လို့ရပါတယ်။ User တွေအများကြီးအတွက် ထုတ်တဲ့အခါမှာ အများကြီးလွယ်ကူသွားတာကိုတွေ့ရပါလိမ့်မယ်။ 
+
+
+
+အောက်မှာ bash နဲ့လုပ်ထားတဲ့ automated workflow တစ်ခုကိုအခုလိုတွေ့ရမှာပါ။ 
+
+```bash
+#!/bin/bash
+
+p='wg-srv-peers.conf'
+[ -f $p ] && rm -f $p
+
+i='PNGs'
+[ -d $i ] && rm -rf $i
+mkdir $i
+
+while IFS=, read -r ui ip
+do
+    echo "$ui and $ip"
+    [ -d "$ui" ] && rm -rf $ui
+    mkdir $ui && cd $ui
+    wg genkey | tee $ui.key | wg pubkey | tee $ui.key.pub > /dev/null
+    key=`cat $ui.key`
+    pubkey=`cat $ui.key.pub`
+
+echo "[Interface]
+PrivateKey = $key
+Address = $ip
+DNS = 8.8.8.8, 8.8.4.4 
+[Peer]
+PublicKey = Ccd+Z/JBwktqy3i2wIfb+rwX9h0w4BO/fghOd7AcxFE=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 11.22.33.44:51820
+PersistentKeepalive = 25" >> $ui.conf
+
+    qrencode -o $ui.png -t png < $ui.conf
+    cp $ui.png ../$i/
+    cd - > /dev/null
+
+echo "[Peer]
+# $ui wg
+PublicKey = $pubkey
+AllowedIPs = $ip/32
+" >> $p
+
+done < users-list.csv
+```
+
 
 
