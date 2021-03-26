@@ -75,6 +75,15 @@ done < users-list.csv
 
 အထက်မှာပြထားတဲ့ bash ထဲမှာအဆင့်ဆင့်လုပ်ထားတဲ့ command တွေကိုတစ်ခုချင်းစီသွားလိုက်ကြည့်လိုက်ရအောင်။ p ဆိုတဲ့ variable တစ်ခုကိုတည်ဆောက်ပြီးတော့ 'wg-srv-peers.conf' ဆိုတဲ့ string တစ်ခုကို assign လုပ်ထားလိုက်ပါတယ်။ အဲ့ဒါက filename ပါ။ \[ -f $p \] && rm -f $p ဆိုတာကတော့ လက်ရှိ directory မှာ အဲ့ဒီ $p ဆိုတဲ့ filename နဲ့ -f ဆိုတာ file ရှိသလားလို့ စစ်ကြည့်ခိုင်းတဲ့ conditional statement တစ််ခုပါ။ ပြီးတော့ အနောက်မှာ && rm -f $p ဆိုတာက အဲ့ဒီ file ရှိခဲ့ရင် အရင်ဆုံးဖျက်ဆီး ပစ်လိုက်လို့ပြောတာပါ။ ဘာဖြစ်လို့လဲဆိုရင် ဒီ bash file ကိုတစ်ခါ run တိုင်း file ကိုအသစ်ပြန်လည်တည်ဆောက်ပြီးတော့ wireguard server ရဲ့ peers အသစ်တွေနဲ့ပဲ ဖန်တီးချင်လို့ပါ။ အဲ့လိုမှာမဟုတ်ရင်... bash ရဲ့ runtime မှာ filename နဲ့လက်ရှိ directory ထဲမှာရှိပြီးသားမို့ overwrite လုပ်မလားဆိုပြီးတော့ မေးလို့ workflow ကသိပ်ပြီးတော့ အဆင်ပြေမနေပါဘူး။ ထိုနည်းတူပဲ i ဆိုတဲ့ variable ကိုတည်ဆောက်ပြီးတော့ PNGs ဆိုတဲ့ string ကို assign လုပ်လိုက်ပါတယ်။ ဒါကတော့ folder ရဲ့နာမည်ပါ။ syntax ကတော့ အပေါ်ကပုံစံအတိုင်းပါပဲ။ -f အစား -d ဆိုတာကတော့ directory ကိုဆိုလိုခြင်းဖြစ်ပါတယ်။ 
 
+နောက်တစ်ခုက while loop ကိုအရင်ဆုံးတချက်ကြည့်လိုက်ရအောင်။ အောက်မှာမြင်ရတဲ့အတိုင်း while loop ရဲ့ အစနဲ့ အဆုံးကို အရင်ဆုံးသွားလိုက်ပါ့မယ်။ while IFS=, read -r ui ip ဆိုတာ while loop နဲ့လှည့်ပြီးတော့ done &lt; users-list.csv ဆိုတဲ့အတိုင်း users-list.csv file ထဲမှာရှိတဲ့ content တွေကိုဖတ်လိုက်မယ်ပြီးရင် variable ui နဲ့ ip အနေနဲ့ ရတဲ့ value တွေကို သိမ်းဆည်းထားမယ်လို့ပြောတာပါ။ IFS ဆိုတာကတော့ Input Field Separator ဆိုတဲ့ delimiter ကို ' , ' ပါလို့ bash ကိုပြောတာပါ။ csv file မှာက column တွေကို comma တွေနဲ့ ခွဲထားတာဖြစ်တဲ့အတွက် ဘာလို delimiter ကိုကြည့်ပြီးတော့ ဖတ်ရမလဲဆိုတာကို ပြောတာပါ။ read -r ဆိုတာကတော့ read-only mode နဲ့ ဖတ်ပါလို့ပြောတာပါ။ 
+
+```bash
+while IFS=, read -r ui ip
+do
+    ...
+done < users-list.csv
+```
+
 အောက်မှာတော့ wg-config-gen.sh ကို run ပြီးသွားရင်တွေ့ နိုင်တဲ့ folder structure တည်ဆောက်ပုံပဲဖြစ်ပါတယ်။ 
 
 ```bash
