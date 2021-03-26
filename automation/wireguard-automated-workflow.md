@@ -84,6 +84,8 @@ do
 done < users-list.csv
 ```
 
+
+
 အောက်မှာတော့ wg-config-gen.sh ကို run ပြီးသွားရင်တွေ့ နိုင်တဲ့ folder structure တည်ဆောက်ပုံပဲဖြစ်ပါတယ်။ 
 
 ```bash
