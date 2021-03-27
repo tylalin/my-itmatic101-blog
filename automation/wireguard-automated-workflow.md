@@ -84,7 +84,39 @@ do
 done < users-list.csv
 ```
 
+နောက်အဆင့်အနေနဲ့တော့ while loop ထဲမှာဘာတွေလုပ်ထားသလားဆိုတာ တချက်လောက်ကြည့်ရအောင်ဗျာ။ ပထမဆုံး တလိုင်းကတော့ echo "$ui and $ip" ဆိုပြီးတော့ အဲ့ဒီ variable တွေထဲမှာဘာတွေ သိမ်းထားသလဲဆိုတာကို user အတွက် screen ပေါ်မှာ feedback ပေးလိုက်တာပါ။ ဒီလိုမှမဟုတ်ရင်တော့ ဘယ် variable က ဘယ် value ကို ဖတ်ပြီးတော့ သူ့အောက်က script operation တွေမှာ ဘာတွေလုပ်သလဲဆိုတာကို မသိနိုင်လို့ပါပဲ။ ဘာကို users-list.csv file ထဲကနေဖတ်ပြီးတော့ variable ထဲမှာ သိမ်းဆည်းထားသလဲဆိုတာကို သိရှိပြီးနောက်မှာတော့ အောက်က အစိတ်အပိုင်းလေးတွေကို နည်းနည်းဆက်ပြီးတော့ ကြည့်လိုက်ရအောင်။ 
 
+```bash
+  [ -d "$ui" ] && rm -rf $ui
+    mkdir $ui && cd $ui
+    wg genkey | tee $ui.key | wg pubkey | tee $ui.key.pub > /dev/null
+    key=`cat $ui.key`
+    pubkey=`cat $ui.key.pub`
+```
+
+နောက်တခါ $ui ဆိုတဲ့ \(unique identity အတွက်အတိုကောက်ပါ။\) variable မှာသယ်လာတဲ့ နာမည်နဲ့ -d ဆိုပြီးတော့ directory ရှိပြီးသားလား ဆိုတာကိုအရင်စစ်ကြည့်လိုက်ပါတယ်။ ရှိခဲ့ရင် rm -rf $ui ဆိုပြီးတော့ ရှိတဲ့ folder နဲ့ folder အတွင်းမှာရှိတဲ့ file တွေ subfolder တွေအားလုံးကို r ဆိုတဲ့ recursive နဲ့ f ဆိုတဲ့ force option တွေကိုသုံးပြီးတော့ အရင်ဖျက်လိုက်ပါတယ်။ နာမည်တူခဲ့ရင် ပြန်ပြီးတော့ ဒီ script ကို run တဲ့အခါမှာ ရှိပြီးသား folder ကိုအရင်ဆုံး ရှင်းလိုက်တဲ့သဘောပါ။ script ရဲ့ workflow ကို fluidity ရဖို့အတွက် လုပ်ထားတာပါ။ ပြီးတော့မှ mkdir $ui && cd $ui ဆိုပြီး folder အသစ်တစ်ခုတည်ဆောက်ပြီးတော့ အဲ့ဒီ folder ထဲကိုဝင်ထားလိုက်ပါတယ်။ အဲ့ဒီ folder အောက်ကိုရောက်တဲ့အခါမှာတော့ wg genkey ဆိုတဲ့ command နဲ့ $ui ထဲက value အတွက် private/public key ကို wireguard အတွက်ထုတ်လိုက်ပါတယ်။ ရလာတဲ့ private key ကို key ဆိုတဲ့ variable အသစ်မှာသွားသိမ်းပါတယ်။ ထိုနည်းတူ public key ကိုလည်း pubkey ဆိုတဲ့ variable မှာသိမ်းထားခဲ့ပါတယ်။ ဒီနေရာမှာ တစ်ခုသတိထားရမှာတစ်ခုက key=\`cat $ui.key\` ဆိုပြီးတော့ .key file ကိုဖတ်တဲ့အခါမှာ backtick ကိုသုံးရပါ့မယ်၊ single quote မဟုတ်ပါဘူး။ နောက်အဆင့်မှာတော့ wiregurad client အတွက် configuration ကို အခုလိုမျိုး echo နဲ့ ရိုက်ထုတ်ပြီးတော့ $ui.conf ဆိုတဲ့ file မှာ append လုပ်ပါတယ်။ 
+
+```bash
+echo "[Interface]
+PrivateKey = $key
+Address = $ip
+DNS = 8.8.8.8, 8.8.4.4 
+[Peer]
+PublicKey = Ccd+Z/JBwktqy3i2wIfb+rwX9h0w4BO/fghOd7AcxFE=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 11.22.33.44:51820
+PersistentKeepalive = 25" >> $ui.conf
+```
+
+မြင်တဲ့အတိုင်းပဲ... PrivateKey နေရာမှာ အပေါ်တွင်ထုတ်ထားတဲ့ $key ကိုလာပြီးတော့ ရိုက်ထုတ်လိုက်တယ်။ Address နေရာမှာလည်း $ip ဆိုတဲ့ csv file ထဲကနေဖတ်လာတဲ့ IP address ကိုရိုက်ထုတ်လိုက်ပြီးနောက် wireguard server ရဲ့ public key ကို static ဒီအတိုင်းထည့်လိုက်ပြီးရင် AllowedIPs နဲ့ Endpoint ကတော့ ရှင်းပါတယ်။ ကိုယ် route လုပ်ချင်တဲ့ subnet နဲ့ wireguard server ရဲ့ public IP address ကိုထည့်သွင်းရမှာပါ။ 0.0.0.0/0 ဆိုတာရှိသမျှ traffic အကုန်လုံးကို ဒီ wireguard tunnel ထဲကနေ သွားခိုင်းတာဖြစ်ပြီးတော့၊ split tunnel လုပ်ချင်ရင်တော့ သင့်လျှော်တဲ့ subnet ကိုဒီနေရာမှာထည့်သွင်းပေးပါ။ &gt;&gt; $ui.conf ဆိုတာကတော့ echo ကနေထွက်လာတဲ့ stdout ကို .conf file မှာသွားရေးခြင်းသာဖြစ်ပါတယ်။ .conf file ထွက်လာရင်တော့ mobile app တွေအတွက် အဆင်ပြေအောင်လို့ QR code ထုတ်လိုက်တယ်၊ ပြီးရင် PNGs ဆိုတဲ့ folder ထဲကို အဲ့ဒီ QR code တစ်ခုချင်းစီကို copy ကူးယူထားလိုက်ပါတယ်။ နောက်ဆုံးမှာတော့ wireguard server ပေါ်မှာသွားပြီးတော့ ပေါင်းထည့်ရမယ့် peer configuration တွေကို wg-srv-peers.conf မှာတော့အောက်အတိုင်း တစ်ခုချင်းစီ append ထပ်လုပ်သွားပါတယ်။ 
+
+```bash
+echo "[Peer]
+# $ui wg
+PublicKey = $pubkey
+AllowedIPs = $ip/32
+" >> $p
+```
 
 အောက်မှာတော့ wg-config-gen.sh ကို run ပြီးသွားရင်တွေ့ နိုင်တဲ့ folder structure တည်ဆောက်ပုံပဲဖြစ်ပါတယ်။ 
 
@@ -114,4 +146,6 @@ wg_automated_workflow
 ├── wg-srv-peers.conf
 └── wg-srv-side-config-example.txt
 ```
+
+ဒါဆိုရင်တော့ အားလုံးအဆင်သင့်ဖြစ်ပါပြီ။ wg-srv-peers.conf ထဲ peer configuration တွေကို wireguard server က /etc/wireguard/wg0.conf မှာသွားပြီးတော့ ပေါင်းထည့်ပေးလိုက်ပြီးတော့ systemctl restart wg-quick@wg0 ဆိုတဲ့ systemd ရဲ့ command ကို run ပေးလိုက်တာနဲ့ အထက်မှာ ဖန်တီးထားတဲ့ wireguard client side မှာသုံးရမယ့် configuration နဲ့ QR code ကိုစတင်ပြီးတော့ အသုံးပြုလို့ရနိုင်ပါပြီ။ Mobile app သမားတွေအတွက်တော့ PNGs folder အောက်က ဆိုင်ရာဆိုင်ရာ .png file တွေကို Signal ကနေပဲဖြစ်ဖြစ်၊ အခြားသော secure ဖြစ်တဲ့ communication channel တစ်ခုခုကနေပြီးတော့ သုံးမယ့်သူကိုပေးလိုက်ရုံပါပဲ။ အားလုံးအတွက် ပိုပြီးတော့ မြန်ဆန်တဲ့ wireguard automation workflow တစ်ခုဖြစ်မယ်လို့ မျှော်လင့်ပါတယ်။ 
 
