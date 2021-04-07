@@ -83,7 +83,7 @@
 * [SSH Tunneling အကြောင်းသိကောင်းစရာ](others/ssh-tunneling-intro.md)
 * [နေ့စဉ်သုံး စိတ်ကြိုက် Application/Software လေးများ](others/fav-apps.md)
 * [Keyboard Size တွေအကြောင်းသိသမျှ](others/keyboard-size.md)
-* [သက္ကရာဇ်၂၀၂၀ ခုနှစ်တွင်း နည်းပညာဆိုင်ရာ အမှတ်တရလေးများ](others/thkkyaundefined2020-khunhittwin-nipnyasaaingyaa-amhattyalemyaa.md)
+* [သက္ကရာဇ်၂၀၂၀ ခုနှစ်တွင်း နည်းပညာဆိုင်ရာ အမှတ်တရလေးများ](others/noteworthy-end-of-2020-tech-news.md)
 * [Storage အကြောင်းတစေ့တစောင်း – အပိုင်း\(၁\)](others/storage-part1.md)
 * [Storage အကြောင်းတစေ့တစောင်း – အပိုင်း\(၂\)](others/storage-part2.md)
 * [Storage အကြောင်းတစေ့တစောင်း – အပိုင်း\(၃\)](others/storage-part3.md)
