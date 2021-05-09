@@ -263,6 +263,12 @@ AllowedIPs = 10.1.10.1/32, 192.168.0.0/24
 
 အထက်ကအတိုင်း ထည့်လိုက်ရင်တော့ wg server ရဲ့ IP address နဲ့၊ peer မှာရှိတဲ့ 192.168.0.0/24 ဆိုတဲ့ subnet နဲ့ကိုတာ WireGuard ရဲ့ tunnel ထဲမှာ route လုပ်မယ်လို့ပြောတာဖြစ်ပါတယ်။
 
+ဒီ setup မှာက client device မှာရှိသမျှ traffic အကုန်လုံးကို Wiregurad VPN tunnel ထဲကနေ သွားစေချင်တာဖြစ်တဲ့အတွက် အောက်မှာပြထားတဲ့အတိုင်း AllowedIPs ကို 0.0.0.0/0 ဆိုပြီးတော့ configure လုပ်ပေးရပါ့မယ်။  
+
+```text
+AllowedIPs = 0.0.0.0/0
+```
+
 နောက်တစ်ခုက… ကိုယ်က WireGuard server node ကို reboot လုပ်တိုင်း wireguard ကို system startup မှာ service တစ်ခုအနေနဲ့ autostart လုပ်ချင်တယ်ဆိုရင်တော့ အောက်ကအတိုင်း systemd ရဲ့ systemctl ကို အသုံးပြုလို့ရပါတယ်။ Wireguard daemon ကို မသုံးလို့ ရပ်ထားချင်ရင် systemctl stop wg-quick@wg0.service နဲ့ restart လုပ်ချင်ရင် systemctl restart wg-quick@wg0.service ဆိုတာတွေကို အသုံးပြုပြီးတော့ daemon ကို systemd ရဲ့ systemctl နဲ့ ထိန်းလို့ရပါတယ်။ တစ်ခုတော့ရှိတယ်.... အပေါ်မှာ သုံးပြထားတဲ့ command တွေထဲမှာ wg-quick up wg0 ဆိုတာအတွက် wg-quick down wg0 ဆိုတဲ့ command ကိုအရင်ဆုံး အသုံးပြုပြီးတော့မှ systemctl command ကိုသုံးပါ။ 
 
 ```text
