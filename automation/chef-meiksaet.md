@@ -116,3 +116,102 @@ cookbook 'linux_node', path: '..'
 ```
 {% endcode %}
 
+Chef မှာရှိပြီးသား Ruby class တွေအပြင်ပိုပြီးတော့ အသုံးပြုချင်တဲ့ use case ရှိရင် Libraries တွေကိုအသုံးပြုပြီးတော့ extend လုပ်လို့ရပါတယ်။ Resource ကိုအပေါ်မှာ ပြထားသလို အသုံးပြုချင်ရင်ရသလိုပဲ၊ libraries တွေကိုလည်း အောက်မှာပြထားတဲ့အတိုင်း အသုံးပြုလို့ရပါတယ်။&#x20;
+
+{% code title="chef-repo/cookbooks/linux_node/libraries/node_info.rb" %}
+```ruby
+# libraries/node_info.rb
+module Node
+  module SystemInfo
+    def node_info
+      # Declare variables
+      hostname = node['hostname']
+      fqdn = node['fqdn']
+      platform = node['platform']
+      platform_version = node['platform_version']
+      cpu_cores = node['cpu']['cores']
+      cpu_type = node['cpu']['0']['model_name']
+      memory_total = node['memory']['total']
+      memory_free = node['memory']['free']
+      ipaddress = node['ipaddress']
+
+      "\n
+      Hostname: #{hostname}
+      FQDN: #{fqdn}\n
+      Operating System: #{platform.capitalize()} #{platform_version}
+      CPU: #{cpu_cores} x #{cpu_type}
+      Memory: #{memory_total} (#{memory_free} available)\n
+      IP Address: #{ipaddress}\n"
+    end
+  end
+end
+
+Chef::Recipe.include(Node::SystemInfo)
+Chef::Resource.include(Node::SystemInfo)
+```
+{% endcode %}
+
+Cookbook မှာနောက်ဆုံး အရေးကြီးတဲ့ spec နဲ့ test ကတော့ testing အတွက်အသုံးပြုပါတယ်။ နောက်အပိုင်းတွေရေးတဲ့ အခါကြရင် Chef ရဲ့ cookbook တွေကို အစကနေပြီးတော့ တည်ဆောာက်ပုံနဲ့ Test Kitchen နဲ့ InSpec ကိုအသုံးပြုပုံအသေးစိတ်ကို ဆက်လက်ရှင်းပါ့မယ်။ အခုဒီနေရာမှာတော့... Cookbook ရဲ့ ပါဝင်တဲ့ အစိတ်အပိုင်းအချို့နဲ့ code sample တွေကို မျက်လုံးထဲမြင်စေချင်လို့ တစ်ခုချင်းစီပြထားပေးပါတယ်။&#x20;
+
+{% code title="chef-repo/cookbooks/linux_node/test/integration/default/nodeinfo_test.rb" %}
+```ruby
+# InSpec test for recipe linux_node::nodeinfo
+
+# The InSpec reference, with examples and extensive documentation, can be
+# found at https://www.inspec.io/docs/reference/resources/
+
+filename = 'node-info.txt'
+folder = '/tmp/'
+
+describe file("#{folder}#{filename}") do
+  it { should exist }
+  its('type') { should cmp 'file' }
+  it { should be_file }
+  it { should_not be_directory }
+  its('content') { should_not be nil }
+  its('mode') { should cmp '00755' }
+end
+
+```
+{% endcode %}
+
+{% code title="chef-repo/cookbooks/linux_node/spec/unit/recipes/nodeinfo_spec.rb" %}
+```ruby
+#
+# Cookbook:: linux_node
+# Spec:: nodeinfo
+#
+# Copyright:: 2020, The Authors, All Rights Reserved.
+
+require 'spec_helper'
+
+describe 'linux_node::nodeinfo' do
+
+  context 'When all attributes are default, on Ubuntu 20.04' do
+
+    let(:chef_run) { ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '20.04').converge(described_recipe) }
+
+    it 'creates a template with the default action' do
+      expect(chef_run).to create_template('/tmp/node-info.txt')
+      expect(chef_run).to_not create_template('/tmp/not-node-info.txt')
+    end
+  
+  end
+
+  context 'When all attributes are default, on CentOS 8' do
+
+    let(:chef_run) { ChefSpec::SoloRunner.new(platform: 'centos', version: '8').converge(described_recipe) }
+
+    it 'creates a template with the default action' do
+      expect(chef_run).to create_template('/tmp/node-info.txt')
+      expect(chef_run).to_not create_template('/tmp/not-node-info.txt')
+    end
+
+  end
+
+end
+
+```
+{% endcode %}
+
+အခုဆိုရင် Chef ရဲ့ အရေးကြီးဆုံး Chef Architecture ဖြစ်တဲ့ Chef Workstation, Chef Server နဲ့ Chef-Client ဆိုတဲ့  အစိတ်အပိုင်းတွေရယ်။ Cookbook တစ်ခုကိုတည်ဆောက်တဲ့ အခါပါဝင်တဲ့အစိတ်အပိုင်းတွေရယ်ကို မျက်စိထဲမှာမြင်လာအောင် code sample တွေနဲ့အရင်ဆုံးပြထားပါတယ်။ ဘယ်လိုမျိုး အသုံးပြုလဲဆိုတဲ့အကြောင်းနဲ့ Cookbook တစ်ခုချင်းစီ အသုံးပြုတဲ့ပုံစံမျိုး ကိုအသေးစိတ် ဆက်ပြီးတော့ ရေးချင်ပါတယ်။&#x20;
