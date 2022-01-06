@@ -200,4 +200,234 @@ token: << Your "ansible-vault encrypt_string 'YourLinodeAPITokenHere' --name 'to
 
 ဒီတပိုင်းမှာတော့... Ubuntu 20.04 LTS ကို apt update && apt upgrade လုပ်တယ်၊ လိုအပ်ရင် server ကို reboot ချပြီးတော့၊ server ပြန်တက်လာရင် ufw နဲ့ packet forwarding ကို wireguard အတွက်ပြင်ဆင်ရပါတယ်။ ဒီအဆင့်မှာပဲ... sshd\_config ကို local machine ကနေ VPS ပေါ်ကို ကူးယူပြီးတော့၊ handler နဲ့ ssh daemon ကို restart ချပါတယ်။ လိုအပ်ရင် သုံးလို့ရအောင်လို့ unit testing ပုံစံမျိုး code block တစ်ခုကိုလည်း ပြထားတဲ့ အတိုင်းထပ်ပေါင်းထည့်ထားပါတယ်။ Testing အတွက်တကူးတက VPS ထဲဝင်ပြီး ssh နဲ့ sysctl configuration တွေကိုတစ်ခုချင်းစီ စစ်ဆေးစရာမလိုတော့ပါဘူး။ အဲ့ဒီအတွက်... Ansible ရဲ့  assert module ကိုအသုံးပြုထားပါတယ်။&#x20;
 
-&#x20;
+နောက်ဆုံးအပိုင်းမှာတော့... WireGuard installation နဲ့ configuration အတွက်အောက်ကအတိုင်း code block တစ်ခုကိုတွေ့ရမှာပါ။&#x20;
+
+```
+# Third play is for WireGuard installation and configuration for both server and peers
+- name: WIREGUARD INSTALLATION AND CONFIGURATION
+  tags: wg
+  hosts: linode_wg
+  user: root
+  vars_files:
+    - ../vars/linode_wg.yml
+
+  tasks:
+    - name: Installing and Configurating WireGuard
+      block:
+        - name: Install WireGuard and QRencode on the Linode
+          apt:
+            name: [ wireguard, qrencode ]
+            state: present
+  
+        - name: Generate WireGuard keypair
+          shell: wg genkey | tee /etc/wireguard/pri | wg pubkey > /etc/wireguard/pub
+          args:
+            creates: /etc/wireguard/pri
+  
+        - name: Register private key
+          shell: cat /etc/wireguard/pri
+          register: wg_pri
+          changed_when: false
+  
+        - name: Register public key
+          shell: cat /etc/wireguard/pub
+          register: wg_pub
+          changed_when: false
+  
+        - name: Setup wg0 virtual interface
+          template:
+            src: ../templates/wg0.conf.j2 # Jinja2 template is used for templating the wg0.conf files
+            dest: /etc/wireguard/wg0.conf
+            owner: root
+            group: root
+            mode: 0640
+  
+        - name: Start and enable WireGuard service
+          systemd:
+            state: started
+            enabled: true
+            name: wg-quick@wg0.service
+
+    - name: Unit testing on WireGuard configuration # unit testing for wireguard configuraiton
+      tags: [ never, tests, wg_test ]
+      block: 
+        - name: Check the private key file location
+          stat:
+            path: /etc/wireguard/pri
+          register: pri_key_file
+
+        - name: Test if the private key file exists
+          debug:
+            msg: "[PASS] The private key file exists."
+          when: pri_key_file.stat.exists
+
+        - name: Register private key
+          shell: cat /etc/wireguard/pri
+          register: wg_pri
+          changed_when: false
+
+        - name: Dispaly WireGuard Private Key
+          debug: var=wg_pri.stdout
+
+        - name: Check the public key file location
+          stat:
+            path: /etc/wireguard/pub
+          register: pub_key_file
+
+        - name: Test if the public key file exists
+          debug:
+            msg: "[PASS] The public key file exists."
+          when: pub_key_file.stat.exists
+        
+        - name: Register public key
+          tags: always
+          shell: cat /etc/wireguard/pub
+          register: wg_pub
+          changed_when: false
+        
+        - name: Dispaly WireGuard Public Key
+          debug: var=wg_pub.stdout
+
+    - name: WireGuard peer(s) configuration # this block is only executed on localhost but not on the newly created Linode so 'delegate_to:' must be used.
+      delegate_to: localhost 
+      block:
+        - name: Read users.csv file 
+          read_csv:
+            path: ../wg/users.csv
+          register: users
+
+        - name: Generate WireGuard user(s) keypair and configuration # loop thru users.csv file and produce both server and peers configs
+          include_tasks: wg_user.yml
+          loop: "{{ users.list }}"
+
+    - name: Update WireGuard server's wg0.conf with wg0_peer.conf # this block is executed on the Linode's wireguard server
+      block:
+        - name: Merge wg0_peer.conf into WireGuard server's wg0.conf
+          lineinfile:
+            line: "{{ lookup('file', '../wg/wg0_peer/wg0_peer_{{ ansible_date_time.epoch }}.conf') }}"
+            dest: /etc/wireguard/wg0.conf
+          notify: Restart WireGuard
+  
+  handlers:
+    - name: Restart WireGuard # everytime updating wg0.conf it needs to restart the wireguard service
+      systemd:
+            state: restarted
+            name: wg-quick@wg0.service
+```
+
+အပိုင်းသုံးပိုင်းထဲမှာ ဒီအပိုင်းက အရေးအကြီးဆုံးနဲ့ stanza အများဆုံး အပိုင်းဖြစ်ပါတယ်။  ဒီ့အပြင်... wguser.yml ကိုလည်း ဒီအပိုင်းမှာပဲ loop ထည့်လှည့်ထားတာကိုတွေ့ရမှာပါ။ နောက်ပြီးတော့... wireguard peers တွေကိုရိုက်ထုတ်တဲ့ လုပ်ငန်းစဉ်ကို ပထမက VPS ပေါ်မှာလုပ်ပြီးတော့ VPS မှာပဲ သိမ်းဖို့ရည်ရွယ်သော်လည်း နောက်ဆုံးမှာ local machine မှာပဲ လုပ်ဖို့ဆုံးဖြတ်ချက်ချလိုက်ပါတယ်။ အဲ့ဒီအတွက် nested block အနေနဲ့ block တစ်ခုတည်ဆောက်ပြီး delegateto: localhost ဆိုတာနဲ့ in-memory inventory ကို bypass လုပ်ထားပါတယ်။ wg\_user.yml ကိုတော့အောက်ကအတိုင်းတွေ့ရမှာပါ။&#x20;
+
+```
+---
+- name: Create directory for user{{ item.usr }} # ensure that 'user' and its relevant subdirectories are created.
+  file:
+    path: ../wg/user/usr_{{ item.usr }}_{{ item.ip }}/
+    state: directory
+
+- name: Generate WireGuard peer's keypair for user{{ item.usr }} # issue wireguard peer's keypair
+  shell: wg genkey | tee ../wg/user/usr_{{ item.usr }}_{{ item.ip }}/{{ item.usr }}.pri.key | wg pubkey | tee ../wg/user/usr_{{ item.usr }}_{{ item.ip }}/{{ item.usr }}.pub.key
+  args:
+    creates: ../wg/user/usr_{{ item.usr }}_{{ item.ip }}/{{ item.usr }}.pri.key # do not run this task if the private key is already created for idempotency
+
+- name: Generate WireGuard peer's configuration for user{{ item.usr }} # produce wireguard peers' configs with its private key and server public key
+  vars: 
+    prikey: "{{ lookup('file', '../wg/user/usr_{{ item.usr }}_{{ item.ip }}/{{ item.usr }}.pri.key') }}"
+  template:
+    src: ../templates/wg_peer.j2
+    dest: ../wg/user/usr_{{ item.usr }}_{{ item.ip }}/{{ item.usr }}_peer.conf
+
+- name: Generate QRcode for WireGuard peer's configuration for user{{ item.usr }} # encode the peers' configs to QRCode in .png format for mobile devices
+  shell: qrencode -o ../wg/user/usr_{{ item.usr }}_{{ item.ip }}/{{ item.usr }}_peer.png -t png < ../wg/user/usr_{{ item.usr }}_{{ item.ip }}/{{ item.usr }}_peer.conf
+
+- name: Ensures ../wg/_QRCode/ dir exists
+  file: 
+    path: ../wg/_QRCode/  
+    state: directory
+
+- name: Copy user{{ item.usr }} QRcode to _QRCode folder # QRCode collection for easy distribution to the end VPN users
+  copy:
+    src: ../wg/user/usr_{{ item.usr }}_{{ item.ip }}/{{ item.usr }}_peer.png
+    dest: ../wg/_QRCode/user{{ item.usr }}.png
+
+- name: Generate WireGuard server's configuration for user{{ item.usr }} # produce the server side wireguard configs for easy rebuild and idempotency
+  vars: 
+    pubkey: "{{ lookup('file', '../wg/user/usr_{{ item.usr }}_{{ item.ip }}/{{ item.usr }}.pub.key') }}"
+  template:
+    src: ../templates/wg_srv.j2
+    dest: ../wg/user/usr_{{ item.usr }}_{{ item.ip }}/{{ item.usr }}_srv.conf
+
+- name: Merge user{{ item.usr }}_srv.conf into wg0_peer.conf # merge all server side configs into one conf file to directly deliver it to wireguard server and apply
+  lineinfile:
+    line: "{{ lookup('file', '../wg/user/usr_{{ item.usr }}_{{ item.ip }}/{{ item.usr }}_srv.conf') }}"
+    dest: ../wg/wg0_peer/wg0_peer_{{ ansible_date_time.epoch }}.conf
+    create: true
+```
+
+ဒီ wireguard peer တွေကိုထုတ်တဲ့အခါမှာလည်း idempotent ဖြစ်အောင်လို့ error handling တွေအတွက် လိုအပ် logic control တွေကိုထည့်သွင်းထားတာကိုလည်း တွေ့ရမှာပါ။&#x20;
+
+Teardown အတွက် စာရေးသူ wg\_PURGE.yml playbook ကိုသီးသန့် ခွဲထုတ်လိုက်ရပါတယ်။ ရိုးရှင်းသလောက် static hostname နဲ့ label ကိုအသုံးပြုထားတဲ့အတွက် immutable ဖြစ်ပါတယ်။ dynamic hostname ကိုသုံးမယ်ဆိုရင် ပြဿနာရှိနိုင်ပါတယ်။&#x20;
+
+```
+---
+# This play is for destroying the running wireguard server on Linode. RUN IT CAREFULLY!
+- name: Delete Linode
+  hosts: localhost
+  vars_files:
+    - ../vars/linode_wg.yml
+
+  tasks:
+    - name: Delete your Linode Instance.
+      linode_v4:
+        label: "{{ hostname }}"
+        access_token: "{{ token }}"
+        state: absent
+```
+
+ကောင်းပြီ... playbook နဲ့ပတ်သတ်တဲ့ အပိုင်းကိုအကုန်လုံး ရှင်းလင်းပြီး နောက်အဆင့်အနေနဲ့ templates တွေပါတချက်ကြည့်လိုက်ရအောင်ဗျ။ ပထမဆုံးအနေနဲ့ wg0.conf.j2 ကိုအရင်ဆုံး အောက်ကအတိုင်းတွေ့ရမှာပါ။ Jinja2 templating မှာလည်း vars folder အောက်က linode\_wg.yml မှာသိုလောင်ထားတဲ့ variable တွေကို ဒီမှာယူသုံးလို့ရပါတယ်။ အခြားသော Ansible ရဲ့ variable တွေကိုလည်း ယူသုံးနိုင်တဲ့အတွက် ဘယ် variable ကိုဘယ်မှာ ဘယ်လိုယူသုံးရသလဲဆိုတာကိုတော့ သိဖို့လိုပါတယ်။ ဥပမာ... {{ ansible\_default\_ipv4.interface }} ဆိုတဲ့ variable ကိုယူမသုံးခင်က စာရေးသူ eth0 ဆိုပြီးတော့ သုံးပါတယ်။ သို့သော်... Linux ရဲ့ network interface name ဟာတခါတလေကြရင် အကြောင်းအမျိုးမျိုးကြောင့် ပြောင်းသွားနိုင်တာမို့ Ansible ရဲ့ variable ကိုယူသုံးတာ ပိုပြီးတော့ သဘာဝကျပါတယ်။
+
+```
+[Interface]
+Address = {{ wg_ip }}/32
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o {{ ansible_default_ipv4.interface }} -j MASQUERADE
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o {{ ansible_default_ipv4.interface }} -j MASQUERADE
+ListenPort = 51820
+PrivateKey = {{ wg_pri.stdout }}
+```
+
+နောက် template တစ်ခုကတော့ wireguard peer တွေကိုရိုက်ထုတ်တဲ့အခါမှာ ထွက်လာတဲ့ server နဲ့ client configuration တွေအတွက် template နှစ်ခုပါ။ ပထမဆုံး wg\_srv.j2 ကိုအောက်မှာကြည့်လိုက်ရအောင်။&#x20;
+
+```
+[Peer]
+# user{{ item.usr }} wg
+PublicKey = {{ pubkey }}
+AllowedIPs = {{ item.ip }}/32
+```
+
+ဒီ template ကထွက်လာအပိုင်းကို Wireguard server configuration မှာသွားပြီးတော့ merge လုပ်ရမှာဖြစ်ပြီးတော့၊ အဲ့လို merge လုပ်တိုင်း wireguard service ကို restart လုပ်ရပါ့မယ်။&#x20;
+
+Wireguard client အတွက်တော့ wg\_peer.j2 ဆိုတဲ့ template ကိုအသုံးပြုပြီးတော့ peer တွေကိုလိုသလောက် ရိုက်ထုတ်လို့ရပါတယ်။&#x20;
+
+```
+[Interface]
+PrivateKey = {{ prikey }}
+Address = {{ item.ip }}
+DNS = 1.1.1.1, 1.0.0.1 
+
+[Peer]
+PublicKey = {{ wg_pub.stdout }}
+AllowedIPs = 0.0.0.0/0
+Endpoint = {{ hostvars[inventory_hostname]["inventory_hostname"] }}:51820
+PersistentKeepalive = 25
+```
+
+ဒီတစ်ခုမှာလည်း အပေါ်မှာတွေ့ရတဲ့အတိုင်း{{ hostvars\[inventory\_hostname]\["inventory\_hostname"] }} ဆိုတဲ့ variable ကိုအသုံးပြုခြင်းကြောင့် VPS ကို build နဲ့ teardown လုပ်တဲ့အခါမှာ ဘာကိုမှပူစရာမလိုတော့ပဲ၊ အလွယ်တကူ ထပ်ခါထပ်ခါလုပ်လို့ရတဲ့ workflow တစ်ခုဖြစ်လာပါတယ်။&#x20;
+
+VPN user တွေကို အများကြီးပေါင်းထည့်လို့ရအောင်လို့လည်း wg folder အောက်မှာ users.csv ဆိုတဲ့ file ကိုအသုံးပြုထားပါတယ်။ ဒီတစ်ခုမှာတော့ စာရေးသူအရင်ကလုပ်ပြီးသား bash script automation ကို Ansible ဘက်ကိုတိုက်ရိုက်နီးပါး ပြန်ကူးယူးထားတယ်လို့ဆိုရမလားတောင် မသိပါဘူး။ တော်တော်လေးဆင်တူနေတာကိုတွေ့ရမှာပါ။ Bash script နဲ့လုပ်ထားတဲ့ automation workflow အကြောင်းကို မဖတ်ရသေးရင်တော့ အောက်က link မှာသွားရောက်ဖတ်ရှုနိုင်ပါတယ်။&#x20;
+
+{% embed url="https://my.itmatic101.com/automation/wireguard-automated-workflow" %}
+
+Ansible-vault ကိုသုံးပြီးတော့ password  တွေ token တွေကို encrypt လုပ်တာကိုတော့ အသေးစိတ်မသွားတော့ပါဘူး။ အင်္ဂလိပ်လိုရေးတဲ့ article မှာလည်း အကျဉ်းချုပ်ရေးသားပြီးသားမို့ သေချာသိချင်ရင် အောက်က link မှာလေ့လာလို့ရနိုင်ပါတယ်။&#x20;
+
+{% embed url="https://en.itmatic101.com/ansible/linode-ansible-wireguard" %}
+
+ဒီလောက်ဆိုရင်တော့... ဒီ article အတွက်တော်တော်လေးကိုပြည့်စုံသွားပြီလို့ပြောလို့ရပါတယ်။ အခုလိုမျိုး Ansible ကိုအသုံးပြုပြီးတော့ playbook တွေဖန်တီးလိုက်တာဟာ နောင်အခါ Wireguard server လုပ်ဖို့အတွက်အများကြီး လွယ်သွားရုံသာမက၊ Infrastructure as Code (IaC) ဆိုတဲ့အတိုင်း အဲ့ဒီ playbook တွေဟာ ကိုယ့်အတွက်လည်း Wireguard server ကိုဘယ်လို setup လုပ်သလဲ၊ configure လုပ်သလဲဆိုတာကို document လုပ်ပြီးသားဖြစ်သွားပါတယ်။ Ansible playbook တွေဟာ delcarative ဖြစ်တဲ့အတွက် ဖတ်ရတာလည်း အဲ့ဒီလောက်မခက်ပါဘူး။ ဒီ article ကိုဖတ်ပြီးတော့ အကျိုးရှိမယ်တော့ထင်ပါတယ်။ IaC အပိုင်း (၄) ကို ဒီမှာပဲရပ်လိုက်ပါတော့မယ်။
