@@ -57,7 +57,7 @@
 
 ## Automation
 
-* [Chef မိတ်ဆက် အပိုင်း(၁)](automation/chef-meiksaet.md)
+* [Chef မိတ်ဆက် အပိုင်း(၁)](automation/chef-intro-part-1.md)
 * [Ansible ရဲ့ Network Automation workflow](automation/ansible-yae-network-automation-workflow.md)
 * [Wireguard ရဲ့ automated workflow](automation/wireguard-automated-workflow.md)
 * [အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code (IaC) – အပိုင်း(၁)](automation/rough-edges-iac-part1.md)
