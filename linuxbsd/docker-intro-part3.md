@@ -1,18 +1,16 @@
-# Docker မိတ်ဆက် အပိုင်း\(၃\)
+# Docker မိတ်ဆက် အပိုင်း(၃)
 
 Docker အကြောင်းတွေကို မိတ်ဆက်လိုက်တာ အခုဆို အပိုင်း ၂ ပိုင်းတောင်ရှိသွားပါပြီ။ ပထမတပိုင်းမှာတော့ Docker ရဲ့ နောက်ခံ အကြောင်းလေးနဲ့ စလိုက် ပြီးတော့၊ ဒုတိယပိုင်းမှာတော့ Docker ရဲ့ တည်ဆောက်ထားပုံနဲ့ သူ့ရဲ့ Docker image အကြောင်းလေးတွေကို အနည်းငယ်တင်ပြပြီးသွားပါပြီ။ မိတ်ဆက်ပေးရုံသာဖြစ်တဲ့ အတွက် ပြီးပြည့်စုံတယ်လို့တော့ မထင်ပါဘူး။ အလုံးစုံကိုရှင်းမယ်ဆိုရင်တော့ ပြောလို့ ပြီးမယ်လို့တောင် မထင်ပါဘူး။ မည်သို့ပင် ဖြစ်စေ Docker ရဲ့ အရသာကို အမြီး သဘောမျိုး သိလိုက်ရမယ်လို့တော့ ထင်ပါတယ်။ ဒီအပိုင်းမှာတော့ Docker ကို အခြားသော virtualization နည်းပညာ တချို့နဲ့ ရောပြီးတော့ မှားတတ်တဲ့ သဘောရှိလို့၊ Docker ကို လက်တွေ့မှာ တကယ်မသုံးခင် ရှင်းစရာရှိတာကို အရင်ဆုံး ရှင်းလိုက်ရအောင်။
 
-![Docker Architecture](https://itmatic101.files.wordpress.com/2019/09/60e72-docker-api-infographic-container-devops-nordic-apis.png?w=660)
-
 ### Docker နဲ့ ဆင်တူတဲ့ Vagrant
 
-Docker ကို တချို့က virtualization နဲ့ မှားတတ်သလို၊ WSL \(Windows Subsystem for Linux \) ဆိုတဲ့ subsystem မျိုးနဲ့ လည်းမှားတတ်ပါတယ်။ Virtualization နဲ့ မတူဘူးဆိုတာကိုတော့ အရှေ့အပိုင်းတွေမှာ သရှင်းနိုင်သလောတော့ ရှင်းပြထားပါတယ်။ Virtualization နည်းပညာကို အနောက်ဘက်မှာ သုံးပြီးတော့ Docker နဲ့ခပ်ဆင်ဆင် နောက် နည်းပညာတစ်ခုရှိပါတယ်။ Vagrant လို့ခေါ်ပါတယ်။ DevOp ဘက်မှာတော့ တချို့ Developers တွေဟာ Vagrant ကိုသုံးပြီးတော့ App တွေကို develop လုပ်ကြ၊ test လုပ်ကြပါတယ်။ များသောအားဖြင့် Vagrant ကို test လုပ်ဖို့ staging အဆင့်လောက်ထိသာ အသုံးများပြီးတော့၊ Docker ကိုတော့ production environment ထိသုံးလို့ရအောင်လို့ လုပ်ထားကြပါတယ်။ Vagrant ဟာလည်း Docker လိုမျိုး CLI မှာ command တွေရိုက်ထည့်ပြီးတော့ ကိုယ်လိုချင်တဲ့ VM template Box တွေကို Vagrant Cloud ကနေပြီးတော့ ဆွဲယူပြီးတော့ အသုံးပြုလို့ရပါတယ်။ Vagrant မှာလည်း Docker မှာသုံးတဲ့ Dockerfile လိုမျိုး Vagrantfile ဆိုတာလည်းရှိပါတယ်။ Vagrant စထွက်လာတဲ့ အချိန်နဲ့ Docker စထွက်လာတဲ့ အချိန်ဟာ မရှေးမနှောင်းလို့ဆိုရမှာပါ။ Vagrant ကတော့ ထွက်တာ နည်းနည်းလေး စောပါလိမ့်မယ်။ Design concept နဲ့ purpose အရကြည့်မယ်ဆိုရင် Vagrant နဲ့ Docker ဟာ တော်တော်ဆင်တူပါတယ်။ Vagrant ရဲ့ ရည်ရွယ်ချက်ကလည်း Docker နည်းတူ DevOps သမားတွေအတွက် အဆင်ပြေအောင်လို့ လုပ်ထားတာ ဖြစ်ပါတယ်။ Vagrant အကြောင်းကို အသေးစိတ် နောက်မှ သပ်သပ်ထပ်ရေးသွားပါ့မယ်။ အခုဒီ post မှာတော့ Docker နဲ့ ဘာလို့ အလွယ်တကူ အမှတ်မှားနိုင်လည်းဆိုတာကို အလေးပေးပြီးတော့ ဆွေးနွေးချင်ပါတယ်။
+Docker ကို တချို့က virtualization နဲ့ မှားတတ်သလို၊ WSL (Windows Subsystem for Linux ) ဆိုတဲ့ subsystem မျိုးနဲ့ လည်းမှားတတ်ပါတယ်။ Virtualization နဲ့ မတူဘူးဆိုတာကိုတော့ အရှေ့အပိုင်းတွေမှာ သရှင်းနိုင်သလောတော့ ရှင်းပြထားပါတယ်။ Virtualization နည်းပညာကို အနောက်ဘက်မှာ သုံးပြီးတော့ Docker နဲ့ခပ်ဆင်ဆင် နောက် နည်းပညာတစ်ခုရှိပါတယ်။ Vagrant လို့ခေါ်ပါတယ်။ DevOp ဘက်မှာတော့ တချို့ Developers တွေဟာ Vagrant ကိုသုံးပြီးတော့ App တွေကို develop လုပ်ကြ၊ test လုပ်ကြပါတယ်။ များသောအားဖြင့် Vagrant ကို test လုပ်ဖို့ staging အဆင့်လောက်ထိသာ အသုံးများပြီးတော့၊ Docker ကိုတော့ production environment ထိသုံးလို့ရအောင်လို့ လုပ်ထားကြပါတယ်။ Vagrant ဟာလည်း Docker လိုမျိုး CLI မှာ command တွေရိုက်ထည့်ပြီးတော့ ကိုယ်လိုချင်တဲ့ VM template Box တွေကို Vagrant Cloud ကနေပြီးတော့ ဆွဲယူပြီးတော့ အသုံးပြုလို့ရပါတယ်။ Vagrant မှာလည်း Docker မှာသုံးတဲ့ Dockerfile လိုမျိုး Vagrantfile ဆိုတာလည်းရှိပါတယ်။ Vagrant စထွက်လာတဲ့ အချိန်နဲ့ Docker စထွက်လာတဲ့ အချိန်ဟာ မရှေးမနှောင်းလို့ဆိုရမှာပါ။ Vagrant ကတော့ ထွက်တာ နည်းနည်းလေး စောပါလိမ့်မယ်။ Design concept နဲ့ purpose အရကြည့်မယ်ဆိုရင် Vagrant နဲ့ Docker ဟာ တော်တော်ဆင်တူပါတယ်။ Vagrant ရဲ့ ရည်ရွယ်ချက်ကလည်း Docker နည်းတူ DevOps သမားတွေအတွက် အဆင်ပြေအောင်လို့ လုပ်ထားတာ ဖြစ်ပါတယ်။ Vagrant အကြောင်းကို အသေးစိတ် နောက်မှ သပ်သပ်ထပ်ရေးသွားပါ့မယ်။ အခုဒီ post မှာတော့ Docker နဲ့ ဘာလို့ အလွယ်တကူ အမှတ်မှားနိုင်လည်းဆိုတာကို အလေးပေးပြီးတော့ ဆွေးနွေးချင်ပါတယ်။
 
 ![](https://itmatic101.files.wordpress.com/2019/09/5283a-vagrant-archi-252812529.png?w=660)
 
 ![](https://itmatic101.files.wordpress.com/2019/09/4bac0-vagrant-and-virtualbox.png?w=660)
 
-ပုံမှန်အားဖြင့်တော့ Vagrant ဟာ Virtualbox ကိုသူ့ရဲ့  provider အနေနဲ့ သုံးပါတယ်။ Virtualbox က open-source ဖြစ်တဲ့အတွက် Vagrant တွဲပြီးတော့ သုံးကြတာပါ။ Vagrant ရဲ့  မူရင်းပိုင်ရှင် ကုမ္ပဏီဖြစ်တဲ့ HashiCorp ကတော့ VMware ကို provider အနေနဲ့ တွဲသုံးဖို့ ကို recommend လုပ်ထားပါတယ်။ သို့သော် VMware ဟာ proprietary ဖြစ်တဲ့ အတွက် ကုန်ကျစရိုက်ရှိသော်လည်း၊ stable လည်းပိုဖြစ်ပါတယ်။ Free ရတဲ့ VMware Player ကြပြန်တော့လည်း feature အပြည့်အစုံမပါလို့ သုံးတာအဆင်မပြေပါဘူး။ VMware Workstation လောက်သုံးမှ အဆင်ပြေတဲ့အတွက် နောက်ဆုံးတော့ open-source ဖြစ်တဲ့ Virtualbox ကိုသာပြေးပြီးတော့ ကပ်ရပြန်တာပါပဲ။ Vagrant ဟာ အဲ့လိုမျိုး VM တွေကို run ဖို့အတွက် Virtualization platform တစ်ခုလိုတဲ့အတွက်၊ သဘာဝအရတော့ Docker နဲ့ လုံးဝကွာခြားသွားပါတယ်။ Ruby နဲ့ Vagrant ကိုရေးထားတာဖြစ်ပြီးတော့၊ VM တစ်လုံးကို provision လုပ်တဲ့အခါသုံးတဲ့ Vagrantfile ရဲ့ syntax ဟာ Ruby language ရဲ့  syntax ပါပဲ။ Docker မှာတော့ ပိုပြီးရိုးရှင်းတဲ့ syntax ကို နောက်ပိုင်းမှာ တွေ့ရမှာဖြစ်ပါတယ်။ တချို့ developers တွေဟာ Vagrant ကို သူတို့ software developing environment နဲ့ test environment မှာ တွင်တွင်ကျယ်ကျယ် သုံးနေဆဲပါ။ စာရေးသူ အနေနဲ့တော့ Docker ကို ပိုပြီးတော့ စိတ်တိုင်းကျပါတယ်။ သို့သော် နှစ်ခုလုံးမှာ သူတို့ရဲ့ အားနည်းချက် အားသာချက်ကိုယ်စီ ရှိကြပါတယ်။ ဒီအပိုင်းမှာ Vagrant ကို နည်းနည်းထည့်ရှင်းတာဟာ Docker နဲ့ ဆင်တူလွန်းတာတကြောင်း၊ DevOps မှာလည်း လက်ရှိသုံးနေကြတာရှိတဲ့အတွက် အမှတ်မမှားရအောင်လို့ ဖြစ်ပါတယ်။ အခုတော့ Docker ကို ကိုယ့်စက်ပေါ်မှာ ဘယ်လိုတင် ပြီးသုံးလို့ ရသလဲဆိုတာရယ်၊ အခြေခံသုံးလို့ ရတဲ့ Docker command တချို့နဲ့ Docker Compose tool နဲ့ ကိုယ့်စိတ်ကြိုက် container တစ်ခုဘယ်လို တည်ဆောက်လို့ရသလဲဆိုတာတွေကို အရင်သွားလိုက်ရအောင်။
+ပုံမှန်အားဖြင့်တော့ Vagrant ဟာ Virtualbox ကိုသူ့ရဲ့ provider အနေနဲ့ သုံးပါတယ်။ Virtualbox က open-source ဖြစ်တဲ့အတွက် Vagrant တွဲပြီးတော့ သုံးကြတာပါ။ Vagrant ရဲ့ မူရင်းပိုင်ရှင် ကုမ္ပဏီဖြစ်တဲ့ HashiCorp ကတော့ VMware ကို provider အနေနဲ့ တွဲသုံးဖို့ ကို recommend လုပ်ထားပါတယ်။ သို့သော် VMware ဟာ proprietary ဖြစ်တဲ့ အတွက် ကုန်ကျစရိုက်ရှိသော်လည်း၊ stable လည်းပိုဖြစ်ပါတယ်။ Free ရတဲ့ VMware Player ကြပြန်တော့လည်း feature အပြည့်အစုံမပါလို့ သုံးတာအဆင်မပြေပါဘူး။ VMware Workstation လောက်သုံးမှ အဆင်ပြေတဲ့အတွက် နောက်ဆုံးတော့ open-source ဖြစ်တဲ့ Virtualbox ကိုသာပြေးပြီးတော့ ကပ်ရပြန်တာပါပဲ။ Vagrant ဟာ အဲ့လိုမျိုး VM တွေကို run ဖို့အတွက် Virtualization platform တစ်ခုလိုတဲ့အတွက်၊ သဘာဝအရတော့ Docker နဲ့ လုံးဝကွာခြားသွားပါတယ်။ Ruby နဲ့ Vagrant ကိုရေးထားတာဖြစ်ပြီးတော့၊ VM တစ်လုံးကို provision လုပ်တဲ့အခါသုံးတဲ့ Vagrantfile ရဲ့ syntax ဟာ Ruby language ရဲ့ syntax ပါပဲ။ Docker မှာတော့ ပိုပြီးရိုးရှင်းတဲ့ syntax ကို နောက်ပိုင်းမှာ တွေ့ရမှာဖြစ်ပါတယ်။ တချို့ developers တွေဟာ Vagrant ကို သူတို့ software developing environment နဲ့ test environment မှာ တွင်တွင်ကျယ်ကျယ် သုံးနေဆဲပါ။ စာရေးသူ အနေနဲ့တော့ Docker ကို ပိုပြီးတော့ စိတ်တိုင်းကျပါတယ်။ သို့သော် နှစ်ခုလုံးမှာ သူတို့ရဲ့ အားနည်းချက် အားသာချက်ကိုယ်စီ ရှိကြပါတယ်။ ဒီအပိုင်းမှာ Vagrant ကို နည်းနည်းထည့်ရှင်းတာဟာ Docker နဲ့ ဆင်တူလွန်းတာတကြောင်း၊ DevOps မှာလည်း လက်ရှိသုံးနေကြတာရှိတဲ့အတွက် အမှတ်မမှားရအောင်လို့ ဖြစ်ပါတယ်။ အခုတော့ Docker ကို ကိုယ့်စက်ပေါ်မှာ ဘယ်လိုတင် ပြီးသုံးလို့ ရသလဲဆိုတာရယ်၊ အခြေခံသုံးလို့ ရတဲ့ Docker command တချို့နဲ့ Docker Compose tool နဲ့ ကိုယ့်စိတ်ကြိုက် container တစ်ခုဘယ်လို တည်ဆောက်လို့ရသလဲဆိုတာတွေကို အရင်သွားလိုက်ရအောင်။
 
 ### Docker ကို ဘယ်လို install လုပ်သလဲ
 
@@ -22,10 +20,10 @@ Docker ကို တချို့က virtualization နဲ့ မှားတ�
 
 ပထမဆုံး အနေနဲ့ Docker ကို install ဘယ်လိုလုပ်သလဲဆိုတာနဲ့ စလိုက်ရအောင်။ Docker ကို install လုပ်တဲ့ နည်းလမ်း အမျိုးမျိုးရှိပါတယ်။ အခုဒီမှာ သုံးတဲ့ command ကတော့ Docker နောက်ဆုံးထွက်ထားတဲ့ version ကို dowload လုပ်ပြီးတော့၊ လိုအပ်တဲ့ dependencies တွေကိုပါလိုအပ် သလို automatic ဆွဲပြီးတော့ install လုပ်တဲ့ နည်းပါ။
 
-**Ubuntu**  
-ကိုယ့်စက်ပေါ်မှာ curl နဲ့ လိုအပ်တဲ့ tool လေးတွေကို မရှိသေးရင် အရင် install လုပ်လိုက်ပါ။ ပြီးတော့မှ Docker ကို အောက်မှာပြထားတဲ့ instruction အတိုင်းဆက်ပြီးတော့ install လုပ်လိုက်ပါ။ 
+**Ubuntu**\
+ကိုယ့်စက်ပေါ်မှာ curl နဲ့ လိုအပ်တဲ့ tool လေးတွေကို မရှိသေးရင် အရင် install လုပ်လိုက်ပါ။ ပြီးတော့မှ Docker ကို အောက်မှာပြထားတဲ့ instruction အတိုင်းဆက်ပြီးတော့ install လုပ်လိုက်ပါ။
 
-```text
+```
 $ sudo apt-get update
 
 $ sudo apt-get install \
@@ -34,18 +32,17 @@ $ sudo apt-get install \
     curl \
     gnupg-agent \
     software-properties-common
-
 ```
 
-Docker ရဲ့ official GPG key ကိုအောက်မှာပြထားတဲ့ အတိုင်းပေါင်းထည့်လိုက်ပါ။ 
+Docker ရဲ့ official GPG key ကိုအောက်မှာပြထားတဲ့ အတိုင်းပေါင်းထည့်လိုက်ပါ။
 
-```text
+```
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
-GPG key ကို verify လုပ်ချင်တယ်ဆိုရင်တော့ အောက်ကအတိုင်းလုပ်နိုင်ပါတယ်။ 
+GPG key ကို verify လုပ်ချင်တယ်ဆိုရင်တော့ အောက်ကအတိုင်းလုပ်နိုင်ပါတယ်။
 
-```text
+```
 $ sudo apt-key fingerprint 0EBFCD88
 
 pub   rsa4096 2017-02-22 [SCEA]
@@ -56,7 +53,7 @@ sub   rsa4096 2017-02-22 [S]
 
 အခုဆိုရင် Docker ကိုစတင် install လုပ်နိုင်ပါပြီ။
 
-```text
+```
 $ sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
@@ -66,9 +63,9 @@ $ sudo add-apt-repository \
  $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-Docker အလုပ်လုပ်သလား မလုပ်ဘူးလာကို စစ်ချင်ရင် hello-world ဆိုတဲ့ container နဲ့ စစ်လို့ရပါတယ်။ 
+Docker အလုပ်လုပ်သလား မလုပ်ဘူးလာကို စစ်ချင်ရင် hello-world ဆိုတဲ့ container နဲ့ စစ်လို့ရပါတယ်။
 
-```text
+```
 $ sudo docker run hellow-world
 
 Unable to find image ‘hello-world:latest’ locally
@@ -87,13 +84,13 @@ This message shows that your installation appears to be working correctly.
 
 အရင်ဆုံး Docker Engine ရဲ့ status ကို ကြည့်လိုက်ရအောင်။
 
-```text
+```
 $ sudo systemctl status docker
 ```
 
 အထက်က command ရိုက်ထည့်လိုက်ပြီးတော့ အောက်ကလိုမျိုးပြရင်တော့ Docker engine က active ဖြစ်နေပါပြီ။
 
-```text
+```
 ● docker.service – Docker Application Container Engine
 Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
 Active: active (running) since Sun 2018-02-25 10:29:52 AEDT; 3min 53s ago
@@ -105,7 +102,7 @@ Main PID: 4813 (dockerd)
 
 Docker ရဲ့ command တွေကိုရိုက်ထည့်တိုင်းမှာ super user အနေနဲ့ရိုက်ထည့်ရတဲ့ အတွက် လက်ရှိကိုယ်သုံးတဲ့ user account ကို docker ဆိုတဲ့ users group ထဲကို အောက်က command ရိုက်ထည့်ရပါလိမ့်မယ်။ ပြီးသွားရင် ကိုယ် user account က docker ဆိုတဲ့ users group ထဲမှာ ပါဝင်သွားပြီလားဆိုတာကိုလည်း တခါတည်း စစ်ကြည့်လို့ ရပါတယ်။ နောက်ပိုင်း တခြား Docker command တွေသုံးတဲ့အခါမှာ ဒီတစ်ခု မလုပ်ထားဘူးဆိုရင် troubleshoot လုပ်ရတဲ့ step အပိုတွေလုပ်ရနိုင်ပါတယ်။ ဒါကြောင့် ဒီအဆင့်က အရေးကြီးပါတယ်။
 
-```text
+```
 $ sudo usermod -aG docker ${USER}
 $ su – ${USER}
 $ id -nG
@@ -125,13 +122,13 @@ Docker ရဲ့ command တွေကို အသေးစိတ် မရှ�
 
 ပထမဆုံး အနေနဲ့ WordPress ကို Docker နဲ့ ဘယ်လို compose လုပ်သလဲဆိုတာ ဆက်ရှင်းပါ့မယ်။ အရင်ဆုံး ဒီနည်းကိုသုံးမယ်ဆိုရင် docker compose tool ကို install လုပ်ရပါလိမ့်မယ်။ အောက်က command ကို သုံးပြီးတော့ github ပေါ်ကနေ download ဆွဲရပါလိမ့်မယ်။
 
-```text
+```
 $ sudo curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-uname -s–uname -m -o /usr/local/bin/docker-compose
 ```
 
 Download လုပ်ပြီးသွားရင်တော့ docker-compose file ကို executable mode ရအောင်လို့ attribute ကို အောက်က command နဲ့ ပြောင်းပေးရပါလိမ့်မယ်။
 
-```text
+```
 $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
@@ -139,7 +136,7 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 
 ဒီတစ်ခုမှာလည်း ကိုယ်သုံးတာ Ubuntu သို့မဟုတ် CentOS အနေနဲ့ သုံးတယ်လို့ ယူဆပါ။ ကိုယ့်ရဲ့ home directory မှာ wordpress ဆိုတဲ့ project directory တစ်ခု အရင်တည်ဆောက်လိုက်ပါ။ ပြီးတော့ အဲ့ဒီ directory အောက်မှာ docker-compose.yml ဆိုတဲ့ file တစ်ခုကို ဖန်တီးလိုက်ပါ။ ပြီးတော့ အဲ့ဒီ ကို ကိုယ်ကြိုက်တဲ့ text editor တစ်ခုကို သုံးပြီးတော့ အောက်က script ကို ကူးယူပြီးတော့ ထည့်လိုက်ပါ။
 
-```text
+```
 version: “3.3”
 services:
      db:
@@ -167,19 +164,19 @@ volumes:
         dbdata:
 ```
 
-အပေါ်က script ကိုကြည့်လိုက်တာနဲ့ နားလည်ဖို့ လွယ်ပါတယ်။ Services နှစ်ကို လိုချင်လို့ services အောက်မှာ wordpress နဲ့ တွဲသုံးဖို့ db: ကိုတည်ဆောက်ဖို့ ရည်ရွယ်ပါတယ်။ ယူသုံးတဲ့ image ကို mysql:5.7 ဆိုပြီးတော့ သတ်မှတ်လိုက်ပါတယ်။ database ကို /var/lib/mysql အောက်မှာ သိမ်းဖို့ကို ပြောထားပါတယ်။ နောက်ပြီးတော့ restart policy ရဲ့ default ဖြစ်တဲ့ no မလုပ်ချင်လို့ restart: always လုပ်မယ်လို့လည်းပြောထားပါတယ်။ ဘာကို ဆိုလိုသလဲဆိုတော့ လိုအပ်လို့ပဲဖြစ်ဖြစ်၊ on-failure error ဖြစ်လို့ပဲဖြစ်ဖြစ် restart အမြဲလုပ်မယ်လို့ ဆိုလိုတာပါ။ ဒါမှမဟုတ်ရင် service က ဘာမှမလုပ်ပဲ frozen ဖြစ်သွားနိုင်လို့ပါ။ နောက်တပိုင်းကတော့ environment: ဆိုတဲ့ အပိုင်းပါ။ ဒီတစ်ခုကလည်း ရှင်းပါတယ်။ WordPress ရဲ့ အခြေခံ လိုအပ်သော environmental variables တွေဖြစ်တဲ့ MYSQL\_ROOT\_PASSWORD \(MySQL db management အတွက်လိုအပ်တဲ့ root passwordပါ။\)၊ MYSQL\_DATABASE \(db ရဲ့ နာမည် ကိုသတ်မှတ်ပေးတာပါ။\)၊ MYSQL\_USER \(အဲ့ဒီ db အတွက်လိုအပ်တဲ့ username ပါ။\)၊ MYSQL\_PASSWORD \(ဒါကတော့ create လုပ်ထားတဲ့ user account အတွက် password ပါ။\)။
+အပေါ်က script ကိုကြည့်လိုက်တာနဲ့ နားလည်ဖို့ လွယ်ပါတယ်။ Services နှစ်ကို လိုချင်လို့ services အောက်မှာ wordpress နဲ့ တွဲသုံးဖို့ db: ကိုတည်ဆောက်ဖို့ ရည်ရွယ်ပါတယ်။ ယူသုံးတဲ့ image ကို mysql:5.7 ဆိုပြီးတော့ သတ်မှတ်လိုက်ပါတယ်။ database ကို /var/lib/mysql အောက်မှာ သိမ်းဖို့ကို ပြောထားပါတယ်။ နောက်ပြီးတော့ restart policy ရဲ့ default ဖြစ်တဲ့ no မလုပ်ချင်လို့ restart: always လုပ်မယ်လို့လည်းပြောထားပါတယ်။ ဘာကို ဆိုလိုသလဲဆိုတော့ လိုအပ်လို့ပဲဖြစ်ဖြစ်၊ on-failure error ဖြစ်လို့ပဲဖြစ်ဖြစ် restart အမြဲလုပ်မယ်လို့ ဆိုလိုတာပါ။ ဒါမှမဟုတ်ရင် service က ဘာမှမလုပ်ပဲ frozen ဖြစ်သွားနိုင်လို့ပါ။ နောက်တပိုင်းကတော့ environment: ဆိုတဲ့ အပိုင်းပါ။ ဒီတစ်ခုကလည်း ရှင်းပါတယ်။ WordPress ရဲ့ အခြေခံ လိုအပ်သော environmental variables တွေဖြစ်တဲ့ MYSQL\_ROOT\_PASSWORD (MySQL db management အတွက်လိုအပ်တဲ့ root passwordပါ။)၊ MYSQL\_DATABASE (db ရဲ့ နာမည် ကိုသတ်မှတ်ပေးတာပါ။)၊ MYSQL\_USER (အဲ့ဒီ db အတွက်လိုအပ်တဲ့ username ပါ။)၊ MYSQL\_PASSWORD (ဒါကတော့ create လုပ်ထားတဲ့ user account အတွက် password ပါ။)။
 
 Services အောက်က ဒုတိယတပိုင်းကတော့ wordpress: ဆိုတဲ့ တစ်ခုပါ။ ဒီမှာလည်း အပေါ်ကတစ်ခုနဲ့ အတူတူပါပဲ။ depend-on: ဆိုတာ services နှစ်ခုဖြစ်တဲ့ အတွက် အဲ့ဒီ နှစ်ခုကို တွဲသုံးတဲ့အခါမှာ လိုအပ်တဲ့ dependencies ကို စစ်လိုက်တာပါ။ အပေါ်က db ဆိုတဲ့ အပိုင်းကို ပြန်ပြီးတော့ reference လုပ်ပါတယ်။ နောက်တခါ နောက်ဆုံးထွက်ထားတဲ့ wordpress ဆိုတဲ့ container image ကို သုံးဖို့ကို ပြောထားပါတယ်။ ports: ဆိုတဲ့ဟာကတတော့ container ကနေပြီးတော့ host ကို communicate လုပ်တဲ့အခါမှာ ဘယ် port number နဲ့ expose လုပ်မလဲဆိုတာကို ပြောထားတာပါ။ 8000:80 ဆိုတာ container က http ရဲ့ port number ဖြစ်တဲ့ 80 ကို host ပေါ်မှာ port number 8000 နဲ့ expose လုပ်ထားတာပါ။ နောက်ပိုင်းမှာ wordpress ကို access လုပ်တဲ့အခါ အဲ့ဒီ port 8000 ကို ကိုယ့်စက်ရဲ့ IP address သို့မဟုတ် localhost ဆိုတဲ့ အနောက်မှာ ထည့်ပြီးတော့ web browser ကနေ access လုပ်ရပါလိမ့်မယ်။ နောက်ဆုံး အပိုင်းကတော့ အပေါ်မှာ MySQL ရဲ့ environmental variable တွေကို သတ်မှတ်သလိုပဲ WordPress အတွက် သတ်မှတ်ပေးလိုက်တာပါ။
 
 အခုဆိုရင်တော့ customized container တစ်ခုတည်ဆောက်ဖို့ docker compose tool နဲ့ script နှစ်ခုလုံး အဆင်သင့် ဖြစ်ပါပြီ။ အောက်က command ကို အခုက ကိုယ် တည်ဆောက်ထားတဲ့ project directory အောက်ကမှာ ရိုက်ထည့်လိုက်ပါ။
 
-```text
+```
 $ docker-compose up -d 
 ```
 
 ဒီနေရာမှာ -d ဆိုတဲ့ parameter က docker-compose up command ကို detached mode မှာ run လို့ ပြောလိုက်တာပါ။ အားလုံးအဆင်ပြေရင်တော့ အောက်ကအတိုင်း တွေ့ရပါလိမ့်မယ်။
 
-```text
+```
 ~/docker-wp-project$ docker-compose up -d
 Creating network “dockerwpproject_default” with the default driver
 Creating volume “dockerwpproject_dbdata” with default driver
@@ -236,7 +233,7 @@ Prompt ထဲမှာပြထားတဲ့ အတိုင်းလိုတ
 
 ကိုယ်က စမ်းပြီးတော့ ဒီ project ကို ကိုယ်စက်ပေါ်ကနေ လုံးဝ remove ပြန်လုပ်ချင်ရင်တော့ အောက်က command ကိုရိုက်ထည့်လိုက်ပါ။
 
-```text
+```
 $ docker-compose down –volumes
 ```
 
@@ -250,7 +247,7 @@ Docker မှာ WordPress ကို အခုလို အလွယ်တကူ
 
 ဆိုပါတော့ ကိုယ်က Ubuntu ဆိုတဲ့ container ကို Docker Hub ပေါ်ကနေ ဆွဲယူ သုံးချင်တယ်ဆိုရင်တော့ အောက်က command ကို ရိုက်ထည့်လိုက်ရုံပါပဲ။
 
-```text
+```
 $ sudo docker run -it ubuntu
 [sudo] password for tyla:
 Unable to find image ‘ubuntu:latest’ locally
@@ -272,4 +269,3 @@ root@49f8a606967a:/#
 ![](https://itmatic101.files.wordpress.com/2019/09/b0a70-informix-on-docker-hub-4-638.jpg?w=660)
 
 Docker မိတ်ဆက်ကို ဒီမှာပဲ ရပ်လိုက်ပါတော့မယ်။ အပိုင်း ၃ ပိုင်းလည်း ရေးပြီးသွားပြီဆိုတော့ မိတ်ဆက်အတွက်တော့ တော်တော်လေးလုံလောက်သွားပြီလို့ စာရေးသူထင်ပါတယ်။ နောက်ပိုင်းမှာတော့ Docker နဲ့ ပတ်သတ်ပြီး ပိုပြီးတော့ အဆင့်မြင့်တဲ့ အကြောင်းလေးတွေကို ဆက်ရေးဖို့တော့ ရှိပါတယ်။
-
