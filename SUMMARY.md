@@ -54,6 +54,7 @@
 * [SELinux မိတ်ဆက်](linuxbsd/selinux-intro.md)
 * [Open Source Licenses များအကြောင်း – အပိုင်း (၁)](linuxbsd/opensource-licenses-part1.md)
 * [Open Source Licenses များအကြောင်း – အပိုင်း (၂)](linuxbsd/opensource-licenses-part2.md)
+* [Keepalived မိတ်ဆက် – အပိုင်း (၁)](linuxbsd/keepalived-meiksaet-apaing-1.md)
 
 ## Automation
 
