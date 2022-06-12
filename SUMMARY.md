@@ -80,6 +80,7 @@
 * [ZeroTier မိတ်ဆက်](networking/zerotier-intro.md)
 * [WireGuard အကြောင်းသိကောင်းစရာ](networking/wireguard-intro.md)
 * [Linode VPS မှာကိုယ်ပိုင် Wireguard VPN server တစ်ခုတည်ဆောက်ပုံ](networking/linode-vps-wireguard-vpn.md)
+* [အဘယ်ကြောင့် MikroTik](networking/abaekyaung-mikrotik.md)
 
 ## Virtualisation and Cloud
 
