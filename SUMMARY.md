@@ -81,6 +81,7 @@
 * [WireGuard အကြောင်းသိကောင်းစရာ](networking/wireguard-intro.md)
 * [Linode VPS မှာကိုယ်ပိုင် Wireguard VPN server တစ်ခုတည်ဆောက်ပုံ](networking/linode-vps-wireguard-vpn.md)
 * [အဘယ်ကြောင့် MikroTik](networking/abaekyaung-mikrotik.md)
+* [VRRP ကို MikroTik မှာ setup လုပ်ပုံ](networking/vrrp-ko-mikrotik-mha-setup-lokpon.md)
 
 ## Virtualisation and Cloud
 
