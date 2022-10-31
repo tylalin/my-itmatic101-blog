@@ -1,10 +1,10 @@
-# FreeRADIUS နဲ့ PPPoE Authentication အပိုင်း (၂)
+# FreeRADIUS နဲ့ PPPoE Authentication အပိုင်း \(၂\)
 
 အရှေ့တပိုင်းမှာတော့ FreeRADIUS ရယ်၊ သူနဲ့တွဲပြီး အသုံးပြုဖို့အတွက် mariadb mysql ရယ်ကို အကုန်ပြင်ဆင်ပြီးသွားပါပြီ။ ဒီအဆင့်မှာတော့ daloRADIUS webUI ကိုဘယ်ထည့်သွင်းပုံနဲ့ သူ့အပေါ်မှာ user၊ nas နဲ့ attribute တွေကို ဘယ်လိုမျိုး manage လုပ်သလဲဆိုတာကို ဆက်ပြီးတော့ ဖော်ပြပေးပါ့မယ်။ နောက်ဆုံးမှာတော့ အားလုံး ready ဖြစ်တဲ့ FreeRADIUS server နဲ့ ကိုယ်ရဲ့ internet service provider platform မှာဘယ်လိုမျိုးတွဲပြီး အသုံးပြုလို့ရသလဲဆိုတာကို ဆက်ပြီးတော့ ရှင်းသွားပါ့မယ်။ အချပ်ပို အနေနဲ့တော့ အခု setup လုပ်ထားတဲ့ RADIUS server နဲ့ device login တွေကို ဘယ်လို manage လုပ်လို့ရသလဲဆိုတာ ကို ဆက်ပြီးတော့ ဖော်ပြသွားပါ့မယ်။ production environment မှာတော့ management network နဲ့ customer PPPoE database ဟာ အတူတူမရှိသင့်ပါဘူး။ ဒီမှာတော့ FreeRADIUS က setup လုပ်ပြီးသားဖြစ်တာနဲ့ ဆက်ပြီးတော့ management network မှာလည်း RADIUS ကို device management အတွက် အသုံးပြုလို့ရပုံကို ဖော်ပြရခြင်းဖြစ်ပါတယ်။ ပထမဆုံးအနေနဲ့ Apache web server နဲ့ daloRADIUS ကို install လုပ်ပုံကို အရင်သွားလိုက်ရအောင်။
 
 ## Apache web server ကို setup လုပ်ပုံ
 
-```
+```text
 # hop in to sudo
 [tyla@rpm-dev01 ~]$ sudo -i
 [sudo] password for tyla:
@@ -48,7 +48,7 @@ Hint: Some lines were ellipsized, use -l to show in full.
 
 ## daloRADIUS ကို setup လုပ်ပုံ
 
-```
+```text
 # download daloradius packages from github
 [root@rpm-dev01 ~]# wget https://github.com/lirantal/daloradius/archive/master.zip
 
@@ -76,7 +76,7 @@ password:     # input the mysql root password previously set
 
 ## daloRADIUS php config file အား MySQL နဲ့ တွဲပြီးအသုံးပြုနိုင်ရန်ပြင်ဆင်ပုံ
 
-```
+```text
 [root@rpm-dev01 ~]# vi /var/www/html/library/daloradius.conf.php
 
  All Rights Reserved.
@@ -206,7 +206,7 @@ $configValues['CONFIG_LOCATIONS'] =                     array(
 
 အထက်က daloradius.conf.php file မှာတော့ line number ၃၄ ကနေ ၃၆ အထိပဲ အထက်မှာပြထားတဲ့ အတိုင်း ပြင်ဖို့လိုပါတယ်။ ကျန်တဲ့ line တွေကိုတော့ reference အနေနဲ့ အားလုံးပစ်ပြီးတော့ထည့် ထားတာဖြစ်ပါတယ်။ အားလုံး ပြီးသွားပြီဆိုရင် နောက်ဆုံးအဆင့် အနေနဲ့ daemon အားလုံး ကို error တက်မတက်သိရအောင်လို့ restart လုပ်ရပါမယ်။ ပြီးတော့မှ php နဲ့တွဲပြီးတော့ အသုံးပြုလို့ရအောင် php-pear ကို install လုပ်ရမှာဖြစ်ပါတယ်။
 
-```
+```text
 # restart all installed daemons to check if there are any errors
 [root@rpm-dev01 ~]# systemctl restart radiusd
 [root@rpm-dev01 ~]# systemctl restart mariadb
@@ -219,30 +219,34 @@ $configValues['CONFIG_LOCATIONS'] =                     array(
 
 ဘာ error မှမတက်ဘူး၊ အားလုံး အဆင်ပြေတယ်ဆိုရင်တော့ web browser ကနေပြီးတော့ အောက်မှာလိုစတင် အသုံးပြုနိုင်ပါပြီ။ စာရေးသူ အတွက်တော့ DNS server နဲ့ မချိတ်ထားတဲ့ အတွက် IP address ကို အသုံးပြုပြီးတော့ daloRADIUS webUI ကို access လုပ်ပါတယ်။ default username နဲ့ password ကို အသုံးပြုပြီးတော့ initial setup မှာ ဝင်ရောက်အသုံးပြုနိုင်ပါတယ်။
 
-```
+```text
 http://192.168.105.7/login.php
  Username: administrator
  Password: radius
 ```
 
-<figure><img src="https://i.imgur.com/jmYAtgq.png" alt=""><figcaption><p>DaloRADIUS WebUI</p></figcaption></figure>
+DaloRADIUS WebUI
+
+![](https://i2.wp.com/www.itmatic101.com/wp-content/uploads/2019/11/daloradius.png?fit=525%2C239&ssl=1)
 
 User အသစ်ကိုဖန်တီးရန် daloRADIUS webUI တွင် အောက်မှာဖော်ပြထားတဲ့အတိုင်း လုပ်ဆောင်ပါ။
 
-```
+```text
 # create a user on daloradius
 Management > Users > New User
 Username: tyla.lin@gnu.net
 Password: pppoepass!23
 ```
 
-<figure><img src="https://i.imgur.com/8ptmB39.png" alt=""><figcaption><p>Create a new user</p></figcaption></figure>
+Create a new user
+
+![](https://i2.wp.com/www.itmatic101.com/wp-content/uploads/2019/11/user.png?fit=525%2C216&ssl=1)
 
 အခုဆိုရင် new user ဖြစ်တဲ့ tyla.lin@gnu.net ဆိုတဲ့ user ကိုဖန်တီးပြီးသွားပါပြီ။ attribute ကို စမ်းသပ်ဖို့ရာ စာရေးသူ reply attribute တစ်ခုကို ထည့်သွင်း အသုံးပြုကြည့်ပါ့မယ်။ အဲ့ဒီအတွက် Edit users details အောက်က attribute မှာ အောက်ကအတိုင်း ထည့်သွင်းလိုက်ပါ။ ပြီးရင် Add attribute ဆိုတဲ့ button ကို နှိပ်လိုက်ပါ။
 
 မှတ်ချက် – ဒီ attribute ကတော့ end customer ရဲ့ CPE ကို static IP address နဲ့ assign လုပ်တဲ့ attribute ဖြစ်ပါတယ်။
 
-```
+```text
 # set a RADIUS attribute for end customer's CPE
 Locate Attribute via Vendor/Attribute 
 Vendor: dictionary.rfc2865
@@ -252,11 +256,13 @@ Op: :=
 Target: reply
 ```
 
-<figure><img src="https://i.imgur.com/wafHIRF.png" alt=""><figcaption><p>RADIUS Attributes</p></figcaption></figure>
+RADIUS Attributes
+
+![](https://i2.wp.com/www.itmatic101.com/wp-content/uploads/2019/11/attributes.png?fit=525%2C228&ssl=1)
 
 PPPoE sessions တွေကို manage လုပ်မယ့် LNS router အတွက် DaloRADIUS မှာ nas အနေနဲ့အောက်ကအတိုင်း ထည့်ပေးရပါမယ်။ ပြီးသွားရင် Add button ကို နှိပ်ပြီးတော့ add လိုက်ပါ။
 
-```
+```text
 # add a nas for LNS router 
 Management > Nas > New NAS
 NAS IP/Host: 192.168.105.70
@@ -265,17 +271,19 @@ NAS Type: cisco
 NAS Shortname: lns
 ```
 
-<figure><img src="https://i.imgur.com/gh2iH9C.png" alt=""><figcaption><p>Add NAS for LNS router</p></figcaption></figure>
+Add NAS for LNS router
 
-အခုဆိုရင် core network ဘက်မှာလိုအပ်တာတွေအကုန် ပြင်ဆင်ပြီးသွားပါပြီ။ အောက်မှာတော့ အခု configure လုပ်နေနဲ့ FreeRADIUS server ကို ထည့်သွင်း အသုံးပြုမယ့် network topology အကြမ်းဖြစ်ပါတယ်။
+![](https://itmatic101.files.wordpress.com/2019/11/82a77-nas.png?w=1024&h=362)
 
-<figure><img src="https://i.imgur.com/Qs67unX.png" alt=""><figcaption><p>Network Topology for FreeRADIUS integration</p></figcaption></figure>
+အခုဆိုရင် core network ဘက်မှာလိုအပ်တာတွေအကုန် ပြင်ဆင်ပြီးသွားပါပြီ။ အောက်မှာတော့ အခု configure လုပ်နေနဲ့ FreeRADIUS server ကို ထည့်သွင်း အသုံးပြုမယ့် network topology အကြမ်းဖြစ်ပါတယ်။Network Topology for FreeRADIUS integration
+
+![](https://i2.wp.com/www.itmatic101.com/wp-content/uploads/2019/11/frad-network-topology.png?fit=525%2C268&ssl=1)
 
 နောက်တဆင့် အနေနဲ့ LNS router ပေါ်မှာ PPPoE sessions တွေအတွက် ဘယ်လိုပြင်ဆင်သလဲဆိုတာကို ဆက်ပြီးတော့ရှင်းပါ့မယ်။ သို့သော် upstream provider ရဲ့ LAC router ဆီကို VPDN နဲ့ L2TP tunnel ဘယ်လို တည်ဆောက်သလဲဆိုတာတော့ မရှင်းတော့ပါဘူး။ နောက်ပိုင်း networking နဲ့ဆိုင်တဲ့ post တွေမှပဲ အသေးစိတ် ဆက်ရှင်းပါမယ်။ အောက်မှာတော့ PPPoE နဲ့ ပတ်သတ်တဲ့ config ကို LNS router ပေါ်မှာ ဘယ်လို configure လုပ်သလဲဆိုတာ ဆက်သွားပါ့မယ်။
 
 ## PPPoE sessions တွေအတွက် LNS router အား configure လုပ်ပုံ
 
-```
+```text
 !
 conf t
 !
@@ -342,7 +350,7 @@ aaa authorization network default group radius
 
 ## Cisco IOS CPE ပေါ်တွင် PPPoE client အတွက် configure လုပ်ပုံ
 
-```
+```text
 !
 config t
 !
@@ -375,7 +383,7 @@ ip route 0.0.0.0 0.0.0.0 Dialer1
 
 ## MikroTik RouterOS ပေါ်တွင် PPPoE client အတွက် configure လုပ်ပုံ
 
-```
+```text
 # create an access bridge called lan
 /interface bridge
 add name=lan
@@ -429,7 +437,7 @@ End-to-end PPPoE configuration ကို freeRADIUS နဲ့ ဘယ်လို
 
 ## MikroTik RouterOS ပေါ်တွင် RADIUS ကိုသုံးပြီး device login setup လုပ်ပုံ
 
-```
+```text
 # configure radius for device login
 /radius
 add address=192.168.105.7 secret=secret!23 service=login
@@ -440,3 +448,4 @@ set use-radius=yes
 ```
 
 ဒီလောက်ဆိုရင်တော့ freeRADIUS နဲ့ PPPoE sessions တွေရဲ့ authentication ကို ဘယ်လို ထိန်းချုပ် နိုင်သလဲဆိုတာ ဂဃဏန သေသေချာချာ လေ့လာနိုင်မယ်လို့ မျှော်လင့်ပါတယ်။ ဒီ post ကိုတော့ ဒီမှာပဲ အဆုံးသတ်လိုက် ပါတော့မယ်။
+
