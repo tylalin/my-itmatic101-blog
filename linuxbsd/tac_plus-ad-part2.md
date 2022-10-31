@@ -1,4 +1,4 @@
-# TACACS+ နဲ့ Windows AD ကိုတွဲပြီး အသုံးပြုနည်း – အပိုင်း \(၂\)
+# TACACS+ နဲ့ Windows AD ကိုတွဲပြီး အသုံးပြုနည်း – အပိုင်း (၂)
 
 အရှေ့ post မှာ TACACS+ server ကို standalone setup ဘယ်လို လုပ်သလဲဆိုတာကို ရှင်းပြပြီးသွားပါပြီ။ အခြေခံအားဖြင့် authentication အတွက် Ubuntu 18.04 LTS local user login database ဖြစ်တဲ့ /etc/passwd file ကို အသုံးပြုပြီးတော့၊ authorization အတွက်တော့ /etc/tacacs+/tac\_plus.conf file ကိုအသုံးပြုထားတာပဲဖြစ်ပါတယ်။ configuration အကုန်လုံးက server ဘက်မှာပဲ ပြီးပါသေးတယ်။ Network devices တွေအတွက်တော့ ဘယ်လို configure လုပ်သလဲဆိုတာကို နောက်ဆုံးမှာ ရှင်းသွားပါ့မယ်။ devices config အတွက်တော့ TACACS+ standalone နဲ့ TACACS+ Windows AD မှာပါ အကုန်လုံးတူပါတယ်။ ဘာမှပြောင်းစရာမလိုပါဘူး။ အဲဒီအတွက် နောက်ဆုံးမှာ ရှင်းတာဖြစ်ပါတယ်၊။ ဒီအဆင့်မှာတော့ Ubuntu 18.04 box ဟာ Windows 2019 AD ကို join ပြီးဖြစ်ပါတယ်။ အခု domain joined Linux TACACS+ server ကို Windows AD နဲ့ ဘယ်လို integrate လုပ်သလဲဆိုတာကို ဆက်ရှင်းသွားပါ့မယ်။ Integration အပိုင်းမှာတော့ ပုံစံမျိုးစုံနဲ့ လုပ်လို့ရပါတယ်။ စာရေးသူ အခုရှင်းမယ့် ပုံစံကတော့ အနည်းငယ် လက်ဝင်ပေမယ့် အလုပ်ဖြစ်ပါတယ်။ နောက်ပြီးတော့ စာရေးသူသတိထားမိတာ တစ်ခုက Internet ပေါ်မှာ စာရေးသူ လုပ်ချင်တဲ့ ပုံစံမျိုး ရအောင်လို့ setup လုပ်ဖို့ရာ ပြီးပြည့်စုံတဲ့ tutorial မရှိပါဘူး။ ဟိုနည်းနည်းဖတ် ဒီနည်းနည်းရှာနဲ့ပဲ မရရအောင်လို့ ကြံဖန်ပြီးတော့ လုပ်ရပါတော့တယ်။ အဲ့ဒီအတွက် အလုံးစုံ ရိုးရှင်းတဲ့ integration process တော့ မဟုတ်ပါဘူး။ သို့သော် အလုပ်ဖြစ်ပြီးတော့ နားလည်ရလွယ်တဲ့ solution တစ်ခုပါ။ Linux မှာရနိုင်တဲ့ tools တွေကိုပဲ ကိုယ်လိုချင်တဲ့ပုံစံ ဖြစ်အောင် လုပ်ရတာဖြစ်တဲ့အတွက် စိတ်ဝင်စားဖို့တော့ကောင်းပါတယ်။ အကျဉ်းချုပ်အားဖြင့်တော့ Linux ရဲ့ PAM ရယ်၊ bash script တစ်ခုရယ်၊ crontab နဲ့ built-in Linux command သုံးလေးငါးခုလောက်ကို လှည့်ပြီးတော့ သုံးထားတာ လည်းဖြစ်တဲ့အတွက် ဘာမှထက်ပြီးတော့ ထွေထွေထူးထူး install လုပ်စရာ မရှိပါဘူး။ သို့သော် တစ်ခုချင်းစီရဲ့ အလုပ်လုပ်ဆောင်ပုံနဲ့ ဘယ်လိုမျိုး အသုံးပြုရတာလဲဆိုတော့ အနည်းငယ်သိဖို့တော့လိုပါလိမ့်မယ်။ စာရေးသူ တတ်နိုင်သလောက်တော့ တစ်ခုချင်းစီကို အကျဉ်းချုပ်ပြီးတော့ ရှင်းသွားပါ့မယ်။
 
@@ -6,7 +6,7 @@
 
 user group ၃ ခုဖြစ်တဲ့ enabler၊ temper၊ reader တို့ကို အောက်ကအတိုင်း Windows AD ရဲ့ domain controller ပေါ်မှာ PowerShell နဲ့ create လုပ်လိုက်ပါ။
 
-```text
+```
 # adding "enabler" security group to Windows AD domain
 PS C:Userstyla.GNU> New-ADGroup -Name "enabler" -SamAccountName enabler -GroupCategory Security -GroupScope Global -DisplayName "enabler" -Path "CN=Users,DC=GNU,DC=NET" -Description "Privilege 15 admins"
 
@@ -19,7 +19,7 @@ PS C:Userstyla.GNU> New-ADGroup -Name "temper" -SamAccountName temper -GroupCate
 
 Windows AD မှာ domain user groups တွေကို create လုပ်ပြီးသွားတာနဲ့ ကိုယ်လိုချင်တဲ့ user account တွေကို အောက်ကအတိုင်း ဖန်းတီးပြီးတော့ ကိုယ်ကြိုက်တဲ့ group မှာထည့်လိုက်ပါ။
 
-```text
+```
 # Import Active Directory Module in PowerShell
 PS C:Userstyla.GNU> Import-Module ActiveDirectory                             
 
@@ -67,11 +67,11 @@ SID               : S-1-5-21-3725648376-1897747198-2438019021-1119
 
 အခုဆိုရင်တော့ Windows AD မှာ သက်ဆိုင်ရာ AD group နဲ့ user တွေကိုပြင်ဆင်ပြီးသွားပါပြီ။ အောက်ကပုံမှာတော့ စာရေးသူရဲ့ network topology အကြမ်းဖြစ်ပါတယ်။
 
-![](https://itmatic101.files.wordpress.com/2019/11/3249f-network-topology-1.png)
+<figure><img src="https://i.imgur.com/ICDKun5.png" alt=""><figcaption><p>Network topology</p></figcaption></figure>
 
 Windows AD ရဲ့ domain controller ပေါ်မှာ group နဲ့ user တွေလည်း ဖန်းတီးပြီးပြီ၊ TACACS+ တင်ထားတဲ့ Linux box ကိုလည်း အဲ့ဒီ GNU.NET ဆိုတဲ့ domain ကို join ပြီးသွားပြီဆိုရင် တော့၊ domain user နဲ့ group တွေကို Linux ကနေ မြင်ရ မမြင်ရဆိုတာကို တချက်တော့ verify လုပ်ရပါ့မယ်။ ဒီအဆင့်က အရေးကြီးပါတယ်။ Linux box ကနေ Windows AD ရဲ့ user နဲ့ group ကို မမြင်ရရင်တော့ နည်းနည်းပါးပါး troubleshoot လုပ်ရပါလိမ့်မယ်။ အားလုံးအဆင်ပြေရင်တော့မှ နောက်တဆင့်ကို ဆက်သွားပါ။
 
-```text
+```
 tyla@apt-dev01:~$ sudo -i
 
 [sudo] password for tyla: 
@@ -87,7 +87,7 @@ enabler:*:1396801113:tyla.lin,tom.cruise
 
 အထက်ကအတိုင်းတွေ့ရတယ်ဆိုရင်တော့ အားလုံးအဆင်ပြေပါပြီ။ နောက်တဆင့်မှာတော့ tac\_plus.conf ကို local user database ဖြစ်တဲ့ /etc/passwd အစား PAM ကိုအသုံးပြုဖို့အတွက် အနည်းငယ် ပြင်ဆင်ဖို့လိုပါလိမ့်မယ်။
 
-```text
+```
 root@apt-dev01:~# vi /etc/tacacs+/tac_plus.conf 
 
 # Created by Henry-Nicolas Tourneur(henry.nicolas@tourneur.be)
@@ -223,7 +223,7 @@ root@apt-dev01:~# systemctl restart tacacs+
 
 အခုဆိုရင် စာရေးသူတို့ လက်ရှိ tac\_plus.conf ကိုအခြေခံပြီးတော့ template တစ်ခုတည်ဆောက်ပါ့မယ်။ ဒီ template ဟာ tac\_plus.conf ရဲ့ မပြောင်းတဲ့ အပိုင်းတွေကိုရွေးယူပြီးတော့ ထက်ထည့်လာမယ့် အစိတ်အပိုင်းတွေနဲ့ ပေါင်းသွားမှာပါ။ နောက်အဆင့်မှာ ဘာဖြစ်လို့ template လိုသလဲဆိုတာကိုတွေ့ပါလိမ့်မယ်။ tac\_plus\_template.conf ကို /etc/tacacs+ ရဲ့အောက်မှာ ဖန်းတီးရမှာဖြစ်ပါတယ်။ နောက်တခု သတိထားရမှာက ဒီ template ကိုသုံးမယ်ဆိုရင် user ကိုသာ အထည့်အသွင်း ပြုလုပ်ဖို့အတွက်ဖြစ်ပြီး၊ group ကို တော့ enabler၊ temper နဲ့ reader ဆိုပြီး အသေထားဖို့အတွက် ရည်ရွယ်ပါတယ်။ Group အပြောင်းအလဲ အတွက်ပါ လိုမယ်ဆိုရင်တော့ automate လုပ်မယ့် bash script ကို အနည်းငယ်ပြင်ဆင်ရပါလိမ့်မယ်။
 
-```text
+```
 root@apt-dev01:/etc/tacacs+# cat tac_plus_template.conf 
 # Created by Henry-Nicolas Tourneur(henry.nicolas@tourneur.be)
 # See man(5) tac_plus.conf for more details
@@ -339,9 +339,9 @@ group = reader {
 }
 ```
 
- နောက်တဆင့်အနေနဲ့ စာရေးသူ bash script တစ်ခုကို အောက်က အတိုင်း bash shell မှာရှိတဲ့ tools တွေပဲယူသုံးပြီးတော့ Windows AD domain controller ရဲ့ group နဲ့ user တွေကို လိုအပ်သလို အချက်အလက်တွေကို ရယူပါတယ်။ file နာမည်ကိုတော့ sync\_users.sh ဆိုပြီးတော့ /opt အောက်မှာ သွားပြီးတော့ ဖန်တီးတည်ဆောက်ထားပါတယ်။
+နောက်တဆင့်အနေနဲ့ စာရေးသူ bash script တစ်ခုကို အောက်က အတိုင်း bash shell မှာရှိတဲ့ tools တွေပဲယူသုံးပြီးတော့ Windows AD domain controller ရဲ့ group နဲ့ user တွေကို လိုအပ်သလို အချက်အလက်တွေကို ရယူပါတယ်။ file နာမည်ကိုတော့ sync\_users.sh ဆိုပြီးတော့ /opt အောက်မှာ သွားပြီးတော့ ဖန်တီးတည်ဆောက်ထားပါတယ်။
 
-```text
+```
 root@apt-dev01:~# vi /opt/sync_users.sh
 
 #!/bin/sh
@@ -399,7 +399,7 @@ fi
 
 Script တော့ရပြီ၊ သို့သော် အဲ့ဒီ script ကို automate လုပ်ဖို့ဆိုရင် crontab ကို အသုံးပြုဖို့လိုပါလိမ့်မယ်။ အောက်မှာတော့ crontab ကိုဘယ်လိုတည်ဆောက်သလဲဆိုတာကို ဖော်ပြထားပါတယ်။ စာရေးသူ ငါးမိနစ်တစ်ခါ cron ကို အဲ့ဒီ script သွားပြီးတော့ run ခိုင်းပါတယ်။ အဲ့ဒီတော့ ငါးမိနစ်တခါတော့ Windows AD နဲ့ user account နဲ့ group membership ကို sync သွားဖြစ်နေမှာပါ။
 
-```text
+```
 root@apt-dev01:/etc/tacacs+# crontab -e
 # Edit this file to introduce tasks to be run by cron.
 # 
@@ -430,7 +430,7 @@ root@apt-dev01:/etc/tacacs+# crontab -e
 
 Cisco router နဲ့ switch တွေအတွက်တော့ အောက်က AAA configuration ကို အသုံးပြုရပါ့မယ်။
 
-```text
+```
 !
 conf t
  !
@@ -464,7 +464,7 @@ conf t
 
 Huawei router နဲ့ switch တွေအတွက်တော့ အောက်က AAA configuration တွေကို ထည့်သွင်းရပါလိမ့်မယ်။
 
-```text
+```
 sys
 
  hwtacacs-server template ts-aaa
@@ -502,7 +502,7 @@ sys
 
 HPE procurve ဆိုရင်တော့ အောက်ကအတိုင်း configure လုပ်ရပါ့မယ်။
 
-```text
+```
 sys
 
 hwtacacs scheme hwtac
@@ -537,4 +537,3 @@ command accounting
 ```
 
 ဒါဆိုရင် အားလုံး အဆင်သင့်ဖြစ်ပါပြီ။ TACACS+ နဲ့ Windows AD တို့ရဲ့ integration process ပြီးပါပြီ။ Standalone TACACS+ မှာပဲ ဖြစ်ဖြစ်၊ TACACS+ Windows AD integration မှာပဲဖြစ်ဖြစ် network devices တွေဘက်မှာတော့ အားလုံးအတူတူပါပဲ။ အားလုံးပဲ အလွယ်တကူ setup လုပ်နိုင်မယ်လို့ မျှော်လင့်ပါတယ်။
-
