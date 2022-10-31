@@ -1,10 +1,12 @@
-# FreeRADIUS နဲ့ PPPoE Authentication အပိုင်း \(၁\)
+# FreeRADIUS နဲ့ PPPoE Authentication အပိုင်း (၁)
 
 RADIUS ဆိုတာကတော့ Remote Authentication Dial-In User Service ရဲ့ အတိုကောက်ဖြစ်ပြီးတော့၊ တော်တော်လေးလည်း ရှေးကျတဲ့ authentication service လည်းဖြစ်ပါတယ်။ သူ့နာမည်မှာကိုက dail-in ဆိုတာပါနေတာကိုကြည့်ခြင်းအားဖြင့် သူရှိနေခဲ့တာဘယ်လောက်ကြာပြီလဲဆိုတာကို မှန်းကြည့်လို့ရပါတယ်။ စာရေးသူ RADIUS နဲ့ ပတ်သတ်ပြီးတော့ open-source solution မှာရှာကြည့်သလောက်တော့ FreeRADIUS ကိုလူပြောများတာနဲ့ လုပ်ငန်းခွင်မှာ အသုံးများတဲ့ PPPoE အတွက် authentication ကိုဘယ်လို လုပ်သလဲဆိုတာ စပြီးတော့ စမ်းသပ်ဖို့ရာဖြစ်လာပါတော့တယ်။ ဒီ post မှာတော့ စာရေးသူရဲ့ အကြိုက်ဆုံးဖြစ်တဲ့ CentOS7 ကိုအသုံးပြုထားပြီးတော့ FreeRADIUS install လုပ်ပုံအဆင့်ဆင့် ကိုရှင်းပြသွားပါ့မယ်။ ‌ပြီးတော့ local flat configuration file အစား MySQL database ကိုအသုံးပြုမှာဖြစ်ပြီးတော့ Dalo RADIUS ဆိုတဲ့ WebUI နဲ့ manage လုပ်တဲ့ပုံစံကို အဆင့်ဆင့်ဖော်ပြပေးသွားပါ့မယ်။ ပထမဆုံးအနေနဲ့ CentOS7 ကို အရင်ဆုံး install လုပ်ရပါ့မယ်။ CentOS7 installation process ကိုတော့ ဒီ post မှာ မရှင်းတော့ပါဘူး။ ‌CentOS7 မှာအသုံးပြုထားတဲ့ Anaconda installer က ရိုးရှင်းပြီးတော့ install လုပ်ရတာလည်း လွယ်ပါတယ်။ Linux မှာ ကိုယ်က အခုမှစတင်လေ့လာနေတယ်ဆိုရင်တော့ YouTube မှာ CentOS 7 ကို ဘယ်လို install လုပ်သလဲဆိုတာ ကိုယ်တိုင်ရှာကြည့်လို့ရပါတယ်။ CentOS7 ကို install လုပ်ပြီးလို့ အဆင်သင့်ဖြစ်ပြီဆိုရင်တော့ အောက်ကအတိုင်း FreeRADIUS ကို စတင် install လုပ်လို့ရပါပြီ။
 
+<figure><img src="https://i.imgur.com/LCo6n7r.png" alt=""><figcaption><p>FreeRADIUS Configuration</p></figcaption></figure>
+
 ## FreeRADIUS ကို CentOS7 ပေါ်တွင် install လုပ်ပုံ
 
-```text
+```
 [tyla@rpm-dev01 ~]$ sudo -i
 [sudo] password for tyla:
 
@@ -41,7 +43,7 @@ Hint: Some lines were ellipsized, use -l to show in full.
 
 ## CentOS7 ရဲ့ Firewall ကို freeRADIUS အတွက်ပြင်ဆင်ရပုံ
 
-```text
+```
 # start and enable firewalld on CentOS7
 [root@rpm-dev01  ~]# systemctl enable firewalld
 [root@rpm-dev01  ~]# systemctl start firewalld
@@ -90,7 +92,7 @@ Ready to process requests
 
 ဒီအဆင့်မှာတော့ freeRADIUS ရဲ့ installation process ကပြီးသွားပါပြီ။ ကိုယ်က basic ပုံစံမျိုး flat config file ထဲမှာပဲ configure လုပ်ချင်တယ်ဆိုရင်တော့ /etc/raddb အောက်မှာတစ်ခုချင်းစီ ကိုယ်ကြိုက်သလို စတင်ပြီးတော့ configure လုပ်လို့ရပါပြီ။ သို့သော်လည်း အစကပြောခဲ့သလိုမျိုး စာရေးသူက flat file အစား MySQL db ကိုအသုံးပြုပြီးတော့ data တွေကို store လုပ်ချင်လို့ mariadb ကိုအသုံးပြုပါ့မယ်။ နောက်ပြီးတော့ Dalo RADIUS ဆိုတဲ့ WebUI အသုံးပြုပြီးတော့ MySQL database ကို manage လုပ်ချင်တဲ့အတွက် Apache နဲ့ daloradius တို့ကို install ထက်လုပ်ရပါ့မယ်။ အောက်မှာတော့ mariadb၊ Apache နဲ့ daloradius တို့ကို install ဘယ်လိုလုပ်သလဲဆိုတာကို ဖော်ပြသွားပါ့မယ်။
 
-```text
+```
 # mariadb 10 is not the default on CentOS7 thus add the repo to yum repos
 [root@rpm-dev01  ~]# vi /etc/yum.repos.d/MariaDB.repo
 
@@ -145,7 +147,7 @@ enabled
 
 ## MySQL server အား initial setup နဲ့ db root password ထည့်သွင်းပုံ
 
-```text
+```
 [root@rpm-dev01  ~]# mysql_secure_installation
 Enter current password for root (enter for none): ENTER
 Set root password? [Y/n] y
@@ -161,7 +163,7 @@ Reload privilege tables now? [Y/n]: Y
 
 ## PHP 7 အား CentOS7 ပေါ်တွင်ထည့်သွင်းအသုံးပြုပုံ
 
-```text
+```
 # add remi and epel repos
 [root@rpm-dev01  ~]# yum install epel-release yum-utils
 [root@rpm-dev01  ~]# yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
@@ -182,7 +184,7 @@ Zend Engine v3.3.10, Copyright (c) 1998-2018 Zend Technologies
 
 ## Mariadb ပေါ်တွင် freeradius အတွက် database တစ်ခုတည်ဆောက်ပုံ
 
-```text
+```
 [root@rpm-dev01  ~]# mysql -u root -p
 Enter password:     # enter the db root password previously set
 Welcome to the MariaDB monitor.  Commands end with ; or g.
@@ -204,7 +206,7 @@ MariaDB [(none)]> quit;
 
 ## freeRADIUS တွင် sql module အား activate ပြုလုပ်ပုံ
 
-```text
+```
 # create a soft link to activate the sql module
 [root@rpm-dev01  ~]# ln -s /etc/raddb/mods-available/sql /etc/raddb/mods-enabled/
 
@@ -476,9 +478,9 @@ sql {
 }
 ```
 
-အကျဉ်းအားဖြင့်တော့ ပြင်ရမယ့် line number တွေကိုပဲ highlight လုပ်ပေးထားပါတယ်။ ပထမဆုံး အနေနဲ့ line number ၃၆ ဖြစ်တဲ့ driver = “rlm\_sql\_null” ကို driver = “rlm\_sql\_mysql” ဆိုပြီးပြင်ဆင်ရမယ်။ ဒုတိယ အနေနဲ့ line number ၉၂ ဖြစ်တဲ့ dialect = “sqlite” ကို dialect = “mysql” ဆိုပြီးပြောင်းပေးရမယ်။ ပြီးတော့ line number ၉၆ ကနေပြီး ၉၉ မှာရှိတဲ့ \# တွေကိုဖယ်ပြီးတော့ အထက်မှာပြထားသလို ပြင်ဆင်ရမယ်။ ကိုယ်က MySQL database ကို တခြား server မှာ run ထားရင်တော့ လိုအပ်သလို ပြင်ဆင်ပြီးတော့ configure လုပ်နိုင်ပါတယ်။ ဒီ တစ်ခုမှာတော့ localhost မှာပဲ freeRADIUS နဲ့ Mariadb ကို အတူတူတွဲပြီးတော့ run တဲ့အတွက် localhost ဆိုပြီးထည့်ထားတာဖြစ်ပါတယ်။ နောက်တစ်ခု ပြင်ရမှာကတော့ line number ၁၀၂ မှာ radius\_db = “frad” ဆိုပြီးတော့ ပြောင်းထည့်ပေးရမှာ ဖြစ်ပါတယ်။ Line number ၂၅၀ နဲ့ ၂၅၃ မှာတော့ အထက်မှာပြထားသလို ဟုတ်မဟုတ် တချက်စစ်ကြည့်ပြီးတော့ လိုအပ်ပါက အထက်ကအတိုင်း ပြင်ဆင်ရပါ့မယ်။ နောက်တဆင့်မှာတော့ /etc/raddb/mods-enabled/sql ဆိုတဲ့ symbolic link ကို radiusd ရဲ့ group မှာ အောက်ကအတိုင်း လိုအပ်တဲ့ rights တွေပေးလိုက်ပါ့မယ်။
+အကျဉ်းအားဖြင့်တော့ ပြင်ရမယ့် line number တွေကိုပဲ highlight လုပ်ပေးထားပါတယ်။ ပထမဆုံး အနေနဲ့ line number ၃၆ ဖြစ်တဲ့ driver = “rlm\_sql\_null” ကို driver = “rlm\_sql\_mysql” ဆိုပြီးပြင်ဆင်ရမယ်။ ဒုတိယ အနေနဲ့ line number ၉၂ ဖြစ်တဲ့ dialect = “sqlite” ကို dialect = “mysql” ဆိုပြီးပြောင်းပေးရမယ်။ ပြီးတော့ line number ၉၆ ကနေပြီး ၉၉ မှာရှိတဲ့ # တွေကိုဖယ်ပြီးတော့ အထက်မှာပြထားသလို ပြင်ဆင်ရမယ်။ ကိုယ်က MySQL database ကို တခြား server မှာ run ထားရင်တော့ လိုအပ်သလို ပြင်ဆင်ပြီးတော့ configure လုပ်နိုင်ပါတယ်။ ဒီ တစ်ခုမှာတော့ localhost မှာပဲ freeRADIUS နဲ့ Mariadb ကို အတူတူတွဲပြီးတော့ run တဲ့အတွက် localhost ဆိုပြီးထည့်ထားတာဖြစ်ပါတယ်။ နောက်တစ်ခု ပြင်ရမှာကတော့ line number ၁၀၂ မှာ radius\_db = “frad” ဆိုပြီးတော့ ပြောင်းထည့်ပေးရမှာ ဖြစ်ပါတယ်။ Line number ၂၅၀ နဲ့ ၂၅၃ မှာတော့ အထက်မှာပြထားသလို ဟုတ်မဟုတ် တချက်စစ်ကြည့်ပြီးတော့ လိုအပ်ပါက အထက်ကအတိုင်း ပြင်ဆင်ရပါ့မယ်။ နောက်တဆင့်မှာတော့ /etc/raddb/mods-enabled/sql ဆိုတဲ့ symbolic link ကို radiusd ရဲ့ group မှာ အောက်ကအတိုင်း လိုအပ်တဲ့ rights တွေပေးလိုက်ပါ့မယ်။
 
-```text
+```
 [root@rpm-dev01  ~]# chgrp -h radiusd /etc/raddb/mods-enabled/sql
 
 # verify and check if you can still run radiusd as below
@@ -496,4 +498,3 @@ Ready to process requests
 ```
 
 အခုဆိုရင် freeRADIUS နဲ့ Mariadb MySQL တို့ကိုတွဲပြီး အသုံးပြုနိုင်ဖို့ အားလုံးပြင်ဆင်ပြီးပါပြီ။ နောက်တဆင့် အနေနဲ့ Dalo RADIUS WebUI နဲ့ Apache install လုပ်ပုံတို့ကို နောက်တပိုင်းမှာ ဆက်ပြီးတော့ ဖော်ပြပေးသွားပါ့မယ်။ ဒီအပိုင်းကိုတော့ ဒီမှာပဲရပ်လိုက်ပါတော့မယ်။
-
