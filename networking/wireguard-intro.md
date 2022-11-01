@@ -4,13 +4,13 @@
 
 ### WireGuard မိတ်ဆက်
 
-WireGuard ကို စာဖတ်သူ တချို့လည်းသိနေနှင့်ပြီးသား ဖြစ်နိုင်သလို၊ မသိသေးသူတွေလည်း အများကြီးရှိနိုင်ပါတယ်။ Open source ရဲ့ free VPN solution ဆိုလိုက်ရင်တော့ OpenVPN နဲ့ IPsec လိုမျိုး implementation တွေကိုလူသိများပါတယ်။ စာရေးသူ ကိုယ်တိုင်လည်း လက်ရှိအချိန်ထိ OpenVPN နဲ့ WireGuard ကိုတွဲပြီးတော့ အသုံးများပါတယ်။ ကိုယ်လိုချင်တဲ့ routed နဲ့ bridged setup မှာတော့ WireGuard \(wg\) ကိုအသုံးများပါတယ်။ စာရေးသူ နေ့စဥ်တိုင်းလို အသုံးပြုဖြစ်ပါတယ်။ WireGuard \(wg\) ရဲ့ ထူးခြားချက်က Linux kernel ရဲ့ module တစ်ခုအနေနဲ့ ရှိနေတာမို့ Linux OS နဲ့ တသားတည်း ဖြစ်နေတယ်လို့ ဆိုနိုင်ပါတယ်။ အဲ့ဒါကြောင့်လည်း performance ပိုင်းမှာ Linux ပေါ်မှာ run မယ်ဆိုရင် အခြားသော VPN solution တွေထက် အများကြီးသာပါတယ်။ VPN Server/Client ပုံစံမျိုးထက်၊ point-to-point လိုမျိုး setup မှာ WireGuard \(wg\) အသာစီးရပါတယ်။ အောက်မှာ configuration လုပ်တဲ့အခါ WireGuard ကဘယ်လောက်တောင် elegant ဖြစ်သလဲဆိုတာ တွေ့ပါလိမ့်မယ်။ site နှစ်ခုကို tunnel အနေနဲ့ တည်ဆောက်ဖို့ကို OpenVPN လို၊ IPsec လိုဘာမှ အများကြီးလုပ်စရာ မလိုပဲနဲ့ WireGuard ကို နှစ်ဘက်စလုံးမှာ install လုပ်ပြီးတော့ static configuration file တစ်ခုကို public key နဲ့ private key တို့နဲ့အတူ setup လုပ်ပေးလိုက်ရုံပါပဲ။ restriction တွေကိုလည်း လိုအပ်သလို ပြင်ဆင်ပြီးတော့ ထည့်သွင်းအသုံးပြုရုံပါပဲ။ အစပိုင်းမှာတော့ Linux အတွက်ပဲ ထုတ်ထားတာကနေအခုဆိုရင် platform နီးပါးတိုင်းမှာ တင်ပြီးတော့ အသုံးပြုလို့ရပါတယ်။ ဒီ post မှာတော့ စာရေးသူ အနေနဲ့ Linux platform မှာဘယ်လို အသုံးပြုသလဲဆိုတာကို ရှင်းပြပေးသွားပါ့မယ်။
+WireGuard ကို စာဖတ်သူ တချို့လည်းသိနေနှင့်ပြီးသား ဖြစ်နိုင်သလို၊ မသိသေးသူတွေလည်း အများကြီးရှိနိုင်ပါတယ်။ Open source ရဲ့ free VPN solution ဆိုလိုက်ရင်တော့ OpenVPN နဲ့ IPsec လိုမျိုး implementation တွေကိုလူသိများပါတယ်။ စာရေးသူ ကိုယ်တိုင်လည်း လက်ရှိအချိန်ထိ OpenVPN နဲ့ WireGuard ကိုတွဲပြီးတော့ အသုံးများပါတယ်။ ကိုယ်လိုချင်တဲ့ routed နဲ့ bridged setup မှာတော့ WireGuard (wg) ကိုအသုံးများပါတယ်။ စာရေးသူ နေ့စဥ်တိုင်းလို အသုံးပြုဖြစ်ပါတယ်။ WireGuard (wg) ရဲ့ ထူးခြားချက်က Linux kernel ရဲ့ module တစ်ခုအနေနဲ့ ရှိနေတာမို့ Linux OS နဲ့ တသားတည်း ဖြစ်နေတယ်လို့ ဆိုနိုင်ပါတယ်။ အဲ့ဒါကြောင့်လည်း performance ပိုင်းမှာ Linux ပေါ်မှာ run မယ်ဆိုရင် အခြားသော VPN solution တွေထက် အများကြီးသာပါတယ်။ VPN Server/Client ပုံစံမျိုးထက်၊ point-to-point လိုမျိုး setup မှာ WireGuard (wg) အသာစီးရပါတယ်။ အောက်မှာ configuration လုပ်တဲ့အခါ WireGuard ကဘယ်လောက်တောင် elegant ဖြစ်သလဲဆိုတာ တွေ့ပါလိမ့်မယ်။ site နှစ်ခုကို tunnel အနေနဲ့ တည်ဆောက်ဖို့ကို OpenVPN လို၊ IPsec လိုဘာမှ အများကြီးလုပ်စရာ မလိုပဲနဲ့ WireGuard ကို နှစ်ဘက်စလုံးမှာ install လုပ်ပြီးတော့ static configuration file တစ်ခုကို public key နဲ့ private key တို့နဲ့အတူ setup လုပ်ပေးလိုက်ရုံပါပဲ။ restriction တွေကိုလည်း လိုအပ်သလို ပြင်ဆင်ပြီးတော့ ထည့်သွင်းအသုံးပြုရုံပါပဲ။ အစပိုင်းမှာတော့ Linux အတွက်ပဲ ထုတ်ထားတာကနေအခုဆိုရင် platform နီးပါးတိုင်းမှာ တင်ပြီးတော့ အသုံးပြုလို့ရပါတယ်။ ဒီ post မှာတော့ စာရေးသူ အနေနဲ့ Linux platform မှာဘယ်လို အသုံးပြုသလဲဆိုတာကို ရှင်းပြပေးသွားပါ့မယ်။
 
 ### WireGuard ကို install လုပ်ပုံ
 
 **Ubuntu ပေါ်မှာ install လုပ်နည်း**
 
-```text
+```
 $ sudo apt-get install wireguard -y
 ```
 
@@ -20,7 +20,7 @@ $ sudo apt-get install wireguard -y
 
 WireGuard ကို ဘယ် Linux box မှာမဆို run လို့ရတဲ့အတွက် Linux VM သို့မဟုတ် Linux bare metal server တစ်ခုပေါ်မှာ configure လုပ်ပြီးတော့ setup လုပ်ရတာပို အဆင်ပြေပါတယ်။ အချို့သော Firewall/Router vendor အချို့မှာတော့ WireGuard ကို built-in အသုံးပြုလို့ ရအောင် အဆင်သင့် integrate လုပ်ထားတဲ့အတွက် Linux box နောက်တစ်ခုမလိုပဲနဲ့ Firewall/Router ပေါ်မှာလည်း setup လုပ်လို့ရပါတယ်။ ဒီ post မှာတော့ Linux box ကို Firewall/Router ရဲ့ အနောက်မှာ ထားပြီးတော့ setup လုပ်တဲ့ပုံစံကို ရှင်းပြသွားပါ့မယ်။ အောက်ကပုံ ကတော့ topology diagram အကြမ်းဖျင်းဖြစ်ပါတယ်။
 
-![WireGuard Topology Diagram](https://i0.wp.com/www.itmatic101.com/wp-content/uploads/2020/01/WireGuard-Topology-Diagram-1024x214.png?resize=637%2C133&ssl=1)
+<figure><img src="https://i.imgur.com/GpYhRrO.png" alt=""><figcaption><p>WireGuard Topology Diagram</p></figcaption></figure>
 
 ပုံထဲမှာတော့ ကိုယ့်အိမ်မှာ self-hosted လုပ်ထားတဲ့ Linux Server ကို WireGuard Local Node လို့ခေါ်ထားပြီးတော့ ကိုယ်အပြင်ကနေ ချိတ်ဆက်ပြီးတော့ အသုံးပြုချင်တဲ့ Laptop/PC ကို remote PC သို့မဟုတ် WireGuard Remote Node လို့ ခေါ်ထားပါတယ်။ အရှင်းဆုံးပြောမယ်ဆိုရင် WireGuard Server Node နဲ့ Client Node ဆိုပြီးမြင်မယ်ဆိုရင်လည်းရပါတယ်။ WireGuard မှာတော့ server ရယ်၊ client ရယ်လို့ မရှိပါဘူး။ ကိုယ်ကြိုက်သလို point-to-point overlay networking ပုံစံမျိုး setup လုပ်ချင်လည်းရပါတယ်။ များသောအားဖြင့် WireGuard ကိုအသုံးပြုတဲ့ ပုံစံတိုင်းမှာ တစ်ခုထက်ပိုတဲ့ remote client node တွေရှိနိုင်ပါတယ်။ WireGuard ရဲ့ architecture မှာတော့ hub-and-spoke model မျိုးကိုသာအသုံးပြုနိုင်မှာဖြစ်ပါတယ်။ Mesh overlay networking ပုံစံဖြစ်လာဖို့တော့ WireGuard project ရဲ့ Todo ထဲမှာ နောက်ပိုင်းထည့်သွားဖို့တော့ ရည်ညွန်းထားတာကိုတွေ့ရပါတယ်။ အဲ့ဒါကို အကောင်အထည် ဖော်လာဖြစ်ရင်တော့ WireGuard ကို MPLS network ပုံစံမျိုးကို home setup တွေမှာ အလွယ်တကူ အသုံးပြုလာနိုင်တော့မှာပါ။ နောက်ပြီး အရှေ့မှာပြောခဲ့သလိုပဲ WireGuard ဟာ Linux kernel ထဲမှာ ထဲထဲဝင်ဝင် integrate လုပ်ထားတဲ့အပြင် Linus Torvalds ကိုယ်တိုင် ကြိုက်နှစ်သက်လို့ Linux kernel ထဲမှာ module တစ်ခုအနေနဲ့ merge လုပ်ဖို့ ဖြစ်လာတဲ့အထိပါပဲ။ Codebase အားဖြင့် လိုင်းပေါင်း ၄၀၀၀ လောက်သာရှိပြီးတော့ ရိုးရှင်းလှတဲ့ implementation ကြောင့် အခုလို lightweight ဖြစ်ရတာလို့ စာရေးသူထင်ပါတယ်။ အကယ်လို့များကိုယ်က WireGuard ထက်ပိုပြီးတော့ ရှေ့ပြေးတဲ့ overlay networking tool ကို open source မှာ အသုံးပြုချင်တယ်ဆိုရင်တော့ နောက်ပိုင်းမှ ထွက်လာတဲ့ Nebula ဆိုတဲ့ Slack က open source လုပ်ပေးထားတဲ့ project တစ်ခုရှိပါတယ်။ Nebula ဟာအခုအချိန်ထိ စမ်းသပ်ဆဲကာလ ဖြစ်တာမို့ အချောသက်တော့ မပြီးသေးပါဘူး။ ကိုယ်ကစမ်းပြီးတော့ အသုံးပြုချင်တယ်ဆိုရင်တော့ စတင်စမ်းသပ်လို့ရပါပြီ။ စာရေးသူကိုယ်တိုင်လည်း Nebula ကိုလေ့လာဆဲ၊ စမ်းသပ်ဆဲမို့ လက်တွေမှာ အခုချပြစရာ တစ်ခုမှမရှိသေးပါဘူး။ ကိုယ်တိုင်နားလည်ပြီးရင်တော့ Nebula အတွက် post သီးသန့်တစ်ခုကို အသေးစိတ်ချပြချင်ပါတယ်။ Nebula ရဲ့ introduction ကိုတော့ ဒီ [link](https://slack.engineering/introducing-nebula-the-open-source-global-overlay-network-from-slack-884110a5579) မှာဖတ်ရှုနိုင်ပါတယ်။
 
@@ -28,7 +28,7 @@ WireGuard ကို setup လုပ်တဲ့ဘက်ကို ပြန်�
 
 #### **WireGuard ကို server node ပေါ်မှာ configure လုပ်ပုံ**
 
-```text
+```
 tyla@wg-srv-node:~$ sudo -i
 [sudo] password for tyla:  [Enter your sudoer password]
 # Generating public and private keys under /etc/wireguard directory
@@ -60,7 +60,7 @@ root@wg-srv-node:~# wg-quick up wg0
 
 **WireGuard ကို client node ပေါ်မှာ configure လုပ်ပုံ**
 
-```text
+```
 tyla@wg-cl-node:~$ sudo -i
 [sudo] password for tyla:  [Enter your sudoer password]
 # Generating public and private keys under /etc/wireguard directory
@@ -90,7 +90,7 @@ root@wg-cl-node:~# wg-quick up wg0
 
 သူ့ရဲ့ configuration ကဒါပါပဲ။ ကိုယ်လုပ်တာအကုန်မှန်တယ်ဆိုရင်တော့ wg ဆိုတဲ့ command ကို prompt မှာရိုက်ထည့်လိုက်ရင် တဘက်တချက်စီမှာ ကိုယ့်ရဲ့ peer နဲ့ဆိုင်တဲ့ အချက်အလက်တွေကို တွေ့ရမှာပဲဖြစ်ပါတယ်။ နောက်ပြီး wg server နဲ့ client node ကြားမှာ 10.1.10.0 ip ကို ping ကြည့်လို့ရတယ်ဆိုရင် wireguard ရဲ့ connection က စတင် အလုပ်လုပ်ပါပြီ။ WireGuard client node ဘက်မှာ AllowedIPs ကို ကိုယ် route ချင်တဲ့ ip address သို့မဟုတ် subnet ကိုလည်း အောက်မှာလို comma နဲ့ ထက်ပြီးတော့ ပေါင်းထည့်လို့ရပါတယ်။
 
-```text
+```
 AllowedIPs = 10.1.10.1/32, 192.168.0.0/24 
 ```
 
@@ -98,15 +98,15 @@ AllowedIPs = 10.1.10.1/32, 192.168.0.0/24
 
 နောက်တစ်ခုက… ကိုယ်က WireGuard server node ကို reboot လုပ်တိုင်း wireguard ကို system startup မှာ service တစ်ခုအနေနဲ့ autostart လုပ်ချင်တယ်ဆိုရင်တော့ အောက်ကအတိုင်း systemd ရဲ့ systemctl ကို အသုံးပြုလို့ရပါတယ်။
 
-```text
+```
 root@wg-srv-node:~# systemctl enable wg-quick@wg0.service
 ```
 
 #### Wireguard အတွက် IP Forwarding လုပ်ပုံ
 
-ကိုယ်က  LAN မှာရှိတဲ့ device တွေကို remote access လုပ်ချင်ရင် ဒီအဆင့်က မလိုအပ်ပါဘူး။ ဒါမှမဟုတ်ပဲနဲ့ internet traffic ကိုပါ ကိုယ့် VPN server ကနေထွက်စေချင်ရင်တော့ အောက်ကအတိုင်း ip forwarding ကို ပြင်ပေးရပါလိမ့်မယ်။
+ကိုယ်က LAN မှာရှိတဲ့ device တွေကို remote access လုပ်ချင်ရင် ဒီအဆင့်က မလိုအပ်ပါဘူး။ ဒါမှမဟုတ်ပဲနဲ့ internet traffic ကိုပါ ကိုယ့် VPN server ကနေထွက်စေချင်ရင်တော့ အောက်ကအတိုင်း ip forwarding ကို ပြင်ပေးရပါလိမ့်မယ်။
 
-```text
+```
 root@wg-srv-node:~# nano /etc/sysctl.conf
 
 #
@@ -181,4 +181,3 @@ net.ipv4.ip_forward=1
 Line 30 မှာရှိတဲ့ net.ipv4.ip\_forward=1 ဆိုတဲ့တခုကို uncomment လုပ်ပေးပြီးတော့ 1 လို့ ပြောင်းပေးလိုက်ပါ။
 
 ဒီလောက်ဆိုရင်တော့ WireGuard ကို setup လုပ်ပုံအတွက် လုံလောက်ပြီလို့ စာရေးသူထင်ပါတယ်။ WireGuard မှာ ဒီထက်ပိုပြီးတော့ လုပ်လို့ရတဲ့ဟာ အများကြီးကျန်ပါသေးတယ်။ အကုန်လိုက်ရှင်းရင် အရမ်းရှည်သွားမှာပါ။ အဲဒီတော့… ဒီ post ကို ဒီလောက်နဲ့ပဲ ရပ်လိုက်ပါတော့မယ်။
-
