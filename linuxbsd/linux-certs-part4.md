@@ -1,14 +1,14 @@
-# အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း (၄)
+# အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၄\)
 
 ## ပညာရှင်အဆင့် certification များ
 
-ဒီတခါတော့ Linux အတွက် ပညာရှင်အဆင့် ရှိတဲ့ certification တွေအကြောင်းကိုဆက်လက် ဖော်ပြပေးမှာဖြစ်ပါတယ်။ ဒါကတော့ LPI မှာအမြင့်ဆုံးအဆင့် ဖြစ်တဲ့ certification တွေပါ။ ကိုယ်လိုက်ချင်တဲ့ ဘက်ကိုအသေးစိတ် လေ့လာပြီးမှ ဖြေဆိုရမယ့် စာမေးပွဲ တွေဖြစ်ပါတယ်။ ကျွမ်းကျင်မှုကို အပြည့်အဝရှိမှ ဖြေဆိုလို့ရမယ့် စာမေးပွဲတွေပါ။ ဒီတဆင့်မှာတော့ Linux Enterprise Professional လို့ နာမည်ပေးထားတဲ့ အဆင့်လည်းဖြစ်ပါတယ်။ ကိုယ်လိုက်ချင်တဲ့ specialty ကိုလိုက်ပြီးတော့ LPIC-3 မှာ ၃ခုခွဲထား ပါတယ်။ အဲ့ဒီ ၃ခုကတော့ Mixed Environment, Security နဲ့ Virtualization and High Availability ဆိုပြီးတော့ ရှိပါတယ်။ တစ်ခုခြင်းစီကိုအောက်မှာ ဖော်ပြပေးသွားပါ့မယ်။ LPIC-3 certified ဖြစ်ဖို့ဆိုရင် ကိုယ်လိုက်ချင်တဲ့ specialty တစ်ခုမှာစာမေးပွဲ တစ်ခုစီ ကို ဖြေဆိုအောင်မြင်ရမှာဖြစ်ပါတယ်။ ကိုယ်က multiple specialty လိုက်ချင်ရင် တော့လည်း အကုန်လိုက်ဖြေလို့ရပါတယ်။ ဒီအဆင့်မှာတော့ အကုန်လုံး ရောနှောထားတဲ့ enterprise အဆင့်ရှိပြီး distribution တစ်ခုထဲမှာသာ အားသာလို့မရတော့ပါဘူး။ ကိုယ်က ဘယ် distro ပဲလားလား အကုန်သိထားအဆင့် neutral distro အဆင့်ထိရှိရမယ့် သဘောပါ။ ဥပမာ deb တခုတည်းကို သုံးတတ်လို့ မရတော့ဘူး၊ rpm မှာပါ ကောင်းကောင်း သုံးတတ် administrate လုပ်တတ် ရမှာဖြစ်တဲ့ သဘောပါ။
+ဒီတခါတော့ Linux အတွက် ပညာရှင်အဆင့် ရှိတဲ့ certification တွေအကြောင်းကိုဆက်လက် ဖော်ပြပေးမှာဖြစ်ပါတယ်။ ဒါကတော့ LPI မှာအမြင့်ဆုံးအဆင့် ဖြစ်တဲ့ certification တွေပါ။ ကိုယ်လိုက်ချင်တဲ့ ဘက်ကိုအသေးစိတ် လေ့လာပြီးမှ ဖြေဆိုရမယ့် စာမေးပွဲ တွေဖြစ်ပါတယ်။ ကျွမ်းကျင်မှုကို အပြည့်အဝရှိမှ ဖြေဆိုလို့ရမယ့် စာမေးပွဲတွေပါ။ ဒီတဆင့်မှာတော့ Linux Enterprise Professional လို့ နာမည်ပေးထားတဲ့ အဆင့်လည်းဖြစ်ပါတယ်။ ကိုယ်လိုက်ချင်တဲ့ specialty ကိုလိုက်ပြီးတော့ LPIC-3 မှာ ၃ခုခွဲထား ပါတယ်။ အဲ့ဒီ ၃ခုကတော့ Mixed Environment,  Security နဲ့ Virtualization and High Availability ဆိုပြီးတော့ ရှိပါတယ်။ တစ်ခုခြင်းစီကိုအောက်မှာ ဖော်ပြပေးသွားပါ့မယ်။ LPIC-3 certified ဖြစ်ဖို့ဆိုရင် ကိုယ်လိုက်ချင်တဲ့ specialty တစ်ခုမှာစာမေးပွဲ တစ်ခုစီ ကို ဖြေဆိုအောင်မြင်ရမှာဖြစ်ပါတယ်။ ကိုယ်က multiple specialty လိုက်ချင်ရင် တော့လည်း အကုန်လိုက်ဖြေလို့ရပါတယ်။ ဒီအဆင့်မှာတော့ အကုန်လုံး ရောနှောထားတဲ့ enterprise အဆင့်ရှိပြီး distribution တစ်ခုထဲမှာသာ အားသာလို့မရတော့ပါဘူး။ ကိုယ်က ဘယ် distro ပဲလားလား အကုန်သိထားအဆင့် neutral distro အဆင့်ထိရှိရမယ့် သဘောပါ။ ဥပမာ deb တခုတည်းကို သုံးတတ်လို့ မရတော့ဘူး၊ rpm မှာပါ ကောင်းကောင်း သုံးတတ် administrate လုပ်တတ် ရမှာဖြစ်တဲ့ သဘောပါ။
 
 ### LPIC-3 300: Linux Enterprise Professional Mixed Environment
 
 အောက်မှာတော့ LPIC-3 Linux Enterprise Professional Mixed Environment မဖြေဆိုခင်သိထားရမယ့် အချက်လေးတွေကို ဖော်ပြပေးသွား ပါ့မယ့်။
 
-<figure><img src="https://i.imgur.com/vfyHjUC.jpeg" alt=""><figcaption><p>LPIC-3 300: Linux Enterprise Professional Mixed Environment</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/7f7b3-lpic-3-mixedenv.jpg?w=300&h=233)
 
 #### LPIC-3 Linux Enterprise Professional Mixed Environment ရဲ့လက်ရှိ version
 
@@ -45,11 +45,11 @@ LPIC-3 Linux Enterprise Professional Mixed Environment ရဲ့ Exam 300-100 �
 
 ဒီတစ်ခုကတော့ Linux က security တွေအကြောင်းကို အသေးစိတ်လေ့လာရမှာဖြစ်ပါတယ်။ အောက်မှာကတော့ LPIC-3 303: Enterprise Professional Security မဖြေခင် ကြိုတင်သိထားသင့်တဲ့ အချက်လေးတွေပါ။
 
-<figure><img src="https://i.imgur.com/SMgW8sD.jpeg" alt=""><figcaption><p>LPIC-3 303: Linux Enterprise Professional Security</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/c8cc5-lpic-3-security.jpg?w=300&h=233)
 
 #### LPIC-3 Enterprise Professional Security ရဲ့လက်ရှိ version
 
-လက်ရှိမှာတော့ version 2.0 ဖြစ်နေပါပြီ။ သူ့မှာ ဖြေဆိုရမယ့် စာမေးပွဲ ကတော့ exam 303-200 ဖြစ်ပါတယ်။
+လက်ရှိမှာတော့  version 2.0 ဖြစ်နေပါပြီ။ သူ့မှာ ဖြေဆိုရမယ့် စာမေးပွဲ ကတော့ exam 303-200 ဖြစ်ပါတယ်။
 
 #### LPIC-3 Enterprise Professional Security မဖြေဆိုခင်လိုအပ်ချက်များ
 
@@ -77,9 +77,9 @@ LPIC-3 Enterprise Professional Security ရဲ့ Exam 303 အကြောင်
 
 ### LPIC-3 304: Enterprise Professional Virtualization and High Availability
 
-ဒီတစ်ခုကတော့ Linux က Virtualization နဲ့ High Availability တွေအကြောင်းကို အသေးစိတ်လေ့လာရမှာဖြစ်ပါတယ်။ အောက်မှာကတော့ LPIC-3 304: Enterprise Professional Virtualization and High Availability မဖြေခင် ကြိုတင်သိထားသင့်တဲ့ အချက်လေးတွေပါ။
+ဒီတစ်ခုကတော့ Linux က Virtualization နဲ့  High Availability တွေအကြောင်းကို အသေးစိတ်လေ့လာရမှာဖြစ်ပါတယ်။ အောက်မှာကတော့ LPIC-3 304: Enterprise Professional Virtualization and High Availability မဖြေခင် ကြိုတင်သိထားသင့်တဲ့ အချက်လေးတွေပါ။
 
-<figure><img src="https://i.imgur.com/4ScfO1j.jpeg" alt=""><figcaption><p>LPIC-3 304: Linux Enterprise Professional Virtualization and High Availability</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/932cf-lpic-3-vandha.jpg?w=300&h=233)
 
 #### LPIC-3 Enterprise Professional Virtualization and High Availability ရဲ့လက်ရှိ version
 
@@ -109,4 +109,5 @@ LPIC-3 Enterprise Professional Virtualization and High Availability ရဲ့ Ex
 
 နောက်တပိုင်းမှာတော့ The Linux Foundation ကပေးတဲ့ Certified Sysadmin နဲ့ Certified Engineer စာမေးပွဲတွေ အကြောင်းနဲ့ ပြင်ဆင်လို့ရတဲ့ ပုံစံလေးတွေ အကြောင်းနည်းနည်းဆက်ရေးပါ့မယ်။
 
-<figure><img src="https://i.imgur.com/SbWPH9H.png" alt=""><figcaption><p>Linux Foundation Certifications</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/e7dd9-linux-foundation-certifications.png?w=660)
+
