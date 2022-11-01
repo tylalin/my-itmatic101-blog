@@ -4,7 +4,7 @@ Keepalived အကြောင်းရေးတုန်းက VRRP ကို ne
 
 စာရေးသူ ဒီ post မှာတော့ MikroTik ကို GNS3 မှာကြိုတင်ပြင်ဆင်ထားပြီးတော့ lab တစ်ခုတည်ဆောက်ပြီးတော့ တဆင့်ချင်း ရှင်းပြခြင်းပါတယ်။ RouterOS ရဲ့ version 6.43.8 ကိုအသုံးပြုထားပြီးတော့၊ GNS3 မှာအလွယ်တကူ ရနိုင်တဲ့ webterm ကိုတော့ client အနေနဲ့ အသုံးပြုသွားမှာဖြစ်ပါတယ်။ Internet connection အတွက်တော့ NAT cloud ကိုအသုံးပြုမှာပါ။ အောက်မှာတော့ network topology ကို GNS3 မှာမြင်ရတဲ့ပုံစံဖြစ်ပါတယ်။
 
-![](https://itmatic101.com/wp-content/uploads/2022/08/mt\_vrrp\_lab-1024x489.png)
+<figure><img src="https://i.imgur.com/10sN0gv.png" alt=""><figcaption></figcaption></figure>
 
 ပုံမှာတွေ့ရတဲ့အတိုင်း လိုအပ်တဲ့ appliance ကို GNS3 project မှာတည်ဆောက်ပြီးရင်တော့၊ webterm client ကို စပြီး configure လုပ်ပါ့မယ်။ Webterm ကို configure လုပ်ဖို့အတွက်တော့ appliance ကိုအရင် stop လုပ်ထားဖို့လိုပါတယ်။ ပြီးရင် Firefox icon နဲ့ webterm ပေါ်မှာ right-click လုပ်ကာ၊ “Edit config” ဆိုတဲ့ option ကိုရွေးပေးပြီး အောက်ကအတိုင်း configure လုပ်ရပါ့မယ်။
 
@@ -119,6 +119,6 @@ set name=r2
 
 Webterm client ဘက်နေစမ်းသပ်ဖို့အတွက် အရင်ဆုံး internet connection ရ မရကို အရင်ဆုံးစစ်ကြည့်လိုက်ပါ။ Client ဘက်ကနေ gateway IP 192.168.0.1 ကိုရော၊ google.com ကိုရော ping လို့ရတယ်ဆိုရင် စပြီးတော့ VRRP အလုပ် လုပ်သလားကို စမ်းသပ်ကြည့်လို့ ရနိုင်ပါပြီ။ စမ်းဖို့အတွက် webterm client မှာ terminal ကိုဖွင့်ပြီး google.com ကို အဆက်မပြတ် ping ထားပါ။ ပြီးရင် r1 ကို powered off ကြည့်လိုက်ပါ။ Ping ကတောက်လျှောက်ဆက်ပြီးတော့ response ပြန်ရနေရပါ့မယ်။
 
-![](https://itmatic101.com/wp-content/uploads/2022/08/ping\_test.png)
+<figure><img src="https://i.imgur.com/4MGpBxy.png" alt=""><figcaption></figcaption></figure>
 
 ဒီ post မှာတော့ VRRP ကို MikroTik RouterOS မှာ configure ဘယ်လိုလုပ်လို့ရသလဲဆိုတာ အကျဉ်းချုပ် ခပ်သွက်သွက်ကလေး ရှင်းပြပေးထားပါတယ်။ VRRP အလုပ် လုပ်မလုပ်ကိုလည်း လက်တွေ့မှာ စမ်းသပ်လို့ရအောင်လို့ GNS3 မှာ lab တစ်ခုတည်ဆောက်ပြီးလည်း ပြပေးထားတဲ့အတွက် အဆင်ပြေမယ်လို့ ထင်ပါတယ်။ ဒီ post ကိုတော့ ဒီလောက်နဲ့ပဲ ရပ်လိုက်ပါတော့မယ်။
