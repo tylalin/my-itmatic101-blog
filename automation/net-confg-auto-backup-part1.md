@@ -1,17 +1,12 @@
----
-cover: https://i.imgur.com/C8YTDtE.png
-coverY: 0
----
+# FTP/TFTP server ပေါ်မှာ network config တွေကို auto backup လုပ်ပုံ – အပိုင်း \(၁\)
 
-# FTP/TFTP server ပေါ်မှာ network config တွေကို auto backup လုပ်ပုံ – အပိုင်း (၁)
-
-ဒီတခါလည်း အလုပ်နဲ့ပတ်သတ်ပြီးတော့ စဖြစ်တဲ့ project တစ်ခုအကြောင်းကို တင်ပြချင်လို့ ဒီ post ကိုရေးဖြစ်တာပါ။ အရင် post တွေမှာရေးသလိုပဲ စာရေးသူ အလုပ်နဲ့ပတ်သတ်ပြီးတော့ ဆိုင်ရာဆိုင်ရာ workflow တော်တော်များများကို စိတ်တိုင်းမကျပါဘူး။ task တော်တော်များများကို manual လိုက်လုပ်နေရလို့ အချို့ အပိုင်းတွေမှာ စာရေးသူ တော်တော်လေးကို စိတ်ညစ်ရပါတယ်။ manual လုပ်ပြီးဆိုကတည်းက productivity လည်းကျသွားပြီးတော့ ကိုယ်လုပ်ရမယ့် အရေးကြီးတဲ့ project တွေပေါ်မှာ အာရုံမစိုက်နိုင်တော့ပါဘူး။ အဲ့လိုနဲ့ integration နဲ့ optimization အတွက် လိုအပ်တဲ့ လုပ်ငန်းဆောင်တာ တွေကို မလုပ်နိုင်တဲ့အတွက် customer base များလာတာနဲ့အမျှ အလုပ်ပို ရှုပ်လာရပြီးတော့ အလုပ်လည်း အချိန်တိုအတွင်းမပြီးနိုင်တော့ပါဘူး။ အချို့ SMB (small and medium-sized business) တွေမှာ အဲ့လိုမျိုး manual process ကိုပဲအသုံးပြုပြီးတော့ အလုပ်ဖြစ်အောင်လို့ ဆက်သွားကြပါတယ်။ အချို့ဆိုရင် automatic workflow အတွက် research နဲ့ staging လုပ်တာကို လုံးဝအားမပေးပါဘူး။ အလုပ်ချိန်အတွင်းမှာ အချိန်ကုန်တယ်လို့ ယူဆတဲ့အတွက် မှားယွင်းတဲ့ work culture တွေကို adopt လုပ်ပါတယ်။ စာရေးသူအမြင်တော့ အဲ့ဒီလို business မျိုးဟာ creativity နဲ့ innovation ကို အားမပေးတဲ့အတွက် SMB အနေနဲ့ပဲ အချိန်တော်တော်ကြာကြာ ဆက်သွားရပါတယ်။ ဘယ်လိုပဲဖြစ်ဖြစ် စာရေးသူ တကိုယ်ရေအမြင်ကတော့ လက်ရှိ work culture ကောင်းသည်ဖြစ်စေ၊ မကောင်းသည်ဖြစ်စေ၊ ကိုယ်က management နဲ့ အဆင်ပြေသည်ဖြစ်စေ၊ အဆင်မပြေသည်ဖြစ်စေ ကိုယ်လုပ်တဲ့ အလုပ်ကို အလေးပေး တန်ဖိုးထားနိုင်ခြင်းဟာ ကိုယ်ဘယ်သွားသွား ကိုယ့်နောက်ပါလာမယ့်၊ ကိုယ်သယ်သွားလို့ရမယ့် အဖိုးတန် အရည်အချင်းတစ်ခုဖြစ်တယ်လို့ မြင်ပါတယ်။ ဆိုလိုချင်တာကတော့ ကိုယ်လုပ်လို့ရသလောက်တော့ ဆက်လုပ်နေရပါ့မယ်။ ကိုယ်လုပ်တဲ့ အလုပ်ပေါ်မှာ စေတနာထားတတ်ရပါမယ်။ အဲ့ဒီအတွက်လည်း ကိုယ့်မှာ အကျိုးမယုတ်ပါဘူး။ စိတ်ထားတာမှန်ရင် နောင်သံတရာ ထိအောင်ပါနိုင်ပါတယ်။ ကဲ… တွေးမိတဲ့ work culture အကြောင်းလေးပြောရင်းနဲ့ တရားခွေလည်း ဖြစ်သွားတော့မယ်။ FTP/TFTP အကြောင်းလေး ဆက်သွား လိုက်ရအောင်…
+ဒီတခါလည်း အလုပ်နဲ့ပတ်သတ်ပြီးတော့ စဖြစ်တဲ့ project တစ်ခုအကြောင်းကို တင်ပြချင်လို့ ဒီ post ကိုရေးဖြစ်တာပါ။ အရင် post တွေမှာရေးသလိုပဲ စာရေးသူ အလုပ်နဲ့ပတ်သတ်ပြီးတော့ ဆိုင်ရာဆိုင်ရာ workflow တော်တော်များများကို စိတ်တိုင်းမကျပါဘူး။ task တော်တော်များများကို manual လိုက်လုပ်နေရလို့ အချို့ အပိုင်းတွေမှာ စာရေးသူ တော်တော်လေးကို စိတ်ညစ်ရပါတယ်။ manual လုပ်ပြီးဆိုကတည်းက productivity လည်းကျသွားပြီးတော့ ကိုယ်လုပ်ရမယ့် အရေးကြီးတဲ့ project တွေပေါ်မှာ အာရုံမစိုက်နိုင်တော့ပါဘူး။ အဲ့လိုနဲ့ integration နဲ့ optimization အတွက် လိုအပ်တဲ့ လုပ်ငန်းဆောင်တာ တွေကို မလုပ်နိုင်တဲ့အတွက် customer base များလာတာနဲ့အမျှ အလုပ်ပို ရှုပ်လာရပြီးတော့ အလုပ်လည်း အချိန်တိုအတွင်းမပြီးနိုင်တော့ပါဘူး။ အချို့ SMB \(small and medium-sized business\) တွေမှာ အဲ့လိုမျိုး manual process ကိုပဲအသုံးပြုပြီးတော့ အလုပ်ဖြစ်အောင်လို့ ဆက်သွားကြပါတယ်။ အချို့ဆိုရင် automatic workflow အတွက် research နဲ့ staging လုပ်တာကို လုံးဝအားမပေးပါဘူး။ အလုပ်ချိန်အတွင်းမှာ အချိန်ကုန်တယ်လို့ ယူဆတဲ့အတွက် မှားယွင်းတဲ့ work culture တွေကို adopt လုပ်ပါတယ်။ စာရေးသူအမြင်တော့ အဲ့ဒီလို business မျိုးဟာ creativity နဲ့ innovation ကို အားမပေးတဲ့အတွက် SMB အနေနဲ့ပဲ အချိန်တော်တော်ကြာကြာ ဆက်သွားရပါတယ်။ ဘယ်လိုပဲဖြစ်ဖြစ် စာရေးသူ တကိုယ်ရေအမြင်ကတော့ လက်ရှိ work culture ကောင်းသည်ဖြစ်စေ၊ မကောင်းသည်ဖြစ်စေ၊ ကိုယ်က management နဲ့ အဆင်ပြေသည်ဖြစ်စေ၊ အဆင်မပြေသည်ဖြစ်စေ ကိုယ်လုပ်တဲ့ အလုပ်ကို အလေးပေး တန်ဖိုးထားနိုင်ခြင်းဟာ ကိုယ်ဘယ်သွားသွား ကိုယ့်နောက်ပါလာမယ့်၊ ကိုယ်သယ်သွားလို့ရမယ့် အဖိုးတန် အရည်အချင်းတစ်ခုဖြစ်တယ်လို့ မြင်ပါတယ်။ ဆိုလိုချင်တာကတော့ ကိုယ်လုပ်လို့ရသလောက်တော့ ဆက်လုပ်နေရပါ့မယ်။ ကိုယ်လုပ်တဲ့ အလုပ်ပေါ်မှာ စေတနာထားတတ်ရပါမယ်။ အဲ့ဒီအတွက်လည်း ကိုယ့်မှာ အကျိုးမယုတ်ပါဘူး။ စိတ်ထားတာမှန်ရင် နောင်သံတရာ ထိအောင်ပါနိုင်ပါတယ်။ ကဲ… တွေးမိတဲ့ work culture အကြောင်းလေးပြောရင်းနဲ့ တရားခွေလည်း ဖြစ်သွားတော့မယ်။ FTP/TFTP အကြောင်းလေး ဆက်သွား လိုက်ရအောင်…
 
 စစချင်းတုန်းက အလုပ်မှာ manage လုပ်ရတဲ့ network ထဲက router နဲ့ switch တွေရဲ့ config ကို backup လုပ်ချင်ရင် တခုချင်းစီ ssh login လုပ်ပြီးတော့ copy ရပါတယ်။ network မှာ device များလာတာနဲ့ အမျှ manual process ဖြစ်တဲ့ copy သွားသွားလုပ်ရတာ သိပ်ပြီးတော့ အလုပ်မဖြစ်တော့ပါဘူး။ အချိန်ကုန်တယ်၊ လူလည်းပင်ပန်းပါတယ်။ အဲ့ဒီတော့ script တွေကို အသုံးပြုပြီးတော့ automate လုပ်ဖို့ စာရေးသူ စဉ်းစားပါတော့တယ်။ ပထမတော့ TCL/Expect ကိုအသုံးပြုပြီးတော့ scripted automation လုပ်မယ်ဆိုပြီးတော့ အတွေးလေး ရပါတယ်။ ပြဿနာက အလုပ်မှာ က multi-vendors router နဲ့ switch တွေအသုံးပြုတဲ့အတွက် TCL/Expect နဲ့ ဆို Cisco မဟုတ်တဲ့ device တွေမှာ အခက်အခဲ အချို့ရှိနေတာကို သွားပြီးတွေ့ရပါတယ်။ အဲ့ဒီတော့ vendor-agnostic ဖြစ်မယ့် neutral backup process ကို တစ်ခုချင်းစီလိုက်ပြီးတော့ research လုပ်ရပါတော့တယ်။ အချိန်တော့ နည်းနည်းကုန်ပါတယ်၊ သို့သော် အလုပ်ဖြစ်မယ်ဆိုရင် အစပိုင်းတော့နည်းနည်း အလုပ်ရှုပ်မယ်ဆိုတာလည်း ကြိုပြီးတော့ တွက်ထားပြီးသားပါ။ ဒီ post တွင် ပထမတပိုင်း CentOS 7 ပေါ်မှာ လုပ်အပ်တဲ့ FTP နဲ့ TFTP ကိုဘယ်လို install လုပ်သလဲ၊ configure လုပ်သလဲဆိုတာကို အရင်ဆုံးသွားလိုက်ပါ့မယ်။ နောက်ပြီးတော့မှ အဲ့ဒီ FTP နဲ့ TFTP ကိုအသုံးပြုပြီးတော့ multi-vendors device တွေရဲ့ config တွေကို ဘယ်လို backup လုပ်သလဲဆိုတာကို ဆက်ရှင်းပါ့မယ်။ ဒီ process ကိုပဲ ပုံစံအမျိုးမျိုးနဲ့ ဖန်တီးယူလို့ရပါတယ်။ စာရေးသူ အသုံးပြုထားတဲ့ workflow က ကိုယ်လက်လှမ်းမှီသလောက် ရှာကျန်ပြီးတော့ လုပ်ထားတဲ့အတွက် အခြားလူတွေရဲ့ workflow နဲ့ နည်းနည်းတော့ ကွာပါလိမ့်မယ်။ နားလည်ရလွယ်မယ်လို့ တော့ စာရေးသူထင်ပါတယ်။ အရင်ဆုံး CentOS 7 ကို install လုပ်ပါ။ ကိုယ့်ရဲ့ CentOS 7 box ဟာ internet access ရှိနေရပါ့မယ်။ ပြီးရင်တော့ sudo yum update -y လုပ်ဖို့လည်း မမေ့ပါနဲ့။ အားလုံးသိကြပြီးတဲ့အတိုင်း CentOS 7 box ကိုဘယ်လို setup လုပ်သလဲ ဆိုတာကို အသေးစိတ် မသွားတော့ပါဘူး။ Install လုပ်ပြီးသား၊ update လုပ်ပြီးသား CentOS 7 ပေါ်မှာ FTP နဲ့ TFTP ကို ဘယ်လို setup လုပ်သလဲဆိုတာကို ဆက်ပြီးတော့သွားပါ့မယ်။
 
 **FTP server ကို setup လုပ်ပုံ**
 
-```
+```text
 tyla@rpm-dev02:~$ sudo -i
 
 [sudo] password for tyla: 
@@ -25,7 +20,7 @@ root@rpm-dev02:~# vi /etc/vsftpd/vsftpd.conf
 
 vsftpd.conf file မှာ အောက်က အတိုင်း လိုသလို ပြင်လိုက်ပါ။
 
-```
+```text
 # disable anonymous login
 anonymous_enable=NO
 
@@ -39,7 +34,7 @@ use_localtime=YES
 
 နောက်ပြီးရင်တော့ vsftpd ကို အောက်ကအတိုင်း enable နဲ့ start လုပ်လိုက်ပါ။
 
-```
+```text
 # enable vsftpd daemon to start upon system reboot
 root@rpm-dev02:~# systemctl enable vsftpd
 
@@ -94,7 +89,7 @@ FTP server ကတော့ အသုံးပြုလို့ရနေပါ�
 
 **TFTP server ကို setup လုပ်ပုံ**
 
-```
+```text
 # install tftp-server and xinetd
 root@rpm-dev02:~# yum install tftp tftp-server* xinetd*
 
@@ -102,7 +97,7 @@ root@rpm-dev02:~# yum install tftp tftp-server* xinetd*
 root@rpm-dev02:~# vi /etc/xinetd.d/tftp
 ```
 
-```
+```text
 # default: off
 # description: The tftp server serves files using the trivial file transfer \
 #	protocol.  The tftp protocol is often used to boot diskless \
@@ -125,7 +120,7 @@ service tftp
 
 အထက်မှာပြထားတဲ့ အတိုင်း line number 13 နဲ့ 14 ကို ပြင်ဆင်ဖို့လိုပါတယ်။ ပြီးရင်တော့ save လုပ်ပြီးတော့ file ကိုပိတ်လိုက်ပါ။ နောက်တဆင့် အနေနဲ့ tftp အတွက် directory တစ်ခုကို ဖန်တီးဖို့လိုပါလိမ့်မယ်။
 
-```
+```text
 # create a tftproot folder and set required permissions
 root@rpm-dev02:~# mkdir /tftproot
 root@rpm-dev02:~# chmod -R 777 /tftproot
@@ -134,7 +129,7 @@ root@rpm-dev02:~# chmod -R 777 /tftproot
 root@rpm-dev02:~# vi /usr/lib/systemd/system/tftp.service
 ```
 
-```
+```text
 [Unit]
 Description=Tftp Server
 Requires=tftp.socket
@@ -149,7 +144,7 @@ Also=tftp.socket
 WantedBy=multi-user.target
 ```
 
-```
+```text
 # enable and start xinetd
 root@rpm-dev02:~# systemctl enable xinetd
 root@rpm-dev02:~# systemctl start xinetd
@@ -159,7 +154,7 @@ root@rpm-dev02:~# systemctl enable tftp
 root@rpm-dev02:~# systemctl start tftp
 ```
 
-```
+```text
 # check tftp permission in SELinux
 root@rpm-dev02:~# getsebool -a | grep tftp
 tftp_anon_write --> off
@@ -183,3 +178,4 @@ root@rpm-dev02:~# systemctl start firewalld
 ```
 
 အခုဆိုရင်တော့ TFTP server လည်း စတင်အသုံးပြုလို့ရပါပြီ။ နောက်တပိုင်းမှာတော့ multi-vendors network device တွေဘက်မှာ configuration file ကို FTP/TFTP ဆီကို လှမ်းပြီးတော့ ဘယ်လို သိမ်းလို့ရအောင် လုပ်သလဲဆိုတာကို ဆက်လက်ဖော်ပြသွားပါ့မယ်။ အထက်မှာပြောသလိုပဲ TCL/Expect လိုမျိုး script တွေကို အသုံးမပြုပဲနဲ့ neutral အတိုင်း FTP/TFTP server ပေါ်မှာ သိမ်းလို့ရတဲ့ vendor တစ်ခုချင်းစီရဲ့ built-in feature တွေပဲ အသုံးပြုသွားမှာဖြစ်ပါတယ်။ နောက်ဆုံးမှာတော့ FTP/TFTP server ပေါ်မှာ bash script တစ်ခုကို အသုံးပြုပြီးတော့ config file တွေကို housekeeping လုပ်သလဲဆိုတာကို ဆက်ပြီးတော့ ဖော်ပြပေးသွားပါ့မယ်။ ဒီအပိုင်းကိုတော့ ဒီမှာပဲရပ်လိုက်ပါတော့မယ်။
+

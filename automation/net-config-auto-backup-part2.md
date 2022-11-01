@@ -1,9 +1,4 @@
----
-cover: https://i.imgur.com/C8YTDtE.png
-coverY: 0
----
-
-# FTP/TFTP server ပေါ်မှာ network config တွေကို auto backup လုပ်ပုံ – အပိုင်း (၂)
+# FTP/TFTP server ပေါ်မှာ network config တွေကို auto backup လုပ်ပုံ – အပိုင်း \(၂\)
 
 အရှေ့တပိုင်းမှာတော့ လိုအပ်တဲ့ FTP/TFTP server အတွက်အားလုံးပြင်ဆင်ပြီးသွားပါပြီ။ ဒီ post မှာတော့ network device အမျိုးမျိုးမှာ ဘယ်လိုမျိုး auto config backup အတွက် trigger တွေကို ဖန်တီးနိုင်သလဲ ဆိုတာ ကိုဆက်ပြီးတော့ ရှင်းပြသွားပါ့မယ်။ ပထမပိုင်းမှာ စာရေးသူ ပြောတဲ့အတိုင်း အလုပ်မှာက multi-vendors networking device တွေကို အသုံးပြုထားတဲ့အတွက် တစ်ခုချင်းစီမှာဘယ်လိုမျိုး built-in features တွေကို အသုံးပြုသလဲဆိုတာကို ရှင်းပါ့မယ်။ အသုံးပြုထားတဲ့ networking device vendors နဲ့ သက်ဆိုင်ရာ OS တွေကတော့ Cisco IOS XE၊ Huawei VRP၊ HPE ProCurve၊ FortiGate နဲ့ MikroTik RouterOS တို့ပဲဖြစ်ပါတယ်။ Cisco ကိုတော့ အားလုံးသိထားတဲ့အတိုင်း လူတော်တော်များများ ကျွမ်းကျင်စွာ အသုံးပြုတတ်ပါတယ်။ အဓိက အားဖြင့်တော့ Cisco ရဲ့training နဲ့ certification တွေဟာ consumer-marketing အတွက်တော့ တော်တော်အားကြီးတဲ့ လွှမ်းမိုးမှု တစ်ခုလို့ဆိုရမှာပါ။ စာရေးသူ အတွက်တော့ Cisco ဟာ networking ဘက်မှာ အင်အားကြီးလွန်းပြီးတော့၊ ဈေးလည်းအလွန်ကြီးတဲ့ product တစ်ခုအနေနဲ့ မြင်ပါတယ်။ နောက်ပြီးတော့ Cisco ဟာ Microsoft လိုပဲ အလွန်ရှုပ် ထွေးတဲ့ licensing model ရှိတဲ့ အတွက်တခါတခါ အဲ့ဒီ licensing ကိုနားလည်ဖို့ကိုပဲ တော်တော်လေးအချိန်ယူရပါတယ်။ စာရေးသူအတွက်တော့ licensing ဆိုတာ vendor အတွက် အကျိုးအမြတ်ရှိပြီး consumer အတွက်တော့ မလိုအပ်ပဲ ကုန်တဲ့ အချိန်နဲ့ ပိုက်ဆံတွေလို့တာ မြင်ပါတယ်။ ရေဘူရအားဖြင့်တော့ HPE ProCurve နဲ့ Huawei VRP platform တွေမှာ hardware ကိုဝယ်လိုက်တာနဲ့ သူနဲ့ ပါလာတဲ့ feature တွေအကုန်လုံးကို ယူပြီးတော့ အသုံးပြုလို့ရပါတယ်။ ဘာ DNA essentials တို့၊ DNA advantage တို့လို license ကိုထက်ပြီးတော့ ထည့်စရာမလိုပါဘူး။ Cisco မှာတော့ လိုအပ်တဲ့ license မရှိရင် hardware က support လုပ်သော်လည်း အချို့ feature တွေကို အသုံးပြုလို့ မရပါဘူး။ Licensing နဲ့ subscription မှာပဲ တော်တော်လေးကို အကုန်အကျများနေပါပြီ။
 
@@ -17,7 +12,7 @@ Firewall နဲ့ security appliance အနေနဲ့တော့ FortiGate �
 
 **Cisco IOS XE မှာ configure လုပ်ပုံ**
 
-```
+```text
 !
 !
 ! # get into global configuration mode
@@ -49,7 +44,7 @@ archive
 
 **Huawei VRP မှာ configure လုပ်ပုံ**
 
-```
+```text
 # get into system-view which is equivalent of configure terminal in Cisco
 system-view
 
@@ -64,7 +59,7 @@ Huawei မှာတော့ နည်းနည်းပိုရှင်းပ
 
 **HPE ProCurve မှာ configure လုပ်ပုံ**
 
-```
+```text
 # get into system-view which is equivalent of configure terminal in Cisco
 system-view
 
@@ -93,7 +88,7 @@ HPE ProCurve မှာကြတော့ နည်းနည်းလေး က�
 
 **MikroTik RouterOS မှာ configure လုပ်ပုံ**
 
-```
+```text
 # create a scheduler called AutoFTPBackupConfig
 /system scheduler
 add interval=1d name=AutoFTPBackupConfig on-event=AutoFTPBackupConfig policy=\
@@ -142,7 +137,7 @@ add name=AutoFTPBackupConfig owner=dnxadm policy=\
 
 ဒါကတော့ MikroTik မှာ scheduler တစ်ခု နဲ့ script တစ်ခု ဖန်တီးတဲ့ ပုံစံဖြစ်ပါတယ်။ CLI မှာ အသုံးပြုလို့ရတဲ့ commands sequence တွေကို ဖော်ပြပေးထားတာပါ။ Winbox ကို အသုံးပြုပြီးတော့ GUI သုံးမယ်ဆိုရင် တော့ အောက်က script ကို ထည့်သွင်းအသုံးပြုလို့ရပါတယ်။ Syntax နဲ့ command အသေးစိတ်ကိုတော့ MikroTik အတွက် မရှင်းတော့ပါ။ လုပ်ငန်းစဥ်ကတော့ အထက်က device တွေမှာလိုပဲ နေ့တိုင်း config backup လုပ်မယ်လို့ scheduler မှာသတ်မှတ်ပေးထားတာပဲဖြစ်ပါတယ်။ Script မှာ filename ကို ကိုယ်လိုချင်တဲ့ ပုံစံထွက်အောင်လို့ လုပ်ရင်းနဲ့ အနည်းရှည်သွားတာပဲဖြစ်ပါတယ်။
 
-```
+```text
 # configure ftp server, username and password
  :local ftphost "192.168.105.10"
  :local ftpuser "gnu-ftp01"
@@ -177,7 +172,7 @@ add name=AutoFTPBackupConfig owner=dnxadm policy=\
 
 **FortiGate မှာ configure လုပ်ပုံ**
 
-```
+```text
 # configure an auto-script to trigger a config backup file to ftp
 config system auto-script 
     edit "backup" 
@@ -191,11 +186,11 @@ config system auto-script
 end
 ```
 
-FortiGate မှာတော့ interval ကို 86400 seconds (တနည်းအားဖြစ် ရက်တိုင်း) ဆိုပြီးတော့ သတ်မှတ်ပေးလိုက်ပါတယ်။ MikroTik နည်းတူ script ရေးပြီးတော့ schedule လုပ်ပေးလိုက်ရုံပါပဲ။ ဒီတစ်ခုကိုလည်း syntax နဲ့ command ကို အသေးစိတ်မရှင်းလိုတော့ပါ။ Post အရမ်းရှည်သွားမှာကိုလည်း စိုးရိမ်လို့ပါ။ syntax နဲ့ commands တွေကို ကျွမ်းကျင်မှုကတော့ ကိုယ်ဘယ်လောက် သိချင်သလဲဆိုတာ ပေါ်မူတည်ပြီးတော့ လေ့လာရင်း တတ်ကျွမ်းလာနိုင်ပါတယ်။ အရမ်းခက်တဲ့ အရာတော့မဟုတ်ပါဘူး။ ဆိုလိုချင်တာက routing protocol တွေနဲ့ switching ရဲ့ အလုပ်လုပ်ပုံကို သိတာနဲ့ အဲ့ဒီ routing protocol နဲ့ switching commands တွေကို မှတ်မိတာ သိတာနဲ့ မတူပါဘူး။ အဲ့ဒါတွေဘယ်လို အလုပ်လုပ်သလဲ ဆိုတာသိပြီးတော့ ဘယ် commands တွေကို မှန်မှန်ကန်ကန် အသုံးပြုရသလဲဆိုတာကို သိမှတာ အသိပညာ အတတ်ပညာရယ်လို့ ခေါ်ရမှာ ဖြစ်ပါတယ်။ အဲ့ဒီ အချက်ကို သေသေချာချာနားလည်ဖို့တော့ လိုပါလိမ့်မယ်။ နောက်မို့ဆိုရင် ခရီးသိပ်ရောက်မှာမဟုတ်ပါဘူး။
+FortiGate မှာတော့ interval ကို 86400 seconds \(တနည်းအားဖြစ် ရက်တိုင်း\) ဆိုပြီးတော့ သတ်မှတ်ပေးလိုက်ပါတယ်။ MikroTik နည်းတူ script ရေးပြီးတော့ schedule လုပ်ပေးလိုက်ရုံပါပဲ။ ဒီတစ်ခုကိုလည်း syntax နဲ့ command ကို အသေးစိတ်မရှင်းလိုတော့ပါ။ Post အရမ်းရှည်သွားမှာကိုလည်း စိုးရိမ်လို့ပါ။ syntax နဲ့ commands တွေကို ကျွမ်းကျင်မှုကတော့ ကိုယ်ဘယ်လောက် သိချင်သလဲဆိုတာ ပေါ်မူတည်ပြီးတော့ လေ့လာရင်း တတ်ကျွမ်းလာနိုင်ပါတယ်။ အရမ်းခက်တဲ့ အရာတော့မဟုတ်ပါဘူး။ ဆိုလိုချင်တာက routing protocol တွေနဲ့ switching ရဲ့ အလုပ်လုပ်ပုံကို သိတာနဲ့ အဲ့ဒီ routing protocol နဲ့ switching commands တွေကို မှတ်မိတာ သိတာနဲ့ မတူပါဘူး။ အဲ့ဒါတွေဘယ်လို အလုပ်လုပ်သလဲ ဆိုတာသိပြီးတော့ ဘယ် commands တွေကို မှန်မှန်ကန်ကန် အသုံးပြုရသလဲဆိုတာကို သိမှတာ အသိပညာ အတတ်ပညာရယ်လို့ ခေါ်ရမှာ ဖြစ်ပါတယ်။ အဲ့ဒီ အချက်ကို သေသေချာချာနားလည်ဖို့တော့ လိုပါလိမ့်မယ်။ နောက်မို့ဆိုရင် ခရီးသိပ်ရောက်မှာမဟုတ်ပါဘူး။
 
 နောက်ဆုံးအနေနဲ့ အထက်မှာရှင်းပြသလို backup လုပ်ထားတဲ့ config file တွေကို ဘယ်လို housekeeping လုပ်သလဲဆိုတာ အချပ်ပိုအနေနဲ့ နည်းနည်းရှင်းလိုပါတယ်။ အောက်မှာတော့ housekeeping.sh ဆိုတဲ့ bash script မှာပါတဲ့ commands sequence တွေပဲဖြစ်ပါတယ်။ အဲ့ဒီ script ကို မ run ခင်တော့ root directory မှာ အောက်က diretories တွေကို အရင်ဆုံး တည်ဆောက်ရပါ့မယ်။
 
-```
+```text
 # create required directories at root
 root@rpm-dev02:~# mkdir -p /configs/cisco /configs/hpe /configs/huawei /configs/mikrotik /configs/fortigate
 
@@ -233,7 +228,7 @@ mv fw01.conf fw01-$(date +'%Y%m%d').conf 2> /dev/null
 
 အထက်က script ကို housekeeping လုပ်ဖို့အတွက် အသုံးပြုပြီးတော့ crontab နဲ့ ညတိုင်း run ဖို့ကို အောက်ကအတိုင်း schedule လုပ်ရပါလိမ့်မယ်။ နောက်ပြီးတော့ အပတ်တိုင်း ၃ လကျော်ကြာသွား ပြီးတဲ့ config file တွေကို remove လုပ်ပစ်ပါ့မယ်။ နောက်မို့ဆိုရင် config file တွေအရမ်းများလာပြီး ftp server ပေါ်မှာ space ကုန်မှာစိုးလို့ပါ။
 
-```
+```text
 # create a cron job to run the housekeeping script every night
 root@rpm-dev02:~# crontab -e 
 
@@ -248,3 +243,4 @@ root@rpm-dev02:~# crontab -e
 ဒီ housekeeping.sh bash script နဲ့ cron job ဟာ စာရေးသူ လိုအပ်သလို အသုံးပြုလို့ရအောင်လို့ လုပ်ထားတာဖြစ်တဲ့အတွက် ပြီးပြည့်စုံတဲ့ workflow တော့မဟုတ်ပါ။ သို့သော်စာရေးသူ အတွက်တော့ အလုပ်ဖြစ်ပါတယ်။
 
 ဒါကတော့ ftp/tftp ကိုအသုံးပြုပြီးတော့ multi-vendors networking device တွေရဲ့ config ကို auto backup လုပ်နိုင်တဲ့ workflow လေးတစ်ခုပဲဖြစ်ပါတယ်။ တခြားသော နည်းလမ်းတွေလည်းရှိပါတယ်။ ဒီ workflow ကတော့ စာရေးသူ အတွက် ကိုက်တဲ့ workflow ဖြစ်တဲ့အတွက် အခုလို ရှင်းပြပေးရ ခြင်းဖြစ်ပါတယ်။ ဒီ post ကို ဒီမှာပဲရပ်လိုက်ပါတော့မယ်။ အားလုံးအဆင်ပြေမယ်လို့ မျှော်လင့်ပါတယ်။
+
