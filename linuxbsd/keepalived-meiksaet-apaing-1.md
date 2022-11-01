@@ -1,15 +1,10 @@
----
-cover: https://i.imgur.com/Gdpe6jZ.png
-coverY: 0
----
-
 # Keepalived မိတ်ဆက် – အပိုင်း (၁)
 
 နည်းပညာနဲ့ ပတ်သတ်လာရင် Linux မှာလုပ်လို့ မရနိုင်တာ မရှိသလောက်ပါပဲ။ အခြားသော operating system တွေနဲ့ ကွာခြားချက်ကတော့ ကိုယ့်အိမ်မှာ စမ်းသပ်ချင်လို့လုပ်တဲ့ setup မှာရနိုင်တာနဲ့ production မှာစနစ်တကျ တည်ဆောက်ပြီးမှာရလာတဲ့ setupအတွက် ရနိုင်တာအများကြီး မကွာခြားပါဘူး။ Windows လို operating system မှာ trial တွေရနိုင်သော်လည်း ရေရှည်စမ်းသပ်အသုံးပြုဖို့အတွက်ကြတော့ ဘာမှများများစားစားမရှိသလိုမျိုးခံစားရပါတယ်။ တဘက်မှာလည်း BSD တို့လို alternative operating system တွေရှိသော်လည်း Linux မှာလောက်ပြီးပြည့်စုံတယ်လို့ မခံစားရပြန်ပါဘူး။ Tool တွေစုံစုံလင်လင်နဲ့ ပြီးပြည်စုံတဲ့ platform တစ်ခုလိုမျိုး စာရေးသူ အမြဲခံစားရပါတယ်။ အဲ့ဒါကြောင့်လည်း အရှေ့မှာထပ်ခါထပ်ခါ ပြောခဲ့သလိုမျိုးပဲ Linux operating system ကို မြတ်မြတ်နိုးနိုး စတင်လေ့လာလိုက်ကတည်းက နည်းပညာအတွက် သင်ကြားမှုမှာ ပိုမိုသင်ယူရလွယ်ကူလာပြီး တိုးတက်နှုန်းလည်း ပိုမြန်လာနိုင်တာတော့ စာရေးသူ တယောက်တည်းရဲ့ အတွေ့အကြုံ တစ်ခုတည်း ဖြစ်မယ်မထင်ပါဘူး။ ဒီ့အတွက် Linux လိုမျိုး ပြီးပြည့်စုံတဲ့ operating system တစ်ခုလည်းဖြစ်၊ open-source မှာလည်း လမ်းပြရှေ့ဆောင်လည်း ဖြစ်တဲ့အတွက် လေ့လာဖြစ်အောင်လေ့လာဖို့ကို တိုက်တွန်းလိုပါတယ်။
 
 ဒီ post မှာတော့ Cisco routing နဲ့ switching မှာလုပ်လို့ရတဲ့ feature တစ်ခုဖြစ်တဲ့ Virtual Router Redundancy Protocol (VRRP) ကို routing and switching gear မပါပဲနဲ့ Linux ပေါ်မှာ setup လုပ်တဲ့ပုံစံကို မိတ်ဆက်ပေးလိုပါတယ်။ ပုံမှန်အားဖြင့် High Availability (HA) system တစ်ခုကိုတည်ဆောက်တော့မယ်ဆိုရင် VRRP ကို router တွေ switch တွေပေါ်မှာ configure လုပ်ကြပါတယ်။ အရှင်းဆုံးပြောရရင် VRRP ဟာ router နှစ်ခုကြားမှာ Virtual IP (VIP) ကိုအသုံးပြုပြီးတော့၊ router နှစ်ခုမှာ တစ်ခုလုံးဝ down သွားရင်တောင် ဆက်ပြီးတော့ routing နဲ့ switching မှာအလုပ်လုပ် အောင်သုံးတဲ့ redundancy protocol တစ်ခုပါ။ Cisco CLI မှာလည်း configure လုပ်ရတာ အရမ်းကြီးခက်ခဲတဲ့ အရာတော့မဟုတ်ပါဘူး။ IT networking နဲ့ ပတ်သတ်တဲ့ job interview တွေမှာဆို VRRP topic ဟာ မမေးမဖြစ် မေးခွန်းတစ်ခုပါ။ HA system တစ်ခုအတွက်အသုံးများတဲ့ topic တစ်ခုဖြစ်တဲ့အတွက် မသိမဖြစ်သိထားရမည့် အရာလည်းဖြစ်ပါတယ်။ အောက်မှာပြထားတဲ့ အတိုင်း ကိုယ့် network မှာအခုလိုမျိုး VRRP ကိုအသုံးပြုပြီးတော့ HA setup လုပ်နိုင်ပါတယ်။ သတိပြုရမှာက ပုံမှာကိုယ့်ရဲ့ server တွေကို Gateway မှာ router တစ်ခုချင်းစီရဲ့ IP ကို configure မလုပ်ပဲနဲ့ Virtual IP (VIP) ကိုအသုံးပြုရမှာဖြစ်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/QpVJ3ol.png" alt=""><figcaption><p>VRRP Concept</p></figcaption></figure>
+![](https://itmatic101.com/wp-content/uploads/2022/06/VRRP1-1.png)
 
 ဒါဆိုရင် VRRP ကို router တွေမှာဘယ်လိုမျိုး အသုံးပြုနိုင်သလဲဆိုတာမျက်လုံးထဲမှာမြင်မယ်ထင်ပါတယ်။ ဟုတ်ပြီ… ဒါဆိုစာရေးသူတို့ VRRP လိုမျိုး keepalived ကို Ubuntu Linux 20.04 LTS VMs နှစ်ခုပေါ်မှာ Apache web server ကိုအသုံးပြုပြီးတော့ Lab တစ်ခုတည်ဆောက်ကြည့်ရအောင်။ ပထမဆုံးအနေနဲ့ လိုအပ်တဲ့ Ubuntu 20.04 LTS VMs နှစ်ခုကို အရင် install လုပ်ပြီးတော့ ပြင်ဆင်ရပါ့မယ်၊ ပြီးရင်တော့ လိုအပ်တဲ့ Apache နဲ့ Keepalived ကိုအောက်မှာပြထားတဲ့ အတိုင်း VM နှစ်ခုလုံးပေါ်မှာ apt နဲ့ လုပ်ပြီး service နှစ်ခုလုံးကို enable လုပ်မယ်၊ start လုပ်လိုက်ပါ့မယ်။ စာရေးသူ ပထမ VM ကို web1 လို့ ခေါ်ပြီး၊ ဒုတိယ တစ်ခုကိုတော့ web2 ဆိုပြီးတော့ နာမည်ပေးထားပါ့မယ်။
 
@@ -113,7 +108,7 @@ authentication {
 } 
 ```
 
-<figure><img src="https://i.imgur.com/tOCXjwL.png" alt=""><figcaption><p>Keepalived 2 Nodes Topology</p></figcaption></figure>
+![](https://itmatic101.com/wp-content/uploads/2022/06/Keepalived1.png)
 
 web1 မှာ sudo systemctl status keepalived ဆိုပြီးတော့ service status ကြည့်လိုက်ရင် အောင်ကအတိုင်းတွေ့ရမှာပါ။
 
