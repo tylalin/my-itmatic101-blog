@@ -1,34 +1,39 @@
-# အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code \(IaC\) - အပိုင်း\(၃\)
+---
+cover: https://i.imgur.com/QHq23wl.jpeg
+coverY: 0
+---
+
+# အနားမသပ်နိုင် သေးတဲ့ Infrastructure as Code (IaC) - အပိုင်း(၃)
 
 အရှေ့ post မှာတော့ Vagrant ကိုအသုံးပြုပြီး dev/test environment တစ်ခုကို ဘယ်လိုမျိုး IaC နည်းနဲ့ တည်ဆောက်ရသလဲဆိုတာကို လက်တွေ့အသုံးပြုနည်း ၂မျိုး ၃မျိုးလောက်ကို ရှင်းပြခဲ့ပါတယ်။ Instant deployment နဲ့ Scale-up/down တို့အပြင် teardown လုပ်ရတာ လွယ်ပုံလွယ်နည်းကိုလည်း ရှင်းခဲ့တယ်။ ဒီလိုဆိုတော့ မေးစရာရှိတာက Vagrant ဟာ Virtualbox နဲ့ အချို့ သော provider တွေနဲ့သာ အလုပ်လုပ်ပြီးတော့ cloud platform တွေမှာ limit အရမ်းကို ဖြစ်လွန်းပါတယ်။ စာရေးသူ အနေနဲ့တော့ Vagrant ကိုအသေးစား စမ်းသပ်မူမျိုးအတွက်သာ ကိုယ့် local machine မှာ Virtualbox နဲ့ တွဲပြီး သုံးသင့်ပါတယ်။ ဒီ့ထက်ကြီးတဲ့ infrastructure ကိုတည်ဆောက်ဖို့အတွက်တော့ Terraform ကိုသာ သုံးသင့်ပါတယ်။ ဒီတစ်ခုမှာတော့ Terraform အကြောင်းကို ဆက်ပြီးတော့သွားလိုက်ရအောင်ဗျာ။
 
 ### Terraform မိတ်ဆက်
 
-Terraform ကိုလည်း HashiCorp ကနေပဲ opensource အနေနဲ့ ဖန်တီးထားတာဖြစ်ပြီးတော့ Vagrant နဲ့ မတူတာတစ်ခုက HashiCorp Configuration Language \(HCL\) ဆိုတဲ့ declarative configuration language ပုံစံကို အသုံးပြုထားပါတယ်။ ဒါကြောင့် Terraform မှာ desired state တွေကိုပြောလိုက်ရုံနဲ့ အနောက်မှာလုပ်စရာရှိတာတွေ အကုန်လုံးကို သူဟာသူ API တွေနဲ့တွဲကာ လုပ်ဆောင်နိုင်စွမ်းရှိပါတယ်။ သူ့မှာလည်း provider ဆိုတဲ့ concept ကို Vagrant မှာလိုပဲ အသုံးပြုထားတာဖြစ်ပြီးတော့ virtualisation နဲ့ cloud platform တွေတော်တော်များများမှာ အလုပ်လုပ်ပါတယ်။ အချို့သော support လုပ်တဲ့ platform တွေကို ပြောရမယ်ဆိုရင်တော့ AWS, Azure, IBM cloud, GCP, DigitalOcean, Oracle Cloud Infrastructure, VMware vSphere နဲ့ OpenStack တို့လိုမျိုး platform တွေမှာ အလုပ်လုပ်ပါတယ်။ စာရေးသူ သိသလောက်တော့ Terraform ရဲ့ အနောက်မှာအသုံးပြုတဲ့ core language က Golang လို့လည်း သိရပါတယ်။ Terraform ရဲ့ GitHub repo ကိုတော့ ဒီမှာ [https://github.com/hashicorp/terraform](https://github.com/hashicorp/terraform) သွားပြီးတော့ ကြည့်ရှုလေ့လာလို့ ရနိုင်ပါတယ်။ Golang ဟာ system နဲ့ infrastructure တွေနဲ့ တိုက်ရိုက် အလုပ်လုပ်တဲ့ အခါမှာ မြန်အောင်ပေါ့အောင် လုပ်ထားတဲ့ language တစ်ခုဖြစ်တဲ့ အတွက် အခုအချိန်မှာ အငယ်တော့ တီးမိခေါက်မိလောက် အောင်သိထားသင့်တဲ့ အရာတစ်ခုပါ။ ဒါကြောင့်လည်း စာရေးသူလေ့လာချင်နေတဲ့ language ထဲမှာ Golang ဟာလည်း တစ်ခုသော programming language တစ်ခုပါ။ Python တို့ Ruby တို့မှာလိုပဲ code တွေကို ဖတ်ရလွယ်ပြီးတော့ စွမ်းဆောင်ရည်ပိုင်းမှာလည်း အခြေခံကစလို့ အဆင့်မြင့်မြင့် လုပ်ဆောင်ချက်တွေကို လုပ်နိုင်တာကြောင့် တော်တော်လေးကို မျက်စိကျမိနေပါတယ်။ Docker လိုမျိုး ဆန်းပြားတဲ့ containerisation platform တစ်ခုလုံးကို Golang တစ်ခုတည်းနဲ့ ရေးလို့ ရနိုင်ပါတယ်။ ဒီလောက်ဆိုရင် Golang နဲ့ ဆိုဘယ်လောက်ထိခရီးပေါက်မလဲဆိုတာ သိနိုင်ပါပြီ။ 
+Terraform ကိုလည်း HashiCorp ကနေပဲ opensource အနေနဲ့ ဖန်တီးထားတာဖြစ်ပြီးတော့ Vagrant နဲ့ မတူတာတစ်ခုက HashiCorp Configuration Language (HCL) ဆိုတဲ့ declarative configuration language ပုံစံကို အသုံးပြုထားပါတယ်။ ဒါကြောင့် Terraform မှာ desired state တွေကိုပြောလိုက်ရုံနဲ့ အနောက်မှာလုပ်စရာရှိတာတွေ အကုန်လုံးကို သူဟာသူ API တွေနဲ့တွဲကာ လုပ်ဆောင်နိုင်စွမ်းရှိပါတယ်။ သူ့မှာလည်း provider ဆိုတဲ့ concept ကို Vagrant မှာလိုပဲ အသုံးပြုထားတာဖြစ်ပြီးတော့ virtualisation နဲ့ cloud platform တွေတော်တော်များများမှာ အလုပ်လုပ်ပါတယ်။ အချို့သော support လုပ်တဲ့ platform တွေကို ပြောရမယ်ဆိုရင်တော့ AWS, Azure, IBM cloud, GCP, DigitalOcean, Oracle Cloud Infrastructure, VMware vSphere နဲ့ OpenStack တို့လိုမျိုး platform တွေမှာ အလုပ်လုပ်ပါတယ်။ စာရေးသူ သိသလောက်တော့ Terraform ရဲ့ အနောက်မှာအသုံးပြုတဲ့ core language က Golang လို့လည်း သိရပါတယ်။ Terraform ရဲ့ GitHub repo ကိုတော့ ဒီမှာ [https://github.com/hashicorp/terraform](https://github.com/hashicorp/terraform) သွားပြီးတော့ ကြည့်ရှုလေ့လာလို့ ရနိုင်ပါတယ်။ Golang ဟာ system နဲ့ infrastructure တွေနဲ့ တိုက်ရိုက် အလုပ်လုပ်တဲ့ အခါမှာ မြန်အောင်ပေါ့အောင် လုပ်ထားတဲ့ language တစ်ခုဖြစ်တဲ့ အတွက် အခုအချိန်မှာ အငယ်တော့ တီးမိခေါက်မိလောက် အောင်သိထားသင့်တဲ့ အရာတစ်ခုပါ။ ဒါကြောင့်လည်း စာရေးသူလေ့လာချင်နေတဲ့ language ထဲမှာ Golang ဟာလည်း တစ်ခုသော programming language တစ်ခုပါ။ Python တို့ Ruby တို့မှာလိုပဲ code တွေကို ဖတ်ရလွယ်ပြီးတော့ စွမ်းဆောင်ရည်ပိုင်းမှာလည်း အခြေခံကစလို့ အဆင့်မြင့်မြင့် လုပ်ဆောင်ချက်တွေကို လုပ်နိုင်တာကြောင့် တော်တော်လေးကို မျက်စိကျမိနေပါတယ်။ Docker လိုမျိုး ဆန်းပြားတဲ့ containerisation platform တစ်ခုလုံးကို Golang တစ်ခုတည်းနဲ့ ရေးလို့ ရနိုင်ပါတယ်။ ဒီလောက်ဆိုရင် Golang နဲ့ ဆိုဘယ်လောက်ထိခရီးပေါက်မလဲဆိုတာ သိနိုင်ပါပြီ။
 
 ### Terraform ကို install လုပ်ပုံ
 
 Terraform ကို Ubuntu/Debian ကိုအခြေခံထားတဲ့ distro တွေမှာအသုံးပြုချင်ရင်တော့ အောက်ကအတိုင်း command တွေကို run ရမှာဖြစ်ပါတယ်။ ပထမဆုံး HashiCorp ရဲ့ GPG ကို ကိုယ့်ရဲ့ apt package manager အတွက် အခုလိုအရင်ဆုံး ထည့်သွင်းရပါ့မယ်။
 
-```text
+```
 $ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 ```
 
-ပြီးနောက်... သူ့ရဲ့ repo ကို package manager ရဲ့ repository list ထဲမှာသွားပြီးတော့ အောက်ကအတိုင်းပေါင်းထည့်ပါ။ 
+ပြီးနောက်... သူ့ရဲ့ repo ကို package manager ရဲ့ repository list ထဲမှာသွားပြီးတော့ အောက်ကအတိုင်းပေါင်းထည့်ပါ။
 
-```text
+```
 $ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 ```
 
-ပြီးသွားရင်တော့... အောက်ကအတိုင်း apt package manager ကို update လုပ်ပြီးတော့၊ Terraform ကို install လုပ်ရုံပါပဲ။ 
+ပြီးသွားရင်တော့... အောက်ကအတိုင်း apt package manager ကို update လုပ်ပြီးတော့၊ Terraform ကို install လုပ်ရုံပါပဲ။
 
-```text
+```
 $ sudo apt-get update && sudo apt-get install terraform
 ```
 
-ကိုယ်က Apple ကိုအသုံးပြုတယ်ဆိုရင်တော့ Homebrew ကိုအသုံးပြုပြီးတော့ အောက်ကအတိုင်း install လုပ်လို့ရပါတယ်။ 
+ကိုယ်က Apple ကိုအသုံးပြုတယ်ဆိုရင်တော့ Homebrew ကိုအသုံးပြုပြီးတော့ အောက်ကအတိုင်း install လုပ်လို့ရပါတယ်။
 
-```text
+```
 $ brew tap hashicorp/tap
 $ brew install hashicorp/tap/terraform
 $ brew upgrade hashicorp/tap/terraform
@@ -36,18 +41,18 @@ $ brew upgrade hashicorp/tap/terraform
 
 ဒါမှမဟုတ်ဘူး... Windows မှာအသုံးပြုချင်ရင်တော့ Chocolatety ကိုသုံးပြီးတော့ အခုလိုမျိုး install လုပ်လို့ရနိုင်ပါတယ်။
 
-```text
+```
 $ choco install terraform
 ```
 
-ဒီတော့... Terraform ကို ကိုယ်အသုံးပြုတဲ့ OS ပေါ်မှာမူတည်ပြီးတော့ ပုံစံအမျိုးမျိုးနဲ့ install လုပ်နိုင်တာကိုတွေ့ရမှာဖြစ်ပါတယ်။ 
+ဒီတော့... Terraform ကို ကိုယ်အသုံးပြုတဲ့ OS ပေါ်မှာမူတည်ပြီးတော့ ပုံစံအမျိုးမျိုးနဲ့ install လုပ်နိုင်တာကိုတွေ့ရမှာဖြစ်ပါတယ်။
 
-### Terraform ကိုလက်တွေ့အသုံးချနည်း 
+### Terraform ကိုလက်တွေ့အသုံးချနည်း
 
-Terraform ကို install လုပ်ပြီးသွားတဲ့နောက်မှာတော့ စတင်ပြီးတော့ အသုံးပြုနိုင်ပြီဖြစ်တဲ့အတွက် ပထမဆုံး အနေနဲ့ Promox Virtualisation platform မှာသုံးတဲ့ပုံစံကို အရင်ဆုံးကြည့်လိုက်ရအောင်။ 
+Terraform ကို install လုပ်ပြီးသွားတဲ့နောက်မှာတော့ စတင်ပြီးတော့ အသုံးပြုနိုင်ပြီဖြစ်တဲ့အတွက် ပထမဆုံး အနေနဲ့ Promox Virtualisation platform မှာသုံးတဲ့ပုံစံကို အရင်ဆုံးကြည့်လိုက်ရအောင်။
 
 {% code title="main.tf" %}
-```text
+```
 terraform {
   required_providers {
     proxmox = {
@@ -103,10 +108,10 @@ sshkeys = <<EOF
 ```
 {% endcode %}
 
-အပေါ်ဆုံးမှာတော့... ကိုယ်ဘယ် provider ကိုအသုံးပြုမလဲဆိုတာကိုပြောပေးလိုက်ရုံပါပဲ။ ဒီလိုဆိုရင် သက်ဆိုင်ရာ အပိုင်းတွေကို terraform ကသွားပြီးတော့ download ဆွဲယူပြီးတော့ install လုပ်ပါလိမ့်မယ်။ ဒီလို download နဲ့ install လုပ်တာလည်း ပထမဆုံးအကြိမ် တခေါက်ပဲ လုပ်ဖို့လိုတာ ဖြစ်ပြီးတော့ နောက်အခါတွေအတွက်တော့ provider ကြေငြာပေးလိုက်ရုံပါ။ ပြီးတာနဲ့ ကိုယ်ရဲ့ Promox VE ရဲ့ IP address နဲ့ login ကိုထည့်သွင်းပေးပြီးတော့ ssh\_key ဆိုတဲ့ variable ကိုကြေငြာပြန်ပါတယ်။ ဒီ variable မှာဆိုရင်တော့ ကိုယ့်ရဲ့ ssh public key ကိုထည့်ပါ။ ဒီလိုလုပ်လိုက်တာနဲ့ အောက်ဆုံးအပိုင်းမှာ Cloud Init Settings ဆိုတဲ့နေရာ ပြန်လည် အသုံးပြုနိုင်အောင်လုပ်ဆောင်လိုက်ခြင်းဖြစ်ပါတယ်။ အဲ့ဒီနောက်မှာတော့ ကိုယ် deploy လုပ်ချင်တဲ့ resource ကိုထပ်မံပြီးတော့ define လုပ်ရပါတယ်။ ဒီနေရာမှာ သတိထားရမှာက VM ဖြစ်တဲ့အတွက် Promox VE မှာ ကိုယ်သုံးမယ် VM template တွေကို အရင်ဆုံးဖန်တီးရပါလိမ့်မယ်။ Cloud Init ကိုလည်း ကိုယ်သုံးမယ်ပုံစံ မှာမူတည်ပြီးတော့ လိုရင်လိုသလို ကြိုပြီးတော့ configure လုပ်ရပါတယ်။ Terraform အကြောင်းရေးတာ ဖြစ်တဲ့အတွက် Promox VE မှာ VM template တည်ဆောက်ပုံနဲ့ cloud init ကို configure လုပ်ပုံကို အသေးစိတ် မသွားလိုတော့ပါဘူး။ နောက်မှ... Promox VE နဲ့ ပတ်သတ်တဲ့ post တွေမှပဲ ရေးပါတော့မယ်။ ဒီ resource နေရာမှာ ကိုယ်လိုချင်တဲ့ VM count အရေအတွက်နဲ့ system specification နဲ့ အခြားသော attribute တွေကို JSON ပုံစံနဲ့ ရေးရပါတယ်။ နောက်ဆုံးမှာတော့... VM တစ်လုံးချင်စီရဲ့ IP configuration နဲ့ ssh public key ကို ကူးယူပြီးတော့ ထည့်သွင်းပေးလိုက်ပါ။ ပြီးရင်တော့ လိုအပ်တဲ့ code ကို ပြင်ဆင်ပြီးဖြစ်ပါတယ်။ နောက်တခါ... VM နဲ့ မဟုတ်ပဲနဲ့ Promox VE ရဲ့ LXC container တွေနဲ့ ဘယ်လို deploy လုပ်နိုင်သလဲဆိုတာလည်း တချက်ကြည့်လိုက်ရအောင်။ 
+အပေါ်ဆုံးမှာတော့... ကိုယ်ဘယ် provider ကိုအသုံးပြုမလဲဆိုတာကိုပြောပေးလိုက်ရုံပါပဲ။ ဒီလိုဆိုရင် သက်ဆိုင်ရာ အပိုင်းတွေကို terraform ကသွားပြီးတော့ download ဆွဲယူပြီးတော့ install လုပ်ပါလိမ့်မယ်။ ဒီလို download နဲ့ install လုပ်တာလည်း ပထမဆုံးအကြိမ် တခေါက်ပဲ လုပ်ဖို့လိုတာ ဖြစ်ပြီးတော့ နောက်အခါတွေအတွက်တော့ provider ကြေငြာပေးလိုက်ရုံပါ။ ပြီးတာနဲ့ ကိုယ်ရဲ့ Promox VE ရဲ့ IP address နဲ့ login ကိုထည့်သွင်းပေးပြီးတော့ ssh\_key ဆိုတဲ့ variable ကိုကြေငြာပြန်ပါတယ်။ ဒီ variable မှာဆိုရင်တော့ ကိုယ့်ရဲ့ ssh public key ကိုထည့်ပါ။ ဒီလိုလုပ်လိုက်တာနဲ့ အောက်ဆုံးအပိုင်းမှာ Cloud Init Settings ဆိုတဲ့နေရာ ပြန်လည် အသုံးပြုနိုင်အောင်လုပ်ဆောင်လိုက်ခြင်းဖြစ်ပါတယ်။ အဲ့ဒီနောက်မှာတော့ ကိုယ် deploy လုပ်ချင်တဲ့ resource ကိုထပ်မံပြီးတော့ define လုပ်ရပါတယ်။ ဒီနေရာမှာ သတိထားရမှာက VM ဖြစ်တဲ့အတွက် Promox VE မှာ ကိုယ်သုံးမယ် VM template တွေကို အရင်ဆုံးဖန်တီးရပါလိမ့်မယ်။ Cloud Init ကိုလည်း ကိုယ်သုံးမယ်ပုံစံ မှာမူတည်ပြီးတော့ လိုရင်လိုသလို ကြိုပြီးတော့ configure လုပ်ရပါတယ်။ Terraform အကြောင်းရေးတာ ဖြစ်တဲ့အတွက် Promox VE မှာ VM template တည်ဆောက်ပုံနဲ့ cloud init ကို configure လုပ်ပုံကို အသေးစိတ် မသွားလိုတော့ပါဘူး။ နောက်မှ... Promox VE နဲ့ ပတ်သတ်တဲ့ post တွေမှပဲ ရေးပါတော့မယ်။ ဒီ resource နေရာမှာ ကိုယ်လိုချင်တဲ့ VM count အရေအတွက်နဲ့ system specification နဲ့ အခြားသော attribute တွေကို JSON ပုံစံနဲ့ ရေးရပါတယ်။ နောက်ဆုံးမှာတော့... VM တစ်လုံးချင်စီရဲ့ IP configuration နဲ့ ssh public key ကို ကူးယူပြီးတော့ ထည့်သွင်းပေးလိုက်ပါ။ ပြီးရင်တော့ လိုအပ်တဲ့ code ကို ပြင်ဆင်ပြီးဖြစ်ပါတယ်။ နောက်တခါ... VM နဲ့ မဟုတ်ပဲနဲ့ Promox VE ရဲ့ LXC container တွေနဲ့ ဘယ်လို deploy လုပ်နိုင်သလဲဆိုတာလည်း တချက်ကြည့်လိုက်ရအောင်။
 
 {% code title="main.tf" %}
-```text
+```
 terraform {
   required_providers {
     proxmox = {
@@ -351,7 +356,7 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 
 ![](../.gitbook/assets/pve.png)
 
-အခုဆိုရင်... lab/test environment တစ်ခုကို terraform HCL နဲ့ တခါရေးပြီး code တွေကို အခါခါပြန်သုံးလို့ ရနိုင်ပါပြီ။ ကိုယ်တည်ဆောက်ထားတဲ့ environment ကိုပြန်လည် tear-down လုပ်ချင်ရင်တော့ အောက်ကအတိုင်း လုပ်လို့ရပါတယ်။ 
+အခုဆိုရင်... lab/test environment တစ်ခုကို terraform HCL နဲ့ တခါရေးပြီး code တွေကို အခါခါပြန်သုံးလို့ ရနိုင်ပါပြီ။ ကိုယ်တည်ဆောက်ထားတဲ့ environment ကိုပြန်လည် tear-down လုပ်ချင်ရင်တော့ အောက်ကအတိုင်း လုပ်လို့ရပါတယ်။
 
 ```bash
 $ terraform destroy 
@@ -456,7 +461,7 @@ proxmox_lxc.lxc[1]: Destruction complete after 11s
 Destroy complete! Resources: 2 destroyed.
 ```
 
-Terraform ဟာ self-host virtualisation environment တွေအပြင်၊ cloud native တွေအတွက်လည်း သက်ဆိုင်ရာ provider တွေရှိပါတယ်။ အောက်မှာတော့ Vultr ဆိုတဲ့ cloud platform ကိုသုံးပြီးတော့ main.tf ကို အခုလိုမျိုးရေးလို့ ရပါတယ်။ 
+Terraform ဟာ self-host virtualisation environment တွေအပြင်၊ cloud native တွေအတွက်လည်း သက်ဆိုင်ရာ provider တွေရှိပါတယ်။ အောက်မှာတော့ Vultr ဆိုတဲ့ cloud platform ကိုသုံးပြီးတော့ main.tf ကို အခုလိုမျိုးရေးလို့ ရပါတယ်။
 
 {% code title="main.tf" %}
 ```javascript
@@ -491,4 +496,3 @@ resource "vultr_instance" "my_instance" {
 {% endcode %}
 
 ဒီလောက်ဆိုရင်တော့... Terraform နဲ့ ဆိုင်တဲ့အပိုင်းတွေ အခြေခံအားဖြင့်တော့ နားလည်သဘောပေါက်လိမ့်မယ်လို့ ထင်ပါတယ်။ အခြေခံကို သိထားပြီးရင်ဖြင့် ကိုယ်လိုချင်တဲ့ ပုံစံမျိုးစုံကို ထပ်မံရှာဖွေပြီးတော့ ချဲ့ကားပြင်ဆင်သွားလိုက်ရင်ဖြင့် ဒီ code ဟာစွမ်းဆောင်နိုင်ရေး ဘယ်လောက်တောင်ရှိနိုင်သလဲဆိုတာ တွေးကြည့်လို့ရနိုင်ပါပြီ။ နောက်တပိုင်းမှာတော့ Ansible ကိုသုံးပြီးတော့ network automation lab တစ်ခုကို တည်ဆောက်တဲ့ ပုံစံကို ဆက်လက်ပြီးတော့ ဖော်ပြချင်ပါသေးတယ်။ တော်တော်လေးကို powerful ဖြစ်တဲ့ automation tool set တွေပဲဖြစ်ပါတယ်။ ဒီအပိုင်းကိုတော့ အခုလောက်နဲ့ပဲရပ်လိုက်ပါတော့မယ်။
-
