@@ -2,15 +2,13 @@
 
 Docker အကြောင်းတွေကို မိတ်ဆက်လိုက်တာ အခုဆို အပိုင်း ၂ ပိုင်းတောင်ရှိသွားပါပြီ။ ပထမတပိုင်းမှာတော့ Docker ရဲ့ နောက်ခံ အကြောင်းလေးနဲ့ စလိုက် ပြီးတော့၊ ဒုတိယပိုင်းမှာတော့ Docker ရဲ့ တည်ဆောက်ထားပုံနဲ့ သူ့ရဲ့ Docker image အကြောင်းလေးတွေကို အနည်းငယ်တင်ပြပြီးသွားပါပြီ။ မိတ်ဆက်ပေးရုံသာဖြစ်တဲ့ အတွက် ပြီးပြည့်စုံတယ်လို့တော့ မထင်ပါဘူး။ အလုံးစုံကိုရှင်းမယ်ဆိုရင်တော့ ပြောလို့ ပြီးမယ်လို့တောင် မထင်ပါဘူး။ မည်သို့ပင် ဖြစ်စေ Docker ရဲ့ အရသာကို အမြီး သဘောမျိုး သိလိုက်ရမယ်လို့တော့ ထင်ပါတယ်။ ဒီအပိုင်းမှာတော့ Docker ကို အခြားသော virtualization နည်းပညာ တချို့နဲ့ ရောပြီးတော့ မှားတတ်တဲ့ သဘောရှိလို့၊ Docker ကို လက်တွေ့မှာ တကယ်မသုံးခင် ရှင်းစရာရှိတာကို အရင်ဆုံး ရှင်းလိုက်ရအောင်။
 
-<figure><img src="https://i.imgur.com/GlFy82R.png" alt=""><figcaption><p>Docker Architecture</p></figcaption></figure>
-
 ### Docker နဲ့ ဆင်တူတဲ့ Vagrant
 
 Docker ကို တချို့က virtualization နဲ့ မှားတတ်သလို၊ WSL (Windows Subsystem for Linux ) ဆိုတဲ့ subsystem မျိုးနဲ့ လည်းမှားတတ်ပါတယ်။ Virtualization နဲ့ မတူဘူးဆိုတာကိုတော့ အရှေ့အပိုင်းတွေမှာ သရှင်းနိုင်သလောတော့ ရှင်းပြထားပါတယ်။ Virtualization နည်းပညာကို အနောက်ဘက်မှာ သုံးပြီးတော့ Docker နဲ့ခပ်ဆင်ဆင် နောက် နည်းပညာတစ်ခုရှိပါတယ်။ Vagrant လို့ခေါ်ပါတယ်။ DevOp ဘက်မှာတော့ တချို့ Developers တွေဟာ Vagrant ကိုသုံးပြီးတော့ App တွေကို develop လုပ်ကြ၊ test လုပ်ကြပါတယ်။ များသောအားဖြင့် Vagrant ကို test လုပ်ဖို့ staging အဆင့်လောက်ထိသာ အသုံးများပြီးတော့၊ Docker ကိုတော့ production environment ထိသုံးလို့ရအောင်လို့ လုပ်ထားကြပါတယ်။ Vagrant ဟာလည်း Docker လိုမျိုး CLI မှာ command တွေရိုက်ထည့်ပြီးတော့ ကိုယ်လိုချင်တဲ့ VM template Box တွေကို Vagrant Cloud ကနေပြီးတော့ ဆွဲယူပြီးတော့ အသုံးပြုလို့ရပါတယ်။ Vagrant မှာလည်း Docker မှာသုံးတဲ့ Dockerfile လိုမျိုး Vagrantfile ဆိုတာလည်းရှိပါတယ်။ Vagrant စထွက်လာတဲ့ အချိန်နဲ့ Docker စထွက်လာတဲ့ အချိန်ဟာ မရှေးမနှောင်းလို့ဆိုရမှာပါ။ Vagrant ကတော့ ထွက်တာ နည်းနည်းလေး စောပါလိမ့်မယ်။ Design concept နဲ့ purpose အရကြည့်မယ်ဆိုရင် Vagrant နဲ့ Docker ဟာ တော်တော်ဆင်တူပါတယ်။ Vagrant ရဲ့ ရည်ရွယ်ချက်ကလည်း Docker နည်းတူ DevOps သမားတွေအတွက် အဆင်ပြေအောင်လို့ လုပ်ထားတာ ဖြစ်ပါတယ်။ Vagrant အကြောင်းကို အသေးစိတ် နောက်မှ သပ်သပ်ထပ်ရေးသွားပါ့မယ်။ အခုဒီ post မှာတော့ Docker နဲ့ ဘာလို့ အလွယ်တကူ အမှတ်မှားနိုင်လည်းဆိုတာကို အလေးပေးပြီးတော့ ဆွေးနွေးချင်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/Tj6fwUx.png" alt=""><figcaption><p>Vagrant + Virtualbox</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/5283a-vagrant-archi-252812529.png?w=660)
 
-<figure><img src="https://i.imgur.com/SWGkjwK.png" alt=""><figcaption><p>Vagrantfile</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/4bac0-vagrant-and-virtualbox.png?w=660)
 
 ပုံမှန်အားဖြင့်တော့ Vagrant ဟာ Virtualbox ကိုသူ့ရဲ့ provider အနေနဲ့ သုံးပါတယ်။ Virtualbox က open-source ဖြစ်တဲ့အတွက် Vagrant တွဲပြီးတော့ သုံးကြတာပါ။ Vagrant ရဲ့ မူရင်းပိုင်ရှင် ကုမ္ပဏီဖြစ်တဲ့ HashiCorp ကတော့ VMware ကို provider အနေနဲ့ တွဲသုံးဖို့ ကို recommend လုပ်ထားပါတယ်။ သို့သော် VMware ဟာ proprietary ဖြစ်တဲ့ အတွက် ကုန်ကျစရိုက်ရှိသော်လည်း၊ stable လည်းပိုဖြစ်ပါတယ်။ Free ရတဲ့ VMware Player ကြပြန်တော့လည်း feature အပြည့်အစုံမပါလို့ သုံးတာအဆင်မပြေပါဘူး။ VMware Workstation လောက်သုံးမှ အဆင်ပြေတဲ့အတွက် နောက်ဆုံးတော့ open-source ဖြစ်တဲ့ Virtualbox ကိုသာပြေးပြီးတော့ ကပ်ရပြန်တာပါပဲ။ Vagrant ဟာ အဲ့လိုမျိုး VM တွေကို run ဖို့အတွက် Virtualization platform တစ်ခုလိုတဲ့အတွက်၊ သဘာဝအရတော့ Docker နဲ့ လုံးဝကွာခြားသွားပါတယ်။ Ruby နဲ့ Vagrant ကိုရေးထားတာဖြစ်ပြီးတော့၊ VM တစ်လုံးကို provision လုပ်တဲ့အခါသုံးတဲ့ Vagrantfile ရဲ့ syntax ဟာ Ruby language ရဲ့ syntax ပါပဲ။ Docker မှာတော့ ပိုပြီးရိုးရှင်းတဲ့ syntax ကို နောက်ပိုင်းမှာ တွေ့ရမှာဖြစ်ပါတယ်။ တချို့ developers တွေဟာ Vagrant ကို သူတို့ software developing environment နဲ့ test environment မှာ တွင်တွင်ကျယ်ကျယ် သုံးနေဆဲပါ။ စာရေးသူ အနေနဲ့တော့ Docker ကို ပိုပြီးတော့ စိတ်တိုင်းကျပါတယ်။ သို့သော် နှစ်ခုလုံးမှာ သူတို့ရဲ့ အားနည်းချက် အားသာချက်ကိုယ်စီ ရှိကြပါတယ်။ ဒီအပိုင်းမှာ Vagrant ကို နည်းနည်းထည့်ရှင်းတာဟာ Docker နဲ့ ဆင်တူလွန်းတာတကြောင်း၊ DevOps မှာလည်း လက်ရှိသုံးနေကြတာရှိတဲ့အတွက် အမှတ်မမှားရအောင်လို့ ဖြစ်ပါတယ်။ အခုတော့ Docker ကို ကိုယ့်စက်ပေါ်မှာ ဘယ်လိုတင် ပြီးသုံးလို့ ရသလဲဆိုတာရယ်၊ အခြေခံသုံးလို့ ရတဲ့ Docker command တချို့နဲ့ Docker Compose tool နဲ့ ကိုယ့်စိတ်ကြိုက် container တစ်ခုဘယ်လို တည်ဆောက်လို့ရသလဲဆိုတာတွေကို အရင်သွားလိုက်ရအောင်။
 
@@ -18,7 +16,7 @@ Docker ကို တချို့က virtualization နဲ့ မှားတ�
 
 အခုတလော စာရေးသူကိုယ်တိုင် Ubuntu LTS 16.04 နဲ့ CentOS7 နှစ်ခုလုံးကို တော်တော်လေး စိတ်တိုင်းကျနေတဲ့ အတွက် Docker အကြောင်းရေးဖို့ စဉ်းစားတော့၊ Ubuntu နဲ့ CentOS ပေါ်မှာ Docker ကို install လုပ်ပုံ နဲ့ ကိုယ်စက်ပေါ်မှာ Docker အတွက်လိုတဲ့ initial configuration လေးတွေကို အခြေခံပြီးတော့ ရေးသွားမှာ ဖြစ်ပါတယ်။ ဘယ်လိုပဲဖြစ်ဖြစ် Ubuntu မှာ install လုပ်လို့ အဆင်ပြေရင် Debian ကဆင်းလာတဲ့ distro တော်တော်များများ အဆင်ပြေပါတယ်။ လိုအပ်တဲ့အပိုင်းတွေကို Install လုပ်၊ initial configuration တွေလုပ်ပြီးသွားရင်တော့ ကျန်တဲ့အပိုင်းတွေမှာတော့ Docker command တွေကို သုံးတဲ့အတွက် distro agnostic ဖြစ်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/gNppaVN.png" alt=""><figcaption><p>Ubuntu + Docker</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/a4fb9-docker.png?w=660)
 
 ပထမဆုံး အနေနဲ့ Docker ကို install ဘယ်လိုလုပ်သလဲဆိုတာနဲ့ စလိုက်ရအောင်။ Docker ကို install လုပ်တဲ့ နည်းလမ်း အမျိုးမျိုးရှိပါတယ်။ အခုဒီမှာ သုံးတဲ့ command ကတော့ Docker နောက်ဆုံးထွက်ထားတဲ့ version ကို dowload လုပ်ပြီးတော့၊ လိုအပ်တဲ့ dependencies တွေကိုပါလိုအပ် သလို automatic ဆွဲပြီးတော့ install လုပ်တဲ့ နည်းပါ။
 
@@ -131,10 +129,10 @@ $ sudo curl -L https://github.com/docker/compose/releases/download/1.19.0/docker
 Download လုပ်ပြီးသွားရင်တော့ docker-compose file ကို executable mode ရအောင်လို့ attribute ကို အောက်က command နဲ့ ပြောင်းပေးရပါလိမ့်မယ်။
 
 ```
-$ sudo chmod +x /usr/local/bin/docker-composeim
+$ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-<figure><img src="https://i.imgur.com/6yb31Qp.png" alt=""><figcaption><p>Docker Compose</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/560f4-techtip77-docker-compose.png?w=660)
 
 ဒီတစ်ခုမှာလည်း ကိုယ်သုံးတာ Ubuntu သို့မဟုတ် CentOS အနေနဲ့ သုံးတယ်လို့ ယူဆပါ။ ကိုယ့်ရဲ့ home directory မှာ wordpress ဆိုတဲ့ project directory တစ်ခု အရင်တည်ဆောက်လိုက်ပါ။ ပြီးတော့ အဲ့ဒီ directory အောက်မှာ docker-compose.yml ဆိုတဲ့ file တစ်ခုကို ဖန်တီးလိုက်ပါ။ ပြီးတော့ အဲ့ဒီ ကို ကိုယ်ကြိုက်တဲ့ text editor တစ်ခုကို သုံးပြီးတော့ အောက်က script ကို ကူးယူပြီးတော့ ထည့်လိုက်ပါ။
 
@@ -227,9 +225,9 @@ Creating dockerwpproject_wordpress_1 … done
 
 နောက်အဆင့်ကတော့ ကိုယ်ကြိုက်တဲ့ web browser ထဲမှာ localhost:8000 သို့မဟုတ် ကိုယ်ရဲ့ IP Address:8000 ဆိုတာကို ရိုက်ထည့်လိုက်ပါ။ အောက်ကအတိုင်း WordPress ကို install လုပ်ဖို့အတွက် အဆင်သင့်ဖြစ်သွား ပါပြီ။
 
-<figure><img src="https://i.imgur.com/AbUs9Tw.png" alt=""><figcaption><p>WordPress Installation (Language Selection)</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/b5ca3-wordpress-welcome.png?w=660)
 
-<figure><img src="https://i.imgur.com/Z1DsSJs.png" alt=""><figcaption><p>WordPress Installation (Welcome Page)</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/23dd1-wordpress-lang.png?w=660)
 
 Prompt ထဲမှာပြထားတဲ့ အတိုင်းလိုတဲ့ဟာတွေကို ထည့်ပြီးတော့ ကိုယ်ကြိုက်သလို setup လုပ်သွားပြီးတော့ WordPress installation ကို ပြီးအောင်လုပ်ဖို့ နောက်ထက် ၃ မိနစ်လောက်ဆို အားလုံး အဆင်သင့်ဖြစ် ပါပြီ။
 
@@ -241,7 +239,7 @@ $ docker-compose down –volumes
 
 Docker မှာ WordPress ကို အခုလို အလွယ်တကူ မိနစ်ပိုင်း အတွင်းမှာ setup လုပ်လို့ရပါတယ်။ Docker မသုံးခင်ကဆို XAMPP လို solution stack တစ်ခုခု သုံးပြီးတော့ ကိုယ့်ရဲ့ WordPress တို့ MediaWiki တို့လို project တွေကို ကိုယ်စက်ပေါ်မှာ စမ်းသပ်သုံးပါ။ ပြဿနာက XAMPP တို့ WAMP တို့ MAMP တို့လို solution stack တွေက resource intensive ဖြစ်ပါတယ်။ Docker ကတော့ ပိုပြီးတော့ portable လည်းဖြစ်၊ lightweight လည်းဖြစ်တဲ့အတွက် ပိုအဆင်ပြေပါတယ်။ စာရေးသူ ကိုယ်တိုင် Windows OS ပဲရှိတယ်၊ Windows OS ပဲသုံးရမယ်ဆိုရင်တော့ XAMPP ကိုပဲသုံးဖြစ်ပါတယ်။ Docker ကိုသုံးတဲ့အခါမှာ Microsoft implementation ကို ရှောင်တဲ့ သဘောပါ။
 
-<figure><img src="https://i.imgur.com/mLAP85D.jpeg" alt=""><figcaption><p>XAMPP</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/c71b6-installing-xampp-1.8.3-for-linux-in-ubuntu-and-derivatives.jpg?w=660)
 
 #### Docker နဲ့ တခြား containers တွေကို ဆွဲယူသုံးပုံ
 
@@ -268,6 +266,6 @@ root@49f8a606967a:/#
 
 တခြား Docker container တွေကိုလည်း စိတ်ဝင်စားလို့ စမ်းကြည့်ချင်တယ်ဆိုရင်လည်း ဒီ [link](https://hub.docker.com/explore/) မှာသွားကြည့်ပြီးတော့ pull လုပ်လို့ရပါတယ်။ run လုပ်လို့ရပါတယ်။
 
-<figure><img src="https://i.imgur.com/w16AEEB.jpeg" alt=""><figcaption><p>Docker Hub</p></figcaption></figure>
+![](https://itmatic101.files.wordpress.com/2019/09/b0a70-informix-on-docker-hub-4-638.jpg?w=660)
 
 Docker မိတ်ဆက်ကို ဒီမှာပဲ ရပ်လိုက်ပါတော့မယ်။ အပိုင်း ၃ ပိုင်းလည်း ရေးပြီးသွားပြီဆိုတော့ မိတ်ဆက်အတွက်တော့ တော်တော်လေးလုံလောက်သွားပြီလို့ စာရေးသူထင်ပါတယ်။ နောက်ပိုင်းမှာတော့ Docker နဲ့ ပတ်သတ်ပြီး ပိုပြီးတော့ အဆင့်မြင့်တဲ့ အကြောင်းလေးတွေကို ဆက်ရေးဖို့တော့ ရှိပါတယ်။
