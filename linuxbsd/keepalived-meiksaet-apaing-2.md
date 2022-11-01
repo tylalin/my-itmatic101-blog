@@ -1,13 +1,8 @@
----
-cover: https://i.imgur.com/Gdpe6jZ.png
-coverY: 0
----
-
 # Keepalived မိတ်ဆက် – အပိုင်း (၂)
 
 ပထမပိုင်းမှာ keepalived ကိုအသုံးပြုပြီးတော့ VRRP ကိုဘယ်လို setup လုပ်လို့ရသလဲဆိုတာကို Apache web server နှစ်လုံးနဲ့ lab လုပ်ပြခဲ့ပြီးပါပြီ။ တကယ်ဆိုရင် အဲ့ဒီအပိုင်းမှာ setup လုပ်တဲ့ပုံစံက လွယ်အောင်၊ ပြီးတော့ ကိုယ့် PC က CPU နဲ့ RAM မလောက်ခဲ့ရင်တောင် အနည်းဆုံး Virtualbox မှာ VM နှစ်လုံးနဲ့ စမ်းသပ်နိုင်အောင် အရင်ဆုံး ရှင်းပြလိုက်တာဖြစ်ပါတယ်။ လုံးဝ fully high availability (HA) ပုံစံမျိုးတော့ အလုပ်လုပ်မှာမဟုတ်ပါဘူး။ Web server နှစ်လုံးထဲက တစ်လုံး down သွားရင်နောက် တစ်လုံးကဝင်ပြီးတော့ failover လုပ်ရုံသာရှိပါတယ်။ ဆိုပါတော့… ပထမ web server က down တော့မသွားဘူး သို့သော် overload ဖြစ်နေတယ်ဆိုရင် end user experience အတွက်လုံးဝကို အလုပ်မဖြစ်ပါဘူး။ Fully HA ဖြစ်ဖို့ဆိုရင် load balancer လိုပါလိမ့်မယ်။ ဒီအတွက်စာရေးသူတို့ haproxy ကို web server ရဲ့အရှေ့မှာ reverse proxy အနေနဲ့ အသုံးပြုပါ့မယ်။ ပြီးတော့ keepalived ကို web server ပေါ်မှာ မတင်ပဲနဲ့ haproxy နှစ်လုံးနဲ့ keepalived ကိုတွဲပြီးတော့ setup လုပ်မှာဖြစ်ပါတယ်။ ဒီ့အတွက် web server အတွက် Ubuntu 20.04 LTS VM နှစ်လုံး၊ haproxy နဲ့ keepalived တွဲပြီးတော့ အသုံးပြုဖို့အတွက် VM နှစ်လုံးလိုပါလိမ့်မယ်။ အောက်မှာပြထားတဲ့ ပုံအတိုင်း ha1 နဲ့ ha2 က Haproxy နှစ်လုံးဖြစ်ပြီး၊ web1 နဲ့ web2 ကတော့ Apache web server နှစ်လုံးဖြစ်ပါတယ်။ သတိပြုရမှာက ဒီ setup မှာ keepalived ကို ha1 နဲ့ ha2 ပေါ်မှာ setup လုပ်မှာဖြစ်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/1LxFU4X.png" alt=""><figcaption><p>Keepalived 4 Nodes Topology</p></figcaption></figure>
+![](https://itmatic101.com/wp-content/uploads/2022/06/keepalived\_4nodes\_1-1.png)
 
 Apache web server နှစ်လုံးကို အရှေ့တပိုင်းမှာလို install လုပ်ပြီးတော့၊ configure လုပ်ထားလိုက်ပါ။ သို့သော်… keepalived ကိုတော့ ဒီတခေါက် web server ပေါ်မှာတိုက်ရိုက် install မလုပ်ပါဘူး။ Haproxy အတွက် Ubuntu 20.04 LTS VM နှစ်လုံး အဆင်သင့်ဖြစ်ပြီ ဆိုရင်အောက်ကအတိုင်း Haproxy နဲ့ Keepalived ကို install လုပ်၊ configure စတင်လုပ်ပါတော့မယ်။ ပထမဆုံး ha1 မှာ install နဲ့ configure လုပ်ပုံကို အရင်ဆုံးသွားလိုက် ရအောင်။
 
