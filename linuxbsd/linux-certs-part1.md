@@ -1,21 +1,21 @@
-# အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း \(၁\)
+# အသုံးဝင်သော Linux Certification များအကြောင်း အပိုင်း (၁)
 
 Linux certification တွေအကြောင်းရေးမယ်ဆိုတော့ ဘယ်လို certification တွေကပိုပြီး အသုံးဝင်သလဲဆိုတာနဲ့brand တွေကိုဘက်မလိုက်ပဲ အလုပ်ဖြစ်မယ့် certification တွေအကြောင်းစပြီးစုဆောင်းရပါတော့တယ်။ ဆိုပါတော့ Red Hat လို certification တွေက စာရေးသူအမြင်မှာတော့ ဘက်လိုက်သလို ခံစားရပါတယ်။ သူကတော့ သူ့brand ကို promote လုပ်ဖို့နဲ့ product ကြော်ငြာလုပ်ဖို့ကို certification exam တွေမှာ ထည့်သွင်းစဉ်းစားပါလိမ့်မယ်။ အဲ့ဒါဟာလည်း သဘာဝကျတယ်လို့ဆိုရမှာပါ။ Microsoft တို့Cisco တို့certification exam တွေဖြေခဲ့ဖူးတဲ့လူတိုင်းသိပါတယ်။ Certification တွေဟာ သူတို့ product တွေကို promote လုပ်ဖို့ကို ကြိုးစားကြပါတယ်။ ဥပမာ Cisco ရဲ့ CCNA certification ဆိုပါတော့… Cisco က Certification ဖြစ်တဲ့အတွက် Cisco ရဲ့ proprietary protocol ဖြစ်တဲ့ routing protocol တွေ အကြောင်းကိုသာ Chapter တိုင်းလိုလို ထည့်သွင်းမိတ်ဆက်ပေး ပြီးတော့ စာမေးပွဲမှာလည်း သူနဲ့ပတ်သတ်တဲ့ မေးခွန်းတွေမေးတာမို့လေ့လာသင်ကြားရတဲ့ သူမှာ အဲ့ဒီ Cisco ရဲ့routing protocol တွေနဲ့သာ ပိုပြီးရင်းနှီးသွားဖို့ရှိပါတယ်။ Routing protocol တွေရဲ့ concept နဲ့ဘယ်လိုအလုပ်လုပ်သလဲဆိုတာကို ရနိုင်ပေမယ့် brand အစွဲတစ်ခုအနေနဲ့ Cisco router တွေနဲ့သာ အကျွမ်းဝင်ပြီး Juniper တို့Vyos တို့လို router တွေနဲ့ဆို နည်းနည်းလေးစိမ်းနေနိုင်ပါတယ်။ အဲ… တစ်ခုရှိတာကာတော့ router product တော်တော်များများဟာ Linux platform ကိုသုံးတာပါ။ အဲ့ဒီတော့ Linux နဲ့ရင်းနှီးပြီးသားဆိုရင်တော့ command syntax တွေကပိုပြီး လွယ်မယ်လို့ထင်ပါတယ်။ ဒါက proprietary certification တွေမှာဘက်လိုက်နိုင်တဲ့ အကြောင်းကိုနည်းနည်းလေးရှင်းပြတာပါ။
 
 နောက်ဆုံးတော့ brand တွေကိုမမှီခိုတဲ့ FLOSS community ကပေးတဲ့ certification အကြောင်းတွေ ကိုရေးဖို့ကိုသာ ဆုံးဖြတ်လိုက်ပါတော့တယ်။ အဲ့ဒီတော့ ကိုယ်က brand တစ်ခုအတွက် Linux certification လုပ်ရမှာဆိုရင်တော့ ဒီ post ကသိပ်အဆင်မပြေပါဘူး။ ဒီ post မှာရေးမယ့် certification တွေ ကတော့ Linux Professional Institute တို့ CompTIA တို့ The Linux Foundation တို့ကလုပ်ပေးထားတဲ့ certificate တွေဖြစ် ပါတယ်။ ဘယ် GNU/Linux distro ရယ်လို့ အစွဲမရှိစေပဲ Linux ဆိုတဲ့ platform တစ်ခုကို သင်ယူလေ့လာဖြစ်ပါတယ်။ နောက်တစ်ခုရှိတာက post မှာပါမယ် စာမေးပွဲတွေက sysadmin တို့ network admin တို့ virtualization specialist တွေအတွက်ပါ။ coding သမားတွေ programming သမားတွေ အတွက်တော့ Linux မှာအသုံးများတဲ့ language တွေအတွက် သီးသန့်စာမေးပွဲတွေရှိပါတယ်။ ဒီ post ကတော့ Linux ဆိုတာဘာလဲ၊ ဘယ်လိုသုံးရသလဲ၊ ဘယ်လို manage လုပ်သလဲဆိုတာတွေကို cover ဖြစ်မှာပါ။ အခြေခံလိုအပ်မှုတွေအတွက် အလွယ်ဆုံး beginner အဆင့် certification ကနေစပြီးတော့ တဖြေးဖြေး ပိုပိုမြင့်လာတဲ့ certification တွေအကြောင်းကို တဆင့်ပြီး တဆင့်ရှင်း ပြသွားပါ့မယ်။ Certification တွေရဲ့ provider သုံးခုကို အခြေခံပြီးတော့ပြောသွားပါ့မယ်။
 
-![](https://itmatic101.files.wordpress.com/2019/09/accdf-linux.jpg?w=300&h=200)
+<figure><img src="https://i.imgur.com/ykfKByE.png" alt=""><figcaption><p>Linux Professional Institute (LPI)</p></figcaption></figure>
 
-![](https://itmatic101.files.wordpress.com/2019/09/a6ddb-1569869_orig.gif?w=300&h=115)
+<figure><img src="https://i.imgur.com/DQFdM8O.jpeg" alt=""><figcaption><p>CompTIA Linux+</p></figcaption></figure>
 
-![](https://itmatic101.files.wordpress.com/2019/09/88a3c-logo402x.png?w=300&h=105)
+<figure><img src="https://i.imgur.com/QNvTILx.gif" alt=""><figcaption><p>The Linux Foundation</p></figcaption></figure>
 
 ### **အခြေခံအဆင့် certification များ**
 
-**LPI Linux Essentials**  
-ပထမဆုံးကတော့ Linux Professional Institute \(LPI\) ဆိုတဲ့ certification provider ဖြစ်ပါတယ်။ အခြေခံအကျဆုံး beginner အဆင့်ကို စလုပ်မယ် ဆိုရင်တော့ စာရေးသူအနေနဲ့ Linux Professional Institute ရဲ့ LPI Linux Essentials ကိုဖြေဖို့ကို တိုက်တွန်းပါတယ်။ LPI Linux Essentials ကိုတော့ နောက်တဆင့်မြင့်တဲ့ Linux certification တွေအတွက်လည်း လိုအပ်သလို Linux စသုံးတဲ့လူတွေအတွက်လည်း သင်ကြားမူတစ်ခု စတင်ဖို့ကို ရည်ညွန်းပါတယ်။ အခြေခံအကျဆုံး Linux ရဲ့မရှိမဖြစ်လိုအပ်တဲ့ အရာတွေကို လေ့လာရင် certification တစ်ခုပြီးသွားမယ့် စာမေးပွဲဖြစ်ပါတယ်။ LPI Linux Essentails စာမေးပွဲကိုဖြေမယ်ဆိုရင်အောက်က အချက်တွေကို သိထားသင့်ပါတယ်။
+**LPI Linux Essentials**\
+ပထမဆုံးကတော့ Linux Professional Institute (LPI) ဆိုတဲ့ certification provider ဖြစ်ပါတယ်။ အခြေခံအကျဆုံး beginner အဆင့်ကို စလုပ်မယ် ဆိုရင်တော့ စာရေးသူအနေနဲ့ Linux Professional Institute ရဲ့ LPI Linux Essentials ကိုဖြေဖို့ကို တိုက်တွန်းပါတယ်။ LPI Linux Essentials ကိုတော့ နောက်တဆင့်မြင့်တဲ့ Linux certification တွေအတွက်လည်း လိုအပ်သလို Linux စသုံးတဲ့လူတွေအတွက်လည်း သင်ကြားမူတစ်ခု စတင်ဖို့ကို ရည်ညွန်းပါတယ်။ အခြေခံအကျဆုံး Linux ရဲ့မရှိမဖြစ်လိုအပ်တဲ့ အရာတွေကို လေ့လာရင် certification တစ်ခုပြီးသွားမယ့် စာမေးပွဲဖြစ်ပါတယ်။ LPI Linux Essentails စာမေးပွဲကိုဖြေမယ်ဆိုရင်အောက်က အချက်တွေကို သိထားသင့်ပါတယ်။
 
-![](https://itmatic101.files.wordpress.com/2019/09/4e0f9-lpi-essentials.jpg?w=300&h=233)
+<figure><img src="https://i.imgur.com/3BKqlYy.jpeg" alt=""><figcaption><p>LPI Linux Essentials</p></figcaption></figure>
 
 * **LPI Linux Essentials ရဲ့လက်ရှိ version** လက်ရှိမှာတော့ version 1.5 ကိုရောက်နေပါပြီ။ ICT industry ရဲ့လိုအပ်ချက်တွေကို ဖြည့်ဆည်းဖို့ရာ version တွေကို ပုံမှန် update လုပ်ရပါတယ်။ တခါတလေ certification exam တွေကို update လုပ်တဲ့အခါမှာ မေးခွန်းပုံစံတွေပါပြောင်းလဲ သွားတတ်တာမို့ သတိပြုစေချင်ပါတယ်။ ကိုယ်က ဘယ် version ကိုဖြေဆိုမလဲဆိုတာလည်းသိထားရပါမယ်။ တချို့ certification တွေမှာ version တွေ retired ဖြစ်သွားတာတွေရှိပါတယ်။ အဲ့ဒါတွေကိုလည်း သတိပြုစေချင်ပါတယ်။ Exam code ကတော့ 010-150 ဆိုတာနဲ့ရှာရပါမယ်။
 * **LPI Linux Essentials မဖြေခင်လိုအပ်ချက်များ** ဒီစာမေးပွဲဖြေဆိုဖို့အတွက်ဆို ရှေ့မှာကိုယ်က ဘာစာမေးပွဲမှ ဖြေဆိုအောင်မြင်ထားစရာမလိုပါဘူး။ အခြေခံစာမေးပွဲဖြစ်တဲ့အတွက် ကိုယ်အဆင်သင့် ဖြစ်ပြီဆိုတာနဲ့test center တစ်ခုမှာ register လုပ်ပြီးဖြေဆိုလိုက်ရုံပါပဲ။
@@ -26,4 +26,3 @@ Linux certification တွေအကြောင်းရေးမယ်ဆို
 ဒါကတော့ Linux မှာအခြေခံအကျဆုံး beginner အဆင့်မှာလေ့လာလို့ရတဲ့ certification အကြောင်းဖြစ်ပါတယ်။ တခြား training နဲ့ certification provider တွေမှာလည်း ခပ်ဆင်ဆင် စာမေးပွဲတွေရှိပါတယ်။ အခြေခံအဆင့်မှာတော့ တစ်ခုနဲ့တစ်ခုအရမ်းကြီးကွာခြားမူ မရှိသလောက်ပါပဲ။ Linux ကိုစနစ်တကျလေ့လာ ချင်တယ်ဆိုရင်တော့ LPI Linux Essentials လောက်ကိုတော့ လေ့လာ သင့်ပါတယ်။ လုပ်ငန်းခွင်အတွက် ဖြေဆိုသင့်ပါတယ်။ အခုနောက်ပိုင်းမှာတော့ Cisco ကလည်း Linux course တွေကို စတင်ပြီးမိတ်ဆက်လာပါပြီ။ အခြေခံအဆင့်မှာတော့ Cisco ရဲ့ course နာမည်ကတော့ NDG Linux Essentials လိုခေါ်ပါတယ်။ သူလည်း LPI Linux Essentials နည်းတူ command line တွေနဲ့ ဘယ်လို administrate လုပ်သလဲဆိုတဲ့ အခြေခံအဆင့်ကို cover ဖြစ်ပါတယ်။ တနည်းအားဖြင့် Cisco ရဲ့ NDG Linux Essentials ဆိုတာလည်း LPI Linux Essentials စာမေးပွဲအတွက် ပြင်ဆင်ပေးတဲ့ training material တစ်ခုပါပဲ။ နှစ်ခုထဲက ကိုယ်ကြိုက်တဲ့ တစ်ခုကို လေ့လာလို့ ရပါတယ်။
 
 နောက်အပိုင်းတွေမှာတော့ ဒီထက်တဆင့်မြင့်သွားတဲ့ Linux စာမေးပွဲတွေအကြောင်းကိုဆက်ရေးပါ့မယ်။ administrator အဆင့် specialist အဆင့် စာမေးပွဲတွေ အတွက်တော့ နောက်တပိုင်းမှာ ဆက်လက် ဖတ်ရှုပေးပါ။
-
