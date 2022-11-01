@@ -1,24 +1,29 @@
+---
+cover: https://i.imgur.com/vjicNMV.jpeg
+coverY: 0
+---
+
 # Linode VPS မှာကိုယ်ပိုင် Wireguard VPN server တစ်ခုတည်ဆောက်ပုံ
 
-အခုလိုမျိုး Facebook ကို block လိုက် ဟိုဟာကို block လိုက် ဒီဟာကို block လုပ်လိုက်နဲ့ လုပ်နေတဲ့ မြန်မာနိုင်ငံရဲ့ အရေးပေါ်အခြေအနေမျိုးမှာ အသုံးတည့်တဲ့ Wireguard ကို Linode ရဲ့ VPS တစ်ခုမှာ ဘယ်လိုမျိုးကိုယ်တိုင် setup လုပ်ပြီးတော့ ကိုယ့်အသိုင်းအဝိုင်း နဲ့  ရင်းနှီးတဲ့ မိတ်ဆွေအလွယ် သုံးနိုင်အောင် ဘယ်လို setup လုပ်နိုင်သလဲဆိုတာကို မျှဝေလိုပါတယ်။ စာရေးသူ ကိုယ်တိုင်လည်း Singapore မှာ VPS တစ်လုံးကိုယ်တိုင် ထောင်ထားပြီးတော့ အမျိုးတွေနဲ့ အသိမိတ်ဆွေတွေကို ပြန်လည်မျှဝေ သုံးစေခြင်းဖြင့် free VPN ဆိုတဲ့ ရန်ကနေကင်းဝေးအောင် ကူညီနိုင်ပါတယ်။ Free VPN တွေရဲ့ nature အရ free ဖြစ်တဲ့အတွက် တစ်ခုခုကနေ revenue ရမှ ရပ်တည်နိုင်မယ့်  သဘောပါ။ Browsing history တွေ log လုပ်တာပဲဖြစ်ဖြစ်၊ အခြားသော ငွေရှာနိုင်မည့် နည်းလမ်းတွေကို တနည်းမဟုတ် တနည်းနဲ့ လုပ်ရစမြဲမို့ လုံခြုံရေး အပိုင်းမှာ အပြည့်အဝစိတ်ချရတာမျိုး မရှိတာတော့ အမှန်ပါ။ အခုလိုမျိုး မြန်မာနိုင်ငံမှာ စစ်တပ်က အာဏာသိမ်းပြီးတော့ ဗရုတ်သုတ်ခ တွေတစ်ခုပြီးတစ်ခု လျှောက်လုပ်နေတော့ မြန်မာပြည်သူတွေမှာလည်း ရရာ free VPN တွေကို အသုံးပြုရပါတော့တယ်။ နောက်တစ်ခုက free VPN တွေဟာ သုံးတဲ့ လူတွေများလာတာနဲ့ အမျှ သတ်မှတ်ထားတဲ့ bandwidth တွင်းမှာ traffic တွေဟာ အပြိုင်အဆိုင် contend လုပ်တဲ့အခါတိုင်း အားလုံးအတွက် နှေးလာပါတော့တယ်။ ကိုယ်ပိုင် VPN server ရှိခြင်းဖြင့် ရနိုင်တဲ့ အကျိုးကျေးဇူးကတော့ ကိုယ်နိုင်သလောက် လူဦးရေအတွက်ကိုသာ VPN connection လာချိတ်တဲ့အတွက် free VPN ထက်မြန်မယ်၊ လုံခြုံစိတ်ချရပါ့မယ်။ နောက်ပြီးတော့ သိပြီးကြတဲ့အတိုင်း Wireguard ဟာ lightweight ဖြစ်တဲ့အတွက် အခြားသော VPN server တွေနဲ့ မတူတာက resource intensive မဖြစ်ပါဘူး။ 
+အခုလိုမျိုး Facebook ကို block လိုက် ဟိုဟာကို block လိုက် ဒီဟာကို block လုပ်လိုက်နဲ့ လုပ်နေတဲ့ မြန်မာနိုင်ငံရဲ့ အရေးပေါ်အခြေအနေမျိုးမှာ အသုံးတည့်တဲ့ Wireguard ကို Linode ရဲ့ VPS တစ်ခုမှာ ဘယ်လိုမျိုးကိုယ်တိုင် setup လုပ်ပြီးတော့ ကိုယ့်အသိုင်းအဝိုင်း နဲ့ ရင်းနှီးတဲ့ မိတ်ဆွေအလွယ် သုံးနိုင်အောင် ဘယ်လို setup လုပ်နိုင်သလဲဆိုတာကို မျှဝေလိုပါတယ်။ စာရေးသူ ကိုယ်တိုင်လည်း Singapore မှာ VPS တစ်လုံးကိုယ်တိုင် ထောင်ထားပြီးတော့ အမျိုးတွေနဲ့ အသိမိတ်ဆွေတွေကို ပြန်လည်မျှဝေ သုံးစေခြင်းဖြင့် free VPN ဆိုတဲ့ ရန်ကနေကင်းဝေးအောင် ကူညီနိုင်ပါတယ်။ Free VPN တွေရဲ့ nature အရ free ဖြစ်တဲ့အတွက် တစ်ခုခုကနေ revenue ရမှ ရပ်တည်နိုင်မယ့် သဘောပါ။ Browsing history တွေ log လုပ်တာပဲဖြစ်ဖြစ်၊ အခြားသော ငွေရှာနိုင်မည့် နည်းလမ်းတွေကို တနည်းမဟုတ် တနည်းနဲ့ လုပ်ရစမြဲမို့ လုံခြုံရေး အပိုင်းမှာ အပြည့်အဝစိတ်ချရတာမျိုး မရှိတာတော့ အမှန်ပါ။ အခုလိုမျိုး မြန်မာနိုင်ငံမှာ စစ်တပ်က အာဏာသိမ်းပြီးတော့ ဗရုတ်သုတ်ခ တွေတစ်ခုပြီးတစ်ခု လျှောက်လုပ်နေတော့ မြန်မာပြည်သူတွေမှာလည်း ရရာ free VPN တွေကို အသုံးပြုရပါတော့တယ်။ နောက်တစ်ခုက free VPN တွေဟာ သုံးတဲ့ လူတွေများလာတာနဲ့ အမျှ သတ်မှတ်ထားတဲ့ bandwidth တွင်းမှာ traffic တွေဟာ အပြိုင်အဆိုင် contend လုပ်တဲ့အခါတိုင်း အားလုံးအတွက် နှေးလာပါတော့တယ်။ ကိုယ်ပိုင် VPN server ရှိခြင်းဖြင့် ရနိုင်တဲ့ အကျိုးကျေးဇူးကတော့ ကိုယ်နိုင်သလောက် လူဦးရေအတွက်ကိုသာ VPN connection လာချိတ်တဲ့အတွက် free VPN ထက်မြန်မယ်၊ လုံခြုံစိတ်ချရပါ့မယ်။ နောက်ပြီးတော့ သိပြီးကြတဲ့အတိုင်း Wireguard ဟာ lightweight ဖြစ်တဲ့အတွက် အခြားသော VPN server တွေနဲ့ မတူတာက resource intensive မဖြစ်ပါဘူး။
 
-ဟုတ်ပြီ... အကုန်အကျဘယ်လောက်ရှိသလဲဆိုတော့ Linode ကို အကောင့် အသစ်စစဖွင့်ချင်း $100 ဖိုးစာကို ရက် ၆၀အတွက် free ရပါလိမ့်မယ်။ စာရေးသူ ကြိုက်နှစ်သက်ဆုံး Jupiter Broadcast ရဲ့ Linux Action News ကနေပြီးတော့ပေးထားတဲ့ ဒီ link လေး [https://www.linode.com/lp/podcasts/?ifso=lan](https://www.linode.com/lp/podcasts/?ifso=lan) အသုံးပြုပြီး အကောင့်အသစ်ဖွင့် claim လိုက်ရုံပါပဲ။ တစ်ခုတော့ ရှိတယ် သုံးလို့ရတဲ့ credit card/debit card တော့လိုပါလိမ့်မယ်။ ဒီ link ကို အသုံးပြုချင်းအားဖြင့်လည်း Linux Action News podcast ကို အထောက်အကူ ပြုရာလည်းဖြစ်ပါတယ်။ $100 ဖိုးဆိုတာ Linode မှာအများကြီး သုံးရပါတယ်။ AWS မှာလိုမျိုး pricing structure မရှုပ်ထွေးတဲ့ အတွက် ရိုးရှင်းပါတယ်။ အခြေခံအကျဆုံး $5 VPS တစ်ခုကို Singapore မှာ setup လုပ်တဲ့ပုံစံကို ပြပါ့မယ်။ ပြီးတော့ အဲ့ဒီ VPS ပေါ်မှာ Wireguard ကို install လုပ်ပုံနဲ့ setup လုပ်ပုံကို ပြပါ့မယ်။ $5 တန် VPS ကို အသုံးပြုတဲ့အတွက် VPN user ၁၀ ယောက်ကနေ အယောက် ၃၀ လောက် ထိအတွက်သာကောင်းပါလိမ့်မယ်။ ဒီထက်များမယ်ဆိုရင်တော့... အခြားသော VPS သို့မဟုတ် dedicated VPS လိုမျိုးတွေကို အသုံးပြုရပါလိမ့်မယ်။ စာရေးသူ စမ်းကြည့်သလောက်တော့ Singapore မှာ VPS ကို ထားတာ အခြားသော Asia zone မှာရှိတဲ့ အခြားသော region တွေထက် ကောင်းသော VPN performance ကိုရပါတယ်။ မြန်မာနိုင်ငံနဲ့ အနီးဆုံးဖြစ်တဲ့အပြင် marine fibre backbone ကို ကြည့်လိုက်ရင်ဖြင့် တိုက်ရိုက်ဆက်သွယ်ထားတဲ့ fibre backbone မှာ bandwidth အများဆုံးနိုင်ငံလည်း ဖြစ်ပါတယ်။ ဒီအတွက် Singapore ကို strategically အရ ရွေးချယ်ခဲ့တာလည်းဖြစ်ပါတယ်။ ကဲ... internet ရတုန်းလေး စလိုက်ရအောင်ဗျာ။ 
+ဟုတ်ပြီ... အကုန်အကျဘယ်လောက်ရှိသလဲဆိုတော့ Linode ကို အကောင့် အသစ်စစဖွင့်ချင်း $100 ဖိုးစာကို ရက် ၆၀အတွက် free ရပါလိမ့်မယ်။ စာရေးသူ ကြိုက်နှစ်သက်ဆုံး Jupiter Broadcast ရဲ့ Linux Action News ကနေပြီးတော့ပေးထားတဲ့ ဒီ link လေး [https://www.linode.com/lp/podcasts/?ifso=lan](https://www.linode.com/lp/podcasts/?ifso=lan) အသုံးပြုပြီး အကောင့်အသစ်ဖွင့် claim လိုက်ရုံပါပဲ။ တစ်ခုတော့ ရှိတယ် သုံးလို့ရတဲ့ credit card/debit card တော့လိုပါလိမ့်မယ်။ ဒီ link ကို အသုံးပြုချင်းအားဖြင့်လည်း Linux Action News podcast ကို အထောက်အကူ ပြုရာလည်းဖြစ်ပါတယ်။ $100 ဖိုးဆိုတာ Linode မှာအများကြီး သုံးရပါတယ်။ AWS မှာလိုမျိုး pricing structure မရှုပ်ထွေးတဲ့ အတွက် ရိုးရှင်းပါတယ်။ အခြေခံအကျဆုံး $5 VPS တစ်ခုကို Singapore မှာ setup လုပ်တဲ့ပုံစံကို ပြပါ့မယ်။ ပြီးတော့ အဲ့ဒီ VPS ပေါ်မှာ Wireguard ကို install လုပ်ပုံနဲ့ setup လုပ်ပုံကို ပြပါ့မယ်။ $5 တန် VPS ကို အသုံးပြုတဲ့အတွက် VPN user ၁၀ ယောက်ကနေ အယောက် ၃၀ လောက် ထိအတွက်သာကောင်းပါလိမ့်မယ်။ ဒီထက်များမယ်ဆိုရင်တော့... အခြားသော VPS သို့မဟုတ် dedicated VPS လိုမျိုးတွေကို အသုံးပြုရပါလိမ့်မယ်။ စာရေးသူ စမ်းကြည့်သလောက်တော့ Singapore မှာ VPS ကို ထားတာ အခြားသော Asia zone မှာရှိတဲ့ အခြားသော region တွေထက် ကောင်းသော VPN performance ကိုရပါတယ်။ မြန်မာနိုင်ငံနဲ့ အနီးဆုံးဖြစ်တဲ့အပြင် marine fibre backbone ကို ကြည့်လိုက်ရင်ဖြင့် တိုက်ရိုက်ဆက်သွယ်ထားတဲ့ fibre backbone မှာ bandwidth အများဆုံးနိုင်ငံလည်း ဖြစ်ပါတယ်။ ဒီအတွက် Singapore ကို strategically အရ ရွေးချယ်ခဲ့တာလည်းဖြစ်ပါတယ်။ ကဲ... internet ရတုန်းလေး စလိုက်ရအောင်ဗျာ။
 
 ### Linode ပေါ်မှာ VPS တစ်ခု ဖန်တီးပုံ
 
-Cloud မှာ VPS တစ်ခုကို ဖန်တီးတဲ့အခါ မှာတစ်ခုနဲ့ တစ်ခု ခပ်ဆင်ဆင်တူကြပါတယ်။ ဒီတစ်ခုမှာတော့ basic VPS တစ်ခုကို ဘယ်လိုမျိုး တည်ဆောက်သလဲဆိုတာ အောက်မှာ gif ပုံထဲမှာ ကြည့်လိုက်ပါ။ အချိန်နည်းနည်း သက်သာအောင်လို့ ပုံတစ်ခုချင်းစီမသွားတော့ပါဘူး။ 
+Cloud မှာ VPS တစ်ခုကို ဖန်တီးတဲ့အခါ မှာတစ်ခုနဲ့ တစ်ခု ခပ်ဆင်ဆင်တူကြပါတယ်။ ဒီတစ်ခုမှာတော့ basic VPS တစ်ခုကို ဘယ်လိုမျိုး တည်ဆောက်သလဲဆိုတာ အောက်မှာ gif ပုံထဲမှာ ကြည့်လိုက်ပါ။ အချိန်နည်းနည်း သက်သာအောင်လို့ ပုံတစ်ခုချင်းစီမသွားတော့ပါဘူး။
 
-![](../.gitbook/assets/wg-srv-linode.gif)
+<figure><img src="../.gitbook/assets/wg-srv-linode (1).gif" alt=""><figcaption></figcaption></figure>
 
-အထက်မှာပြထားတဲ့ အတိုင်း Linode ပေါ်မှာ VPS တစ်ခုကို ဖန်တီးဖို့ရာ အတွက်က မခက်ပါဘူး။ ကိုယ်သုံးမယ် Linux distribution ကိုရွေးမယ်၊ Region ကိုရွေးမယ် VPS ရဲ့ အရွယ်အစား၊ နာမည် နဲ့ login လုပ်ဖို့ လိုအပ်တဲ့ root ရဲ့ password နဲ့ key authentication အတွက် ကိုယ့်ရဲ့ ssh key တွေကိုထည့်ပေးလိုက် ပြီးတော့ create လုပ်လိုက်ရုံပါပဲ။ ပြီးရင် ကိုယ်ရဲ့ VPS ကို provisioning၊ booting နဲ့ running ဆိုပြီးတော့ တစ်ခုချင်းစီပြပါလိမ့်မယ်။ သူချပေးလိုက် public IP address ကို မှတ်ထားလိုက်ပြီးတော့ အခုဆိုရင် server ထဲကို root account နဲ့ အောက်ကအတိုင်း ssh login ဝင်လို့ရပါပြီ။ 
+အထက်မှာပြထားတဲ့ အတိုင်း Linode ပေါ်မှာ VPS တစ်ခုကို ဖန်တီးဖို့ရာ အတွက်က မခက်ပါဘူး။ ကိုယ်သုံးမယ် Linux distribution ကိုရွေးမယ်၊ Region ကိုရွေးမယ် VPS ရဲ့ အရွယ်အစား၊ နာမည် နဲ့ login လုပ်ဖို့ လိုအပ်တဲ့ root ရဲ့ password နဲ့ key authentication အတွက် ကိုယ့်ရဲ့ ssh key တွေကိုထည့်ပေးလိုက် ပြီးတော့ create လုပ်လိုက်ရုံပါပဲ။ ပြီးရင် ကိုယ်ရဲ့ VPS ကို provisioning၊ booting နဲ့ running ဆိုပြီးတော့ တစ်ခုချင်းစီပြပါလိမ့်မယ်။ သူချပေးလိုက် public IP address ကို မှတ်ထားလိုက်ပြီးတော့ အခုဆိုရင် server ထဲကို root account နဲ့ အောက်ကအတိုင်း ssh login ဝင်လို့ရပါပြီ။
 
 ![](../.gitbook/assets/wg-srv-key-auth.gif)
 
-စာရေးသူ ရဲ့ ssh key ကို ဒီ VPS ကို create လုပ်တုန်းက tick လုပ်ပြီးထည့်ထားတဲ့အတွက် root ရဲ့  password ကို login လုပ်တဲ့အခါမှာ မမေးပါဘူး။ Cloud မှာ အခုလိုမျိုး VPS တစ်ခုလုပ်တဲ့အခါမှာ ကိုယ့် VPS လုံခြုံရေးအတွက် ssh configuration မှာ လိုအပ်တဲ့ ပြင်စရာလေးတွေ အချို့ရှိနေပါတယ်။ ပထမတစ်ခုက အထက်မှာလိုမျိုး root account ကို production မှာ remote login မပေးထားသင့်ပါဘူး။ ကိုယ့်ရဲ့ ကိုယ်ပိုင် account ကို VPS ထဲ ဝင်ပြီးတာနဲ့ ချက်ချင်း create လုပ်သင့်ပါတယ်။ ပြီးရင်အဲ့ဒီ account ကို sudo ဆိုတဲ့ group ထဲမှာထည့်ပေးလိုက်ရုံဖြင့် ကိုယ့် account က sudoer ဖြစ်သွားပါတယ်။ 
+စာရေးသူ ရဲ့ ssh key ကို ဒီ VPS ကို create လုပ်တုန်းက tick လုပ်ပြီးထည့်ထားတဲ့အတွက် root ရဲ့ password ကို login လုပ်တဲ့အခါမှာ မမေးပါဘူး။ Cloud မှာ အခုလိုမျိုး VPS တစ်ခုလုပ်တဲ့အခါမှာ ကိုယ့် VPS လုံခြုံရေးအတွက် ssh configuration မှာ လိုအပ်တဲ့ ပြင်စရာလေးတွေ အချို့ရှိနေပါတယ်။ ပထမတစ်ခုက အထက်မှာလိုမျိုး root account ကို production မှာ remote login မပေးထားသင့်ပါဘူး။ ကိုယ့်ရဲ့ ကိုယ်ပိုင် account ကို VPS ထဲ ဝင်ပြီးတာနဲ့ ချက်ချင်း create လုပ်သင့်ပါတယ်။ ပြီးရင်အဲ့ဒီ account ကို sudo ဆိုတဲ့ group ထဲမှာထည့်ပေးလိုက်ရုံဖြင့် ကိုယ့် account က sudoer ဖြစ်သွားပါတယ်။
 
 ![](../.gitbook/assets/create-user.gif)
 
-ကိုယ့် account နဲ့ VPS ထဲကို ssh ဝင်လို့ ရမရ အရင်စမ်း ကြည့်ပါ။ ဝင်လို့ရပြီဆိုတာနဲ့ ကိုယ် ssh ပတ်သတ်တဲ့ remote login လုံခြုံရေးအတွက် စတင်လုပ်စရာရှိတာတွေကို လုပ်လို့ ရနိုင်ပါပြီ။ အောက်ကအတိုင်း တဆင့်ပြီးတော့ တဆင့်လုပ်သွားလိုက်ပါ။ 
+ကိုယ့် account နဲ့ VPS ထဲကို ssh ဝင်လို့ ရမရ အရင်စမ်း ကြည့်ပါ။ ဝင်လို့ရပြီဆိုတာနဲ့ ကိုယ် ssh ပတ်သတ်တဲ့ remote login လုံခြုံရေးအတွက် စတင်လုပ်စရာရှိတာတွေကို လုပ်လို့ ရနိုင်ပါပြီ။ အောက်ကအတိုင်း တဆင့်ပြီးတော့ တဆင့်လုပ်သွားလိုက်ပါ။
 
 ```bash
 root@wg-srv:~# nano /etc/ssh/sshd_config
@@ -181,19 +186,19 @@ Feb 07 21:53:37 wg-srv sshd[2014]: Unable to negotiate with 167.99.41.124 port 4
 lines 1-17/17 (END)
 ```
 
-အထက်က အဆင့်မှာတော့ /etc/ssh/sshd\_config ဆိုတဲ့ ssh daemon configuration file ကို nano နဲ့ဖြစ်ဖြစ်၊ vim နဲ့ ဖြစ်ဖြစ် edit လုပ်ရပါလိမ့်မယ်။ line number 36 မှာ PermitRootLogin yes ဆိုတဲ့ နေရာမှာ no လို့ပြောင်းပေးပါ။ ဒီတစ်ခုကတော့ root account နဲ့ ssh remote login ပေးမလုပ်ဘူးလို့ sshd ကို ပြောလိုက်တာပါ။ ပြီးရင် line number 60 မှာ PasswordAuthentication yes ကို no လို့ထပ်ပြောင်း ပေးရပါ့မယ်။ ဒါကတော့ password နဲ့ ssh remote login ပေးမလုပ်တော့ဘူးလို့ သတ်မှတ်ပေးလိုက်ပါ။ ဒီအတွက် ကိုယ့်ရဲ့ ssh key ကို root user account ကနေပြီးတော့ ကိုယ့် user အသစ်ရဲ့ /home/tyla/.ssh အောက်မှာ cp နဲ့ copy ကူးယူပြီးတော့ chown နဲ့ ကိုယ်ပိုင် ဖြစ်အောင်ပြောင်းပေးရပါ့မယ်။ ဒီအဆင့်က အရေးကြီးပါတယ်။ ဒီလိုလုပ်ပြီးတဲ့ အခါမှ systemctl restart sshd နဲ့ ssh daemon ကို restart ချပေးလိုက်ပါ။ အခုဆိုရင်တော့... ကိုယ့် account နဲ့ ssh authentication လုပ်ဖို့ အဆင့်သင့်ဖြစ်ပါပြီ။ SSH login လုပ်လို့ ရမရ အရင်ဆုံး စမ်းကြည့်ပါ။ အားလုံး အဆင်ပြေရင်တော့ Wireguard ကို စတင်ပြီးတော့ install လုပ်နိုင်၊ configure လုပ်နိုင်ပါပြီ။ 
+အထက်က အဆင့်မှာတော့ /etc/ssh/sshd\_config ဆိုတဲ့ ssh daemon configuration file ကို nano နဲ့ဖြစ်ဖြစ်၊ vim နဲ့ ဖြစ်ဖြစ် edit လုပ်ရပါလိမ့်မယ်။ line number 36 မှာ PermitRootLogin yes ဆိုတဲ့ နေရာမှာ no လို့ပြောင်းပေးပါ။ ဒီတစ်ခုကတော့ root account နဲ့ ssh remote login ပေးမလုပ်ဘူးလို့ sshd ကို ပြောလိုက်တာပါ။ ပြီးရင် line number 60 မှာ PasswordAuthentication yes ကို no လို့ထပ်ပြောင်း ပေးရပါ့မယ်။ ဒါကတော့ password နဲ့ ssh remote login ပေးမလုပ်တော့ဘူးလို့ သတ်မှတ်ပေးလိုက်ပါ။ ဒီအတွက် ကိုယ့်ရဲ့ ssh key ကို root user account ကနေပြီးတော့ ကိုယ့် user အသစ်ရဲ့ /home/tyla/.ssh အောက်မှာ cp နဲ့ copy ကူးယူပြီးတော့ chown နဲ့ ကိုယ်ပိုင် ဖြစ်အောင်ပြောင်းပေးရပါ့မယ်။ ဒီအဆင့်က အရေးကြီးပါတယ်။ ဒီလိုလုပ်ပြီးတဲ့ အခါမှ systemctl restart sshd နဲ့ ssh daemon ကို restart ချပေးလိုက်ပါ။ အခုဆိုရင်တော့... ကိုယ့် account နဲ့ ssh authentication လုပ်ဖို့ အဆင့်သင့်ဖြစ်ပါပြီ။ SSH login လုပ်လို့ ရမရ အရင်ဆုံး စမ်းကြည့်ပါ။ အားလုံး အဆင်ပြေရင်တော့ Wireguard ကို စတင်ပြီးတော့ install လုပ်နိုင်၊ configure လုပ်နိုင်ပါပြီ။
 
 ### Wireguard ကို VPS ပေါ်မှာ VPN Server အနေနဲ့ configure လုပ်ပုံ
 
-Wireguard ကိုအောက်က အတိုင်း install လုပ်လိုက်ပါ။ 
+Wireguard ကိုအောက်က အတိုင်း install လုပ်လိုက်ပါ။
 
-```text
+```
 $ sudo apt-get install wireguard -y
 ```
 
-SSH login နဲ့ ပတ်သတ်ပြီးတော့ အားလုံး အဆင်သင့်ဖြစ်ရင် Wireguard server ပုံစံကို ကိုယ့် VPS ပေါ်မှာ အောက်မှာပြထားတဲ့အတိုင်း configure လုပ်ပြီးတော့ ပြင်ဆင်လိုက်ပါ။ ဒီ link မှာလည်း  [https://my.itmatic101.com/networking/wireguard-intro](https://my.itmatic101.com/networking/wireguard-intro) Wireguard ကို configure လုပ်တဲ့ပုံကို အနည်းငယ်ရှင်းပြီးသားမို့ ဒီမှာတော့ အတိုချုပ်ပြီးတော့ ပဲရှင်းပါတော့မယ်။ 
+SSH login နဲ့ ပတ်သတ်ပြီးတော့ အားလုံး အဆင်သင့်ဖြစ်ရင် Wireguard server ပုံစံကို ကိုယ့် VPS ပေါ်မှာ အောက်မှာပြထားတဲ့အတိုင်း configure လုပ်ပြီးတော့ ပြင်ဆင်လိုက်ပါ။ ဒီ link မှာလည်း [https://my.itmatic101.com/networking/wireguard-intro](https://my.itmatic101.com/networking/wireguard-intro) Wireguard ကို configure လုပ်တဲ့ပုံကို အနည်းငယ်ရှင်းပြီးသားမို့ ဒီမှာတော့ အတိုချုပ်ပြီးတော့ ပဲရှင်းပါတော့မယ်။
 
-```text
+```
 tyla@wg-srv:~$ sudo -i
 [sudo] password for tyla:  [Enter your sudoer password]
 # Generating public and private keys under /etc/wireguard directory
@@ -225,9 +230,9 @@ root@wg-srv:~# wg-quick up wg0
 
 ### Wireguard ကို client ဘက်မှာ configure လုပ်ပုံ
 
-Wireguard ရဲ့ server ဘက်မှာ ပြင်ဆင်ပြီးရင် ကိုယ်သုံးမယ့် Wireguard client ဘက်မှာလည်း အောက်ကအတိုင်းဆက်လက် configure လုပ်လိုက်ပါ။ Client တစ်ခု ထပ်ပေါင်းထည့်ဖို့လိုတိုင်း အောက်ကအတိုင်း လုပ်ပြီးတော့ server ဘက်အခြမ်းမှာ နောက်ထပ်တိုးထည့်တဲ့ \[Peer\] တစ်ခုအနေနဲ့ သွားထည့်ပေးလိုက်ရုံပါပဲ။  
+Wireguard ရဲ့ server ဘက်မှာ ပြင်ဆင်ပြီးရင် ကိုယ်သုံးမယ့် Wireguard client ဘက်မှာလည်း အောက်ကအတိုင်းဆက်လက် configure လုပ်လိုက်ပါ။ Client တစ်ခု ထပ်ပေါင်းထည့်ဖို့လိုတိုင်း အောက်ကအတိုင်း လုပ်ပြီးတော့ server ဘက်အခြမ်းမှာ နောက်ထပ်တိုးထည့်တဲ့ \[Peer] တစ်ခုအနေနဲ့ သွားထည့်ပေးလိုက်ရုံပါပဲ။
 
-```text
+```
 tyla@wg-cl-node:~$ sudo -i
 [sudo] password for tyla:  [Enter your sudoer password]
 # Generating public and private keys under /etc/wireguard directory
@@ -255,31 +260,31 @@ PersistentKeepalive = 25
 root@wg-cl-node:~# wg-quick up wg0
 ```
 
-အခုဆိုရင်... Wireguard ရဲ့ server ဘက်မှာရော client ဘက်ခြမ်းအတွက်ပါ အဆင်သင့်ဖြစ်ပါပြီ။ Wireguard ဟာ public/private keys တွေနဲ့ authenticate လုပ်တာမို့ ဘာမှထပ်ပြီးတော့ အခြားသော VPN service တွေမှာလို ထပ်ပြီးတော့  configure လုပ်စရာမရှိပါ။ သူ့ရဲ့ configuration ကဒါပါပဲ။ ကိုယ်လုပ်တာအကုန်မှန်တယ်ဆိုရင်တော့ wg ဆိုတဲ့ command ကို prompt မှာရိုက်ထည့်လိုက်ရင် တဘက်တချက်စီမှာ ကိုယ့်ရဲ့ peer နဲ့ဆိုင်တဲ့ အချက်အလက်တွေကို တွေ့ရမှာပဲဖြစ်ပါတယ်။ နောက်ပြီး wg server နဲ့ client node ကြားမှာ 10.1.10.0 ip ကို ping ကြည့်လို့ရတယ်ဆိုရင် wireguard ရဲ့ connection က စတင် အလုပ်လုပ်ပါပြီ။ WireGuard client node ဘက်မှာ AllowedIPs ကို ကိုယ် route ချင်တဲ့ ip address သို့မဟုတ် subnet ကိုလည်း အောက်မှာလို comma နဲ့ ထက်ပြီးတော့ ပေါင်းထည့်လို့ရပါတယ်။
+အခုဆိုရင်... Wireguard ရဲ့ server ဘက်မှာရော client ဘက်ခြမ်းအတွက်ပါ အဆင်သင့်ဖြစ်ပါပြီ။ Wireguard ဟာ public/private keys တွေနဲ့ authenticate လုပ်တာမို့ ဘာမှထပ်ပြီးတော့ အခြားသော VPN service တွေမှာလို ထပ်ပြီးတော့ configure လုပ်စရာမရှိပါ။ သူ့ရဲ့ configuration ကဒါပါပဲ။ ကိုယ်လုပ်တာအကုန်မှန်တယ်ဆိုရင်တော့ wg ဆိုတဲ့ command ကို prompt မှာရိုက်ထည့်လိုက်ရင် တဘက်တချက်စီမှာ ကိုယ့်ရဲ့ peer နဲ့ဆိုင်တဲ့ အချက်အလက်တွေကို တွေ့ရမှာပဲဖြစ်ပါတယ်။ နောက်ပြီး wg server နဲ့ client node ကြားမှာ 10.1.10.0 ip ကို ping ကြည့်လို့ရတယ်ဆိုရင် wireguard ရဲ့ connection က စတင် အလုပ်လုပ်ပါပြီ။ WireGuard client node ဘက်မှာ AllowedIPs ကို ကိုယ် route ချင်တဲ့ ip address သို့မဟုတ် subnet ကိုလည်း အောက်မှာလို comma နဲ့ ထက်ပြီးတော့ ပေါင်းထည့်လို့ရပါတယ်။
 
-```text
+```
 AllowedIPs = 10.1.10.1/32, 192.168.0.0/24 
 ```
 
 အထက်ကအတိုင်း ထည့်လိုက်ရင်တော့ wg server ရဲ့ IP address နဲ့၊ peer မှာရှိတဲ့ 192.168.0.0/24 ဆိုတဲ့ subnet နဲ့ကိုတာ WireGuard ရဲ့ tunnel ထဲမှာ route လုပ်မယ်လို့ပြောတာဖြစ်ပါတယ်။
 
-ဒီ setup မှာက client device မှာရှိသမျှ traffic အကုန်လုံးကို Wiregurad VPN tunnel ထဲကနေ သွားစေချင်တာဖြစ်တဲ့အတွက် အောက်မှာပြထားတဲ့အတိုင်း AllowedIPs ကို 0.0.0.0/0 ဆိုပြီးတော့ configure လုပ်ပေးရပါ့မယ်။  
+ဒီ setup မှာက client device မှာရှိသမျှ traffic အကုန်လုံးကို Wiregurad VPN tunnel ထဲကနေ သွားစေချင်တာဖြစ်တဲ့အတွက် အောက်မှာပြထားတဲ့အတိုင်း AllowedIPs ကို 0.0.0.0/0 ဆိုပြီးတော့ configure လုပ်ပေးရပါ့မယ်။
 
-```text
+```
 AllowedIPs = 0.0.0.0/0
 ```
 
-နောက်တစ်ခုက… ကိုယ်က WireGuard server node ကို reboot လုပ်တိုင်း wireguard ကို system startup မှာ service တစ်ခုအနေနဲ့ autostart လုပ်ချင်တယ်ဆိုရင်တော့ အောက်ကအတိုင်း systemd ရဲ့ systemctl ကို အသုံးပြုလို့ရပါတယ်။ Wireguard daemon ကို မသုံးလို့ ရပ်ထားချင်ရင် systemctl stop wg-quick@wg0.service နဲ့ restart လုပ်ချင်ရင် systemctl restart wg-quick@wg0.service ဆိုတာတွေကို အသုံးပြုပြီးတော့ daemon ကို systemd ရဲ့ systemctl နဲ့ ထိန်းလို့ရပါတယ်။ တစ်ခုတော့ရှိတယ်.... အပေါ်မှာ သုံးပြထားတဲ့ command တွေထဲမှာ wg-quick up wg0 ဆိုတာအတွက် wg-quick down wg0 ဆိုတဲ့ command ကိုအရင်ဆုံး အသုံးပြုပြီးတော့မှ systemctl command ကိုသုံးပါ။ 
+နောက်တစ်ခုက… ကိုယ်က WireGuard server node ကို reboot လုပ်တိုင်း wireguard ကို system startup မှာ service တစ်ခုအနေနဲ့ autostart လုပ်ချင်တယ်ဆိုရင်တော့ အောက်ကအတိုင်း systemd ရဲ့ systemctl ကို အသုံးပြုလို့ရပါတယ်။ Wireguard daemon ကို မသုံးလို့ ရပ်ထားချင်ရင် systemctl stop wg-quick@wg0.service နဲ့ restart လုပ်ချင်ရင် systemctl restart wg-quick@wg0.service ဆိုတာတွေကို အသုံးပြုပြီးတော့ daemon ကို systemd ရဲ့ systemctl နဲ့ ထိန်းလို့ရပါတယ်။ တစ်ခုတော့ရှိတယ်.... အပေါ်မှာ သုံးပြထားတဲ့ command တွေထဲမှာ wg-quick up wg0 ဆိုတာအတွက် wg-quick down wg0 ဆိုတဲ့ command ကိုအရင်ဆုံး အသုံးပြုပြီးတော့မှ systemctl command ကိုသုံးပါ။
 
-```text
+```
 root@wg-srv-node:~# systemctl enable wg-quick@wg0.service
 ```
 
 ### Wireguard အတွက် IP Forwarding လုပ်ပုံ
 
-ကိုယ်က  LAN မှာရှိတဲ့ device တွေကို remote access လုပ်ချင်ရင် ဒီအဆင့်က မလိုအပ်ပါဘူး။ ဒါမှမဟုတ်ပဲနဲ့ internet traffic ကိုပါ ကိုယ့် VPN server ကနေထွက်စေချင်ရင်တော့ အောက်ကအတိုင်း ip forwarding ကို ပြင်ပေးရပါလိမ့်မယ်။
+ကိုယ်က LAN မှာရှိတဲ့ device တွေကို remote access လုပ်ချင်ရင် ဒီအဆင့်က မလိုအပ်ပါဘူး။ ဒါမှမဟုတ်ပဲနဲ့ internet traffic ကိုပါ ကိုယ့် VPN server ကနေထွက်စေချင်ရင်တော့ အောက်ကအတိုင်း ip forwarding ကို ပြင်ပေးရပါလိမ့်မယ်။
 
-```text
+```
 root@wg-srv-node:~# nano /etc/sysctl.conf
 
 #
@@ -353,9 +358,9 @@ net.ipv4.ip_forward=1
 
 Line 30 မှာရှိတဲ့ net.ipv4.ip\_forward=1 ဆိုတဲ့တခုကို uncomment လုပ်ပေးပြီးတော့ 1 လို့ ပြောင်းပေးလိုက်ပါ။
 
-ကိုယ်က mobile phone မှာ Wireguard app ကို အသုံးပြုတဲအခါမှာ client side ဘက်က configuration တွေကိုကူးယူပြီးတော့ ထည့်ရတာ တော်တော်လေးလက်ဝင်ပါတယ်။ အထူးသဖြင့် public/private keys တွေကိုတစ်ခုချင်းစီရိုက်ထည့်ရတာ မလွယ်ပါဘူး။ အဲ့ဒီအတွက် ကိုယ်ရဲ့ Wireguard client configuration ကို QR Code အနေနဲ့ ပြောင်းပြီးတော့ mobile phone camera နဲ့ scan ဖတ်ပြီးတော့ configure လုပ်ရတာ ပိုပြီးတော့ အဆင်ပြေပါတယ်။ အောက်ကအတိုင်း လိုက်ပြီးတော့ install လုပ်၊ QR code ကို issue လုပ်လို့ ရပါတယ်။ 
+ကိုယ်က mobile phone မှာ Wireguard app ကို အသုံးပြုတဲအခါမှာ client side ဘက်က configuration တွေကိုကူးယူပြီးတော့ ထည့်ရတာ တော်တော်လေးလက်ဝင်ပါတယ်။ အထူးသဖြင့် public/private keys တွေကိုတစ်ခုချင်းစီရိုက်ထည့်ရတာ မလွယ်ပါဘူး။ အဲ့ဒီအတွက် ကိုယ်ရဲ့ Wireguard client configuration ကို QR Code အနေနဲ့ ပြောင်းပြီးတော့ mobile phone camera နဲ့ scan ဖတ်ပြီးတော့ configure လုပ်ရတာ ပိုပြီးတော့ အဆင်ပြေပါတယ်။ အောက်ကအတိုင်း လိုက်ပြီးတော့ install လုပ်၊ QR code ကို issue လုပ်လို့ ရပါတယ်။
 
-```text
+```
 root@wg-cl-node:~# apt install qrencode
 root@wg-cl-node:~# qrencode  -t ansiutf8 < tyla.conf
 ```
@@ -364,9 +369,9 @@ root@wg-cl-node:~# qrencode  -t ansiutf8 < tyla.conf
 
 ကိုယ့်ရဲ့ VPS ဟာ public internet မှာ public IP address နဲ့ expose ဖြစ်မှာမို့ Ubuntu ရဲ့ ufw Firewall ကို အသုံးပြုပြီးတော့ port တွေကို limit လုပ်ရပါလိမ့်မယ်။ ဘယ်လို လုပ်လို့ရသလဲဆိုတာကို အောက်မှာ တချက်ကြည့်လိုက်ရအောင်။
 
-UFW ဆိုတာကတော့ Ubuntu ရဲ့ default firewall တစ်ခုပါ။ Uncomplicated Firewall ကို အတိုကောက်ခေါ်ဆိုထားတာလည်းဖြစ်ပါတယ်။ UFW ဟာ iptables ရဲ့ abstraction layer တစ်ခုအနေနဲ့ အပေါ်ကနေ အုပ်ထားပါတယ်။ ကိုယ်က ufw ကို enable မလုပ်ထားရင် သူ့ status က inactive ပါ။ Inactive ဆိုတဲ့နေရာမှာ ufw feature ကို အသုံးမပြုထားဘူးဆိုတဲ့ အဓိပ္ပာယ်ပါ၊ firewall ကို disable လုပ်ထားတာမဟုတ်ပါဘူး။ Underlay မှာတော့ iptables ကို security အရအသုံးပြုထားပါတယ်။ Wireguard အတွက် Ubuntu မှာ ufw သုံးပြီးတော့ ဘယ်လိုမျိုး port ကို ဖွင့်ပေးတဲ့ ပုံကိုကြည့်လိုက်အောင်။ 
+UFW ဆိုတာကတော့ Ubuntu ရဲ့ default firewall တစ်ခုပါ။ Uncomplicated Firewall ကို အတိုကောက်ခေါ်ဆိုထားတာလည်းဖြစ်ပါတယ်။ UFW ဟာ iptables ရဲ့ abstraction layer တစ်ခုအနေနဲ့ အပေါ်ကနေ အုပ်ထားပါတယ်။ ကိုယ်က ufw ကို enable မလုပ်ထားရင် သူ့ status က inactive ပါ။ Inactive ဆိုတဲ့နေရာမှာ ufw feature ကို အသုံးမပြုထားဘူးဆိုတဲ့ အဓိပ္ပာယ်ပါ၊ firewall ကို disable လုပ်ထားတာမဟုတ်ပါဘူး။ Underlay မှာတော့ iptables ကို security အရအသုံးပြုထားပါတယ်။ Wireguard အတွက် Ubuntu မှာ ufw သုံးပြီးတော့ ဘယ်လိုမျိုး port ကို ဖွင့်ပေးတဲ့ ပုံကိုကြည့်လိုက်အောင်။
 
-```text
+```
 root@wg-srv-node:~# sudo ufw default deny incoming
 Default incoming policy changed to 'deny'
 (be sure to update your rules accordingly)
@@ -390,8 +395,6 @@ To                         Action      From
 22                         ALLOW IN    Anywhere                  
 51820/udp (v6)             ALLOW IN    Anywhere (v6)             
 22 (v6)                    ALLOW IN    Anywhere (v6)             
-
 ```
 
-အခုဆိုရင်တော့... Wireguard နဲ့ ssh အတွက် ufw ကိုပြင်ဆင်တာပြီးသွားတာဖြစ်တဲ့အတွက် Wireguard connection ကို စတင်စမ်းသပ်လို့ရပါပြီ။ 
-
+အခုဆိုရင်တော့... Wireguard နဲ့ ssh အတွက် ufw ကိုပြင်ဆင်တာပြီးသွားတာဖြစ်တဲ့အတွက် Wireguard connection ကို စတင်စမ်းသပ်လို့ရပါပြီ။
