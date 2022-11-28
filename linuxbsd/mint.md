@@ -1,3 +1,8 @@
+---
+cover: ../.gitbook/assets/cinnamon.png
+coverY: 0
+---
+
 # လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း (၁)
 
 **၁. Mint**
