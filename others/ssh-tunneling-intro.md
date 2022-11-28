@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/Jy07Dzg.png
+cover: ../.gitbook/assets/SSH-Local-Forwarding.png
 coverY: 0
 ---
 
@@ -33,7 +33,7 @@ SSH port forwarding ကိုလုပ်တဲ့အခါ လုပ်ပု�
 ssh -N -L 3389:10.10.2.100:3389 tyla.lin@123.1.2.210
 ```
 
-<figure><img src="https://i.imgur.com/Jy07Dzg.png" alt=""><figcaption><p>SSH Local Forwarding</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SSH-Local-Forwarding.png" alt=""><figcaption></figcaption></figure>
 
 ပထမဆုံး ssh ဆိုတာကတော့ ssh protocol ကို အသုံးပြုမယ်၊ -N ဆိုတာက not executing ဘာ command ကိုမှ မ run ဘူးဆိုပြီးတော့ ပြောတာပါ။ ပုံမှန် ssh command ကို terminal ထဲမှာ run တဲ့အခါမှာ remote connection ကိုအောင်မြင်စွာ ချိတ်ဆက် ပြီးသွားတာနဲ့ remote host ရဲ့ prompt လေးပေါ်လာပါတယ်။ အဲ့ဒီ prompt ကိုမလိုချင်လို့ -N ဆိုတဲ့ switch ကိုအသုံးပြုထားတာဖြစ်ပါတယ်။ -L ဆိုတာကတော့ local forwarding လုပ်မယ်လို့ ပြောတာပါ။ ပထမဆုံး 3389 ဆိုတာက ကိုယ်ရဲ့ local machine မှာသုံးမယ့် port number ဖြစ်ပါတယ်။ 10.10.2.100 ဆိုတာကတော့ remote network မှာရှိတဲ့ ကိုယ်သွားချင်တဲ့ destination IP address ဖြစ်ပြီးတော့၊ နောက် 3389 ဆိုတာကတော့ အဲ့ဒီ remote network က destination host မှာကိုယ် map လုပ်မယ့် remote port number ပဲဖြစ်ပါတယ်။ နောက်ဆုံးအပိုင်းဖြစ်တဲ့ tyla.lin@123.1.2.210 ဆိုတာကတော့ စာရေးသူရဲ့ ssh အတွက် username နဲ့ remote ssh server ဖြစ်တဲ့ 123.1.2.210 ကို authenticate လုပ်မယ်ဆိုပြီးတော့ ပြောတာပါ။ ပုံမှန် remote host ကို ssh နဲ့ login ဝင်မယ်ဆိုရင် ssh tyla.lin@123.1.2.210 ဆိုပြီးတော့ command ရိုက်ထည့်လိုက်ရုံပါပဲ။ အခုက ssh ကိုအသုံးပြုပြီးတော့ ကိုယ်လိုချင်တဲ့ port ကို forward လုပ်ပေးတဲ့ သဘောပါ။ လုံခြုံရေးမကောင်းတဲ့ RDP လို port မျိုးကို internet ပေါ်မှာ surface ပေးမယ့်အစား ssh tunneling လုပ်ပြီးတော့ အခုဆိုရင် RDP ကို ကိုယ်လိုချင်တဲ့ remote host ပေါ်ကို ssh server ကနေတဆင့် local forwarding လုပ်သွားတာပဲဖြစ်ပါတယ်။ တကယ်လို့ ကိုယ့်ရဲ့ RDP server က remote ssh server နဲ့ အတူတူပဲဆိုရင် command က အခုလိုဖြစ်သွားပါတယ်။
 
@@ -53,7 +53,7 @@ Remote forwarding ကတော့ အသုံးပြုတဲ့ပုံ အ
 ssh -N -R 8080:localhost:80 tyla.lin@123.1.2.210
 ```
 
-<figure><img src="https://i.imgur.com/EanZGEY.png" alt=""><figcaption><p>SSH Remote Forwarding</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SSH-Remote-Forwarding.png" alt=""><figcaption></figcaption></figure>
 
 အထက်က ssh command ကိုရိုက်ထည့်လိုက်ပြီးတော့ ကိုယ်ရဲ့ SSH login password ကို ရိုက်ထည့်လိုက်ပြီးသွားရင်တော့ ssh tunneling က အဆင့်သင့်ဖြစ်ပါပြီ။ အခုဆိုရင် web browser ထဲမှာ www.itmatic101.com:8080 လို့ရိုက်ထည့်လိုက်ရင် ကိုယ့်ရဲ့ workstation မှာ run ထားတဲ့ development environment က web site ကို ssh tunnel ကနေတဆင့် public internet မှာ စတင် access လုပ်လို့ရပါပြီ။ ဒီနေရာမှာ www.itmatic101.com ဆိုတဲ့ web site မှာ port 8080 ကို အခြားဘယ်နေရာမှာမှ အသုံးပြုမထားသေးဘူးလို့ ယူဆပါတယ်။ အဲ့ဒီ port မအားရင်တော့ အခြားသော port number ကို သင့်သလိုအသုံးပြုလို့ရပါတယ်။ ဒီနည်းနဲ့ သင့်ရဲ့ web app ကို တခြားဘာမှ ထွေထွေထူးထူး setup လုပ်စရာမလိုပဲနဲ့ internet မှာ အစမ်း သဘောမျိုး အလွယ်တကူ တင်လို့ရပါတယ်။ ပြီးရင် ssh tunnel ကို Control + C နဲ့ရပ်လိုက်တာနဲ့ ကိုယ်ရဲ့ web app ကို internet ပေါ်မှာ ဆက်ပြီးတော့ expose မလုပ်တော့ပါဘူး။ အရမ်းကို ရိုးရှင်းတဲ့ ssh ရဲ့ technique တစ်ခုပါ။
 
@@ -65,11 +65,11 @@ ssh -N -R 8080:localhost:80 tyla.lin@123.1.2.210
 ssh -D 8080 -f -C -q -N tyla.lin@123.1.2.210
 ```
 
-<figure><img src="https://i.imgur.com/M0VSZkt.png" alt=""><figcaption><p>SSH Dynamic Forwarding</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SSH-Dynamic-Forwarding-1024x239.png" alt=""><figcaption></figcaption></figure>
 
 အထက်က ssh command မှာ အသုံးပြုထားတဲ့ switch တွေကတော့၊ -D ဆိုတာ dynamic forwarding လုပ်မယ်လို့ ဆိုလိုရင်ဖြစ်ပြီး၊ -f ဆိုတာကတော့ background မှာ process ကို fork ပါလို့ ဆိုလိုပါတယ်။ -C ဆိုတာက data ကို link ကနေ မပို့ခင် compress လုပ်မယ်။ -q ဆိုတာ quiet mode မှာ ssh ကို run ဖို့ပြောတာပါ။ နောက်ဆုံး -N ကတော့ ဘာ command မှ ssh session မှာ မ run ဖို့ကို ဆိုလိုတာပါ။ ssh login ကို authenticate လုပ်ပြီးသွားတာနဲ့ ကိုယ့်အလုပ်က စက်ရဲ့ browser ပေါ်မှာ proxy setting ကိုအောက်ကအတိုင်း configure လုပ်ပေးလိုက်ရုံပါပဲ။
 
-<figure><img src="https://i.imgur.com/LSbcJfp.png" alt=""><figcaption><p>SOCKS Proxy Configuration for SSH dynamic forwarding</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SOCKS-Proxy-Config.png" alt=""><figcaption></figcaption></figure>
 
 အခုဆိုရင်တော့ ကိုယ့်အလုပ်က firewall/web filtering ကို bypass လုပ်ပြီးတော့ ကိုယ့်အိမ်က SSH server ကို proxy အနေနဲ့ အသုံးပြုလို့ရတဲ့အတွက် ကိုယ့် web browser ထဲမှာ သုံးသမျှ traffic အားလုံးဟာ အဲ့ဒီ ssh server ရဲ့ WAN IP ကနေပဲ ခုန်ပြီးတော့ ထွက်သွားမှာဖြစ်ပါတယ်။ ဘာ proxy server မှ setup လုပ်စရာမလိုပဲနဲ့ အခုလို ssh dynamic forwarding လုပ်လိုက်ရုံနဲ့ အားလုံး အဆင့်သင့်ဖြစ်သွားမှာဖြစ်ပါတယ်။ ရိုးရှင်းသလောက် အစွမ်းထက်တဲ့ ssh tunneling ရဲ့ technique တွေဖြစ်ပါ။ SSH tunneling နဲ့ အခြားအခြားသော လုပ်လို့ရတဲ့ နည်းလမ်းတွေအများကြီးရှိပါတယ်။ ဒီ post မှာတော့ လက်တွေ့ အသုံးပြုနိုင်တဲ့ technique သုံးခုလောက်ကို ပြထားတာပဲဖြစ်ပါတယ်။
 
