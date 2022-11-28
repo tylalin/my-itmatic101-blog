@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/QHq23wl.jpeg
+cover: ../.gitbook/assets/pexels-photo-169573-1880x1200.jpeg
 coverY: 0
 ---
 
@@ -354,7 +354,7 @@ proxmox_lxc.lxc[1]: Creation complete after 10s [id=pve/lxc/109]
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
-<figure><img src="https://i.imgur.com/fETpCeY.png" alt=""><figcaption><p>PVE</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/PVE.png" alt=""><figcaption></figcaption></figure>
 
 အခုဆိုရင်... lab/test environment တစ်ခုကို terraform HCL နဲ့ တခါရေးပြီး code တွေကို အခါခါပြန်သုံးလို့ ရနိုင်ပါပြီ။ ကိုယ်တည်ဆောက်ထားတဲ့ environment ကိုပြန်လည် tear-down လုပ်ချင်ရင်တော့ အောက်ကအတိုင်း လုပ်လို့ရပါတယ်။
 
