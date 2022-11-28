@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/QHq23wl.jpeg
+cover: ../.gitbook/assets/pexels-photo-169573-1880x1200.jpeg
 coverY: 0
 ---
 
@@ -15,7 +15,7 @@ Vagrant မှာ အဓိက အပိုင်း နှစ်ပိုင်
 
 Vagrant ကို install လုပ်ဖို့အတွက်တော့ ဒီလင့်မှာ “https://www.vagrantup.com/downloads.html” သွားပြီး ကိုယ်အသုံးပြုတဲ့ OS ပေါ်မှာမူတည်ပြီးတော့ download လုပ်ကာ၊ install လုပ်နိုင်ပါတယ်။ စာရေးသူမှာတော့ Ubuntu 20.04 LTS ကိုသုံးတဲ့အတွက် “sudo apt install vagrant” ဆိုတာနဲ့ Vagrant ကို စတင်အသုံးပြုဖို့ အတွက် အဆင်သင့်ဖြစ်ပါပြီ။
 
-<figure><img src="https://i.imgur.com/dafOouV.png" alt=""><figcaption><p>Vagrant Download Page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/vagrant_download.png" alt=""><figcaption></figcaption></figure>
 
 ### Vagrant လက်တွေ့အသုံးဝင်ပုံ
 
