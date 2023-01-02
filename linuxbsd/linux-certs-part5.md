@@ -4,13 +4,13 @@
 
 Linux Foundation က certification တွေအကြောင်းမရေးခင် Linux Foundation အကြောင်းလေးကို နည်းနည်းလေး ပြောပြချင်ပါတယ်။ Linux Foundation ဟာ Linux ရဲ့ god ဖြစ်တဲ့ Linus Torvalds ကို ပြန်ပြီးအလုပ်ခန့်ထားတဲ့ အဖွဲ့ပါ။ Linux Foundation ရဲ့ အဓိက လုပ်ငန်းကတော့ Linux project တွေနဲ့ တခြား အရေးကြီးတဲ့ project တွေကို စမ်းသပ်တီထွင်နေတဲ့ အဖွဲ့လည်း ဖြစ်ပါတယ်။ အဲ့ဒီလို R\&D လုပ်ငန်းကြောင့်လည်း Linux က software နဲ့ security ပိုင်းမှာ အရှေ့ကို ကြိုပြီးရောက်နေတတ်ပါတယ်။ အဲ့ဒါကြောင့်လည်း IBM, Intel, Microsoft, NetApp စသဖြင့် ကုမ္ပဏီကြီးတွေရဲ့ ကျောထောက်ခံရထားတဲ့ အဖွဲ့လည်းဖြစ်ပါတယ်။ တဘက်မှာလည်း ICT industry ကလိုအပ်နေတဲ့ Linux သမားများစွာကို မွေးထုတ်ဖို့ရည်ရွယ်ပြီးတော့ certification တွေ training တွေ e-learning တွေကို လုပ်ထားပေးပါတယ်။ ဒီ post မှာတော့ Linux Foundation ကလုပ်ပေးထားတဲ့ certificate သုံးခုအကြောင်းကို အကျဥ်းချုပ်ပြီတော့ပြောပြချင်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/z20GciR.gif" alt=""><figcaption><p>The Linux Foundation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1569869_orig-300x115.gif" alt=""><figcaption></figcaption></figure>
 
 ## အခြေခံအဆင့် e-learning နဲ့ certification/affiliation
 
 သတင်းကောင်း အနေနဲ့ အခြေခံအဆင့်မှာတော့ online ကနေ အခမဲ့ enrol လုပ်ပြီးတော့ e-learning လို training ကို နာရီ ၄၀ ကနေ ၅၀ အထိ အချိန်ပေးပြီးကိုယ်တိုင် လေ့လာလို့ရအောင်လုပ်ပေးထားပါတယ်။ အဲ့ဒီ training ပြီးလို့ official certificate/affiliation လိုချင်ရင်တော့ $99 ပေးရပါ့မယ်။ မလိုဘူး လေ့လာရုံသက်သက် ဆိုရင်လည်း အခမဲ့လေ့လာလို့ရပါတယ်။ တစ်ပြားမှပေးစရာမလိုပါဘူး။ donate လုပ်ချင်ရင်လည်း website ပေါ်ကနေကိုယ်နိုင်သလောက် လှူလို့ရပါတယ်။
 
-<figure><img src="https://i.imgur.com/QUIzzhm.png" alt=""><figcaption><p>Introduction to Linux</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot-from-2017-01-08-19-47-36-768x425.png" alt=""><figcaption></figcaption></figure>
 
 စိတ်ဝင်စားတယ်ဆိုရင်တော့ ကိုယ်တိုင် ဒီ [link](https://training.linuxfoundation.org/linux-courses/system-administration-training/introduction-to-linux) ကနေ enrol လုပ်ပြီးတော့ အခမဲ့ စတင်လေ့လာလို့ရပါပြီ။ training မှာတော့ slide တွေ tutorial video တွေကို အင်္ဂလိပ်လို လေ့လာနိုင်မှာဖြစ်ပါတယ်။ enrol လုပ်ဖို့အတွက် email တစ်ခုတော့လိုပါလိမ့်မယ်။
 
@@ -22,7 +22,7 @@ Linux Foundation က certification တွေအကြောင်းမရေး
 
 LFCS အတွက်တော့ Linux Foundation က self-paced 100% online course နဲ့ exam ကိုတွဲပြီးတော့ ရောင်းပါတယ်။ လက်ရှိမှာတော့ self-paced online course ကုိ LFS201 ဆိုပြီး တော့ ခေါ်ပါတယ်။ ကိုယ်ဟာကို online ကနေလေ့လာ သင်ယူရမှာဖြစ်ပြီးတော့ course အစအဆုံးအတွက် ၁၂ လအချိန်ရပါတယ်။ အဲ့ဒါပြီးတာနဲ့ စာမေးပွဲစဖြေလို့ရပါပြီ။ LFCS ကတော့ system administration အပိုင်းကုိ cover လုပ်ပေးပါတယ်။ အောက်မှာတော့ LFCS အတွက် သိစရာအကြောင်းလေး တွေကိုဖော်ပြပေးပါ့မယ်။
 
-<figure><img src="https://i.imgur.com/CJ4MvUk.png" alt=""><figcaption><p>Linux Foundation Certified SysAdmin</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/logo_lftcert_sysadmin-300x262.png" alt=""><figcaption></figcaption></figure>
 
 #### LFCS မဖြေဆိုခင်လိုအပ်ချက်များ
 
@@ -42,7 +42,7 @@ LFCS အကြောင်းကို ထပ်ပြီးသိချင်�
 
 LFCE အတွက်ကတော့ Linux Foundation က exam voucher ကိုပဲ သက်သက်ရောင်းပါတယ်။ အောက်မှာတော့ LFCE အတွက် သိစရာအကြောင်းလေး တွေကိုဖော်ပြပေးပါ့မယ်။
 
-<figure><img src="https://i.imgur.com/DLK2wZ4.png" alt=""><figcaption><p>Linux Foundation Certified Engineer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/logo_lftcert_engineer-300x270.png" alt=""><figcaption></figcaption></figure>
 
 **LFCE မဖြေဆိုခင်လိုအပ်ချက်များ**
 
@@ -60,5 +60,5 @@ LFCE အကြောင်းကို အသေးစိတ် ထပ်ပြ�
 
 Linux certification တွေအကြောင်းတော့ ဒီမှာပဲ နိဂုံးချုပ်လိုက်ပါတော့မယ်။ သိချင်တဲ့ အချက်တော်တော်များများကိုတော့ စာရေးသူ ရေးသွားတဲ့ အထဲမှာ ပါမယ်လို့မျှော်လင့်ပါတယ်။ ပထမဆုံး အပိုင်းမှာပြောခဲ့သလိုပဲ ကျွမ်းကျင်မှု နဲ့ အတွေ့အကြုံ အပိုင်းမှာတော့ ကိုယ်နဲ့သာ ဆိုင်ပါလိမ့်မယ်။ certification ဆိုတာကတော့ လုပ်ငန်းခွင် အတွက် ရင်းနှီးမြုပ်နှံမှု တစ်ခုအနေနဲ့ ဖြေဆိုရတာပါ။ စျေးမပေါပါဘူး။ စျေးအရမ်းကြီးပါတယ်။ အဲ့ဒီတော့ ဒီအတိုင်းလေ့လာဖို့ဆိုရင်တော့ Linux မှာ အခမဲ့ လေ့လာလို့ရတဲ့ နည်းတွေအများကြီးပါ။ နည်းနည်းရှာလိုက်တာနဲ့ အင်တာနက်ပေါ်အများကြီးတွေ့နိုင်ပါတယ်။ စာရေးသူ အမြင်ကတော့ Linux certification တွေကိုဖြေဆို လိုက်တာဟာ FLOSS community ကို တိုက်ရိုက် သို့မဟုတ် သွယ်ဝိုက်သောနည်းနဲ့ ထောက်ပံ့ရာ ရောက်ပါတယ်။ Software နဲ့ OS ကို ကန့်သတ်ချက်မရှိပဲ အခမဲ့အသုံးပြုခွင့် ပေးထားပြီးသားဖြစ်တဲ့အတွက် သင်ကြားမှု လေ့လာမှု အပိုင်းမှာ အများကြီး သက်သာပါတယ်။ စာရေးသူအမြင်မှာတော့ Linux certification တွေကုိ ကိုယ့်အတွက်တစ်ခုတည်းအတွက် မဟုတ်ပဲနဲ့ Linux ရဲ့ Open Source community ကိုပါ အထောက်အပံ့ပေးရာ ဖြစ်ပါတယ်။ ဒီမှာပဲ Linux certification တွေအကြောင်းရေးတာကို ရပ်လိုက်ပါတော့မယ်။
 
-<figure><img src="https://i.imgur.com/I6B4ts5.jpeg" alt=""><figcaption><p>Evolution of a SysAdmin</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/lftc_evolution_sysadmin-768x586.jpg" alt=""><figcaption></figcaption></figure>
 

@@ -8,7 +8,7 @@ Linux certification တွေအကြောင်းရေးမယ်ဆို
 
 <figure><img src="../.gitbook/assets/Linux.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/1569869_orig-300x115.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1569869_orig-300x115 (1).gif" alt=""><figcaption></figcaption></figure>
 
 ### **အခြေခံအဆင့် certification များ**
 
