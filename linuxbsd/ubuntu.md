@@ -8,7 +8,7 @@ Ubuntu က Unity ဆိုတဲ့ Desktop Environment ကိုလည်းစ
 
 Ubuntu ကိုတော့ Debian ဆိုတဲ့ distro ကို အခြေခံပြီးတော့ရေးထားပါတယ်။ ၂၀၀၄ ခုနှစ်အစပိုင်းမှာ Ubuntu CD/DVD တွေကို အခမဲ့ ဖြန့်ဝေတာတွေလုပ်နိုင်ခဲ့လို့ လူတွေက စတင် သတိထား မိလာကြပါတယ်။ ဒါအပြင် အသုံးပြုတာရတာ လည်းလွယ်ကူတဲ့အတွက် လူကြိုက်များ လာခဲ့ပါတယ်။ နိုင်ငံတကာ မြန်မာနိုင်ငံ အပါအဝင် မှာတော့ Ubuntu Local User Group လေးတွေရှိပြီးတော့ Ubuntu အသုံးပြုသူတွေ အတွက် အကူအညီပေး နိုင်တာကြောင့် Ubuntu ဟာ Windows တို့ Apple အသုံးပြုသူတွေ အကြိုက်တွေ့ ကြပါတယ်။ စာရေးသူကိုယ်တိုင် ပထမဆုံး အသုံးပြုတဲ့ Linux distro တွေထဲမှာ Ubuntu လည်းပါ ပါတယ်။
 
-<figure><img src="https://i.imgur.com/Hel2HQ9.png" alt=""><figcaption><p>Ubuntu (Unity Desktop)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/ubuntu-768x614.png" alt=""><figcaption></figcaption></figure>
 
 **Ubuntu ရဲ့အားသာချက်များ**
 
@@ -20,24 +20,16 @@ Linux စတင် အသုံပြုသူတွေ အတွက် Support 
 
 **လက်ရှိ Ubuntu Version နဲ့ Code-name များ**
 
-လက်ရှိ version ကတော့ Ubuntu 16.10 ဖြစ်ပါတယ်။ ၁၆ ဆိုတာကတော့ ထွက်ရှိတဲ့ ခုနှစ်ဖြစ်ပြီးတော့ ၁ဝဆိုတာကတော့ အောက်တိုဘာ (၁၀) လပိုင်းမှာထွက်တဲ့ version ဖြစ်ပါတယ်။ Ubuntu 16.10 ကတော့ LTS မဟုတ်ပါဘူး။ နောက်ဆုံးထွက်ရှိထားတဲ့ LTS ကတော့ Ubuntu 16.04 LTS ဖြစ်ပါတယ်။ အဲ့ဒီ မတိုင်ခင် LTS ကတော့ Ubuntu 14.04 LTS ဖြစ်ပါတယ်။ Ubuntuက ၅နှစ်ကို တစ်ခါ LTS ထုတ်ပါတယ်။ နှစ်စဉ် ပုံမှန် ထုတ်တဲ့ version နှစ်ခုရှိပါတယ်။ ၄လပိုင်း ဧပြီမှာထုတ်တဲ့ Ubuntu xx.04 နဲ့ ၁ဝလပိုင်း အောက်တိုဘာ မှာထုတ်တဲ့ Ubuntu xx.10 ဆိုပြီး ဖြစ်ပါတယ်။ အရှေ့က xx ဆိုတာကတော့ သက်ဆိုင်ရာ ခုနှစ်ဖြစ်ပါတယ်။ Ubuntu 16.10 ရဲ့ code-name ကတော့ Yakkety Yak ဖြစ်ပါတယ်။ နောက်နှစ် ၄လပိုင်း ဧပြီမှာတော့ Ubuntu 17.04 – Zesty Zapus ထွက်မှာ ဖြစ်ပါတယ်။ Ubuntu 16.04 LTS version ရဲ့ code-name ကတော့ Xenial Xerus ဖြစ်ပါတယ်။ Ubuntu 14.04 LTS ကိုတော့ Trusty Tahr လို့ နာမည်ပေးထားပါတယ်။ Ubuntu ရဲ့နာမည်မှည့်ပုံက နည်းနည်းတော့ ဆန်းပါတယ်။ version တိုင်းမှာ စာလုံး နှစ်လုံးပါပါတယ်။ ပထမ တစ်လုံးက ဝိသေသနလို့ ခေါ်တဲ့ Adjective နဲ့ ဒုတိယတစ်လုံးကတော့ အကောင်လေးတွေရဲ့ အခေါ်အဝေါ် တွေဖြစ်ပါတယ်။ ဥပမာ Zesty Zapus ဆိုတာ အဓိပ္ပာယ်ပြန်လိုက်ရင် Zesty ဆိုတာက စိတ်အား ထက်သန် တက်ကြွသော၊ Zapus ဆိုတာကတော့ အမေရိက ကကြွက် တစ်မျိုး ဖြစ်ပါတယ်။ အောက်မှာ အကောင်လေးတွေရဲ့ ပုံကိုရှာပြီးထည့်ပေးထားပါတယ်။
-
-<figure><img src="https://i.imgur.com/jgjCyrc.jpeg" alt=""><figcaption><p>Zapus</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/M0wi2JX.jpeg" alt=""><figcaption><p>Yak</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/7fj1U2n.jpeg" alt=""><figcaption><p>Xerus</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/Pc29c9c.jpeg" alt=""><figcaption><p>Tahr</p></figcaption></figure>
+လက်ရှိ version ကတော့ Ubuntu 16.10 ဖြစ်ပါတယ်။ ၁၆ ဆိုတာကတော့ ထွက်ရှိတဲ့ ခုနှစ်ဖြစ်ပြီးတော့ ၁ဝဆိုတာကတော့ အောက်တိုဘာ (၁၀) လပိုင်းမှာထွက်တဲ့ version ဖြစ်ပါတယ်။ Ubuntu 16.10 ကတော့ LTS မဟုတ်ပါဘူး။ နောက်ဆုံးထွက်ရှိထားတဲ့ LTS ကတော့ Ubuntu 16.04 LTS ဖြစ်ပါတယ်။ အဲ့ဒီ မတိုင်ခင် LTS ကတော့ Ubuntu 14.04 LTS ဖြစ်ပါတယ်။ Ubuntuက ၅နှစ်ကို တစ်ခါ LTS ထုတ်ပါတယ်။ နှစ်စဉ် ပုံမှန် ထုတ်တဲ့ version နှစ်ခုရှိပါတယ်။ ၄လပိုင်း ဧပြီမှာထုတ်တဲ့ Ubuntu xx.04 နဲ့ ၁ဝလပိုင်း အောက်တိုဘာ မှာထုတ်တဲ့ Ubuntu xx.10 ဆိုပြီး ဖြစ်ပါတယ်။ အရှေ့က xx ဆိုတာကတော့ သက်ဆိုင်ရာ ခုနှစ်ဖြစ်ပါတယ်။ Ubuntu 16.10 ရဲ့ code-name ကတော့ Yakkety Yak ဖြစ်ပါတယ်။ နောက်နှစ် ၄လပိုင်း ဧပြီမှာတော့ Ubuntu 17.04 – Zesty Zapus ထွက်မှာ ဖြစ်ပါတယ်။ Ubuntu 16.04 LTS version ရဲ့ code-name ကတော့ Xenial Xerus ဖြစ်ပါတယ်။ Ubuntu 14.04 LTS ကိုတော့ Trusty Tahr လို့ နာမည်ပေးထားပါတယ်။ Ubuntu ရဲ့နာမည်မှည့်ပုံက နည်းနည်းတော့ ဆန်းပါတယ်။ version တိုင်းမှာ စာလုံး နှစ်လုံးပါပါတယ်။ ပထမ တစ်လုံးက ဝိသေသနလို့ ခေါ်တဲ့ Adjective နဲ့ ဒုတိယတစ်လုံးကတော့ အကောင်လေးတွေရဲ့ အခေါ်အဝေါ် တွေဖြစ်ပါတယ်။ ဥပမာ Zesty Zapus ဆိုတာ အဓိပ္ပာယ်ပြန်လိုက်ရင် Zesty ဆိုတာက စိတ်အား ထက်သန် တက်ကြွသော၊ Zapus ဆိုတာကတော့ အမေရိက ကကြွက် တစ်မျိုး ဖြစ်ပါတယ်။&#x20;
 
 စာကြွင်း။ ။ လက်ရှိမှာတော့ Ubuntu ဟာ 19.04 LTS ကိုရောက်နေပါပြီ။ code-name ကို Disco Dingo လို့ခေါ်ပါတယ်။ ဧပြီလ ၂၀၁၉ ခုနှစ်မှာ ထွက်ထားတာပါ။ ဒီ release က LTS မဟုတ်တဲ့အတွက် နောက် ၅နှစ် အထိ support လုပ်မှာမဟုတ်ပါဘူး။ Official DE အနေနဲ့ Gnome ကို Unity ပုံလောင်းထားတဲ့ DE ကို official default အနေနဲ့ လာပါတယ်။ Unity ထက်စာရင်တော့ Gnome ကို Ubuntu ပေါ်မှာ စာရေးသူအနေနဲ့ ပြီးတော့ သဘောတွေ့ပါတယ်။
 
-<figure><img src="https://i.imgur.com/DiEpaEk.png" alt=""><figcaption><p>Ubuntu 18.04 LTS Gnome DE</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Ubuntu_18.04-768x432.png" alt=""><figcaption></figcaption></figure>
 
 \[၁၀.၀၅.၂၀၂၀] စာကြွင်း။ ။ ပြီးခဲ့တဲ့ ၂ ပတ် ၃ ပတ်လောက်က Ubuntu 20.04 LTS အသစ်ထပ်ထွက်ပါတယ်။ Code name ကိုတော့ Focal Fossa ဆိုတဲ့ နာမည်ပေးထားပါတယ်။ Fossa ဆိုတာကတော့ Africa မှာပဲရှိတဲ့ တောကြောင်လိုအကောင်တမျိုးဖြစ်ပါတယ်။ Madagascar ကာတွန်းထဲမှာ ပါပြီးတော့ Lemur ဆိုတဲ့ အကောင်သေးသေးလေးတွေကို လိုက်လံဖမ်းစားကြပါတယ်။ ထုံးစံအတိုင်း GNOME DE နဲ့ လာပြီးတော့ သူ့ရဲ့ version ကတော့ 3.36 ပါ။ Canonical ကလူတွေကော၊ အခြားသော Linux ကမ္ဘာကလူတွေရဲ့ သုံးသပ်ချက်အရတော့ ဒီ Ubuntu 20.04 LTS release ဟာ GNOME DE ရဲ့ အကောင်းဆုံးသော implementation ပါတဲ့။ စာရေးသူကိုယ်တိုင် သုံးကြည့်သလောက်တော့ အမြင်အရတော့ အရှေ့ LTS ဖြစ်တဲ့ Ubuntu 18.04 ထက်အများကြီးကွာခြားမှုတွေရှိပါတယ်။ Yaru ဆိုတဲ့ theme ကို default အနေနဲ့ အသုံးပြုထားပြီးတော့ visual ပိုင်းရော၊ performance ပိုင်းမှာပါ အများကြီး တိုးတက်လာတာကိုတော့ တွေ့ရပါတယ်။ လက်ရှိ ကိုယ့်ရဲ့ အဓိကသုံးတဲ့ စက်ပေါ်မှာတော့ တင်ပြီးတော့ မသုံးဖြစ်သေးပါဘူး။ အနည်းငယ်စောင့်ကြည့်ရအုံးမယ်တော့ ထင်ပါတယ်။ Ubuntu 18.04 မှာ အသုံးပြုတဲ့ အချို့သော software လေးတွေကိုဟာ Ubuntu 20.04 အတွက် binary compatible ဖြစ်ဖို့တော့ လအနည်းငယ်စောင့်ရအုံးမယ်ထင်ပါတယ်။ အကယ်လို့များ စာဖတ်တဲ့သူအတွက်တော့ ထွေးထွေးထူးထူး သုံးတဲ့ software တွေ၊ application တွေ မရှိဘူးဆိုရင်တော့ Ubuntu 20.04 လုပ်ဖို့ရာ အဆင်ပြေနိုင်ပါတယ်။ နောက်ပြီးတော့… ကိုယ်က dark theme ကိုကြိုက်တယ်ဆိုရင် သတင်းကောင်းတစ်ခုက Ubuntu 20.04 မှာ built-in ပါလာပြီးသားပါ။ GNOME Tweak ကို ထပ် install လုပ်ပြီးတော့ ပြင်ဆင်စရာမလိုတော့ပါဘူး။ ကြီးကြီးမားမား ပြောင်းသွားတဲ့ နောက်အရာတခုကတော့ Focal Fossa ဟာ Linux kernel 5.4 နဲ့ လာပါတယ်။ အဲ့ဒီတော့ Linux kernel 5.4 ရဲ့ ကောင်းမွေဆိုးမွေကို အကုန်ခံစားနိုင်မှာဖြစ်ပါတယ်။ သိသာတဲ့ ကောင်းမွေတစ်ခုကတော့ Linus Torvalds ပြောပြောနေတဲ့ Wireguard ကို backport လုပ်လာတာပဲဖြစ်ပါတယ်။ ဒီအတွက် Wireguard ရဲ့ stability နဲ့ security ပိုင်းမှာတော့ ဒီထက်ပိုပြီးတော့ ကောင်းလာဖို့ပဲရှိပါတယ်။ စာရေးသူကိုယ်တိုင်က Wireguard fan တစ်ယောက်ပါ။ နေ့တိုင်းအသုံးပြုဖြစ်တဲ့ tool တစ်ခုပါ။ နောက်တစ်ခုက… snap ကို universal packaging format နဲ့ အသုံးပြုပါတယ်။ Ubuntu Software မှာပါ application တွေကို install လုပ်တဲ့အခါ snap ကို backend မှာ အသုံးပြုထားပါတယ်။ ဒီလိုဆိုရင်တော့ snap ဟာ ပိုပြီးတော့ ကောင်းသတဲ့ကောင်းလာဖို့ပဲရှိပါတယ်။ အနာဂတ်အတွက် snap လာ၊ flatpak လာဆိုတော့ ဒါကိုကြည့်ခြင်းအားဖြင့် ရေးရေးလေးတော့ မြင်နိုင်ပါတယ်။ ZFS file system မှာလည်း အရင်ထက်စာရင် support ပိုကောင်းလာတဲ့လို့ ဆိုပါတယ်။ ZFS Experimental ဆိုတာကိုတော့ install လုပ်တဲ့အခါမှာ အခုအချိန်ထိတော့ တွေ့နေရတုန်းပါ။ နောက် version နှစ်ခုသုံးခုလောက်ဆိုရင်တော့ ZFS ကို တရားဝင် stable အနေနဲ့ အသုံးပြုလို့ ရလောက်ပြီတော့ ထင်ပါတယ်။ ZFS အကြောင်းကိုတော့ နောက်မှ File system အကြောင်းတွေရေးတဲ့အခါမှာ ထည့်သွင်းဖော်ပြလိုပါတယ်။ Ubuntu 20.04 LTS Focal Fossa ကိုတော့ ဒီ [link](https://releases.ubuntu.com/20.04/) မှာကိုယ်တိုင် ကိုယ်ကျ download ဆွဲပြီးတော့ အသုံးပြုနိုင်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/cl6mXOf.png" alt=""><figcaption><p>Ubuntu 20.04 LTS Focal Fossa Login</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Ubuntu-20.04-LTS-Login-1-768x381.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://i.imgur.com/gf6L4zg.png" alt=""><figcaption><p>Ubuntu 20.04 LTS Desktop</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Ubuntu-20.04-LTS-Desktop-1-768x382.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://i.imgur.com/gg4nTAQ.png" alt=""><figcaption><p>Ubuntu 20.04 LTS Dark Theme</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Ubuntu-20.04-LTS-Dark-Theme-1-768x382.png" alt=""><figcaption></figcaption></figure>
