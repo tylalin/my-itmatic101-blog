@@ -6,11 +6,9 @@ Ubuntu စတင်အသုံးပြုသူတွေ တခါတခါမ
 
 ဒီ grub customizer ကတော့ GUI ကနေပြီး GNU/Linux ရဲ့ grub bootloader ကို အလွယ်တကူ ပြင်ဆင်လို့ရအောင်လို့ Daniel Richter ဆိုတဲ့ developer တစ်ယောက်ကရေးပေးထားတဲ့ tool လေးပါ။ ပုံမှန်အားဖြင့် ကိုယ်က Windows နဲ့ Ubuntu ကို dual boot တင်တဲ့အခါမှာ များသောအားဖြင့် Windows ကိုအရင်တင်ပြီးတော့မှ Ubuntu တင်တာပိုပြီး ခေါင်းစားသက်သာ ပါတယ်။ အဲ့ဒီလို Windows ကိုတင်ပြီးမှ Ubuntu တင်တဲ့အခါ Ubuntu က လက်ရှိ Windows နဲ့ တွဲပြီး dual boot တင်မလားဆိုတဲ့ ဟာပါတဲ့အတွက် အဲ့ဒါလေးကို ရွေးလိုက်တာနဲ့ သူ့ဟာသူWindows ရဲ့ system file တွေနဲ့ data တွေကိုလည်း ပျက်စီးထိခိုက် သွားမှာကို စိုးရိမ်စရာမလိုတော့ပါဘူး။ အဲ… ကိုယ်ရဲ့ စက်ပေါ်မှာတော့ unallocated partition တော့ရှိဖို့လိုပါလိမ့်မယ်။ အဲ့ဒါကတော့ Windows ဘက်အခြမ်းကနေ disk management နဲ့ပဲ ဖြစ်ဖြစ် third party disk manager/director တစ်ခုခုသုံးပြီးတော့ ပဲဖြစ်ဖြစ် unallocated partition ကို အရင်ဖန်းတီးပေးခဲ့ဖို့တော့လိုပါတယ်။
 
-<figure><img src="https://i.imgur.com/qBHTifZ.png" alt=""><figcaption><p>GNU GRUB Bootloader</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/GrubCustomizer01.png" alt=""><figcaption></figcaption></figure>
 
 ထားပါတော့… အသေးစိတ်တော့ မရှင်းတော့ပါဘူး။ grub customizer အကြောင်းရေးတာဆိုတော့ လိုရင်းကိုဆက်လိုက်ရအောင်။ အရှေ့မှာပြောခဲ့သလို Ubuntu ကိုရှိပြီးသား Windows နဲ့တွဲ ပြီးတော့ install လုပ်မယ်လို့ပြောလိုက်ရင် Ubuntu က Windows ရဲ့ bootloader ကို မသုံးတော့ပဲ သူ့ရဲ့ grub ကို default bootloader အနေနဲ့ သုံးပါတယ်။ install လုပ်လို့ပြီးသွားရင် reboot လုပ်ပြီးတဲ့အခါမှာ အဲ့ဒီ grub ကိုအရင်ရောက်ပါတယ်။ Windows ကို ရွေးစရာရဲ့ အောက်ဆုံးမှာ ထားပြီး ၁၀ စက္ကန့် အချိန်ရပါတယ်။ ကိုယ်တက်ချင်တဲ့ OS ကို keyboard ကနေ up down keys သုံးပြီး Enter ခေါက်လိုက်တာနဲ့ OS တက်ပါတယ်။ ပြဿနာက ကိုယ်က အဲ့ဒီ Menu လေးကိုပြင်ချင်တယ် ဆိုရင် Ubuntu ဘက်အခြမ်းမှာ terminal ကနေ command တွေသုံးပြီးတော့ ပြင်လို့ရပါတယ်။ စသုံးတဲ့သူတွေအတွက် ဆိုရင်တော့နည်းနည်း စိတ်ရှုပ်ရမှာဖြစ်ပါတယ်။ ခက်တော့လည်း မခက်ပါဘူး။ ဒါပေမယ့် ကိုယ်က GUI ကနေအလွယ်တကူ ပြင်လိုတယ်ဆိုရင်တော့ grub customizer ကို install လုပ်ပြီးတော့ GUI ကနေ သွားပြင်လို့ရပါတယ်။
-
-<figure><img src="https://i.imgur.com/YSfu33G.png" alt=""><figcaption><p>GRUB Customizer</p></figcaption></figure>
 
 grub customizer ကို install လုပ်မယ်ဆိုရင်တော့ အောက်က command လေးတွေကို Ubuntu ရဲ့ terminal မှာ တစ်ကြောင်းပြီး တစ်ကြောင်းရိုက်ထည့်လေးလိုက်ရုံပါပဲ။
 
@@ -26,12 +24,6 @@ Grub customizer ကို install လုပ်ပြီးရင်တော့ 
 
 ဒီတစ်ခုကတော့ သိပ်ပြီးရှင်းပြစရာတောင် မလိုပါဘူး။ Ubuntu မှာအလွန်ကောင်းတဲ့ Firefox browser နဂိုအတိုင်းပါလာပြီးသားပါ။ သို့ပေမယ်လည်း Google ရဲ့ Chromecast လို device တွေသုံးရင်တော့ Google Chrome ကို သုံးမှရမှာပါ။ စာရေးသူ အမြင်မှာတော့ Chrome ကတော့ လက်ရှိမှာ အလုပ်အဖြစ်ဆုံး internet browser တစ်ခုပါ။ Chrome ကိုတော့ Google ရဲ့ download လုပ်တဲ့ ကနေ deb file ကို download ဆွဲပြီးတော့ deb file ကို double click လုပ်လိုက်တာနဲ့ Ubuntu Software တက်လာပြီးတော့ install လုပ်လိုက်ရုံပါပဲ။ ဘာ command မှမလိုပါဘူး။
 
-<figure><img src="https://i.imgur.com/WRsoADw.jpeg" alt=""><figcaption><p>Google Chromecast</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/Cl18zxY.png" alt=""><figcaption><p>Google Chrome for Ubuntu</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/ulOjuyG.png" alt=""><figcaption><p>Chrome Installation with Ubuntu Software</p></figcaption></figure>
-
 ## ၃. Notepadqq
 
 Windows မှာ အရိုးအရှင်းဆုံးနဲ့ အလုပ်အဖြစ်ဆုံး text editor တစ်ခုရှိပါတယ်။ အဲ့ဒါကတော့ Notepad++ ဖြစ်ပါတယ်။ Ubuntu Linux မှာတော့ Notepad++ မရှိတဲ့အတွက် အစားထိုးဖို့အတွက် ဒီ Notepadqq ဆိုတဲ့ application နဲ့ အစားထိုးလို့ရပါတယ်။ Notepad++ နဲ့ပုံစံတူဖြစ်တဲ့အတွက် မျက်စိလည်စရာမရှိပါဘူး။ GUI မှာသုံးလို့ရတဲ့ text editor တွေထဲမှာတော့ Notepadqq ကတော်တော်လေး ပေါ့ပါးပါတယ်။ coding သမားတွေ အတွက်တော့ color markup ဖြစ်တဲ့အတွက် အလွယ်တကူ troubleshoot လို့ရတဲ့အပြင်မျက်စိလည်း ရှင်းပါတယ်။ Notepadqq ကို Ubuntu မှာ install လုပ်ချင်ရင်တော့ အောက် command တစ်ခုချင်းစီ ကို terminal ထဲမှာရိုက်ထည့်လိုက်ပါ။
@@ -42,25 +34,15 @@ sudo apt-get update
 sudo apt-get install notepadqq
 ```
 
-<figure><img src="https://i.imgur.com/z0x3y3b.png" alt=""><figcaption><p>Notepad++</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/GnVgzx8.png" alt=""><figcaption><p>Notepadqq</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/screen.png" alt=""><figcaption></figcaption></figure>
 
 ## ၄. Dropbox
 
 Ubuntu လို Linux distro တွေကို သုံးချင်ရင် Google Drive တို့ Onedrive တို့ကို စက်ပေါ်မှာ install လုပ်ရတာနဲ့အသုံးပြုရတာ နည်းနည်းလက်ဝင်ပါတယ်။ ကိုယ်က Ubuntu လို Linux တင်ထားတဲ့ စက်နဲ့ တခြား Windows စက်တွေမှာ file တွေ folder တွေကို sync လုပ်ချင်တယ် ဆိုရင်တော့ Dropbox က Ubuntu အတွက် Ubuntu Software ပေါ်မှာရှိပါတယ်။ အဲ့ကိုသွားပြီးတော့ Dropbox ဆိုပြီးရှာလိုက်ရုံပါပဲ။ ပြီးရင်တော့ install လုပ်ပြီးတော့ ကိုယ် account နဲ့ setup လုပ်လိုက်ပါ။ 2GB ထိတော့ အခမဲ့ရပါတယ်။ ပိုပြီးလိုရင်တော့ ဝယ်ရပါလိမ့်မယ်။
 
-<figure><img src="https://i.imgur.com/HmOyIBy.png" alt=""><figcaption><p>Dropbox on Ubuntu Software</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/I0H45N1.png" alt=""><figcaption><p>Dropbox Account Setup</p></figcaption></figure>
-
 ## ၅. GParted
 
 GParted ဟာ GNU/Linux distro တွေရဲ့ LiveCD တော်တော်များများမှာ partitioning tool အနေနဲ့ ထည့်ပေးထားပါတယ်။ သုံးရတာ အဆင်ပြင်တဲ့အပြင် အလုပ်ဖြစ်လွန်းတဲ့ partitioning tool တစ်ခုအနေနဲ့လူသိများကြပါတယ်။ Ubuntu ကို ကိုယ့်စက်ပေါ်မှာ install လုပ်ရင် GParted သပ်သပ် install လုပ်ပေးရပါတယ်။ သူကိုလည်း Ubuntu Software ကနေရှာပြီး တော့ install လုပ်ပေးလိုက်ရုံပါပဲ။ GParted ဟာ Windows က Disk Management လိုပါပဲ။ ဒါပေမယ့် ပိုပြီးအလုပ်ဖြစ်ပါတယ်။ သတိထားပြီးတော့ အသုံးပြုစေချင်ပါတယ်။ GParted မှာ မှားဖျက်မိတဲ့အခါ ကိုယ်ရဲ့ bootloader တွေ system file တွေကို ပြဿနာပေးပြီး boot မတက်တော့တဲ့ထိဖြစ်တတ်ပါတယ်။ သတိလေးနဲ့ တော့ အသုံးပြုစေချင်ပါတယ်။
-
-<figure><img src="https://i.imgur.com/ZHqoXYy.jpeg" alt=""><figcaption><p>GParted on Ubutnu Software</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/kXeHvAb.jpeg" alt=""><figcaption><p>GParted GUI</p></figcaption></figure>
 
 ## ၆. VLC Player
 
@@ -70,13 +52,9 @@ Ubuntu မှာလည်း နဂိုအတိုင်းပါလာတဲ
 sudo apt-get install vlc browser-plugin-vlc
 ```
 
-<figure><img src="https://i.imgur.com/F5Y7zSq.jpeg" alt=""><figcaption><p>VLC Player</p></figcaption></figure>
-
 ## ၇. Teamviewer
 
 Teamviewer ကတော့ လူသုံးများတဲ့ အလုပ်ဖြစ်တဲ့ remote session ဖို့ အကောင်းဆုံး application တစ်ခုဖြစ်ပါတယ်။ အိမ်သုံးဖို့ အတွက်ကိုတော့ အခမဲ့ဖြစ်ပြီးတော့ လုပ်ငန်းခွင်အတွက်ဆိုရင်တော့ ဝယ်ရပါလိမ့်မယ်။ ကိုယ့်အသိ ကိုယ်မိတ်ဆွေတွေကို အဝေးတစ်နေရာကနေ remote desktop နဲ့ လှမ်းချိတ်ပြီး အကူအညီပေးချင်ရင်တော့ Teamviewer က အသုံးဝင်ပါတယ်။ Internet connection တော့ ရှိဖို့လိုပါတယ်။ သုံးရတာ အရမ်းအဆင်ပြေတဲ့အတွက် ကုမ္ပဏီ ကြီးတွေမှာတောင် Teamviewer နဲ့ပဲ Desktop Support လုပ်ကြပါတယ်။ Teamviewer ကိုတော့ သူ့ကို download လုပ်တဲ့ နေရာကနေ Ubuntu အတွက်ဆိုတဲ့ဟာကို download ဆွဲပြီးတော့ deb file ကို double click လုပ်ပြီးတော့ install လုပ်လိုက်ရုံပါပဲ။
-
-<figure><img src="https://i.imgur.com/cwiWik6.png" alt=""><figcaption><p>Teamviewer on Ubuntu</p></figcaption></figure>
 
 ## ၈. KeePassX
 
@@ -88,21 +66,9 @@ sudo apt-get update
 sudo apt-get install keepassx
 ```
 
-<figure><img src="https://i.imgur.com/r8zBaWg.jpeg" alt=""><figcaption><p>KeePassX 2.0 on Ubuntu</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/uxDbQvy.png" alt=""><figcaption><p>KeePassX – Set Master Key</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/Jb5kHXH.png" alt=""><figcaption><p>KeePassX 2.0 GUI</p></figcaption></figure>
-
 ## ၉. Virtualbox
 
 Virtualbox ကတော့ ကိုယ့်စက်ပေါ်မှာ Virtualization Environment တစ်ခု တည်ဆောက်ဖို့အတွက်လိုအပ်တဲ့ hypervisor platform ပါ။ VMware ရဲ့ ပိုက်ဆံပေးဝယ်ရတဲ့ Workstation လိုမျိုး platform ဖြစ်ပါတယ်။ Virtualbox ကတော့ အခမဲ့ပါ။ တခုတော့ရှိပါတယ်… ကိုယ့်စက်မှာတော့ CPU, RAM နဲ့ Hard Disk လိုမျိုး resource တွေ အပိုရှိဖို့တော့လိုပါတယ်။ VMs တွေ run ဖို့ကတော့ အနည်းဆုံး နောက်ပိုင်းထွက်တဲ့ အလယ်အလတ် CPU မျိုး၊ RAM ကတော့ 8GB ကနေ 32 GB လောက်တော့ရှိရမှာပါ။ Hard Disk ကလည်း SSD ဆိုရင်တော့ ပိုကောင်းပါတယ်။ ပြီးတော့ 256GB ကနေ 500GB လောက်ဆိုရင်တော့ VM သုံးလုံး လေးလုံးလောက်တော့ တပြိုင်နက်တည်း run ပြီး virtual lab တစ်ခုတည်ဆောက်လို့ရပါတယ်။ Virtualbox ကိုတော့ သူရဲ့ download လုပ်တဲ့ နေရာကနေ download ဆွဲပြီးတော့ deb file ကို double click လုပ်ပြီး install လုပ်လိုက်ရုံပါပဲ။ Ubuntu Software မှာလည်း virtualbox ဆိုပြီးရှာလိုက်ရင်တွေ့ နိုင်ပါတယ်။ ကိုယ်အဆင်ပြေမယ့် နည်းနဲ့သာ install လုပ်ပြီးတော့ သုံးပါ။
-
-<figure><img src="https://i.imgur.com/Pcgi2aG.jpeg" alt=""><figcaption><p>Virtualbox for Ubuntu</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/gSFCeQS.png" alt=""><figcaption><p>Install Virtualbox on Ubuntu Software</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/uLyxmdY.png" alt=""><figcaption><p>Virtualbox Manager GUI</p></figcaption></figure>
 
 ## ၁၀. Zawgyi Keymagic Keyboard
 
@@ -115,9 +81,5 @@ sudo apt-get install ibus-keymagic
 sudo apt-get install ibus-table-my-zawgyi
 sudo apt-get install ttf-myanmar-fonts-zawgyi
 ```
-
-<figure><img src="https://i.imgur.com/Kmvo0Gw.png" alt=""><figcaption><p>Zawgyi ibus-keymagic</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/HON7oWT.png" alt=""><figcaption><p>Zawgyi L (KeyMagic)</p></figcaption></figure>
 
 အထက်မှာတော့ Ubuntu မှာ အသုံးပြုနိုင်တဲ့ အလုပ်ဖြစ်တဲ့ tool တွေနဲ့ application တွေအကြောင်း ကိုဖော်ပြပေးခဲ့တာဖြစ်ပါတယ်။ ဒီ ​post ကိုတော့ ဒီမှာပဲရပ်လိုက်ပါတော့မယ်။
