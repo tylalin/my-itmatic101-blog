@@ -12,7 +12,7 @@ LPI Linux Essentials ဖြေဆိုပြီးလို့မှ ကို�
 
 ဒီ certification ကတော့ LPI Linux Essentials ထက်စာရင်ပိုခက်သွားပါပြီ။ အောက်မှာတော့ ဒီစာမေးပွဲ အတွက်လိုအပ်တဲ့ အချက်တွေကို ဖော်ပြပေးသွားပါ့မယ်။
 
-<figure><img src="https://i.imgur.com/NAhMVQ1.jpeg" alt=""><figcaption><p>LPIC-1 Linux Administrator</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/LPIC-1-300x233.jpg" alt=""><figcaption></figcaption></figure>
 
 #### **LPIC-1 Linux Administrator ရဲ့ လက်ရှိ version**
 
