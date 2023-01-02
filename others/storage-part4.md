@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/AjWbhuH.jpeg
+cover: ../.gitbook/assets/disc-reader-reading-arm-hard-drive-1880x1200.jpg
 coverY: 0
 ---
 
@@ -21,15 +21,15 @@ RAID မှာ ပထမဆုံး R ဆိုတာကတော့ အင်�
 
 **RAID 0** – ဒီတစ်ခုက အထက်မှာလည်း ပြောသွားတဲ့ JBOD ကိုပြောတာပါ။ RAID ဆိုတဲ့အတွက် အနည်းဆုံး hard disk ၂ လုံးနဲ့ အထက်ရှိရင် RAID 0 ကို အသုံးပြုနိုင်ပါတယ်။ JBOD အပြင် သုံးလို့ရတဲ့ ပုံစံကတော့ data တွေကို read/write လုပ်တဲ့အခါမှာ တစ်လုံးထဲကို ရေးမယ့် ဖတ်မယ့်အစား ၂လုံးနဲ့ အထက်သော hard disk တွေပေါ်မှာအရေးအဖတ်လုပ်တဲ့အတွက် performance တက်လာပါတယ်။ ဒါကို stripe လုပ်တယ်လို့ ခေါ်ပြီးတော့၊ သူ့ရဲ့ဘေးထွက်ဆိုးကျိုးကတော့ hard disk နှစ်လုံးကို RAID 0 နဲ့သုံးတဲ့အခါမှာ နှစ်လုံးထဲကတစ်လုံး ပျက်တာနဲ့ရှိသမျှ data တွေအားလုံးပျက်တယ်။ ဒီ့အတွက် RAID 0 ကိုအကြောင်းပြချက် ကောင်းကောင်းမရှိပဲနဲ့ မသုံးသင့်ပါဘူး။ အခုနောက်ပိုင်းမှာ hard disk တစ်လုံးရဲ့ capacity ဟာများလာပြီးတော့၊ စျေးလည်းအရင်တုန်းကလိုမျိုး per GB မှာအရမ်းကြီးမများတော့တဲ့အတွက် JBOD လိုမျိုးအသုံးပြုဖို့ရာ သိပ်မရှိတော့ပါဘူး။ နောက်ပြီးတော့ performance အတွက်လည်း SSD နဲ့ NVMe drives တွေရှိတဲ့အတွက် RAID 0 ဟာလက်ရှိအချိန်မှာတော့ production အတွက် လက်တွေ့အသုံးချနိုင်ဖို့ရာအကြောင်းမရှိပါ။ အောက်မှာတော့ RAID 0 မှာ stripe ဘယ်လိုလုပ်သလဲဆိုတာကို ပုံထဲမှာပြထားခြင်းဖြစ်တယ်။
 
-<figure><img src="https://i.imgur.com/sT7Q3fa.png" alt=""><figcaption><p>RAID 0 Stripe</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/RAID-0-Stripe.png" alt=""><figcaption></figcaption></figure>
 
 **RAID 1** – ဒါကတော့ mirroring လုပ်တဲ့ RAID 1 ပါ။ ဒီတစ်ခုကတော့ ရှင်းပါတယ် အထက်မှာလိုပဲ hard disk ၂လုံးနဲ့ အထက်လိုပါလိမ့်မယ်။ ပထမ hard disk မှာ write လုပ်တိုင်း ဒုတိယတစ်လုံးမှာလည်း သွားပြီးတော့ write လုပ်တဲ့အတွက် တူညီသော data တွေကို မတူတဲ့ hard disk တွေမှာ write operation လုပ်တဲ့အတွက် နှစ်လုံးထဲက တစ်လုံးပျက်သွားရင်တောင်မှ နောက်တစ်လုံးမှာ data တွေရှိသေးတဲ့အတွက် ပျက်သွားတဲ့တစ်လုံးကို အသစ်ဝယ်ထည့်ပြီးတော့ RAID 1 ကိုပြန်လည်တည်ဆောက်လိုက်ရုံပါပဲ။ Read operation လုပ်တဲ့အခါမှာတော့ နှစ်လုံးထဲက I/O load အနည်းအများပေါ်မှာမူတည်ပြီးတော့ ဘယ်အလုံးမှာသွားပြီးတော့ဖတ်သလဲဆိုတာ ပုံသေမရှိပါဘူး။ hard disk မှာပါတဲ့ ROM ရဲ့ instruction နဲ့ buffer/cache ဘယ်လောက်နဲ့လာတယ်ဆိုတာပေါ်မှာမူတည်ပြီးတော့ RAID 1 ရဲ့ read/write operation ကို သင့်တော်သလိုလုပ်ပါတယ်။ Performance အပိုင်းမှာတော့ RAID 1 ဟာ vendor၊ I/O operation နဲ့ အခြားသော အချက်တွေမှာမူတည်တဲ့အတွက် standalone hard disk တစ်လုံးတည်းရဲ့ performance ထက်ကောင်းလာတာလည်းတွေ့နိုင်သလို၊ write အတွက် double handling လုပ်ပြီး read မှာ ဘယ် disk ကနေဖတ်မလဲဆိုတာရွေးချယ်ရတဲ့အတွက် overhead အချို့ရှိတဲ့အတွက် performance ညံ့သွားတာကိုလည်း တွေ့နိုင်ပါတယ်။ ကိုယ်ရဲ့ production မှာ redundancy ဟာပိုပြီးတော့ အရေးကြီးတယ်ဆိုရင်တော့ RAID 1 ကိုအသုံးပြုနိုင်ပါတယ်။ သတိထားရမယ့်အချက်က redundancy ဆိုတာ system backup / data backup နဲ့ ထပ်တူမညီဘူးဆိုတာပါ။ RAID 1 မှာလည်း disk နှစ်လုံးလုံး data corruption ဖြစ်နိုင်ချေရှိတဲ့အတွက် backup ကိုတော့ သီးသန့်ထားသင့်ပါတယ်။ ဥပမာ ransomware လိုမျိုး exploit မှာ RAID 1 ရှိရုံနဲ့ မလုံလောက်တော့ပါဘူး။ Backup ရှိမှ data restore လုပ်နိုင်မှာဖြစ်တဲ့အတွက် backup ဟာ ဘယ်လို production environment မျိုးအတွက် အရေးကြီးပါတယ်။ လွန်ခဲ့တဲ့ တစ်ပတ်နှစ်ပတ်လောက်မှာ Manjaro Linux ရဲ့ forum backend system ကို Manjaro team က update လုပ်ပြီးတဲ့အခါမှာ forum ရေးထားဖြေထားတင်ထားတဲ့ ဟာတွေအကုန်ပျက်ကုန်လို့ Manjaro team ဟာအခုဆိုရင် အကုန် အစကနေပြန်လုပ်ရတဲ့ အဆင့်ပါ။ Manjaro အနေနဲ့ backup တော့ရှိပုံရပြီးတော့ backup restore ကိုပုံမှန် test လုပ်ပုံမပါဘူး။ ဒီအတွက် အကုန်လုံးပျက်ကုန်ပါတော့တယ်။ မှတ်သားလေ့လာနိုင်စရာ Disaster Recovery (DR) နဲ့ Business Continuity (BC) သင်ခန်းစာတစ်ခုပါ။ အောက်မှာတော့ RAID 1 အလုပ်လုပ်ပုံကို ပုံနဲ့အတူ ပြထားပေးပါတယ်။
 
-<figure><img src="https://i.imgur.com/JBYcqLO.png" alt=""><figcaption><p>RAID 1 Mirror</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/RAID-1-Mirror.png" alt=""><figcaption></figcaption></figure>
 
 **RAID 2** – ဒီတစ်ခုမှာတော့ အနည်းဆုံး hard disk ၃လုံးလိုပြီးတော့ သူ့ကို data ကိုရေးတဲ့ဖတ်တဲ့အခါမှာ stripe လုပ်ရင် bit level မှာ stripe လုပ်တဲ့အတွက် အရမ်းကိုအသေးစိပ်လွန်းပြီး RAID ထဲမှာပါတဲ့ disks အကုန်လုံးဟာ အမြဲတမ်း synchronise ဖြစ်ဖို့လိုအပ်ပါတယ်။ ဒီ့အပြင် RAID ထဲမှာပါတဲ့ disk တစ်လုံးကပျက်ရင်ဖြစ်ဖြစ်၊ error တက်တာများလာရင်ဖြစ်ဖြစ် error correction အတွက် Hamming code ကိုအသုံးပြုပါတယ်။ Hamming code ကို ECC RAM တွေမှာလည်း error detection နဲ့ error correction အတွက်အသုံးပြုပါတယ်။ ဒီလို error detection နဲ့ correction လုပ်တဲ့အခါမှာ redundant bit သို့မဟုတ် parity bit ကိုအသုံးပြုပြီးတော့ message တစ်ခု ဘယ်နားမှာ bit flip ဖြစ်ပြီးတော့ error တက်နေသလဲဆိုတာကို two-bit အထိ detection လုပ်နိုင်ပြီးတော့၊ one-bit အထိ correction လုပ်ပေးနိုင်ပါတယ်။ ဘာကိုဆိုလိုသလဲဆိုတာကိုတော့ အောက်မှာ Hamming code ဆိုတဲ့ အပိုဒ်မှာ ဆက်ပြီးအသေးစိတ်ရှင်းလိုပါတယ်။ သိထားသင့်တဲ့ computer science ဆိုင်ရာ တွက်ချက်မူမျိုးဖြစ်တဲ့အတွက် နေရာတော်တော်များများမှာ အသုံးချနိုင်မှာလို့ ထင်လို့ပါ။ ဒီတော့… RAID 2 ဆိုတဲ့ဟာလေးကို အဆုံးသတ်ပြီးတော့ အပြီးသတ်လိုက်ရအောင်။ RAID 2 ဒီနောက်ပိုင်းမှာတော့ မသုံးကြတော့ပါဘူး။ အဓိက ပြဿနာက RAID 2 ကိုအသုံးပြုတဲ့အခါမှာ multiple read/write requests တွေကို တပြိုင်နက်တည်းမှာမလုပ်နိုင်တဲ့အတွက် performance အတွက်အများကြီး ပြဿနာရှိပါတယ်။ အစပိုင်းမှာ parity bit ကိုအသုံးပြုပြီးတော့ error detection နဲ့ correction အတွက်အသုံးချနိုင်အောင် စပြီးတော့ implement လုပ်ခဲ့ကြပုံရပါတယ်။ အောက်မှာတော့ RAID 2 ဘယ်လိုမျိုး bit level မှာ data တွေကို stripe လုပ်သလဲဆိုတာကိုပြထားပါတယ်။
 
-<figure><img src="https://i.imgur.com/KK9DiLI.png" alt=""><figcaption><p>RAID 2 – Bit Level Stripe with Hamming code</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/RAID2.png" alt=""><figcaption></figcaption></figure>
 
 **Hamming code** – အထက်မှာ ပြောထားတဲ့အတိုင်း Hamming code အကြောင်းကို အပိုဒ်တစ်ခုမှာသီးသန့် ရေး မယ်လို့ ဆိုထားတဲအတိုင်း ဒီတစ်ခုမှာ သူ့အကြောင်းကို အကျဉ်းချုပ်ရှင်းပါ့မယ်။ လက်တွေ့မှာတော့ binary Hamming code ကိုအသုံးပြုပြီးတော့ parity bits တွေကိုဘယ်ထည့်ပုံ နဲ့ single bit error ကို correction လုပ်ပုံကိုတွက်ချက်ကြည့်ရအောင်ဗျာ။ Hamming code က binary မှာအလုပ်လုပ်တာဖြစ်တဲ့အတွက် binary bit data ကိုအသုံးပြုပြီးတော့ parity bits တွေကိုထည့်ဖို့ position ကိုဘယ်လိုရှာသလဲသွားကြည့်ရအောင်။
 
@@ -37,11 +37,11 @@ RAID မှာ ပထမဆုံး R ဆိုတာကတော့ အင်�
 
 p ဆိုတာ parity bit ဖြစ်ပြီးတော့ d ဆိုတာက data bit ပါ။ အနောက်က နံပါတ်ကတော့ position တည်နေရာပါ။
 
-<figure><img src="https://i.imgur.com/9Fz6xV1.png" alt=""><figcaption><p>Hamming code – parity bits positioning and data bits placement</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Hamming-Code.png" alt=""><figcaption></figcaption></figure>
 
 အထက်မှာတွေ့နိုင်တဲ့အတိုင်း parity bits အတွက် position နေရာကို 1, 2, 4, 8 ဆိုပြီးတော့နေရာချလိုက်ပါတယ်။ Data bits တွေကိုလည်း ကျန်တဲ့နေရာမှာလိုက်ဖြည့်လိုက်ခြင်းဖြင့် ပထမအဆင့်ပြီးပါတယ်။ နောက်တဆင့်အနေနဲ့တော့ ထည့်ရမည့် parity bits တွေရဲ့ တန်ဖိုးကို ဘယ်လိုတွက်သလဲဆိုတာဆက်ကြည့်လိုက်ရအောင်။ တွက်တဲ့ပုံက… ဆိုကြပါတော့ p1 အတွက် ဘယ်လိုတွက်သလဲဆိုရင်… position 1 မှာရှိတဲ့ bit ကိုရွေးမယ်၊ 2 မှာရှိတဲ့ bit ကိုကျော်သွားလိုက်မယ်၊ ပြီးတော့ နောက်တခါ 3 မှာရှိတဲ့ bit ကိုရွေးမယ်၊ 4 မှာရှိတဲ့ bit ကိုကျော်လိုက်မယ်။ ဒီနည်းနဲ့ပဲ အောက်မှာပြထားတဲ့ အတိုင်း bit sequence တစ်ခုရလာပါတယ်။
 
-<figure><img src="https://i.imgur.com/8pUX1EX.png" alt=""><figcaption><p>P1 parity bit: even parity calculation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Hamming-Code-1-1-768x290.png" alt=""><figcaption></figcaption></figure>
 
 အထက်မှာမြင်ရတဲ့အတိုင်းပဲ ပထမဆုံး parity bit မှာထည့်ဖို့ binary နံပါတ်ကို even parity method ကိုအသုံးပြုပြီးတော့ ရှာပြထားတာ ဖြစ်ပါတယ်။ Even parity ဆိုတာကတော့ one-byte ရှိတဲ့ data stream တစ်ခုမှာ 1 ဖြစ်နေတဲ့ bits အရေအတွက် စုစုပေါင်းဟာ စုံကိန်း (even number) ဖြစ်နေလို့ရှိရင်၊ parity bit ကို 0 ထားရပြီးတော့၊ မကိန်း (odd number) ဖြစ်နေရင်တော့ 1 ဆိုပြီးတော့ထားရပါတယ်။ ဆိုလိုချင်တာက 1 ဖြစ်နေတဲ့ bit အရေအတွက်ပေါင်းလိုက် စုံကိန်း (even number) အမြဲဖြစ်အောင်ထားတဲ့ အတွက် even parity လို့ခေါ်ဆိုခြင်းဖြစ်ပါတယ်။ သူနဲ့ပြောင်းပြန်ကတော့ odd parity ပါ။ 1 ဖြစ်နေတဲ့ bit ပေါင်းလိုက်ရင် မကိန်းဖြစ်အောင်အမြဲထားတဲ့အတွက် odd parity လို့ခေါ်ဆိုခြင်းဖြစ်သည်။
 
@@ -49,34 +49,34 @@ Parity ဆိုတာကို data transmission / redundant data storage တ�
 
 ဒုတိယ parity bit ကို even parity နည်းနဲ့ဆက်ပြီးတော့ တွက်လိုက်ကြည့်ရအောင်။ ဒီတခါတော့ p2 parity bit နဲ့သူ့နောက် bit ကိုရွေးမယ်၊ 2 bits ကိုကျော်သွားလိုက်မယ်၊ ပြီးတော့နောက်ထပ် 2 bit ကိုရွေးမယ်၊ သူ့နောက်က 2 bits ကိုကျော်သွားလိုက်ရင်ဖြင့် အောက်မှာပြထားသလိုနောက်ထပ် bit sequence တစ်ခုရလာပါလိမ့်မယ်။ အဲ့ဒီမှာ ပထမဆုံး p2 parity bit ကို even parity နည်းနဲ့ တွက်ချက်လိုက်ရင်ဖြင့် 0 0 1 0 0 1 ဆိုပြီးတော့ အောက်မှာပြထားတဲ့ အတိုင်းရပါတယ်။
 
-<figure><img src="https://i.imgur.com/S1xD9Rc.png" alt=""><figcaption><p>P2 parity bit: even parity calculation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Hamming-Code-2-1.png" alt=""><figcaption></figcaption></figure>
 
 P4 parity bit အတွက်နောက်တစ်ခါထပ်ပြီးတော့ တွက်ကြည့်မယ်။ p4 parity bit ကိုလည်း အထက်က နှစ်ဆင့်မှာတွက်ချက်တဲ့ နည်းအတိုင်း ဆက်သွားလိုက်ရင်ဖြင့်အောက်က အတိုင်း ထပ်တခါရလာပါလိမ့်မယ်။ ရလာတဲ့ parity bit တန်းဖိုးကို မူရင်း data stream ထဲမှာထည့်လိုက်ပြီးတော့ နောက်အဆင့်ဆက်သွားပါ။
 
-<figure><img src="https://i.imgur.com/i22EzQn.png" alt=""><figcaption><p>P4 parity bit: even parity calculation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Hamming-Code-3.png" alt=""><figcaption></figcaption></figure>
 
 နောက်ဆုံး P8 parity bit ကိုကြည့်လိုက်ရအောင်ဗျာ။ ဒီမှာတော့ 12 bits ပဲရှိလို့မမြင်ရပေမယ့်၊ အထက်မှာလိုပဲ 8 bits ကိုရွေးလိုက်၊ 8 bits ကျော်လိုက်နဲ့ data stream တစ်ခုမှာရှိသလောက် bits တွေကို ထပ်ခါထပ်ခါတွက်ချက်လိုက်ရင်ဖြင့် parity bits တန်းဖိုးလေးတွေထွက်လာပါလိမ့်မယ်။ ဒီဥပမာမှာတော့ အဖြေက 1 0 0 1 0 1 0 1 1 0 1 1 ရတာကို အောက်မှာတွေ့ရတဲ့ အတိုင်းပါ။
 
-<figure><img src="https://i.imgur.com/aJAphG6.png" alt=""><figcaption><p>P8 parity bit: even parity calculation and its resultant bits stream</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Hamming-Code-4.png" alt=""><figcaption></figcaption></figure>
 
 ဟုတ်ပြီ… parity bits တွေရဲ့ position လည်းသိပြီ၊ value ကိုလည်းသိပြီဆိုရင် data bits တွေကြားထဲမှာ အထက်မှာပြထားသလို ကြားညှပ်ထည့်လိုက်ရင်ဖြင့် သိမ်းဆည်းတဲ့ အပိုင်းမှာပြီးသွားပါပြီ။ Parity bits တွေကိုသုံးပြီးတော့ error detection နဲ့ error correction လုပ်မလဲ။ ထားပါတော့… အထက်က 12 bits stream မှာ bit တစ်ခုက flip ဖြစ်ပြီးတော့ 0 ကနေ 1 သို့မဟုတ် 1 ကနေ 0 ဖြစ်သွားတယ်ဆိုကြပါတော့။ လွယ်ပါတယ်၊ အထက်မှာလုပ်တဲ့ အဆင့် ၄ ဆင့်နောက်တခါ ပြန်သွားလိုက်ပြီးတော့ even parity နည်းနဲ့ တွက်ချက်လိုက်ရင်ဖြင့် parity check pass ဖြစ်လာ fail ဖြစ်လာဆိုတာကို ပြန်လည်ဆန်းစစ်နိုင်ပြီးတော့ မှားနေတဲ့ bit ကို ပြင်ပေးလိုက်ရုံပါပဲ။ အဲ့ဒီအတွက် one-bit errors တွေကို correct လုပ်နိုင်ပြင်ပေးနိုင်ပြီးတော့၊ two-bit errors တွေကို detect သာလုပ်နိုင်ပါတော့တယ်။ အောက်မှာပြထားပုံက ပိုပြီးတော့ ရှင်းပါလိမ့်မယ်။ d4 data bit က bit flip ဖြစ်ရင် p1၊ p2၊ p3 parity bits တွေကိုသုံးပြီးတော့ error detection ရော၊ error correction ရော လုပ်ပေးနိုင်ပြီး၊ d3 data bit က bit flip ဖြစ်ရင်ဖြင့် p2 နဲ့ p3 parity bits တွေကို သုံးပြီးတော့ error detection သာလုပ်ပေးနိုင်မှာဖြစ်ပါတယ်။ အသေးစိတ်တွက်ချက်နည်းကို စိတ်ဝင်စားရင် ဒီ link မှာသွားရောက်လေ့လာနိုင်ပါတယ်။ Hamming code အကြောင်း ဒီလောက်ဆိုရင်တော့ဖြင့်လုံလောက်ပြီလို့ထင်ပါတယ်။ အောက်မှာ RAID အကြောင်းတွေကို ဆက်သွားလိုက်ရအောင်။
 
-<figure><img src="https://i.imgur.com/0Ji5NdZ.png" alt=""><figcaption><p>Binary Hamming Codes</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Hamming-Code-5.png" alt=""><figcaption></figcaption></figure>
 
 **RAID 3 –** ဒီတစ်ခုမှာလည်း RAID 2 မှာလိုပဲ byte level မှာ stripe လုပ်ပါတယ်။ အနည်းဆုံး disk ၃လုံးလိုပြီးတော့ parity ကိုသီးသန့် disk မှာ သက်သက်သိမ်းတယ်။ ဒီနောက်ပိုင်းမှာတော့ ဘယ်သူမှ RAID 3 ကို အသုံးမပြုတော့ပါ။ သူ့အစား RAID 5 ကိုသာလူတွေအသုံးများလာပါတော့တယ်။ အောက်မှာတော့ RAID 3 ကို implement လုပ်ပုံကို ပြထားပါတယ်။
 
-<figure><img src="https://i.imgur.com/4ZniS7L.png" alt=""><figcaption><p>RAID 3 – byte-level striping</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/RAID-3-768x569.png" alt=""><figcaption></figcaption></figure>
 
 **RAID 4** – RAID 2 နဲ့ 3 မှာလိုပဲ အနည်းဆုံး disk ၃လုံးလိုပါလိမ့်မယ်။ Block-level မှာ stripe လုပ်တဲ့အတွက် random reads operation အတွက်ကောင်းသော်လည်း random writes အတွက်တော့ parity ကို RAID 3 မှာလိုပဲ သီးသန့် disk တစ်လုံးမှာ သွားသိမ်းတဲ့ အတွက် အချိန်ပိုပြီးတော့ကြာပါတယ်။ အောက်မှာတော့ RAID 4 ကို implement ဘယ်လိုလုပ်သလဲဆိုတာပြထားပါတယ်။
 
-<figure><img src="https://i.imgur.com/cM2dvCc.png" alt=""><figcaption><p>RAID 4 – block-level striping</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/RAID-4-768x569.png" alt=""><figcaption></figcaption></figure>
 
 **RAID 5** – RAID 4 မှာလိုပဲ block-level မှာ stripe လုပ်ပြီးတော့၊ disk ၃လုံး အနည်းဆုံးလိုပါတယ်။ မတူတာက RAID 5 မှာ parity bits တွေကိုပါ disks တွေအားလုံးမှာ stripe လုပ်ပြီးတော့ သိမ်းပါတယ်။ ဒီတော့ performance နဲ့ redundancy ပါတက်လာတယ်။ RAID 2, 3, 4 အစား RAID 5 ကိုသာ industry standard အနေနဲ့ သုံးပါတော့တယ်။ ပြောလာတဲ့ RAID 0 ကနေ RAID 5 အထိအားလုံးသော RAID level တွေမှာ disk တစ်လုံးသာ အပျက်ခံပြီးတော့ နှစ်လုံး အထိအပျက်ခံနိုင်ဖို့ကတော့ nested RAID လို့ ခေါ်တဲ့ RAID 1 နဲ့ RAID 0 ကိုပေါင်းပြီးတော့ implement လုပ်တဲ့ RAID 10 ကိုအသုံးပြုရပါလိမ့်မယ်။ အောက်မှာတော့ RAID 5 ကို ဘယ်လိုမျိုး implement လုပ်သလဲဆိုတာကို ပြထားပါတယ်။
 
-<figure><img src="https://i.imgur.com/tXmx8hW.png" alt=""><figcaption><p>RAID 5 – block-level striping with distributed parity</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/RAID-5-768x569.png" alt=""><figcaption></figcaption></figure>
 
 **RAID 6** – ဒီတစ်ခုကတော့ RAID 5 နဲ့အားလုံးတူပြီးတော့ မတူတာတစ်ခုက parity block ကို နောက်တစ်ခုအပို ထပ်ပြီးတော့ သိမ်းလိုက်တာပါပဲ။ ဒီ့အတွက် disk နှစ်လုံးထိအပျက်ခံပါတယ်။ သို့သော်… RAID 6 ကို implement လုပ်ဖို့အတွက် အနည်းဆုံး disk ၄လုံးလိုပါလိမ့်မယ်။ အောက်မှာတော့ RAID 6 ကိုဘယ်လို implement လုပ်သလဲဆိုတာကိုပြထားပါတယ်။
 
-<figure><img src="https://i.imgur.com/40RSFUI.png" alt=""><figcaption><p>RAID 6 – block-level striping with double distributed parity</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/RAID-6-768x452.png" alt=""><figcaption></figcaption></figure>
 
 RAID အကြောင်းက အခုလောက်ဆိုရင်လုံလောက်ပြီလို့ထင်ပါတယ်။ နောက်တစ်ခုက block storage မှာသုံးတဲ့ Logical Unit Number (LUN) ကိုနောက်တပိုင်းမှာ ဆက်ပြီးတော့ ရှင်းပါ့မယ်။ ဒီ post ကို ဒီမှာပဲရပ်လိုက်ပါ့မယ်။ နောက်တစ်ခုမှာတော့ LUN အကြောင်း အကျဉ်းချုပ်ရယ်၊ object storage အကြောင်း ရယ်ကိုဆက်ပြီးတော့ ဆွေးနွေးချင်ပါတယ်။
