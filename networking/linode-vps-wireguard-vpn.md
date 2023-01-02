@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/vjicNMV.jpeg
+cover: ../.gitbook/assets/pexels-photo-4570711-1880x1200.jpeg
 coverY: 0
 ---
 
@@ -13,15 +13,15 @@ coverY: 0
 
 Cloud မှာ VPS တစ်ခုကို ဖန်တီးတဲ့အခါ မှာတစ်ခုနဲ့ တစ်ခု ခပ်ဆင်ဆင်တူကြပါတယ်။ ဒီတစ်ခုမှာတော့ basic VPS တစ်ခုကို ဘယ်လိုမျိုး တည်ဆောက်သလဲဆိုတာ အောက်မှာ gif ပုံထဲမှာ ကြည့်လိုက်ပါ။ အချိန်နည်းနည်း သက်သာအောင်လို့ ပုံတစ်ခုချင်းစီမသွားတော့ပါဘူး။
 
-<figure><img src="../.gitbook/assets/wg-srv-linode.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/wg-srv-linode (2).gif" alt=""><figcaption></figcaption></figure>
 
 အထက်မှာပြထားတဲ့ အတိုင်း Linode ပေါ်မှာ VPS တစ်ခုကို ဖန်တီးဖို့ရာ အတွက်က မခက်ပါဘူး။ ကိုယ်သုံးမယ် Linux distribution ကိုရွေးမယ်၊ Region ကိုရွေးမယ် VPS ရဲ့ အရွယ်အစား၊ နာမည် နဲ့ login လုပ်ဖို့ လိုအပ်တဲ့ root ရဲ့ password နဲ့ key authentication အတွက် ကိုယ့်ရဲ့ ssh key တွေကိုထည့်ပေးလိုက် ပြီးတော့ create လုပ်လိုက်ရုံပါပဲ။ ပြီးရင် ကိုယ်ရဲ့ VPS ကို provisioning၊ booting နဲ့ running ဆိုပြီးတော့ တစ်ခုချင်းစီပြပါလိမ့်မယ်။ သူချပေးလိုက် public IP address ကို မှတ်ထားလိုက်ပြီးတော့ အခုဆိုရင် server ထဲကို root account နဲ့ အောက်ကအတိုင်း ssh login ဝင်လို့ရပါပြီ။
 
-![](../.gitbook/assets/wg-srv-key-auth.gif)
+![](<../.gitbook/assets/wg-srv-key-auth (1).gif>)
 
 စာရေးသူ ရဲ့ ssh key ကို ဒီ VPS ကို create လုပ်တုန်းက tick လုပ်ပြီးထည့်ထားတဲ့အတွက် root ရဲ့ password ကို login လုပ်တဲ့အခါမှာ မမေးပါဘူး။ Cloud မှာ အခုလိုမျိုး VPS တစ်ခုလုပ်တဲ့အခါမှာ ကိုယ့် VPS လုံခြုံရေးအတွက် ssh configuration မှာ လိုအပ်တဲ့ ပြင်စရာလေးတွေ အချို့ရှိနေပါတယ်။ ပထမတစ်ခုက အထက်မှာလိုမျိုး root account ကို production မှာ remote login မပေးထားသင့်ပါဘူး။ ကိုယ့်ရဲ့ ကိုယ်ပိုင် account ကို VPS ထဲ ဝင်ပြီးတာနဲ့ ချက်ချင်း create လုပ်သင့်ပါတယ်။ ပြီးရင်အဲ့ဒီ account ကို sudo ဆိုတဲ့ group ထဲမှာထည့်ပေးလိုက်ရုံဖြင့် ကိုယ့် account က sudoer ဖြစ်သွားပါတယ်။
 
-![](../.gitbook/assets/create-user.gif)
+![](<../.gitbook/assets/create-user (1).gif>)
 
 ကိုယ့် account နဲ့ VPS ထဲကို ssh ဝင်လို့ ရမရ အရင်စမ်း ကြည့်ပါ။ ဝင်လို့ရပြီဆိုတာနဲ့ ကိုယ် ssh ပတ်သတ်တဲ့ remote login လုံခြုံရေးအတွက် စတင်လုပ်စရာရှိတာတွေကို လုပ်လို့ ရနိုင်ပါပြီ။ အောက်ကအတိုင်း တဆင့်ပြီးတော့ တဆင့်လုပ်သွားလိုက်ပါ။
 
