@@ -14,7 +14,7 @@ GNU/Linux သုံးမယ်ဆိုရင်တော့ ကိုယ် �
 
 GNOME desktop environment ကတော့ Free and Open Source community မှာရှိနေခဲ့တာ တော်တော်လေးတောင် ကြာသွားပါပြီ။ GNOME 1 ကိုတော့ မတ်လ ၃ ရက်နေ့ ၁၉၉၉ ခုနှစ်မှာ စပြီးတော့ မိတ်ဆက်ပေးခဲ့ပါတယ်။ အစပိုင်းမှာတော့ GNOME ဟာ GNU Network Object Model Environment ကို အတိုကောက် ရည်ညွန်းခဲ့ကြသော်လည်း နောက်ပိုင်းမှာတော့ GNOME project ရဲ့ အဓိက ရည်ရွယ်ချက်နဲ့ မကိုက်ညီတာကြောင့် GNOME လို့ပဲမှတ်လိုက်ကြ ရပါတယ်။ GNOME ကို The GNOME Project ရဲ့ အောက်မှာ free and open source community မှာရှိတဲ့ နိုင်ငံတကာက ဝါသနာရှင်များနဲ့ ပညာရှင်ပေါင်း မြောက်များစွာပါဝင်ရေးသားပေးထားပြီး Red Hat ကလည်း အဓိက contributor အနေနဲ့ အားဖြည့်ပေးထားတဲ့အတွက် တော်တော်ကောင်းမွန်တဲ့ DE တစ်ခုဖြစ်တယ်လို့ ဆိုရမှာဖြစ်ပါတယ်။
 
-<figure><img src="../.gitbook/assets/Gnomelogo.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Gnomelogo (1).png" alt=""><figcaption></figcaption></figure>
 
 GNOME ကို အစကနဦးပိုင်းမှာတော့ Miguel de Icaza နဲ့ Federico Mena ဆိုတဲ့ ပုဂ္ဂိုလ် နှစ်ဦးက ဩဂုတ်လ ၁၅ရက်နေ့ ၁၉၉၇ခုနှစ် လောက်မှာ စတင်ခဲ့ကြပါတယ်။ အဲ့ဒီတုန်းကတော့ Richard Stallman ဦးဆောင်တဲ့ free software လှုပ်ရှားမှုအောက်မှာ စတင်လိုက်တဲ့ free software project တစ်ခုအနေနဲ့ စခဲ့ကြပါတယ်။ အဲ့ဒီ အချိန်က KDE မှာ proprietary software တွေနဲ့ တည်ဆောက်ထားတာကြောင့် အရှုပ်အရှင်းနည်းနည်းရှိပုံရပါတယ်။ အဲ့ဒါကြောင့်လည်း GNOME ကို free and open source အောက်မှာရှိတဲ့ GTK+ toolkit ကိုအသုံးပြုပြီးတော့ တည်ဆောက်ခဲ့ကြပါတယ်။ License အရှုပ်အရှင်း တွေကင်းနိုင် သမျှကင်း အောင်လို့ သိပ်ပြီးတော့ မတင်းကျပ်တဲ့ GNU Lesser General Public License (LGPL) အောက်မှာ မှတ်ပုံတင်ထားခဲ့ပါတယ်။ ၂၀၀၁ ခုနှစ် လောက်မှာ တော့ the GNOME Project ဟာ တော်တော်လေး ကို ပြည့်စုံလာတဲ့ DE တစ်ခုဖြစ်လာပြီးတော့ GNOME office suite ကိုပါထည့်သွင်းပေးလာနိုင်ခဲ့ပါတယ်။
 
