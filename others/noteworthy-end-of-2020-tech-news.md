@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/VhoM1wV.jpeg
+cover: ../.gitbook/assets/park-1168348-2048x1365.jpg
 coverY: 0
 ---
 
