@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/RN1AYrl.png
+cover: ../.gitbook/assets/terminator.png
 coverY: 0
 ---
 
@@ -15,7 +15,7 @@ Computer တစ်လုံးမှာ hardware ရယ် software ရယ်ဆ
 
 Bitwarden ကိုစပြီးတော့သုံးကတည်း personal vault ရဲ့ Premium Features ကို တစ်နှစ်ကို US $10 ပေးပြီးတော့ သုံးဖြစ်ပါတယ်။ Free ကိုအသုံးပြုလို့ ရနိုင်သော်လည်း တစ်နှစ်လုံးမှာမှ US $10 ပေးရလို့ Bitwarden ကို support လုပ်တဲ့အနေနဲ့ Premium Features တွေကို မလိုအပ်ပါနဲ့ ပေးဝယ်လိုက်ခဲ့ပါတယ်။ အခုအချိန်ထိ အသုံးပြုသလောက်တော့ အခြားအခြားသော password manager တွေထက် အများကြီး သာပြီးတော့ စျေးနှုန်းအားဖြင့်လည်းအသင့်ပဲဖြစ်တဲ့အတွက် စိတ်တိုင်းတော်တော်လေးကိုကျမိတယ်။
 
-<figure><img src="https://i.imgur.com/NoIC3ZO.png" alt=""><figcaption><p>Bitwarden – PLANS &#x26; PRICING FOR INDIVIDUALS AND FAMILIES</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Bitward-Pricing-768x368.png" alt=""><figcaption></figcaption></figure>
 
 Bitwarden မှာ self-hosting လုပ်ချင်ရင်လည်း လုပ်ဖို့အတွက် options တွေရှိပါတယ်။ Docker နဲ့ Docker Compose နဲ့မို့ deploy လုပ်ရာမှာလည်း တော်တော်လေးကို လွယ်ကူပါတယ်။ သို့သော် ကိုယ့်ရဲ့ environment ကို secure ဖြစ်အောင်လုပ်ဖို့ကတော့ နည်းနည်းလေးကသီလို့ personal အတွက်အသုံးပြုတယ်ဆိုရင်တော့ သူ့ရဲ့ cloud server ကပိုပြီးတော့ လွယ်မယ်လို့ ထင်ပါတယ်။ Bitwarden ကိုလည်း အခြားသော 3rd party auditor တွေက audit လုပ်ပြီးတော့မှ ယုံကြည်စိတ်ချလို့ ရတယ်လို့ ဆိုပါတယ်။ 100% opensource ဖြစ်တဲ့အတွက် codebase မှာလည်း အရှုပ်အရှင်းဘာတွေရှိသလဲဆိုတာကို သိနိုင်လို့ စိတ်အေးနိုင်ပါတယ်။ ကိုယ့်ရဲ့ data တွေကိုလည်း cloud storage မှာ encrypt လုပ်ပြီးတော့မှ တင်တဲ့အတွက် အတိုင်းအတာတစ်ခုထိတော့ စိတ်ချလို့ ရနိုင်ပါတယ်။ လုံးဝယုံကြည်စိတ်ချရတဲ့ cloud ဆိုတာတော့ မရှိသေးတဲ့အတွက် အဆိုးဆုံးကိုလည်း ကြိုပြီးတော့ တွေးတော့ထားရပါ့မယ်။ စာရေးသူအတွက်တော့ အတော်လေးကို စိတ်ကြိုက်တွေ့မိတဲ့ နေ့စဉ်သုံး application လေးတစ်ခုပါ။ Bitwarden ရဲ့ website ကတော့ [https://bitwarden.com/](https://bitwarden.com/) ပါ။ ကိုယ်တိုင်သွားရောက်လေ့လာလို့ရပါတယ်။
 
@@ -33,7 +33,7 @@ Mesh network တစ်ခုကို တည်ဆောက်နိုင်ဖ
 
 Microsoft ကထုတ်သမျှထဲမှာ အကြိုက်ဆုံး software/technology ကို ပြောပါဆိုရင် Active Directory နဲ့ Visual Studio Code နှစ်ခုလို့ပြောရမှာဖြစ်ပါတယ်။ နှစ်ခုထဲက တစ်ခုရွေးပါဆိုရင်တော့ Visual Studio Code လို့ပဲဆိုရမှာပါ။ Microsoft က VSCode ကို opensource လုပ်ပေးပြီးတဲ့နောက်မှာတော့ သူ့ရဲ့ platform တစ်ခုလုံးဟာ အရမ်းကို versatile ဖြစ်လာတယ်လို့ဆိုနိုင်ပါတယ်။ plugin လေးတွေကို အသုံးပြုပြီးတော့ ကိုယ်တွဲသုံးမယ့် linter လေးတွေကို ထည့်သွင်းအသုံးပြုနိုင်တာမို့ ပုံမှန် text editor တစ်ခုကနေပြီးတော့ full-blown IDE တစ်ခုပမာဖြစ်လာပါတော့တယ်။ VSCode မတိုင်ခင်က စာရေးသူ Atom ဆိုတဲ့ text editor တစ်ခုကို အသုံးပြုပါတယ်။ နောက်ပိုင်းမှာတော့ VSCode ကို အသုံးပြုလာရာကနေပြီးတော့ VSCode ကိုပဲ သီးသန့်နေ့တိုင်း သုံးဖြစ်ပါတော့တယ်။
 
-<figure><img src="https://i.imgur.com/rF2TEl2.png" alt=""><figcaption><p>Visual Studio Code</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/vscode-768x609.png" alt=""><figcaption></figcaption></figure>
 
 Atom နဲ့ ယှဉ်လိုက်ရင် VSCode ဟာ ပိုပြီးတော့ stable ဖြစ်တယ်လို့တော့ ထင်ပါတယ်။ VSCode ဟာ Microsoft ရဲ့ umbrella အောက်မှာရှိလို့ မသုံးချင်ဘူးဆိုတဲ့ သူတွေအတွက်တော့ VSCodium ဆိုတဲ့ community-driven alternative တစ်ခုရှိပါတယ်။ အားလုံးနီးပါးဆင်တူဖြစ်ပြီးတော့ Chrome နဲ့ Chromium ကွာခြားသလိုပဲ လို့ အပေါ်ယံမြင်နိုင်ပါတယ်။ စာရေးသူအတွက်တော့ opensource လည်းဖြစ် free လည်းဖြစ်တာမို့ VSCode ကိုသုံးဖို့အတွက် အကြောင်းဖန်လာပါတယ်။ VSCode ရဲ့ website ကတော့ [https://code.visualstudio.com/](https://code.visualstudio.com/) ဖြစ်ပြီးတော့၊ VSCodium ရဲ့ website ကတော့ [https://vscodium.com/ ](https://vscodium.com/)တို့ပဲဖြစ်ပါတယ်။ Features တွေအများကြီးပါတာမို့ sysadmin အတွက် ဖြစ်ဖြစ်၊ automation engineer အတွက် ပဲဖြစ်ဖြစ်၊ programmer အတွက် ပဲဖြစ်ဖြစ် IT system တစ်ခုခုနဲ့ နေ့စဉ် ထိတွေ့လုပ်ကိုင်နေရတဲ့ သူအတွက်တော့ VSCode ဟာ မရှိမဖြစ် tool တစ်ခုပါ။
 
@@ -41,7 +41,7 @@ Atom နဲ့ ယှဉ်လိုက်ရင် VSCode ဟာ ပိုပ�
 
 version control အတွက် Git ကိုသုံးဖြစ်တာနှစ်နှစ်လောက်နီးပါးရှိပါတော့မယ်။ များသောအားဖြင့် configuration file တွေနဲ့ အချို့သော script တွေကို version control လုပ်ဖို့ရာအတွက် Git ကို အသုံးပြုဖြစ်ပါတော့တယ်။ အရင်ကတော့ Git ကိုယ်နဲ့ မဆိုင်သလိုပဲနေရာကနေပြီးတော့ သုံးရင်းသုံးရင်းကနေ မရှိမဖြစ် နေ့စဉ်သုံး tool လေးတစ်ခုဖြစ်လာပါတော့တယ်။ အစမှာတော့ GitHub ကိုသုံးဖြစ်ရာကနေပြီးတော့ GitLab ဆိုတာကိုလည်း တပြိုင်နက်တည်းမှာလိုပဲ သုံးနေဖြစ်ပါတယ်။ အဲ့ဒီတုန်း Microsoft တောင် GitHub ကို မဝယ်သေးပါဘူး။ သို့သော် GitHub မှာ ရှိတဲ့ free offering က GitLab ရဲ့ free offering လောက် မကောင်းတာကို တွေ့ရလို့ GitLab ကိုပဲ အသုံးများလာပါတော့တယ်။ အဲ့ဒီနောက်မှာတော့… GitHub ကို Microsoft ကဝယ်လိုက်တယ်။ ဒါနဲ့ပဲ GitLab ကိုပဲ တောက်လျှောက်အသုံးပြုပါတော့တယ်။
 
-<figure><img src="https://i.imgur.com/weE4nEr.png" alt=""><figcaption><p>GitLab CI/CD Pipeline</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/gitlab-cicd-pipeline-768x303.png" alt=""><figcaption></figcaption></figure>
 
 ထူးခြားတာတစ်ခုကတော့… GitLab မှာ သူနဲ့ပါလာတဲ့ CI/CD pipeline ရှိပြီးသားဖြစ်တဲ့အတွက် Jenkins လိုမျိုး CI/CD pipeline engine တစ်ခုကို integrate လုပ်ပြီးတော့ အသုံးပြုစရာမလိုပါဘူး။ ဒါ့အပြင် နောက်ရနိုင်တဲ့ option တစ်ခုက တကယ်လို့များ ကိုယ်က self-hosted လုပ်ချင်တယ်ဆိုရင်လည်း opensource မို့ ကိုယ်တိုင် server ပေါ်မှာတင်ပြီးတော့ run လို့လည်းရပါတယ်။ Docker နဲ့ Docker Compose ကိုပဲ အသုံးပြုပြီးတော့ deploy လုပ်နိုင်တာဖြစ်တဲ့အတွက် အတော်လေးကို လွယ်ကူပါတယ်။ static site generator တွေ တော်တော်များများ ကိုလည်း အသုံးပြုပြီးတော့ GitLab Pages မှာ ကိုယ့်ရဲ့ blog တွေကို အခမဲ့ host လို့ရတဲ့အတွက် အရမ်းကိုအဆင်ပြေပါတယ်။ GitHub မှာလည်း Pages ဆိုတဲ့ offering ရှိပါတယ်။ စာရေးသူ အတွက်တော့ GitLab က Pages ရဲ့ CI/CD Pipeline နဲ့တွဲပေးပြီးတော့ deploy လုပ်တဲ့လို့ရတဲ့ offering ကိုပိုပြီးတော့ elegant ဖြစ်တယ်လို့ထင်လို့ပါ။ GitLab ရဲ့ website ကတော့ [https://gitlab.com/](https://gitlab.com/t) ဖြစ်ပါတယ်။ အခြားသော repo အတွက် wiki တို့၊ Snippets တို့လိုမျိုး feature တွေပါဝင်တာမို့ ကိုယ်လိုတဲ့ဟာ ကိုအဆင်သင့်ယူပြီး သုံးရုံပါပဲ။
 
@@ -49,7 +49,7 @@ version control အတွက် Git ကိုသုံးဖြစ်တာန�
 
 နေ့စဉ်မရှိမဖြစ် အသုံးပြုရတဲ့ tool တွေထဲမှာ Terminator ဟာလည်း စာရေးသူအတွက် ထိပ်ဆုံးမှာပါ။ Ubuntu ရဲ့ default ပါလာတဲ့ Gnome Terminal ကို သုံးလည်းရပါတယ်။ သို့သော်… Terminator ရဲ့ window tiling ပုံစံနဲ့ အမြင်အားဖြင့် ကြည့်ရတာရှင်းတဲ့အတွက် တော်တော်လေးကို နှစ်သက်မိပါတယ်။ နောက်ပြီးတော့ ပုံမှန် terminal emulator တွေထက်ပိုပြီးတော့ အမြင်ဆန်းတယ်လို့ထင်တဲ့အတွက် နေ့စဉ်မရှိမဖြစ် tool ထဲမှာထည့်သွင်းလိုက်ရခြင်းဖြစ်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/RN1AYrl.png" alt=""><figcaption><p>Terminator</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/terminator.png" alt=""><figcaption></figcaption></figure>
 
 Terminator မှာရှိတဲ့ feature တွေအကုန်လုံးအကြောင်းကို သိချင်ရင်တော့ သူ့ရဲ့ readthedocs website က [https://terminator-gtk3.readthedocs.io/en/latest/#](https://terminator-gtk3.readthedocs.io/en/latest/) ဖြစ်ပြီး Debian နဲ့ Ubuntu လိုမျိုး dpkg သုံးတဲ့ distro တွေမှာ `sudo apt install terminator` ဆိုပြီးတော့ install လုပ်ပြီးတော့ စတင်အသုံးပြုရုံပါပဲ။
 
@@ -57,7 +57,7 @@ Terminator မှာရှိတဲ့ feature တွေအကုန်လုံ
 
 Google တို့ Facebook တို့လို platform တွေမှာ Ads တွေ run ပြီးတော့ tracker တွေလုပ်လွန်းလို့ တခါတခါတော်တော်လေးကို စိတ်ပျက်မိပါတယ်။ Online မှာ ပစ္စည်းတစ်ခု အကြောင်းကို သိချင်လို့ ရှာဖတ်တာမှ မကြာသေးဘူး ကိုယ့်ရဲ့ Facebook မှာဖြစ်ဖြစ် Google ရဲ့ Ads မှာဖြစ်ဖြစ်လာလာပေါ်တတ်ပါတယ်။ ဘာလို့လဲ သိချင်ရင်တော့ Pi-hole ကိုသာ ကိုယ့် network ပေါ်မှာ တင်ပြီးတော့ ကြည့်လိုက်ပါ။
 
-<figure><img src="https://i.imgur.com/Yo3wvPz.png" alt=""><figcaption><p>Pi-hole Dashboard</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/pi-hole-768x528.png" alt=""><figcaption></figcaption></figure>
 
 Pi-hole ကို Raspberrypi မှာတင်ပြီးတော့ run လို့ရအောင်လုပ်ထားတဲ့ အတွက်ဘယ်လောက်တောင် lightweight ဖြစ်သလဲဆိုတာတော့ သိလောက်မယ်ထင်ပါတယ်။ Setup လုပ်ဖို့ရာအတွက်လည်း RPi မှာပဲဖြစ်ဖြစ်၊ Bare-metal server ပေါ်မှာပဲဖြစ်ဖြစ်၊ VM မှာဖြစ်ဖြစ် တင်ပြီးတော့ ကိုယ့် network တစ်ခုလုံးအတွက် recursive DNS resolver တစ်ခုအနေနဲ့ တင်ပြီးတော့ အသုံးပြုနိုင်ပါတယ်။ ublocker လို AdBlocker တွေကိုအသုံးပြုလို့ ရနိုင်သော်လည်း ကိုယ့်အိမ်မှာ အသုံးပြုနေတဲ့ device တွေအကုန်လုံးကို Adblocker တွေလိုက် install လုပ်ဖို့ ထက် Pi-hole ကိုအသုံးပြုခြင်းအားဖြင့် ပိုပြီးတော့ ထိရောက်နိုင်ပါတယ်။ ublocker လို Adblocker တွေကိုလည်းတွဲပြီးတော့ အသုံးပြုနိုင်ရင်တော့ anti-virus လို software တွေကိုယ့်စက်ပေါ်မှာအသုံးပြုတာထက်တောင် ပိုပြီးတော့ ထိရောက်မူရှိပြီး ကိုယ့်အိမ်သူအိမ်သားတွေအားလုံးအတွက် စိတ်ချနိုင်မှာပါ။ ကိုယ့်အိမ်ရဲ့ network ပေါ်မှာတော့ မရှိမဖြစ် အသုံးပြုသင့်တဲ့ software တစ်ခုပါ။ Pi-hole ရဲ့ website ကတော့ [https://pi-hole.net/](https://pi-hole.net/) ဖြစ်ပြီးတော့ သိချင်တဲ့ဟာတွေကို ဖြည့်စွတ်ပြီးတော့ သိရအောင်လို့ သွားရောက်လေ့လာလို့ရပါတယ်။
 
