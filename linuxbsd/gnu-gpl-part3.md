@@ -10,7 +10,7 @@ GNU project ကိုကာကွယ်ဖို့ GPL သို့မဟုတ
 
 အဲ့ဒီတော့ ရှင်းပါတယ် GNU Manifesto ထဲမှာ ပြောတဲ့ အဓိက အချက်လေးချက်ကိုပဲ အထောက်အပံ့ ပေးထားတဲ့ သဘောမျိုးပါ။ GNU Manifesto ထဲက အချက်တွေကို အရှေ့ရှင်းပြီးတဲ့အတွက် ပြန်မရှင်းတော့ပါဘူး။ အကျဉ်းချုပ်လိုက်ရင်တော့ GPL v1 မှာဆိုထားတာက GPL v1 ကိုအသုံးပြုချင်ရင် open source ဖြစ်ရမယ်။ လိုသလိုပြင်ဆင် သည်ဖြစ်စေ တခြား source code နဲ့ပေါင်းပြီးတော့ software တစ်ခုရေး လိုသည်ဖြစ်စေ လာပေါင်းမယ် source code က GPL v1 နဲ့ သို့မဟုတ် BSDလို MITလို license တမျိုးမျိုးရဲ့ အောက်မှာ register လုပ်ထားတာဖြစ်ရမယ်။ အဲ့လိုမှ ပြင်ပြီးနောက် GPL v1 ကိုပဲ ဆက်ပြီးလိုက်နာနိုင်မှာဖြစ်တဲ့အတွက်ကြောင့်လို့ဆိုပါတယ်။ GPL v1 ထဲမှာဘာတွေ ပါလည်း အင်္ဂလိပ်လို အသေးစိတ်သိချင်ရင်တော့ ဒီ [link](https://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html) ကိုသာ တချက်လောက်ကြည့် လိုက်ပါတယ်။ အချိန်နည်းနည်းပေးပြီး ဖတ်ကြည့်သင့်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/H88y7lr.jpeg" alt=""><figcaption><p>Richard Stallman</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/220px-Stallman_GPLv3_launch_MIT_060116.jpg" alt=""><figcaption></figcaption></figure>
 
 ## GNU GPL v2
 
