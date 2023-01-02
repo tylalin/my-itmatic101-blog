@@ -4,18 +4,18 @@ Linux certification တွေအကြောင်းရေးမယ်ဆို
 
 နောက်ဆုံးတော့ brand တွေကိုမမှီခိုတဲ့ FLOSS community ကပေးတဲ့ certification အကြောင်းတွေ ကိုရေးဖို့ကိုသာ ဆုံးဖြတ်လိုက်ပါတော့တယ်။ အဲ့ဒီတော့ ကိုယ်က brand တစ်ခုအတွက် Linux certification လုပ်ရမှာဆိုရင်တော့ ဒီ post ကသိပ်အဆင်မပြေပါဘူး။ ဒီ post မှာရေးမယ့် certification တွေ ကတော့ Linux Professional Institute တို့ CompTIA တို့ The Linux Foundation တို့ကလုပ်ပေးထားတဲ့ certificate တွေဖြစ် ပါတယ်။ ဘယ် GNU/Linux distro ရယ်လို့ အစွဲမရှိစေပဲ Linux ဆိုတဲ့ platform တစ်ခုကို သင်ယူလေ့လာဖြစ်ပါတယ်။ နောက်တစ်ခုရှိတာက post မှာပါမယ် စာမေးပွဲတွေက sysadmin တို့ network admin တို့ virtualization specialist တွေအတွက်ပါ။ coding သမားတွေ programming သမားတွေ အတွက်တော့ Linux မှာအသုံးများတဲ့ language တွေအတွက် သီးသန့်စာမေးပွဲတွေရှိပါတယ်။ ဒီ post ကတော့ Linux ဆိုတာဘာလဲ၊ ဘယ်လိုသုံးရသလဲ၊ ဘယ်လို manage လုပ်သလဲဆိုတာတွေကို cover ဖြစ်မှာပါ။ အခြေခံလိုအပ်မှုတွေအတွက် အလွယ်ဆုံး beginner အဆင့် certification ကနေစပြီးတော့ တဖြေးဖြေး ပိုပိုမြင့်လာတဲ့ certification တွေအကြောင်းကို တဆင့်ပြီး တဆင့်ရှင်း ပြသွားပါ့မယ်။ Certification တွေရဲ့ provider သုံးခုကို အခြေခံပြီးတော့ပြောသွားပါ့မယ်။
 
-<figure><img src="https://i.imgur.com/ykfKByE.png" alt=""><figcaption><p>Linux Professional Institute (LPI)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/logo@2x.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://i.imgur.com/DQFdM8O.jpeg" alt=""><figcaption><p>CompTIA Linux+</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Linux.jpg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://i.imgur.com/QNvTILx.gif" alt=""><figcaption><p>The Linux Foundation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1569869_orig-300x115.gif" alt=""><figcaption></figcaption></figure>
 
 ### **အခြေခံအဆင့် certification များ**
 
 **LPI Linux Essentials**\
 ပထမဆုံးကတော့ Linux Professional Institute (LPI) ဆိုတဲ့ certification provider ဖြစ်ပါတယ်။ အခြေခံအကျဆုံး beginner အဆင့်ကို စလုပ်မယ် ဆိုရင်တော့ စာရေးသူအနေနဲ့ Linux Professional Institute ရဲ့ LPI Linux Essentials ကိုဖြေဖို့ကို တိုက်တွန်းပါတယ်။ LPI Linux Essentials ကိုတော့ နောက်တဆင့်မြင့်တဲ့ Linux certification တွေအတွက်လည်း လိုအပ်သလို Linux စသုံးတဲ့လူတွေအတွက်လည်း သင်ကြားမူတစ်ခု စတင်ဖို့ကို ရည်ညွန်းပါတယ်။ အခြေခံအကျဆုံး Linux ရဲ့မရှိမဖြစ်လိုအပ်တဲ့ အရာတွေကို လေ့လာရင် certification တစ်ခုပြီးသွားမယ့် စာမေးပွဲဖြစ်ပါတယ်။ LPI Linux Essentails စာမေးပွဲကိုဖြေမယ်ဆိုရင်အောက်က အချက်တွေကို သိထားသင့်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/3BKqlYy.jpeg" alt=""><figcaption><p>LPI Linux Essentials</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/LPI-Essentials-300x233.jpg" alt=""><figcaption></figcaption></figure>
 
 * **LPI Linux Essentials ရဲ့လက်ရှိ version** လက်ရှိမှာတော့ version 1.5 ကိုရောက်နေပါပြီ။ ICT industry ရဲ့လိုအပ်ချက်တွေကို ဖြည့်ဆည်းဖို့ရာ version တွေကို ပုံမှန် update လုပ်ရပါတယ်။ တခါတလေ certification exam တွေကို update လုပ်တဲ့အခါမှာ မေးခွန်းပုံစံတွေပါပြောင်းလဲ သွားတတ်တာမို့ သတိပြုစေချင်ပါတယ်။ ကိုယ်က ဘယ် version ကိုဖြေဆိုမလဲဆိုတာလည်းသိထားရပါမယ်။ တချို့ certification တွေမှာ version တွေ retired ဖြစ်သွားတာတွေရှိပါတယ်။ အဲ့ဒါတွေကိုလည်း သတိပြုစေချင်ပါတယ်။ Exam code ကတော့ 010-150 ဆိုတာနဲ့ရှာရပါမယ်။
 * **LPI Linux Essentials မဖြေခင်လိုအပ်ချက်များ** ဒီစာမေးပွဲဖြေဆိုဖို့အတွက်ဆို ရှေ့မှာကိုယ်က ဘာစာမေးပွဲမှ ဖြေဆိုအောင်မြင်ထားစရာမလိုပါဘူး။ အခြေခံစာမေးပွဲဖြစ်တဲ့အတွက် ကိုယ်အဆင်သင့် ဖြစ်ပြီဆိုတာနဲ့test center တစ်ခုမှာ register လုပ်ပြီးဖြေဆိုလိုက်ရုံပါပဲ။
