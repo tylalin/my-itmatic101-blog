@@ -2,7 +2,7 @@
 
 ဒီ post မှာတော့ LXDE အကြောင်း ဆက်ပြီးတော့ ရေးပါ့မယ်။ အရှေ့မှာတော့ Xfce အကြောင်းကို မိတ်ဆက်ပေးတုန်း Lightweight Desktop ဆိုတာဘာလဲကို ရှင်းပြပေးပြီးသားမို့ LXDE အကြောင်းကို ခပ်သွက်သွက်လေးသွားလိုက်ကြရအောင်။ LXDE ဆိုတာကလည်း Xfce လို Ligthweight DE တစ်ခုဖြစ်ပါတယ်။ LXDE ဆိုတာကတော့ Lightweight X11 Desktop Environment ကိုအတိုကောက် ခေါ်ဆိုတာလည်းဖြစ်ပြီး၊ LXDE project ကို ၂၀၀၆ ခုနှစ်မှာ ထိုင်ဝမ်နိုင်ငံက Hong Jen Yee (PCMan) က စတင်မိတ်ဆက်ပေးခဲ့ ပါတယ်။ LXDE ကို C programming language နဲ့ ရေးထားပြီးတော့ GTK+ 2 toolkit ကို အသုံးပြုထားပါတယ်။ Unix ကော Unix-alike system တွေမှာပါသုံးလို့ ရအောင်လို့ ရည်ရွယ်ခဲ့တာပါ။ သက်တမ်းအားဖြင့် ၁၀နှစ်ကျော်ကျော်သာရှိသေးတဲ့ project တစ်ခုဖြစ်သော်လည်း LXDE ကို Lightweight distro တော်တော်များများမှာ တွင်တွင်ကျယ်ကျယ် အသုံးပြုလို့နေပါပြီ။ လက်ရှိအချိန်ထိတော့ usability၊ performance၊ aesthetic၊ functionality နဲ့ support ပိုင်းမှာတော့ လူတော်တော်များများက LXDE ကိုအမှတ်တော်တော်လေးကိုပေးကြပါတယ်။ LXDE ထက်ပေါ့တဲ့ DE တွေလည်းရှိတော့လည်း ရှိပါတယ်။ လက်တွေ့အသုံးပြုတဲ့အခါမှာတော့ အဆင်မပြေတာတွေရှိတာမို့ LXDE ကိုသာ အရိုးရှင်းဆုံးနဲ့ အလုပ်အဖြစ်ဆုံး DE တစ်ခု အနေနဲ့သာ စာရေးသူက မှတ်ယူခြင်းဖြစ်ပါတယ်။ နောက်ပြီးတော့ LXDE က စာရေးသူသုံးဖူးသမျှ DE တွေထဲမှာ စာရေးသူ အကြိုက်ဆုံး DE ပါ။ အထူးသဖြင့် laptop တွေပေါ်မှာ တော်တော်လေးကို သိသာပြီး Battery နဲ့ သုံးရတာဖြစ်တဲ့ အတွက် LXDE ရဲ့ အစွမ်းကို ပိုပြီးတော့ ထင်သာမြင်သာရှိစေပါတယ်။ CPU နဲ့ RAM ကိုလည်း အလုပ် သိပ်ပြီးတော့ မပေးတဲ့အတွက် တော်ရုံ PC အဟောင်းတွေ Laptop အဟောင်း တွေမှာ တော်တော်လေးကို သင့်တော်တဲ့ DE တစ်ခုပါ။
 
-<figure><img src="https://i.imgur.com/saf0wbG.png" alt=""><figcaption><p>Lubuntu</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/LXDE.png" alt=""><figcaption></figcaption></figure>
 
 LXDE Project ရဲ့ မူရင်း ရည်ရွယ်တာကလည်း မြန်ဆန်ပေါ့ပါးပြီးတော့ စွမ်းအင်သုံးစွဲမူမှာ လိုသလောက်နဲ့ အနည်းဆုံး ဖြစ်အောင်လုပ်ဖို့အတွက်ပါ။ Hong Jen Yee (PCMan) ဟာ ၂၀၀၆ ခုနှစ်မှာ PCManFM ဆိုတဲ့ file manager တစ်ခုကို စစချင်းမိတ်ဆက်ပေးလိုက်ပါတယ်။ PCManFM ဟာ LXDE ရဲ့ ပထမဆုံး component တစ်ခုပါ။ နောက်ပိုင်းမှ LXDE တစ်ခုလုံးကို တည်ဆောက်ဖို့ကို တခြား module တွေကိုလိုက်ရေးရာကနေပြီးတော့ ရုပ်လုံးပေါ်လာတာလည်း ဖြစ်ပါတယ်။ နောက်တစ်ခု ထူးခြားတာက LXDE မှာပါတဲ့ component တွေက တခြား GNOME DE မှာလို integrate လုပ်ထားတာ မဟုတ်ပဲနဲ့ တစ်စချင်းစီ ဖြုတ်လို့တက်လို့ရတာပါပဲ။ အဲ့ဒါကြောင့် component တွေဟာ dependency လည်းနည်းတယ်လို့ဆိုရမှာပါ။ အောက်မှာကတော့ LXDE မှာ ပါတဲ့ component အစိတ်အပိုင်းတွေပဲ ဖြစ်ပါတယ်။
 
@@ -20,7 +20,7 @@ LXDE Project ရဲ့ မူရင်း ရည်ရွယ်တာကလည�
 * LXDM: X display manager တစ်ခုပါ။ သူကတော့ system ရဲ့ login လုပ်တဲ့ screen အနောက်မှာ Session Manager ကို လက်လွှဲ မပြောင်းပေးခင် ဘယ်လို desktop မျိုးနဲ့ session တစ်ခုကို စမလဲဆိုတာကို manage လုပ်ပေးတဲ့ component ပါ။ DE နှစ်ခုသို့မဟုတ် နှစ်ခုထက် ပိုတဲ့ အခါမျိုးမှာ display manager ရဲ့ လုပ်ဆောင်မှုက ပိုပြီးတော့ အရေးပါ ပါတယ်။
 * LXNM: system တစ်ခုရဲ့ network settings တွေကို ထိန်းချုပ်ပေးထားတဲ့ Network Manager သို့မဟုတ် network connection helper daemon တစ်ခုဖြစ်ပါတယ်။ Wired ရော Wireless အတွက် ပါသုံးတဲ့ component တစ်ခုပါ။ အခုအခါမှာတော့ LXNM ဟာ active developing project အနေနဲ့ မဟုတ်တော့ပါဘူး။ LXDE ဟာလည်း အများ distro တွေနည်းတူ NetworkManager နဲ့ nm-applet တွေကိုသာ အသုံးပြုပါတော့တယ်။
 
-<figure><img src="https://i.imgur.com/pFo6neX.png" alt=""><figcaption><p>LXDE on Fedora</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/LXDE-Apps.png" alt=""><figcaption></figcaption></figure>
 
 တခြား ပါဝင်တဲ့ အစိတ်အပိုင်းတွေလည်းရှိပါတယ်။ အဲ့ဒီလို အစိတ်အပိုင်းတွေဟာ external project အနေနဲ့တည်ရှိပြီးတော့ LXDE project အတွက်ရေးပေးထားတဲ့ component တွေ program တွေ အနေနဲ့သာရှိပါတယ်။ အောက်မှာတော့ external project တွေက LXDE အတွက် ရေးပေးထား components လေးတွေပါ။
 
@@ -29,12 +29,12 @@ LXDE Project ရဲ့ မူရင်း ရည်ရွယ်တာကလည�
 * ObConf: ဒါကတော့ Openbox ကို configure လုပ်ဖို့သုံးတဲ့ GUI tool တစ်ခုပါ။
 * Xarchiver: file တွေ folder တွေကို archive လုပ်ဖို့ extract လုပ်ဖို့ သုံးတဲ့ file archiver တစ်ခုပါ။
 
-<figure><img src="https://i.imgur.com/Zjr4AdR.jpeg" alt=""><figcaption><p>Lubuntu 14.04 Login Screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/lubuntu-14-04-log-in-screen.jpg" alt=""><figcaption></figcaption></figure>
 
 LXDE ရဲ့ သိသင့် သိထိုက်တာတွေကို အထက်မှာ ဖော်ပြသင့်သလောက် ဖော်ပြပြီးတဲ့ နောက်မှာတော့ LXDE အကြောင်း ပြောရင် မပြောလို့ မပြီးတဲ့ အကြောင်းအရာ နှစ်ခုရှိပါတယ်။ အဲ့ဒါတွေကတော့ LXQt နဲ့ Razor-qt ပါပဲ။ LXQt ကိုတော့ မတ်လ ၂၆ရက်နေ့ ၂၀၁၃ခုနှစ်မှာတော့ LXDE ကို ဦးဆုံး စခဲ့တဲ့ Hong Jen Yee က စမ်းသပ်မှုသဘော အနေနဲ့ PCManFM ကို Qt toolkit နဲ့ port လုပ်ကြည့်ခဲ့ပါတယ်။ GTK+ 3 မှာစ ထွက်လာတာနဲ့ ပြဿနာ တော်တော်ရှိခဲ့ပုံရပါတယ်။ Hong Jen Yee ကလည်း GTK+ 3 ကို သဘောမတွေ့တော့တာနဲ့ Qt port လုပ်မယ်ဆိုပြီးတော့ ဖြစ်လာခဲ့တာပါ။ အဲ့ဒါကြောင့်လည်း LXDE ကနေပြီးတော့ Qt port လုပ်လိုက်လို့ LXQt ဆိုပြီးတော့ DE တစ်ခုထပ်ဖြစ်လာခဲ့ပါတယ်။ နောက်တခါ ဇွန်လိုင်လ ၂၁ရက်နေ့ ၂၀၁၃ ခုနှစ်မှာ Razor ဆိုတဲ့ DE project တစ်ခုက LXDE နဲ့လာပေါင်းလိုက်ပြီးတော့ Razor-qt ဆိုပြီးတော့ ဖြစ်လာခဲ့ပြန်ပါတယ်။ Razor ဟာလည်း Lightweight DE တစ်ခုရဖို့အတွက် ကြိုးပမ်းနေတဲ့ project တစ်ခုပါ။ LXDE နဲ့ ရည်ရွယ်ချက် ထက်တူကျရုံသာမက project ရဲ့ သဘော သဘာဝ သွားတူနေတာကြောင့် merge လုပ်လိုက်ကြတာပါ။ LXQt နဲ့ Razor-qt တို့ဟာ သက်တမ်းအားဖြင့် နုလွန်းလှသော်လည်း project အရှိန်ကတော်တော်လေးကောင်းတယ်လို့ဆိုရမှာပါ။ စာရေးသူ ထင်တာတော့ LXQt နဲ့ Razor-qt နှစ်ခုလုံးဟာ Lightweight ဖြစ်အောင်လုပ်ပြီးတော့ KDE လိုလှအောင် ရေးနိုင်ရင်တော့ နောက်ပိုင်းမှာ တွင်တွင်ကျယ်ကျယ် အသုံးပြုလာမယ့် DE တွေပဲဖြစ်ပါတယ်။ လက်ရှိမှာတော့ LXDE လောက် အဲ့ဒီ နှစ်ခုလုံးဟာ နာမည်မထွက်သလို အလုပ်သိပ်ဖြစ်ပုံတော့ မရပါဘူး။ Ubuntu လို distro ကနေပြီး ခွဲထွက်လာတဲ့ lightweight တွေမှာတော့ LXDE နဲ့ Xfce ကိုသာ official DE အနေနဲ့ သုံးနေရတုန်းပါ။ မည်သို့ပင်ဖြစ်စေ LXQt ကတော့ အချိန်တစ်ခုရောက်ရင် project သက်တမ်းရင့်လာတာနဲ့ အမျှ ပိုမိုကောင်းမွန်လာမယ့် DE ပါ။ အခုချိန်ထိတော့ LXDE ကိုသာ အားထား နေရတုန်းလည်း ဖြစ်သလို အလုပ်အလွန်ဖြစ်တဲ့ lightweight DE တစ်ခုပါ။
 
-<figure><img src="https://i.imgur.com/jT0ruiI.png" alt=""><figcaption><p>LXQt Desktop</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/LXQt-Desktop.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://i.imgur.com/wFLbzEy.png" alt=""><figcaption><p>Razor-qt Desktop</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Razor-qt-Desktop.png" alt=""><figcaption></figcaption></figure>
 
 LXDE အကြောင်းကိုတော့ ဒီလောက်နဲ့ပဲ ရပ်လိုက်ပါတော့မယ်။ Desktop Environment အကြောင်းတွေကိုတော့ သိသင့်သလောက် သိပြီးကြပြီလို့ စာရေးသူထင်ပါတယ်။ DE ၅ခုကိုသာ ပုံပမာထားပြီးတော့ GNU/Linux distro တွေမှာ Desktop Environment တွေက ဘယ်လောက်တောင် အရေးပါသလဲဆိုတာကို တင်ပြလိုတာပါ။ လိုရင်းအကျဉ်းချုပ်သဘောလောက်ကိုတော့ လေ့လာမှတ်သားမိမယ်တော့ စာရေးသူထင်ပါတယ်။ ဒီ Desktop Environment အကြောင်းကိုတော့ ဒီအပိုင်းနဲ့ပဲ အဆုံးသတ်လိုက်ပါတော့မယ်။
