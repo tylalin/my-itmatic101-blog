@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/pexels-photo-171198.jpeg
+cover: ../.gitbook/assets/FileZilla-ftp-tftp.png
 coverY: 0
 ---
 
