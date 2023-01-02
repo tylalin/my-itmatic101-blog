@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/PyJhhGi.png
+cover: ../.gitbook/assets/osi.png
 coverY: 0
 ---
 
@@ -7,7 +7,7 @@ coverY: 0
 
 ### MIT License
 
-<figure><img src="https://i.imgur.com/tEViBp0.png" alt=""><figcaption><p>MIT License logo (origin: Wikipedia – MIT License page)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/MIT-Logo.png" alt=""><figcaption></figcaption></figure>
 
 BSD License အကြောင်းကို လိုသလောက် အရှေ့တပိုင်းမှာရှင်းသွားပြီးတဲ့နောက် ဒီ post မှာတော့ သူ့လိုပဲ permissive license အမျိုးအစားဖြစ်တဲ့ MIT license အကြောင်းကို ဆက်သွားချင်ပါတယ်။ လက််ရှိအချိန်ထိတော့ အသုံးအများဆုံး license တစ်ခုဖြစ်ပါတယ်။ အရိုးအရှင်းဆုံးသော license အမျိုးအစား ဖြစ်တဲ့အတွက်လူသုံးများတာလည်း ဖြစ်နိုင်ပါတယ်။ သူရဲ့ ထူးခြားချက်က အခြားမည့်သည့် license အမျိုးအစားနှင့်မဆို compatible ဖြစ်တဲ့အပြင်၊ သူကနေဆင်းသက်လာတဲ့ software ကို အခြားသော license အမျိုးအစားနဲ့ ပြန်ပြီးတော့ ထားချင်လည်းရပါတယ်။ ထားပါတော့… အရှေ့လူက သူ software ကို MIT license အသုံးပြုထားပြီးရင်၊ အဲ့ဒီ software ရဲ့ code base ကို အခြေခံထားပြီးတော့ နောက်လူကဆက်ပြီးတော့ redistribute လုပ်ချင်ရင် သူ့အနေနဲ့ GPL ကိုပြောင်းပြီးတော့ အသုံးပြုချင်ရင် ပြောင်းခွင့်ပေးထားပါတယ်။ အခြားသော license နဲ့တွဲပြီးတော့ အသုံးပြုချင်လည်း ရပါတယ်။ သို့သော် GPL ဘက်ကနေပြီးတော့ MIT License ကို ပြန်လာချင်ရင်တော့ GPL ဘက်က restriction တွေကြောင့် ပြောင်းခွင့်မရှိပါဘူး။ ဒါ့အပြင် နောက်လူက proprietary လုပ်ချင်လည်း လုပ်ပိုင်ခွင့်ပြုထားပါတယ်။ အောက်မှာတော့ MIT License ရဲ့ မူရင်းကို မြင်နိုင်ပါဖြစ်ပါတယ်။
 
@@ -23,7 +23,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 ### Apache License 2.0
 
-<figure><img src="https://i.imgur.com/J8TcvnT.png" alt=""><figcaption><p>Apache License logo (origin: Wikipedia – Apache License page)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Apache-logo-768x375.png" alt=""><figcaption></figcaption></figure>
 
 ဒီ License ကိုတော့ Apache Software Foundation (ASF) ကနေပြီးတော့ စတင်သတ်မှတ်ပေးခဲ့တာဖြစ်ပါတယ်။ Apache License ဟာလည်း permissive license အမျိုးအစားနောက် တစ်ခုပါ။ permissive ဆိုတဲ့အတိုင်း ဒီ license ကိုအသုံးပြုချင်းအားဖြင့် ကိုယ့်ရဲ့ software ကို အကန့်အသတ် မရှိပဲ အခြားသူတွေကို ပေးသုံး၊ ပေးပြင်၊ ပေးဖြန့်ခွင့်ကို ပြုထားပါတယ်။ ၁၉၉၅ခုနှစ်အစပိုင်းမှာ အဲ့ဒီအချိန်က လူသုံးများလာတဲ့ Apache web server (httpd server) မှာအသုံးပြုဖို့ရာအတွက် 4-clause BSD License နဲ့ခပ်ဆင်ဆင် license တစ်ခုကို အသုံးအပြုရာကနေပြီးတော့၊ ၁၉၉၉ခုနှစ် အလယ်မှာ Berkeley ကနေ အရှေ့တပိုင်းမှာပြောတဲ့ advertising clause ကိုဖြုတ်ချလိုက်ပြီး 3-Clause BSD license လုပ်လိုက်နောက်မှာ၊ သူ့လိုပဲ Apache License 1.1 ဆိုပြီးတော့ သက္ကရာဇ် ၂၀၀၀မှာ ထပ်တခါထွက်လာခဲ့ပါတယ်။
 
