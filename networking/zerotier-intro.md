@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/rc5t9J8.jpeg
+cover: ../.gitbook/assets/pexels-photo-1901388-1880x1200.jpeg
 coverY: 0
 ---
 
@@ -9,27 +9,19 @@ VPN တို့၊ MPLS တို့၊ Tunnelling တို့နဲ့ပတ�
 
 ဒီ post မှာကတော့ စာရေးသူ [ZeroTier](https://www.zerotier.com/) ဆိုတဲ့ mesh network အကြောင်းကို မိတ်ဆက်ပေး လိုပါတယ်။ ZeroTier ကတော့ အထက်ကနှစ်ခုလောက်တော့ setup လုပ်ရတာမခက်ပါဘူး၊ လွယ်ကူပါတယ်။ အဓိက ကတော့ opensource project တစ်ခုဖြစ်ပြီးတော့၊ enterprise customer တွေအတွက်လည်း offering ကောင်းကောင်း ရှိတာမို့ စိတ်ကြိုက်တွေ့မိတာတော့ အမှန်ပါ။ အောက်မှာတော့ သူ့ရဲ့ free မှာသုံးလို့ရတဲ့ feature အကျဉ်းချုပ်နဲ့ professional တို့၊ Enterprise တို့မှာ ဘာတွေကွာခြားသွားသလဲဆိုတာကို ယှဉ်ကြည့်လို့ရအောင် ဖော်ပြပေးထားပါတယ်။ စာရေးသူအတွက်တော့… free မှာရနိုင်တဲ့ feature တွေ၊ limit တွေ နဲ့ကို တော်တော်လေး လုံလောက်နေပြီ ဖြစ်တဲ့အတွက် အဆင်ပြေနေပါတယ်။ များသောအားဖြင့် WireGuard ကို အဓိကသုံးဖြစ်ပြီးတော့၊ နောက်ဆုံး WireGuard အဆင်မပြေရင် သုံးလို့ရအောင်လို့ ZeroTier ကို Plan B အနေနဲ့ အသုံးပြုပါတယ်။
 
-<figure><img src="https://i.imgur.com/ApCpzSG.png" alt=""><figcaption><p>ZeroTier Pricing</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image-768x677.png" alt=""><figcaption></figcaption></figure>
 
 အထက်မှာပြထားတဲ့ အတိုင်း တကိုယ်ရေသုံးမယ်ဆိုရင် admin တစ်ယောက်ပဲလိုနိုင်ပြီးတော့၊ ကိုယ့်အိမ်က environment ကို ဘယ်နေရာကနေမဆို access လုပ်နိုင်အောင်လို့ လုပ်ထားလို့ရပါတယ်။ ပြီးတော့ devices ပေါင်းအခု ၅၀လောက် ချိတ်ဆက်ပြီးတော့ အသုံးပြုနိုင်တာမို့ ကိုယ့်အိမ်က network နဲ့ချိတ်ဖို့အတွက်တော့လောက်မယ်လို့ထင်ပါတယ်။ တခါမှတော့ သတ်မှတ်ထားတဲ့ limit ကိုရောက်တာမရှိသေးလို့ ဘယ်လိုမျိုး သတ်မှတ်သလဲဆိုတော့ သေချာမသိပါဘူး။ WireGuard တို့၊ Nebula တို့နဲ့ မတူတာတစ်ခုက ZeroTier ကိုကိုယ့်ရဲ့ environment မှာ deploy လုပ်စရာမလို၊ configure လုပ်စရာမလိုတာပဲဖြစ်ပါတယ်။ ZeroTier မှာက web portal တစ်ခုကို [https://accounts.zerotier.com](https://accounts.zerotier.com/) မှာသွားရောက် account တစ်ခုဖွင့်လိုက်ရုံဖြင့် အားလုံးနီးပါး အဆင်သင့်ဖြစ်ပါပြီ။ ဒီတော့ ဘယ်လိုမျိုး စတင်အသုံးပြုနိုင်သလဲဆိုတာကို တချက်လောက်ကြည့်လိုက်ရအောင်။ Account ဖွင့်ပုံ အသေးစိတ်ကိုတော့ ဒီနေရာမှာ မရှင်းတော့ ပါဘူး။ အဲ့ဒီ account ရပြီဆိုတာနဲ့ network တစ်ခုဘယ်လိုတည်ဆောက်သလဲ၊ အဲ့ဒီ network ကိုဘယ်လိုချိတ်သလဲဆိုတာကို မတူတဲ့ cloud providers နှစ်ခုကိုအသုံးပြုပြီးတော့ VPS နှစ်လုံးကို ချိတ်ပြပါ့မယ်။ ပထမဆုံး အနေနဲ့ ZeroTier account နဲ့ သူ့ web portal ထဲကိုဝင်လိုက်တာနဲ့ အောက်ကအတိုင်းတွေ့ရမှာပါ။
 
-<figure><img src="https://i.imgur.com/jShVd9A.png" alt=""><figcaption><p>ZeroTier Portal</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image-3-768x295.png" alt=""><figcaption></figcaption></figure>
 
 ရိုးရှင်းတဲ့ interface တစ်ခုဖြစ်ပြီးတော့ ရှင်းလင်းတဲ့ အဆင့်ဆင့်လုပ်ဆောင်ရမယ့် အရာတွေကိုပုံမှာအတိုင်းတွေ့ရမှာပါ။ ပြောထားတဲ့ အတိုင်း network တစ်ခုကိုတည်ဆောက်ကြည့်လိုက် ရအောင်။ “Create A Network” ဆိုတဲ့နေရာနှိပ်လိုက်ပါ။ ZeroTier ဟာ random ID တစ်ခုနဲ့ network name တစ်ခုကို တည်ဆောက်ပေးပါလိမ့်မယ်။ အောက်မှာတွေ့တဲ့ အတိုင်းမြင်ရပါလိမ့်မယ်။
 
-<figure><img src="https://i.imgur.com/t091SLH.png" alt=""><figcaption><p>ZeroTier Networks</p></figcaption></figure>
-
 ကိုယ့်အနေနဲ့ တစ်ခုထက်ပိုတဲ့ network တွေကိုတည်ဆောက်ခြင်းလည်း ရပါတယ်။ ပုံမှာမြင်တဲ့ အတိုင်း ကိုယ့်ရဲ့ network ကအဆင်သင့်ဖြစ်ပြီ ဆိုတာနဲ့ network ID ရဲ့ အပြာရောင် hyperlink လေးကို click လုပ်လိုက်ပါ။ ဒါဆိုရင်ဖြင့် အောက်ကအတိုင်း network နဲ့ဆိုင်တဲ့ အချက်အလက်တွေကို ရှိတဲ့ နေရာကိုခေါ်သွားပါလိမ့်မယ်။
-
-<figure><img src="https://i.imgur.com/VcWZbaX.png" alt=""><figcaption><p>ZeroTier – Basic Settings</p></figcaption></figure>
 
 ကိုယ်က network ရဲ့ နာမည်ကိုပြောင်းချင်တယ်၊ description ထည့်ချင်တယ်၊ private လုပ်မှာလား public လုပ်မှာလားကိုလည်း ရွေးချယ်နိုင်ပါတယ်။ အောက်ကို scroll down ဆက်လုပ်လိုက်တာနဲ့ အခုလိုမျိုး မြင်ရမှာဖြစ်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/BvLcwfv.png" alt=""><figcaption><p>ZeroTier – Advanced Settings</p></figcaption></figure>
-
 အပေါ်မှာပြထားတဲ့ ပုံထဲကအတိုင်း ကိုယ်ကြိုက်တဲ့ subnet ကိုရွေးချယ်နိုင်ပြီးတော့ အခြားသော routing ဆိုင်ရာရွေးချယ်အချို့ကို ဆက်လက်ရွေးလို့ ရပါတယ်။ နောက်တဆင့်အနေနဲ့ network members တွေကို ဘယ်လိုမျိုးထည့်သလဲဆိုတာ တချက်လောက်ကြည့်လိုက်ရအောင်။
-
-<figure><img src="https://i.imgur.com/WRozSCW.png" alt=""><figcaption><p>ZeroTier – Add members to a network</p></figcaption></figure>
 
 Node ID ကို ZeroTier ရဲ့ network မှရိုက်ထည့်ပြီး ထည့်သွင်းနိုင်သလို၊ ကိုယ့်ရဲ့ ချိတ်ဆက်ချင်တဲ့ server တွေပေါ်မှာ ZeroTierOne application ကို install လုပ်ပြီးတော့ network member အနေနဲ့ ထည့်လို့ရပါတယ်။ ကိုယ်အဆင်ပြေသလိုထည့်လို့ရ နိုင်ပါတယ်။ VPS နှစ်ခုမှာ တစ်ခုက CentOS၊ နောက်တစ်ခုက Ubuntu ဖြစ်တဲ့အတွက် ZeroTier ရဲ့ [https://www.zerotier.com/download/](https://www.zerotier.com/download/) documentation ကအတိုင်း အောက်မှာပြထားတဲ့ command နဲ့ install လုပ်လို့ရပါတယ်။ https://install.zerotier.com/ ဆိုတဲ့ URL ကနေ file တစ်ခုကို curl နဲ့ download လုပ်ပြီးတော့ sudo bash အတွင်း script ကို run ဖို့အတွက် pipeline ကိုသုံးထားပါ။
 
@@ -361,8 +353,6 @@ wcrBUY3kl8s0/g7x
 
 ပုံမှန်အားဖြင့်တော့ Linux user တစ်ယောက်အနေနဲ့ curl လို command မျိုးနဲ့ Internet ပေါ်မှာတွေ့ကရာ link ကနေရတဲ့ ဘယ်လို script မျိုးကို မဆို sudo နဲ့ တွဲပြီးတော့ execute မလုပ်သင့်ပါဘူး။ (စာရေးသူက VPS အသစ်နှစ်ခုကို လတ်လတ်ဆက်ဆက် deploy လုပ်ပြီးတော့ အလွယ်သဘောမျိုးနဲ့ root account ပဲသုံးထားတဲ့အတွက် sudo မပါလည်း သက်ရောက်မူက အတူတူပါပဲ။) ကိုယ် download လုပ်မယ့် script ရဲ့ content ကို အနည်းငယ်လေ့လာပြီးတော့၊ သုံးသပ်ပြီးတော့မှ အခုလိုမျိုး curl ကို sudo bash နဲ့ တွဲပြီးတော့ အသုံးပြုသင့်ပါတယ်။ အကယ်လို့များ script ဟာ malicious code တွေဖြစ်နေရင် ကိုယ်ရဲ့ system တစ်ခုလုံးကို ဆုံးရှုံးနိုင်ပါတယ်။ အဲ့ဒီအတွက်သတိနဲ့ ကပ်ပြီးတော့ အသုံးပြုသင့်ပါတယ်။ CentOS နဲ့ Ubuntu system နှစ်ခုလုံးမှာ install လုပ်ပြီးရင်တော့ အောက်ကအတိုင်းတွေ့ရမှာဖြစ်ပါတယ်။ အပေါ်ကတစ်ခုမှာ CentOS 8 Stream ကိုတင်ထားပြီးတော့၊ အောက်ကတစ်ခုမှာတော့ Ubuntu 20.10 ကိုတင်ထားတာဖြစ်တဲ့အတွက် အခုလိုမျိုးတွေ့မြင်ရတာပဲဖြစ်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/4Q9pZeR.png" alt=""><figcaption><p>ZeroTier – Installation</p></figcaption></figure>
-
 VPS နှစ်ခုလုံးပေါ်မှာ ZeroTier ကို install လုပ်ပြီးတဲ့နောက်မှာတော့၊ ကိုယ့်ရဲ့ network ကိုအောက်ကအတိုင်း join လိုက်ရုံပါပဲ။ ကိုယ်က root account နဲ့ run တာမဟုတ်ရင်တော့ sudo ထည့်စရာလိုပါတယ်။
 
 ```
@@ -371,16 +361,8 @@ sudo zerotier-cli join 885033839017a5c3
 
 အားလုံးအဆင်ပြေရင် ကိုယ်ရဲ့ node ဘက်မှာ အောက်ကအတိုင်း တွေ့ရမှာဖြစ်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/9Na25sE.png" alt=""><figcaption><p>zerotier-cli join</p></figcaption></figure>
-
 ZeroTier portal ဘက်မှာတော့ အောက်မှာလိုမျိုးတွေ့ရပါလိမ့်မယ်။ အပေါ်တစ်ခုက Tokyo မှာ deploy လုပ်ထားတဲ့ CentOS 8 Stream VPS (IP: 45.32.51.8) ဖြစ်ပြီးတော့၊ အောက်ကတစ်ခုကတော့ Sydney မှာ deploy လုပ်ထားတဲ့ Ubuntu 20.10 VPS (IP: 108.61.185.145) တို့ပဲဖြစ်ပါတယ်။ ကိုယ်က node တစ်ခုချင်းစီရဲ့ short name နဲ့ description ကိုထည့်ထားချင်ရင်လည်း ဒီ interface မှာထည့်လို့ ရနိုင်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/K6n9kJ8.png" alt=""><figcaption><p>ZeroTier – Members</p></figcaption></figure>
-
-Network တစ်ခုမှာ member တွေကိုထည့်သွင်းလိုက်ရုံနဲ့ ချက်ချင်း ချိတ်ဆက်ပြီးသား မဖြစ်သေးပါဘူး။ Auth? ဆိုတဲ့ column ကို tick လုပ်လိုက်မှ နောက်ဆုံးအဆင့် authentication လုပ်တဲ့စီကိုရောက်ပါတော့တယ်။ အောက်မှာတော့ Auth? ကို tick လုပ်ပြီးသွားရင်မြင်ရတဲ့ အနေအထားကို ပြထားပေးပါတယ်။
-
-<figure><img src="https://i.imgur.com/oMuNweU.png" alt=""><figcaption><p>After Auth? ticked</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/dsx9Dwy.png" alt=""><figcaption><p>ZeroTier client NIC config</p></figcaption></figure>
+Network တစ်ခုမှာ member တွေကိုထည့်သွင်းလိုက်ရုံနဲ့ ချက်ချင်း ချိတ်ဆက်ပြီးသား မဖြစ်သေးပါဘူး။ Auth? ဆိုတဲ့ column ကို tick လုပ်လိုက်မှ နောက်ဆုံးအဆင့် authentication လုပ်တဲ့စီကိုရောက်ပါတော့တယ်။ အောက်မှာတော့ Auth? ကို tick လုပ်ပြီးသွားရင် အားလုံးအဆင်သင့်ဖြစ်ပါပြီ။
 
 အခုဆိုရင်တော့… mesh network တစ်ခုရဲ့ အခြေခံကို စတင်ပြီးတော့ သုံးနိုင်နေပါပြီ။ ကိုယ်လိုချင်တဲ့ routing နဲ့ network တွေကို ချိတ်ဆက်လိုက ချိတ်ဆက်နိုင်ပါပြီ။ ဘာ VPN server တစ်ခုကို အိမ်မှာ setup လုပ်စရာမလိုပဲနဲ့ အခုလိုမျိုး mesh network တစ်ခုကို အလွယ်တကူ တည်ဆောက်ခြင်းဖြင့် ကိုယ့်အိမ်က network ဟာ double-NAT သို့မဟုတ် Carrier-Grade NAT (CGN) နောက်မှာပဲရောက်နေပါစေ၊ ရှိသမျှ NAT တွေကို အတွင်းထဲကနေပြန်ပြီးတော့ punch-back လုပ်တာဖြစ်တဲ့အတွက် ကိုယ့်အိမ်က network ကို port-forwarding လုပ်ပြီး internet ပေါ်မှာ ဘယ်လို port မျိုးကိုမှ expose လုပ်စရာမလိုတော့ပါဘူး။ မဖြစ်မနေသုံးဖို့အတွက်တော့ လုံးဝကိုအဆင်ပြေတဲ့ နည်းလမ်းတစ်ခုမို့ ပြန်လည် ဝေမျှလိုခြင်းဖြစ်ပါတယ်။ Backend မှာတော့ တော်တော်လေးကို ရှုပ်ထွေးလှတဲ့ overlay network virtualisation ကိုသုံးထားတာဖြစ်ပြီးတော့၊ အသေးစိတ်ကိုသိချင်ရင် ဒီ [link](https://www.zerotier.com/manual/) မှာသွားဖတ်လို့ရပါတယ်။ စာရေးသူ အစမှာပျိုးခဲ့သလိုမျိုးပဲ backend မှာသုံးထားတဲ့ နည်းပညာအကုန်လုံး သိစရာမလိုပဲနဲ့ mesh network တစ်ခုကို အလွယ်တကူ deploy လုပ်နိုင်တဲ့ အနေအထားမျိုးမို့၊ အချို့သော VPN နဲ့ routing အခြေခံလောက်ကိုတော့ ကိုယ်သိထားရပါလိမ့်မယ်။ Performance မှာတော့ WireGuard လောက်မကောင်းတာကို ကိုယ်တွေ့ကြုံရလို့ သတိတော့ပေးချင်ပါတယ်။ သို့သော်… Out-Of-Band (OOB) network management အတွက်ဆိုရင်တော့ Raspberry PI လိုမျိုး SoC device လေးတွေနဲ့ တွဲပြီးတော့ ZeroTier ကိုသုံးချင်ရင်တော့ လုံဝ valid ဖြစ်တဲ့ use case တစ်ခုပါ။ အခြားသော ကိုယ်သုံးချင်တဲ့ low bandwidth လိုအပ်မျိုးပဲ လိုအပ်တဲ့ project တွေအတွက်လည်း အသုံးပြုနိုင်ပါတယ်။ စိတ်ဝင်စားပြီး အသုံးတည့် မယ်လို့ မျှော်လင့်ပါတယ်။ ဒီ post ကိုဒီလောက်နဲ့ပဲ ရပ်လိုက်ပါတော့မယ်။
