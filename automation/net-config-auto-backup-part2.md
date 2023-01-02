@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/C8YTDtE.png
+cover: ../.gitbook/assets/FileZilla-ftp-tftp.png
 coverY: 0
 ---
 
