@@ -8,7 +8,7 @@ Debian ဆိုတာကတော့ အင်္ဂလိပ်လို ဘ�
 
 Debian ဟာ developer တွေ အားရင် အားသလို ဝင်ရေး ပြင်ရေး ရင်းနဲ့စခဲ့လို့ဘယ်သူကမှာ စနစ်တကျ ဦးစီးဦးဆောင်ပြီး မလုပ်ခဲ့လို့အခုလောက် ဖြစ်လာဖို့ကို ဘယ်သူကမှ မထင်ထားခဲ့ပါဘူး။ Microsoft တို့Apple တို့လို developer တွေ အားလုံး ပူးပေါင်းပြီး စနစ်တကျ ရေးထားတာမဟုတ်တဲ့ အတွက် အပျော်တမ်း ဝါသနာရှင် (Hobbyist) တွေ လက်သွေးကြတဲ့ project လည်းဖြစ်ပါတယ်။ တကယ်တမ်းမှာတော့ Debian ဟာ Open Source community အတွက် ဥပမာကောင်းတစ်ခုလို ဖြစ်လာပါတယ်။ ဆယ်စုနှစ်တစ်ခုကျော်ကျော် လောက်ကို Debian က ပြိုင်ဘက် မရှိလောက်အောင် အောင်ပွဲဆင်ခဲ့တာ အခုထိတောင် Server environment တွေမှာ နာမည် ရနေတုန်းဖြစ်တဲ့ distro လည်းဖြစ်ပါတယ်။ project သက်တမ်းကလည်း ရှည်ကြာလာတာနဲ့အမျှ developer တော်တော် များများလက်စွမ်း ဝင်ပြထားတွေကြောင့် package အများဆုံး application အပေါဆုံး distro တစ်ခု အနေနဲ့လည်း Debian ကရပ်တည်လျှက်ပါ။ နောက်ပြီး ပြဿနာ နည်းပြီး သုံးရတာ stableဖြစ်တယ်လို့လည်း လူသိများပါတယ်။ Debian project ရဲ့ဒီမိုကရေစီ ဆန်းလွန်းမှု က developer တွေကို တခါတလေ တွေဝေစေပါတယ်။ တစ်နှစ်တခါ Debian project အတွက် Leader တစ်ယောက်ကိုမဲပေးတဲ့ စနစ်နဲ့ရွေးချယ်ပါတယ်။ အဲ့လို developer တွေကို လွတ်လပ်ခွင့်ပေးထားက အခုချိန်မှာတော့ Debian ရဲ့ကြံကမ္မာကို အနာဂတ်မှာ ခြိမ်းခြောက်နေသလို ဖြစ်နေပါတော့တယ်။ လက်ရှိထိတော့ Debian ကို Linux ကမ္ဘာကလူသုံးများနေဆဲပါ။ အခုလက်ရှိ Debian 8 – Jessie ကတော့ Gnome 3 desktop ကို နဂိုအတိုင်း သုံးထားပါတယ်။ Debian ကို install လုပ်တဲ့ အခါမှာ ကိုယ်ကြိုက်တဲ့ desktop environment တွေကို ရွေးချယ် လို့ရပါတယ်။ Debian ကို install လုပ်ရတာ Ubuntu တို့ Linux Mint တို့လောက်တော့ မလွယ်ပါဘူး။ Linux kernel ကိုရေး ဂုရုကြီး Linus Torvalds ကိုယ်တိုင် Linux Users Group forum တစ်ခုမှာ Debian ကို install လုပ်ရတာ အရမ်းခက်တာပဲ ရှုပ်လွန်းတယ်လို့တောင် ဖြေခဲ့ပါတယ်။ အဲ့ဒါကတော့ ဟိုအရင်တုန်းကပါ။ အခုတော့ နည်းနည်းလွယ်လာပါပြီ။ ဒါပေမယ့် Ubuntu တို့လောက်လည်း ရှင်းလင်း မလွယ်ကူဘူး install လုပ်ရတာ။
 
-<figure><img src="https://i.imgur.com/YSG2Ki9.png" alt=""><figcaption><p>Debian GNU/Linux</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/debian-768x614.png" alt=""><figcaption></figcaption></figure>
 
 **Debian GNU/Linux ရဲ့အားသာချက်များ**
 
@@ -22,6 +22,6 @@ Debian ဟာ developer တွေ အားရင် အားသလို ဝ�
 
 Debian ရဲ့ လက်ရှိ version ကတော့ Debian 8 – Jessie ဖြစ်ပါတယ်။ သူ့ကို ၂၅ရက်နေ့ဧပြီလ ၂၀၁၅ ခုနှစ် မှာ ထုတ်ခဲ့တာဖြစ်ပြီးတော့ အခုအချိန် ဒီစာရေးနေချိန်မှာတော့ Debian 8.6.0 ရောက်နေပါပြီ။ Debian ကပုံမှန်အားဖြင့် stable release တစ်ခုထုတ်ဖို့ကို ၁ နှစ်ကနေ ၃ နှစ်ထိကြာတတ်ပါတယ်။ Debian ကတော့ သူ့ distro release တွေရဲ့code-name တွေကို Pixar ရဲ့ Toy Story အမေရိကန် animated ကာတွန်းထဲက ဇာတ်ဆောင်တွေ နာမည်ကို ယူသုံးထားပါတယ်။ ဥပမာ Debian 7 ကို Wheezy ဆိုတဲ့ Toy Story ထဲက Penguin ဇာတ်ဆောင်လေးနာမည်ပေးထာပါတယ်။ လက်ရှိ Debian 8 ကိုတော့ Jessie ဆိုတဲ့ အရုပ်မလေးရဲ့ နာမည်ပေးထားပြီး နောက်ထွက်မဲ့ release ကိုတော့ Stretch ဆိုပြီး နာမည်ပေးဖို့လုပ်ထားပါတယ် တဲ့ဗျာ။ အောက်မှာတော့ ကာတွန်းဇာတ်ဆောင်တွေနဲ့သူတို့နာမည်လေးတွေ တွဲမိအောင် ပုံကိုရှာပြီးတော့ ထည့်ပေးလိုက်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/tNhNKtB.jpeg" alt=""><figcaption><p>Pixar – Toy Story</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/15401050_1423165617701894_3521381417063452846_n.jpg" alt=""><figcaption></figcaption></figure>
 
 စာကြွင်း။ ။ အခုအချိန်မှာ Debian 10 ဆိုတဲ့ version ကိုရောက်လို့လာပါပြီ။ code-name ကိုတော့ Buster လို့မှည့်ထားပါတယ်။ နောက်ထွက်မယ့် version မှာတော့ Bullseye လို့ ခေါ်မယ်လို့လည်း သိရပါတယ်။
