@@ -1,3 +1,8 @@
+---
+cover: ../.gitbook/assets/TAC-WINS-ADDS.png
+coverY: 0
+---
+
 # TACACS+ နဲ့ Windows AD ကိုတွဲပြီး အသုံးပြုနည်း – အပိုင်း (၁)
 
 ## Centralized AAA process တစ်ခု setup လုပ်ဖို့ အကြောင်း
