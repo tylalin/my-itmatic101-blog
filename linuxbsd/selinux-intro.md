@@ -22,7 +22,7 @@ SELinux ပါဝင်တဲ့ Linux distro တွေမှာ out-of-box defa
 * ဒီနေရာမှာ လိုအပ်တဲ့ permission ကိုပေးဖို့အတွက် AVC မှာလုံလောက်တဲ့ အချက်အလက် တွေမရှိဘူးဆိုကြပါစို့။ ဒါဆိုရင်တော့ နောက်အဆင့်အနေနဲ့ SELinux security server ရဲ့ policy database ကိုသွားပြီးတော့ ထို application process နဲ့ သူ access လုပ်ဖို့ ကြိုးစားတဲ့ file နှစ်ခုရဲ့ security context ကို subject-object matrix မှာ ထပ်မံ့စစ်ဆေးရပြန်ပါတယ်။
 * အဲ့ဒီနောက်မှာတော့ permission ကို granted လုပ်သလား၊ denied လုပ်သလားဆိုတာကို သိပါပြီ။ အကယ်လို့များ access ကို denied လုပ်ခံရမယ်ဆိုရင်တော့ avc: denied ဆိုတဲ့ message အသေးစိတ်ကို /var/log/messages မှာသွားပြီးတော့ report လုပ်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/9vCT59O.png" alt=""><figcaption><p>SELinux Decision Process (Origin – Red Hat Documentation)<br>URL – <a href="https://web.mit.edu/rhel-doc/5/RHEL-5-manual/Deployment_Guide-en-US/images/selinux/SELinux_Decision_Process.png">https://web.mit.edu/rhel-doc/5/RHEL-5-manual/Deployment_Guide-en-US/images/selinux/SELinux_Decision_Process.png</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/SELinux_Decision_Process.png" alt=""><figcaption></figcaption></figure>
 
 SELinux ကို configure လုပ်ချင်တယ်ဆိုရင်တော့ /etc/sysconfig/selinux ဆိုတဲ့ configuration file မှာ သွားပြီးတော့ ကို်ယ်ထားချင်တဲ့ operating mode နဲ့ type ကို သတ်မှတ်ပေးလို့ရပါတယ်။ ဒီ /etc/sysconfig/selinux ဟာ အမှန်တကယ် SELinux ရဲ့ config ဖြစ်တဲ့ /etc/selinux/config ရဲ့ symbolic link ဖြစ်ပါတယ်။
 
