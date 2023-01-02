@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/q4JJn8o.jpeg
+cover: ../.gitbook/assets/pexels-photo-171198.jpeg
 coverY: 0
 ---
 
