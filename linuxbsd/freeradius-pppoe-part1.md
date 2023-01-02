@@ -1,8 +1,13 @@
+---
+cover: ../.gitbook/assets/radiusd-1.png
+coverY: 0
+---
+
 # FreeRADIUS နဲ့ PPPoE Authentication အပိုင်း (၁)
 
 RADIUS ဆိုတာကတော့ Remote Authentication Dial-In User Service ရဲ့ အတိုကောက်ဖြစ်ပြီးတော့၊ တော်တော်လေးလည်း ရှေးကျတဲ့ authentication service လည်းဖြစ်ပါတယ်။ သူ့နာမည်မှာကိုက dail-in ဆိုတာပါနေတာကိုကြည့်ခြင်းအားဖြင့် သူရှိနေခဲ့တာဘယ်လောက်ကြာပြီလဲဆိုတာကို မှန်းကြည့်လို့ရပါတယ်။ စာရေးသူ RADIUS နဲ့ ပတ်သတ်ပြီးတော့ open-source solution မှာရှာကြည့်သလောက်တော့ FreeRADIUS ကိုလူပြောများတာနဲ့ လုပ်ငန်းခွင်မှာ အသုံးများတဲ့ PPPoE အတွက် authentication ကိုဘယ်လို လုပ်သလဲဆိုတာ စပြီးတော့ စမ်းသပ်ဖို့ရာဖြစ်လာပါတော့တယ်။ ဒီ post မှာတော့ စာရေးသူရဲ့ အကြိုက်ဆုံးဖြစ်တဲ့ CentOS7 ကိုအသုံးပြုထားပြီးတော့ FreeRADIUS install လုပ်ပုံအဆင့်ဆင့် ကိုရှင်းပြသွားပါ့မယ်။ ‌ပြီးတော့ local flat configuration file အစား MySQL database ကိုအသုံးပြုမှာဖြစ်ပြီးတော့ Dalo RADIUS ဆိုတဲ့ WebUI နဲ့ manage လုပ်တဲ့ပုံစံကို အဆင့်ဆင့်ဖော်ပြပေးသွားပါ့မယ်။ ပထမဆုံးအနေနဲ့ CentOS7 ကို အရင်ဆုံး install လုပ်ရပါ့မယ်။ CentOS7 installation process ကိုတော့ ဒီ post မှာ မရှင်းတော့ပါဘူး။ ‌CentOS7 မှာအသုံးပြုထားတဲ့ Anaconda installer က ရိုးရှင်းပြီးတော့ install လုပ်ရတာလည်း လွယ်ပါတယ်။ Linux မှာ ကိုယ်က အခုမှစတင်လေ့လာနေတယ်ဆိုရင်တော့ YouTube မှာ CentOS 7 ကို ဘယ်လို install လုပ်သလဲဆိုတာ ကိုယ်တိုင်ရှာကြည့်လို့ရပါတယ်။ CentOS7 ကို install လုပ်ပြီးလို့ အဆင်သင့်ဖြစ်ပြီဆိုရင်တော့ အောက်ကအတိုင်း FreeRADIUS ကို စတင် install လုပ်လို့ရပါပြီ။
 
-<figure><img src="https://i.imgur.com/LCo6n7r.png" alt=""><figcaption><p>FreeRADIUS Configuration</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/radiusd-1.png" alt=""><figcaption></figcaption></figure>
 
 ## FreeRADIUS ကို CentOS7 ပေါ်တွင် install လုပ်ပုံ
 
