@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/YxCC0Hx.jpeg
+cover: ../.gitbook/assets/cat-story-13-1571415-2000x1200.jpg
 coverY: 0
 ---
 
