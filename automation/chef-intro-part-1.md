@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/rjmZCfN.jpeg
+cover: ../.gitbook/assets/carving-knife-1195462-2000x1200.jpg
 coverY: 0
 ---
 
