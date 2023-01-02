@@ -1,5 +1,5 @@
 ---
-cover: https://i.imgur.com/HGgitPA.jpeg
+cover: ../.gitbook/assets/pexels-photo-430208-1880x1200.jpeg
 coverY: 0
 ---
 
