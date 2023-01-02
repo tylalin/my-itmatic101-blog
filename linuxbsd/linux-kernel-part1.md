@@ -2,17 +2,17 @@
 
 GNU/Linux distro အကြောင်းကတော့ တော်တော်လည်း အရှေ့ပိုင်းမှာ ရေးထားပြီးသားမို့ လေ့လာသင့် သလောက်တော့ လေ့လာမိမယ် ထင်ပါတယ်။ အမှန်ကတော့ Linux လို့သာလူသိများပြီးတော့ GNU Operating System ရယ်လို့တော့ လူသိပ်ပြီးတော့ မသိကြပါဘူး။ အထူးသဖြင့် free software ကိုစတင်ခဲ့တဲ့ Richard Stallman ကိုယ်တိုင်က အဲ့ဒီ မေးခွန်းကို interview တိုင်းနီးပါးလောက်မှာ ခဏခဏ အမေးခံရလေ့ရှိ ပါတယ်။ တော်တော်များများ interview တွေမှာ မေးတဲ့သူတွေက Richard Stallman ကို Linux လို့ခေါ်တာကိုလက်ခံလားဆိုပြီးတော့ မေးတာများပါတယ်။ သူကတော့ လက်ခံတယ်လို့လည်းမပြောသလို လက်မခံဘူးလို့လည်း သူ့အဖြေတွေက ဖော်ပြနေပါတယ်။ Linux OS လို့ခေါ်တာမမှန်နိုင်ဘူးလို့ ဆိုပါတယ်။ ဘာဖြစ်လို့လဲဆိုတော့ Linux ဆိုတာက kernel ရဲ့နာမည်ပါတဲ့၊ အဲ့ဒီ kernel က GNU ဆိုတဲ့ system အတွက် အသုံးပြုထားတဲ့အတွက် GNU/Linux လို့ခေါ်ရင် ပိုပြီးတော့ ပြည့်စုံမယ်လို့လည်းဆိုပါတယ်။ အရှေ့မှာလည်း GNU ဆိုတာဘာကို ရည်ညွန်းသလဲဆိုတာကို ရှင်းပြဘူးပါတယ်။ အခုတစ်ခါလည်း မသိသေးတဲ့သူတွေအတွက် ထပ်ရှင်းပါ့မယ်။ Richard Stallman ကတော့ programming joke တစ်ခုကို အသုံးပြုပြီး မှည့်ထားတဲ့ နာမည်ပါတဲ့။ GNU ဆိုတာ GNU is Not Unix ကိုဆိုလိုတာပါ။ Programming technique တစ်ခုဖြစ်တဲ့ recursive looping လိုဟာမျိုးကို ထည့်ပြီးတော့ နာမည်ပေးထားတာပါ။ ဆိုလိုရှင်း joke ကို နားလည်လိမ့်မယ်လို့လည်း ထင်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/3zFEN6b.png" alt=""><figcaption><p>GNU is Not Unix</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/GNU-is-Not-Unix-768x197.png" alt=""><figcaption></figcaption></figure>
 
 GNU project အစမှာ Richard Stallman ဟာ GNU Hurd ဆိုတဲ့ kernel တစ်ခုကို ရေးဖို့လုပ်တဲ့ အခါ အခက်အခဲလေး တွေရှိခဲ့ပါတယ်။ GNU ဆိုတဲ့ OS တစ်ခုကိုရေးဖို့ ကြိုးစားရင်းနဲ့ kernel တစ်ခုလိုလို့ Hurd ကို ကောက်ရေးနေခဲ့တာပါ။ အသုံးပြုလို့ ရတဲ့ အခြေအနေတစ်ခုထိတော့ မရောက်လိုက်နိုင်ပဲ Linus Torvalds ရေးတဲ့ Linux kernel နဲ့ ကြမှ တော်တော်လေး အဆင်ပြေသွားလို့ Linux kernel ကိုပဲ အသုံးပြုလိုက်ကြရင်းနဲ့ GNU/Linux OS ဆိုပြီးတော့ ဖြစ်သွားပါတော့တယ်။ ဒီနေရာမှာ Linux ဆိုတဲ့ နာမည်ဖြစ်လာပုံကိုလည်း ပြောပြချင်ပါတယ်။ အစပိုင်းမှာ Linus Torvalds က သူရေးထားတဲ့ kernel software ကို Freax ဆိုတဲ့ folder နာမည်နဲ့ သိမ်းထားခဲ့ပါတယ်။ ရည်ညွန်းချက်ကတော့ Free, Freak နဲ့ X ဆိုတဲ့ စကားလုံးတွေကိုရောပြီးတော့ ထည့်ထားတာဖြစ်ပါတယ်။ ဆိုလိုရှင်းကတော့ Free ကတော့ အခမဲ့ သို့မဟုတ် လွတ်လပ်စွာ အသုံးပြုခွင့် ပါ။ Freak ကတော့ ခေတ်ဆန်ဆန်ပြောရင်တော့ မိုက်တယ် လန်းတယ်ပေါ့ဗျာ… နောက်ဆုံးကတော့ X ဆိုတာကတော့ Unix က X ကိုပြောလိုခြင်းဖြစ်ပါတယ်။ Unix system လို system မျိုးနဲ့ တွဲသုံးရအောင် ရေးထားတာဖြစ်တယ်လို့ ဆိုလိုရင်းဖြစ်ပါတယ်။ နောက်ပိုင်းကြမှ Unix system နဲ့ တွဲပြီးသုံးလို့ရမယ့် Linus ရေးထားတဲ့ kernel ဖြစ်လို့ Linux လို့ ခေါ်လိုက်ပါတော့တယ်။ အစပိုင်းမှာတော့ Linus Torvalds ကိုယ်တိုင်က Linux လို့နာမည်ပေးမယ်လို့ စဉ်းစားထားသော်လည်း အဲ့ဒီနာမည်က မသင့်တော်ဘူးဆိုကာ မပေးဖြစ်ခဲ့ပါဘူး။ နောက်ပိုင်းမှ လုပ်ဖော်ကိုင်ဖက်တစ်ယောက်က တိုက်တွန်းလို့ သာ Linux ဆိုတဲ့ နာမည်ပေးဖြစ်သွားတာပါ။ နောက်တော့လည်း Linux ဆိုတဲ့နာမည်က အတည်ပေးတဲ့ project နာမည်ဖြစ်သွားပါတော့တယ်။ အဲ့ဒီ Linux project မှာ version တစ်ခုစီကို နာမည်တွေထပ်ပြီးတော့ ပေးထားပြန်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/GmprV2p.jpeg" alt=""><figcaption><p>Freax</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/he-wanted-to-call-it-freax.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Linux kernel မွေးဖွားခြင်း နိဒါန်း
 
 Linux kernel ကိုတော့ Finland နိုင်ငံမှာရှိတဲ့ University of Helsinki မှာ ထိုအချိန်က ပညာသင်ကြားနေခဲ့တဲ့ Linus Torvalds က စတင်ပြီးတော့ မွေးဖွားပေးခဲ့ပါတယ်။ အချိန်အားဖြင့် ဧပြီလ ၁၉၉၁ခုနှစ် တွင် အသက် ၂၁ နှစ်အရွယ် computer science ကျောင်းသားတစ်ယောက်ဖြစ်တဲ့ Linus Torvalds က အရိုးရှင်းဆုံးနဲ့ အသုံးဝင်မယ့် Operating System တစ်ခုအတွက် အားထုတ်ကြိုးစားနေခဲ့ပါတယ်။ ရေးရင်းနဲ့ နောက်ဆုံးမှာတော့ Operating System kernel တစ်ခုကရုပ်လုံးပေါ်လာပါတော့တယ်။ ၂၅ရက်နေ့ ဩဂုဏ်လ ၁၉၉၁ ခုနှစ်မှာတော့ Usenet ပေါ်မှာ အောက်ပါအတိုင်း Linus Torvalds ကရေးပြီးတော့တင်လိုက်ပါတယ်။ ဒီ post ကတော့ နည်းပညာလောကရဲ့ သမိုင်းဝင် post တစ်ခုဖြစ်ပြီးတော့ Linux kernel စတင် အသက်ဝင်လာချိန်လည်းဖြစ်ပါတယ်။
 
-<figure><img src="https://i.imgur.com/QNgynDN.png" alt=""><figcaption><p>What would you like to see most in minix?</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Linus-Torvalds-post-at-Usenet.png" alt=""><figcaption></figcaption></figure>
 
 အဓိပ္ပာယ်ဖွင့်ဆိုချက်ကတော့ အောက်ပါအတိုင်းဖြစ်ပါတယ်။
 
@@ -28,6 +28,6 @@ Linus (torvalds@kruuna.helsinki.fi)
 
 ဟုတ်ပါတယ်။ MINIX code ရဲ့ ဘယ်အပိုင်းကို မဆို အခမဲ့ဖြစ်တဲ့အပြင် multi-threaded filesystem နဲ့လာမှာပါ။ CPU architecture/system တစ်ခုကနေ တစ်ခုကို ပြောင်းသုံးလို့တော့မရတဲ့အတွက် 386 task switching လိုမျိုး switcher တွေနဲ့ တွဲသုံးရမှာဖြစ်ပါတယ်။ နောက်ပြီးတော့ အဲ့ဒီ kernel က AT-harddisks တွေလောက်နဲ့ပဲ အလုပ်လုပ်မှာဖြစ်ပြီးတော့ တခြားအမျိုးအစားတွေနဲ့ဆိုရင် အလုပ် လုပ်လောက် မှာမဟုတ်ပါဘူး။ အခုကတော့ ကျွန်တော် စွမ်းနိုင်သလောက် ဒါအကုန်ပါပဲ။ 😦
 
-<figure><img src="https://i.imgur.com/gwskxZv.png" alt=""><figcaption><p>Minix3 OS</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/screendump-768x614.png" alt=""><figcaption></figcaption></figure>
 
 ဒီတပိုင်းမှာတော့ Linux kernel စတင်ခဲ့ပုံကို နည်းနည်းလေး မိတ်ဆက်ပေးလိုက်ရုံပါပဲ။ နောက်အပိုင်းတွေမှာတော့ Linux project ရဲ့ ဖြတ်သန်းခဲ့ ပုံအဆင့်ဆင့်ကို ဆက်ပြီးတော့ ရေးသွားပါ့မယ်။ လက်ရှိမှာလည်း Linux project ကို Linus Torvalds က ဆက်လက် ဦးဆောင်ပြီးတော့ maintainer တွေ များစွာနဲ့ ဆက်ပြီးတော့ ကောင်းသည်ထက် ကောင်းအောင် ပြင်ဆင် တိုးဖြည့် ရေးသားနေ ဆဲဖြစ်ပါတယ်။ စာဖတ်သူတွေ အနေနဲ့ Linux project/kernel အကြောင်းကို စိတ်ဝင်စားမယ်လို့ထင်ပါတယ်။ နောက်အပိုင်းတွေမှာ Linux kernel အကြောင်း ကို ဖြေးဖြေးချင်းဆီ စာရေးသူ ဆက်လက်တင်ပြသွားပါ့မယ်။
