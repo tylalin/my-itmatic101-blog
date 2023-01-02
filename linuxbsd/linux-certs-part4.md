@@ -8,7 +8,7 @@
 
 အောက်မှာတော့ LPIC-3 Linux Enterprise Professional Mixed Environment မဖြေဆိုခင်သိထားရမယ့် အချက်လေးတွေကို ဖော်ပြပေးသွား ပါ့မယ့်။
 
-<figure><img src="https://i.imgur.com/vfyHjUC.jpeg" alt=""><figcaption><p>LPIC-3 300: Linux Enterprise Professional Mixed Environment</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/LPIC-3-MixedEnv-300x233.jpg" alt=""><figcaption></figcaption></figure>
 
 #### LPIC-3 Linux Enterprise Professional Mixed Environment ရဲ့လက်ရှိ version
 
@@ -45,7 +45,7 @@ LPIC-3 Linux Enterprise Professional Mixed Environment ရဲ့ Exam 300-100 �
 
 ဒီတစ်ခုကတော့ Linux က security တွေအကြောင်းကို အသေးစိတ်လေ့လာရမှာဖြစ်ပါတယ်။ အောက်မှာကတော့ LPIC-3 303: Enterprise Professional Security မဖြေခင် ကြိုတင်သိထားသင့်တဲ့ အချက်လေးတွေပါ။
 
-<figure><img src="https://i.imgur.com/SMgW8sD.jpeg" alt=""><figcaption><p>LPIC-3 303: Linux Enterprise Professional Security</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/linux-foundation-certifications.png" alt=""><figcaption></figcaption></figure>
 
 #### LPIC-3 Enterprise Professional Security ရဲ့လက်ရှိ version
 
@@ -79,7 +79,7 @@ LPIC-3 Enterprise Professional Security ရဲ့ Exam 303 အကြောင်
 
 ဒီတစ်ခုကတော့ Linux က Virtualization နဲ့ High Availability တွေအကြောင်းကို အသေးစိတ်လေ့လာရမှာဖြစ်ပါတယ်။ အောက်မှာကတော့ LPIC-3 304: Enterprise Professional Virtualization and High Availability မဖြေခင် ကြိုတင်သိထားသင့်တဲ့ အချက်လေးတွေပါ။
 
-<figure><img src="https://i.imgur.com/4ScfO1j.jpeg" alt=""><figcaption><p>LPIC-3 304: Linux Enterprise Professional Virtualization and High Availability</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/LPIC-3-VandHA-300x233.jpg" alt=""><figcaption></figcaption></figure>
 
 #### LPIC-3 Enterprise Professional Virtualization and High Availability ရဲ့လက်ရှိ version
 
@@ -108,5 +108,3 @@ LPIC-3 Enterprise Professional Virtualization and High Availability အတွက
 LPIC-3 Enterprise Professional Virtualization and High Availability ရဲ့ Exam 304 အကြောင်းကို အသေးစိတ်သိချင်ရင်တော့ ဒီ [link](https://www.lpi.org/our-certifications/exam-304-objectives) ကနေသွားဖတ်ကြည့်လို့ရ ပါတယ်။
 
 နောက်တပိုင်းမှာတော့ The Linux Foundation ကပေးတဲ့ Certified Sysadmin နဲ့ Certified Engineer စာမေးပွဲတွေ အကြောင်းနဲ့ ပြင်ဆင်လို့ရတဲ့ ပုံစံလေးတွေ အကြောင်းနည်းနည်းဆက်ရေးပါ့မယ်။
-
-<figure><img src="https://i.imgur.com/SbWPH9H.png" alt=""><figcaption><p>Linux Foundation Certifications</p></figcaption></figure>
