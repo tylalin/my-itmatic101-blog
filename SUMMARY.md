@@ -59,6 +59,7 @@
 
 ## Automation
 
+* [Vagrant အခြေခံ - အပိုင်း (၁)](automation/vagrant-akhyekhan-apaing-1.md)
 * [Chef မိတ်ဆက် အပိုင်း(၁)](automation/chef-intro-part-1.md)
 * [Ansible ရဲ့ Network Automation workflow](automation/ansible-yae-network-automation-workflow.md)
 * [Wireguard ရဲ့ automated workflow](automation/wireguard-automated-workflow.md)
