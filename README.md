@@ -7,3 +7,6 @@ coverY: 0
 
 # နည်းပညာဆိုင်ရာ Blog
 
+**Written by**: Tyla Lin\
+**LinkedIn**: [https://www.linkedin.com/in/tyla-lin/](https://www.linkedin.com/in/tyla-lin/)\
+**Email**: itmatic101@gmail.com
