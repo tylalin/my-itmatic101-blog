@@ -88,9 +88,6 @@
 
 * [Promox ပေါ်မှာ VM template တွေကို cloud-init သုံးပြီး ဖန်တီးပုံ](virtualisation-and-cloud/promox-pawmha-vm-template-tweko-cloud-init-thonpyi-paantipon.md)
 * [Cloud ဆိုသည်မှာ](virtualisation-and-cloud/cloud-saothimha.md)
-* [Distributed Systems](virtualisation-and-cloud/distributed-systems.md)
-* [VMware ရဲ့ Software-Defined Data Center](virtualisation-and-cloud/vmware-yae-software-defined-data-center.md)
-* [OpenStack မိတ်ဆက်](virtualisation-and-cloud/openstack-meiksaet.md)
 
 ## others
 
