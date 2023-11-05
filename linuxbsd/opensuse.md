@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1596034037111-b16bcdbf219a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxMHx8Z2Vja298ZW58MHx8fHwxNjk5MTc4OTI4fDA&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
+
 # လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း (၆)
 
 **၆. openSUSE**
