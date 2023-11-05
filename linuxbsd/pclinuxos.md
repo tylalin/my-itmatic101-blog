@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxDb21wdXRlcnxlbnwwfHx8fDE2OTkxNzkwNzV8MA&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
+
 # လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း (၉)
 
 **၉. PCLinuxOS**

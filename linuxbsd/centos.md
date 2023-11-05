@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1683032510346-53ca9c162a8d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxDZW50b3N8ZW58MHx8fHwxNjk5MTc5MDE4fDA&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
+
 # လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း (၈)
 
 **၈. CentOS**
