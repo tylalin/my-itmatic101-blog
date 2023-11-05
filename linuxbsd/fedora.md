@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxMHx8ZmVkb3JhfGVufDB8fHx8MTY5OTE3ODg0Mnww&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
+
 # လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း (၅)
 
 **၅. Fedora**
