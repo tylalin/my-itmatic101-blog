@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1640552435388-a54879e72b28?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxkZWJpYW58ZW58MHx8fHwxNjk5MTc4NDYzfDA&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
+
 # လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း (၃)
 
 **၃. Debian GNU/Linux**
