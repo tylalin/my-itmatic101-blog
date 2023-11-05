@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1583474884909-230dac058b63?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw4fHxyb3V0ZXJ8ZW58MHx8fHwxNjk5MTc5NzI3fDA&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
+
 # အဘယ်ကြောင့် MikroTik
 
 Networking နဲ့ပတ်သတ်ပြီးတော့ စတင်လေ့လာကတည်း Cisco Network Academy နဲ့ပဲ အကျွမ်းတဝင်ဖြစ်ခဲ့ရပါတယ်။ Industry leader ဖြစ်တဲ့အပြင်၊ professional training နဲ့ပတ်သတ်လာရင်လည်း အကောင်းဆုံးလို့ ရေပူရသိထားကြပါတယ်။ ဒီအတွက်ကြောင့် networking topic တွေကအကြောင်းပြောကြရင် Cisco IOS-XE လိုplatform မှာအသုံးပြုတဲ့ CLI commands တွေနဲ့ စာရေးသူတို့ အကျွမ်းတဝင်ဖြစ်ခဲ့ကြရပါတယ်။ CCNA လို networking certificate ကိုဖြေဆိုကြမယ့် ကျောင်းသူကျောင်းသားတွေဟာ Packet Tracer လို့ခေါ်တဲ့ simulator နဲ့ networking lab တွေကို အသုံးပြုပြီးလေ့လာကြပါတယ်။ စာရေးသူ အနေနဲ့ GNS3 နဲ့ EVE-NG တို့လို emulator အသုံးပြုရတာ ပိုပြီးတော့လက်တွေကြတယ်ထင်ပါတယ်။ အရင်ကလည်း GNS3 အကြောင်းကို ရေးဖူးလို့ ဖတ်ရှုချင်ရင်တော့အောက်က link မှာသွားရောက်ဖတ်နိုင်ပါတယ်။
