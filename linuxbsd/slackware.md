@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw2fHxDb21wdXRlcnxlbnwwfHx8fDE2OTkxNzkwNzV8MA&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
+
 # လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း (၁၀)
 
 **၁၀. Slackware Linux**
