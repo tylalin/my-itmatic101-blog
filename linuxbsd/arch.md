@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1497282003564-004631e01464?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw5fHxhcmNofGVufDB8fHx8MTY5OTE3ODk2OXww&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
+
 # လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း (၇)
 
 **၇. Arch Linux**
