@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1629654291663-b91ad427698f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHx1YnVudHV8ZW58MHx8fHwxNjk5MTc4NDAyfDA&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
+
 # လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း (၂)
 
 **၂. Ubuntu**
