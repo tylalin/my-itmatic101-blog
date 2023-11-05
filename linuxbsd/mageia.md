@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1697633285278-9c5a36cb283b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTkxNzg3NTJ8&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
+
 # လူသုံးများ ရေပန်းစားသော GNU/Linux Distro များ အပိုင်း (၄)
 
 **၄. Mageia**
