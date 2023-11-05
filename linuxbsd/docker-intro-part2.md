@@ -1,3 +1,9 @@
+---
+cover: >-
+  https://images.unsplash.com/photo-1646627927863-19874c27316b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw3fHxkb2NrZXJ8ZW58MHx8fHwxNjk5MTc5Nzg1fDA&ixlib=rb-4.0.3&q=85
+coverY: 0
+---
+
 # Docker မိတ်ဆက် အပိုင်း(၂)
 
 အရှေ့ post မှာ Docker နဲ့ ပတ်သတ်ပြီး စိတ်ဝင်စားဖို့ ကောင်းတဲ့ အကြောင်းအရာလေး တွေကိုမိတ်ဆက်ပေးခဲ့ပါတယ်။ အခုဒီတစ်ခုမှာတော့ Docker ရဲ့ အလုပ်လုပ်ပုံနဲ့ virtualization နည်းပညာနဲ့ ကွာခြားချက်လေးတွေကို ဆက်ပြီးတော့ ဆွေးနွေးချင်ပါတယ်။ တခါတခါ Docker ကို Hypervisor virtualization နဲ့ အထင်မှားတတ်ပါတယ်။ ဆိုကြပါတော့… Hyper-V တို့ VMware ESXi တို့လို Hypervisor virtualization ဟာ Docker နဲ့ သဘောတရားအရ ဆင်တူပေမယ့် တကယ်တော့ backend အလုပ်လုပ်ပုံကွားခြားသလို၊ မတူနဲ့ container နည်းပညာနောက်တစ်ခုကို အသုံးပြုထားတာပါ။ နောက်တစ်ခုက Docker ဟာ Linux kernel ပေါ်မှာပဲ အလုပ်လုပ်တယ်ဆိုကို ရှင်းရှင်းလင်းလင်းသိထားဖို့လိုပါတယ်။ တခြား kernel မှာဆိုရင် Linux kernel subsystem သို့မဟုတ် Linux Virtual Machine တစ်ခုကို ကြားခံ အနေနဲ့ အသုံးပြုရမှာပါ။
