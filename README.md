@@ -7,7 +7,7 @@ coverY: 0
 
 # ITmatic101 - နည်းပညာဆိုင်ရာ Blog
 
-Author: Tyla Lin\
+**Author**: Tyla Lin\
 **LinkedIn**: [https://www.linkedin.com/in/tyla-lin/](https://www.linkedin.com/in/tyla-lin/)\
 **YouTube**: [https://www.youtube.com/@itmatic1017](https://www.youtube.com/@itmatic1017)\
 **Email**: itmatic101@gmail.com
