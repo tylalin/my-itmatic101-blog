@@ -1,6 +1,6 @@
 # Table of contents
 
-* [နည်းပညာဆိုင်ရာ Blog](README.md)
+* [ITmatic101 - နည်းပညာဆိုင်ရာ Blog](README.md)
 
 ## Linux/BSD <a href="#linuxbsd" id="linuxbsd"></a>
 
