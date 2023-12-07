@@ -110,4 +110,4 @@
 
 ## 💀 OffSec
 
-* [SSH](offsec/ssh.md)
+* [ခုတ်မယ် ထစ်မယ် ပါးပါးလှီးမယ် OpenSSL](offsec/khokme-taitme-papalhime-openssl.md)
