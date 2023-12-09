@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c2173a68bfb1ae2d",
+        "id": "e099a284cd0ad384",
         "type": "tabs",
         "children": [
           {
-            "id": "45dadc40ee5ffbdd",
+            "id": "37b3c428a1d0f2ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "others/fav-apps.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "others/fav-apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "others/fav-apps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SUMMARY.md"
+                "file": "others/fav-apps.md"
               }
             }
           },
@@ -162,14 +162,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "45dadc40ee5ffbdd",
+  "active": "37b3c428a1d0f2ca",
   "lastOpenFiles": [
-    "offsec/OpenSSL.md",
-    "SUMMARY.md",
-    "README.md",
+    "others/cyanogenmod-intro-part1.md",
     "automation/ansible-yae-network-automation-workflow.md",
+    "automation/bash-net-automation-part1.md",
+    "SUMMARY.md",
+    "offsec/OpenSSL.md",
+    "README.md",
     "automation/firsthand-network-automation-artform-part1.md",
-    "automation/chef-intro-part-1.md",
-    "automation/bash-net-automation-part1.md"
+    "automation/chef-intro-part-1.md"
   ]
 }
