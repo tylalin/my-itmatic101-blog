@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "offsec/OpenSSL.md",
+                "file": "SUMMARY.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "offsec/OpenSSL.md",
+                "file": "SUMMARY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "offsec/OpenSSL.md",
+                "file": "SUMMARY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "offsec/OpenSSL.md"
+                "file": "SUMMARY.md"
               }
             }
           },
@@ -164,9 +164,9 @@
   },
   "active": "45dadc40ee5ffbdd",
   "lastOpenFiles": [
-    "README.md",
     "offsec/OpenSSL.md",
     "SUMMARY.md",
+    "README.md",
     "automation/ansible-yae-network-automation-workflow.md",
     "automation/firsthand-network-automation-artform-part1.md",
     "automation/chef-intro-part-1.md",
