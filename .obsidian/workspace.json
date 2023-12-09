@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "others/fav-apps.md",
+                "file": "offsec/khokme-taitme-papalhime-openssl.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "others/fav-apps.md",
+                "file": "offsec/khokme-taitme-papalhime-openssl.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "others/fav-apps.md",
+                "file": "offsec/khokme-taitme-papalhime-openssl.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "others/fav-apps.md"
+                "file": "offsec/khokme-taitme-papalhime-openssl.md"
               }
             }
           },
@@ -164,6 +164,7 @@
   },
   "active": "37b3c428a1d0f2ca",
   "lastOpenFiles": [
+    "others/fav-apps.md",
     "others/cyanogenmod-intro-part1.md",
     "automation/ansible-yae-network-automation-workflow.md",
     "automation/bash-net-automation-part1.md",
