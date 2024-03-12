@@ -75,7 +75,7 @@
 * [FTP/TFTP server ပေါ်မှာ network config တွေကို auto backup လုပ်ပုံ – အပိုင်း (၁)](automation/net-confg-auto-backup-part1.md)
 * [FTP/TFTP server ပေါ်မှာ network config တွေကို auto backup လုပ်ပုံ – အပိုင်း (၂)](automation/net-config-auto-backup-part2.md)
 
-## ⚙ Networking
+## ⚙️ Networking
 
 * [အဘယ့်ကြောင့် GNS3](networking/why-gns3.md)
 * [ZeroTier မိတ်ဆက်](networking/zerotier-intro.md)
@@ -84,13 +84,14 @@
 * [အဘယ်ကြောင့် MikroTik](networking/abaekyaung-mikrotik.md)
 * [VRRP ကို MikroTik မှာ setup လုပ်ပုံ](networking/vrrp-ko-mikrotik-mha-setup-lokpon.md)
 
-## ☁ Virtualisation and Cloud
+## ☁️ Virtualisation and Cloud
 
 * [Promox ပေါ်မှာ VM template တွေကို cloud-init သုံးပြီး ဖန်တီးပုံ](virtualisation-and-cloud/promox-pawmha-vm-template-tweko-cloud-init-thonpyi-paantipon.md)
 * [Cloud ဆိုသည်မှာ](virtualisation-and-cloud/cloud-saothimha.md)
 
 ## 🍒 others
 
+* [Home Lab ရှိခြင်း အနုပညာ](others/home-lab-yahikhyin-anupnya.md)
 * [ကိုယ့်လုံခြုံရေးအတွက် အသုံးပြုသင့်တဲ့ toolkit လေးများ](others/privacy-toolkit.md)
 * [SSH Tunneling အကြောင်းသိကောင်းစရာ](others/ssh-tunneling-intro.md)
 * [နေ့စဉ်သုံး စိတ်ကြိုက် Application/Software လေးများ](others/fav-apps.md)
