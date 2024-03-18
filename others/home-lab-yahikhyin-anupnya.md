@@ -48,7 +48,9 @@ Linux ကိုသုံးရတာ အဆင်တော်တော်လေ�
 ### version 1.1
 #### Enter the BSD Realm
 
-Linux အပြင်စိတ်ဝင်စားတဲ့ အခြား Operating System တွေထဲမှာ BSD လည်းပါလာခဲ့ပါတယ်။ အရင်ဆုံး စာရေးသူအိမ်မှာသုံးလို့ရမယ့် opensource router/firewall solution တခုကို ရှာကြည့်တော့ pfSense ဆိုတာကို အရင်ဆုံးတွေ့ပါတယ်။ 
+Linux အပြင်စိတ်ဝင်စားတဲ့ အခြား Operating System တွေထဲမှာ BSD လည်းပါလာခဲ့ပါတယ်။ အရင်ဆုံး စာရေးသူအိမ်မှာသုံးလို့ရမယ့် opensource router/firewall solution တခုကို ရှာကြည့်တော့ pfSense ဆိုတာကို အရင်ဆုံးရှာတွေ့ပါတယ်။ နောက်မှပဲ pfSense ကို Netgate ကဝယ်လိုက်ပြီးတဲ့နောက် developer အချို့က Netgate ရဲ့လမ်းညွှန်မှုအောက်မှ မနေချင်လို့ OPNsense ဆိုပြီး pfSense ကို fork လိုက်ကြပါတယ်။ ဒါကြောင့်... စာရေးသူလည်း pfSense ကိုသုံးနေရင်းကနေ OPNsense ရဲ့ ဦးတည်ရာကို ပိုပြီးကြိုက်နှစ်သက်လို့ OPNsense ကိုတခါပြောင်းသုံးပါလေရော။ ဒီလိုနဲ့ မထင်မှတ်ပဲ BSD ရဲ့ Ecosystem ကိုရောက်မှန်းမသိရောက်၊ ကြိုက်မှန်းမသိ စကြိုက်မိလာခဲ့ပါတယ်။ BSD မှာရှိတဲ့ distro တွေအားလုံးရဲ့ လားရာက stability နဲ့ security ဖြစ်တာမို့ ကိုယ့်ရဲ့ environment ထဲမှာစိတ်ချလက်ချ run လို့ရတဲ့ system မျိုးပါ။ Linux လောက်လူတွေစိတ်ဝင်စားခြင်း မခံရတဲ့အတွက်၊ သူ့ရဲ့ community ကလည်း Linux မှာလောက်မကြီးပါဘူး။ စာရေးသူ တကိုယ်ရေ အမြင်နဲ့ဆိုရင်တော့ Linux အပြင် BSD လို့မျိုး ထပ်ပြီးရွေးချယ်စရာရှိတာ opensource အတွက်ကောင်းတဲ့ အနေအထားတခုပါ။ 
+
+OPNsense firewall appliance ကို စာရေးသူ အိမ်မှာ အဓိက internet gateway firewall အနေနဲ့ တော်တော်ကြာကြာသုံးဖြစ်လိုက်ပါသေးတယ်။ Internet လိုင်းကိုလည်း နှစ်ခုထားပြီးတော့ load balancing နဲ့ fail over configuration တွေအကုန်လုံးကိုလည်း စမ်းသပ်ခွင့်ရခဲ့ပါတယ်။ ဒါ့အပြင် OpenVPN server နဲ့ Wiregaurd server တွေကိုလည်း အဲ့ဒီ appliance ပေါ်မှာပဲ ထားပြီးတော့ အသုံးချခဲ့ပါတယ်။ Hardware ကိုတော့ 4 x Intel(R) Celeron(R) CPU J1900 နဲ့လာပြီး 1GB Ethernet port ၅ခုပါတဲ့ fanless/passive cooling mini PC တခုကို AliExpress ကနေဝယ်ပြီးတော့ အသုံးပြုခဲ့ပါတယ်။ တော်တော်လေးကို solid လည်းဖြစ်၊ versatile လည်းဖြစ်တဲ့ hardware platform တစ်ခုပါ။  
 
 
 
