@@ -48,7 +48,7 @@ Linux ကိုသုံးရတာ အဆင်တော်တော်လေ�
 ### version 1.1
 #### Enter the BSD Realm
 
-
+Linux အပြင်စိတ်ဝင်စားတဲ့ အခြား Operating System တွေထဲမှာ BSD လည်းပါလာခဲ့ပါတယ်။ အရင်ဆုံး စာရေးသူအိမ်မှာသုံးလို့ရမယ့် opensource router/firewall solution တခုကို ရှာကြည့်တော့ pfSense ဆိုတာကို အရင်ဆုံးတွေ့ပါတယ်။ 
 
 
 
