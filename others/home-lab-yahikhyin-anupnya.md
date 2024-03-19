@@ -52,7 +52,14 @@ Linux အပြင်စိတ်ဝင်စားတဲ့ အခြား Ope
 
 OPNsense firewall appliance ကို စာရေးသူ အိမ်မှာ အဓိက internet gateway firewall အနေနဲ့ တော်တော်ကြာကြာသုံးဖြစ်လိုက်ပါသေးတယ်။ Internet လိုင်းကိုလည်း နှစ်ခုထားပြီးတော့ load balancing နဲ့ fail over configuration တွေအကုန်လုံးကိုလည်း စမ်းသပ်ခွင့်ရခဲ့ပါတယ်။ ဒါ့အပြင် OpenVPN server နဲ့ Wiregaurd server တွေကိုလည်း အဲ့ဒီ appliance ပေါ်မှာပဲ ထားပြီးတော့ အသုံးချခဲ့ပါတယ်။ Hardware ကိုတော့ 4 x Intel(R) Celeron(R) CPU J1900 နဲ့လာပြီး 1GB Ethernet port ၅ခုပါတဲ့ fanless/passive cooling mini PC တခုကို AliExpress ကနေဝယ်ပြီးတော့ အသုံးပြုခဲ့ပါတယ်။ တော်တော်လေးကို solid လည်းဖြစ်၊ versatile လည်းဖြစ်တဲ့ hardware platform တစ်ခုပါ။ နောက်ပိုင်းမှာတော့ built-in Wireless AP မပါလို့ Mikrotik networking gear တွေကို တဖန်သုံးပြန်ပါတယ်။ 
 
-BSD ကို pfSense/OPNsense လိုမျိုး internet gateway firewall appliance အပြင်၊ FreeNAS / TrueNAS ဆိုတဲ့ enterprise grade NAS appliance အနေနဲ့လည်းသုံးခဲ့ဖူးပါတယ်။ 
+BSD ကို pfSense/OPNsense လိုမျိုး internet gateway firewall appliance အပြင်၊ FreeNAS / TrueNAS ဆိုတဲ့ enterprise grade NAS appliance အနေနဲ့လည်းသုံးခဲ့ဖူးပါတယ်။ သူ့မှာပါဝင်တဲ့ feature တွေက တော်တော်လည်းစုံပါတယ်။ ZFS ကို filesystem အနေနဲ့ အသုံးပြုပြီးတော့ စမ်းသပ်လို့ရနိုင်သမျှတွေကို စမ်းသပ်ဖြစ်ခဲ့ပါတယ်။ စာရေးသူ အနေနဲ့တော့ set and forget လိုမျိုး system တွေကို ကိုယ့်အိမ်အတွက် setup လုပ်ချင်ရင်တော့ BSD ကို အခြေခံထားတဲ့ appliance တွေကို စမ်းသပ်အသုံးပြုသင့်ပါတယ်။ သို့သော်... Linux လိုမျိုး Desktop Environment (DE) နဲ့သုံးရင်တော့ ထင်သလောက်အဆင်ပြေမှာ မဟုတ်ပါဘူး။ ပြောင်းလဲပြီးတော့ ကြိုးစားကြည့်ပါသေးတယ်။ ကိုယ်သုံးနေကျ Linux က workflow တော်တော်များများကို တိုက်ရိုက်ပြောင်းလဲယူသုံးဖို့ မလွယ်ခဲ့ပါဘူး။ OPNsense တို့၊ TrueNAS တို့လိုမျိုး appliance အနေနဲ့တော့ သုံးဖို့တော်တော်လေး အဆင်ပြေတဲ့ operating system တခုပါ။
+
+### version 2.0
+#### Crazy little thing called Promox
+
+Windows Server 2012 R2 ကို production environment အနေနဲ့တော်တော်ကြာကြာသုံးပြီးနောက်မှာတော့၊ end of life မတိုင်ခင် တစ်နှစ်၊ နှစ်နှစ်လောက်မှာ setup လုပ်တဲ့ပုံပြောင်းချင်စိတ်ပေါက်လာပါတော့တယ်။ အရင်ဆုံး VMware ESXi ကို သုံးဖို့စိတ်ကူးဖြစ်ပါတယ်။ သို့သော်... latest ISO ကို ရဖို့အတွက် VMware အကောင့်နဲ့ဝင်ရ download ဆွဲရဆိုတော့ စိတ်ထဲမှာအရင်တုန်းကလိုမျိုး စိတ်မရှည်တော့ပါ။ ဒါနဲ့ Promox ကိုစမ်းသပ်ဖို့ စတင်စိတ်ဝင်စားခဲ့ပါတော့တယ်။ Enterprise နဲ့ Data Centre တွေမှာ Promox ကို Hypervisor အနေနဲ့သုံးတာ စာရေးသူမကြုံဘူးပါ။ VMware vSphere နဲ့ vCenter၊ ဒါမှမဟုတ်ရင် Linux QEMU/KVM နဲ့ OpenStack တို့ကို အသုံးများကြတယ်လို့ သိထားခဲ့ပါတယ်။ Promox ကတော့ Debian Linux QEMU/KVM ကို VMware ESXi လိုသုံးရလွယ်အောင်လုပ်ပေးထားတဲ့ hypervisor တခုဖြစ်ပါတယ်။ ပိုပြီးတော့ စိတ်ဝင်စားဖို့ကောင်းတာက LXD/LXC ကို out-of-the-box experience အနေနဲ့ ထည့်ပေးထားပါတယ်။ ရှိတဲ့ hardware ပေါ်မှာပဲ Windows Server 2012 R2 ကိုဖြုတ်ပြီး Promox ကိုပြန်လည် installation လုပ်ပြီးတော့ စတင်အသုံးပြုခဲ့ပါတယ်။ 
+
+Promox ပေါ်မှာမှ VM တွေ၊ LXC တွေကို run ပြီးတော့ ကိုယ်လိုချင်တဲ့ service ကို spin up လုပ်ပါတယ်။ ဥပမာ - TrueNAS ကို VM အနေနဲ့ install လုပ်ပြီးတော့၊ WD Red NAS drive တွေကို အဲ့ဒီ VM ဆီကို pass-thru လုပ်ပြီး NAS ကို setup လုပ်ပါတယ်။  
 
 
 
