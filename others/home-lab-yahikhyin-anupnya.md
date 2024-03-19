@@ -85,6 +85,8 @@ Processor: 24 x Intel(R) Xeon(R) CPU E5-2630 v2 @ 2.60GHz (2 Sockets)
 
 Disk capacity: 3.25 TB (Mix of SSD and HDDs)
 
+ဒီ hardware platform တွေကို server အသွင်နဲ့အသုံးပြုရတာ တော်တော်လေးကိုအားရပါတယ်။ ပြဿနာက သူ့ရဲ့ power consumption ကြောင့်အမြဲတန်း run ထားဖို့သိပ်တော့အဆင်မပြေမယ်မထင်ပါ။ ဒါ့အပြင် Dell နဲ့ Lenovo က PC case တွေက အတွင်းမှာ hardware ထပ်တိုးထည့်ချင်တာတို့၊ လဲချင်တာတို့ ဆိုရင်တော့ ဖြုတ်ရတပ်ရတာ customise လုပ်ထားတဲ့ case လောက်မရိုးရှင်းလှပါဘူး။ အရမ်းတော့လည်း မခက်လှပါ။ သို့သော်... သူ့ hardware တွေနဲ့ အလုပ်မလုပ်ဘူးရင် နည်းနည်းတော့တိုင်ပတ်နိုင်ပါတယ်။ Lenovo ရဲ့ ThinkStation E32 နဲ့ ThinkStation C30 ဟာ စာရေးသူအတွက် home lab လုပ်သမျှထဲမှာ အဆင်ပြေတဲ့ platform တွေဖြစ်တဲ့အတွက်၊ rackable server တွေနဲ့ နှိုင်းယှဉ်လိုက်ရင် မီးအားစားတာကော၊ အသံဆူတာကော နှစ်ခုလုံးအတွက်သက်သာတဲ့ option တခုပါ။ 
+
 #### V for Vagrant
 
 
