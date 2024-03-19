@@ -75,6 +75,7 @@ Graphic: NVIDIA GK107GL (Quadro K2000)
 
 Disk capacity: 2.5 TB (Mix of SSDs and HDD)
 
+
 **Lenovo ThinkStation C30**
 
 Memory: 128 GB
