@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "804d21374209b077",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.11"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,7 +173,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "567749aac51295c3",
+  "active": "804d21374209b077",
   "lastOpenFiles": [
     "others/home-lab-yahikhyin-anupnya.md",
     "others/cyanogenmod-intro-part1.md",
