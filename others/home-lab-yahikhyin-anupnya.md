@@ -65,6 +65,7 @@ Promox ပေါ်မှာမှ VM တွေ၊ LXC တွေကို run �
 
 COVID-19 ကာလအတွင်းမှာ ဘာစိတ်ကူးပေါက်မှန်းမသိ Lenovo ရဲ့ ThinkStation အဟောင်းတွေကိုဝယ်ပြီး home lab server အဖြစ်စမ်းသုံးချင်မိလာတယ်။ ဒါနဲ့ပဲ Lenovo ရဲ့ ThinkStation E32 တခုနဲ့ ThinkStation C30 တခုကိုဝယ်ပြီး စာရေးသူအိမ်မှာ lab server အနေနဲ့ စပြီးသုံးဖြစ်ပြန်ပါတယ်။ နောက်ပိုင်းမှာတော့ E32 ကို Desktop အနေနဲ့သုံးပြီး C30 ကိုပဲ dedicated home lab အနေနဲ့ Promox ကို install လုပ်ပြီးသုံးလာတာအခုအချိန်ထိပါပဲ။ ThinkStation တခုချင်းစီမှာပါတဲ့ hardware specs တွေကိုအောက်မှာဖော်ပြပေးထားပါတယ်။ 
 
+
 **Lenovo ThinkStation E32**
 
 Memory: 32 GB
