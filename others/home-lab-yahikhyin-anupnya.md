@@ -61,5 +61,9 @@ Windows Server 2012 R2 ကို production environment အနေနဲ့တေ
 
 Promox ပေါ်မှာမှ VM တွေ၊ LXC တွေကို run ပြီးတော့ ကိုယ်လိုချင်တဲ့ service ကို spin up လုပ်ပါတယ်။ ဥပမာ - TrueNAS ကို VM အနေနဲ့ install လုပ်ပြီးတော့၊ WD Red NAS drive တွေကို အဲ့ဒီ VM ဆီကို pass-thru လုပ်ပြီး NAS ကို setup လုပ်ပါတယ်။ Plex တို့၊ Docker တို့လိုမျိုး service တွေကိုတော့ LXC နဲ့ပဲ setup လုပ်ပါတော့တယ်။ Docker container တွေကို LXC container ပေါ်မှာတင် run တဲ့အတွက် resource utilisation ကတော်တော်လေးကို efficient ဖြစ်ခဲ့ပါတယ်။ စာရေးသူလည်း LXC ရဲ့ power ကိုအဲ့ဒီအချိန်ကျမှ အပြည့်အဝ unleash လုပ်ဖြစ်ခဲ့တယ်လို့ ဆိုရမှာပါ။ 
 
+#### Big boy Lenovo ThinkStation
+
+
+
 
 
