@@ -85,9 +85,17 @@ Disk capacity: 3.25 TB (Mix of SSD and HDDs)
 ### version 3.0
 #### Lazy admin NAS
 
+Synology 
 
 
 #### Small is mini PC
+
+Atom 
+
+
+#### Love of my Net
+
+Mikrotik
 
 
 
