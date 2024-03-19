@@ -68,14 +68,19 @@ COVID-19 ကာလအတွင်းမှာ ဘာစိတ်ကူးပေ�
 ##### Lenovo ThinkStation E32
 
 Memory: 32 GB
+
 Processor: 4 x Intel(R) Xeon(R) CPU E3-1225 v3 @ 3.20GHZ
+
 Graphic: NVIDIA GK107GL (Quadro K2000)
+
 Disk capacity: 2.5 TB (Mix of SSDs and HDD)
 
 ##### Lenovo ThinkStation C30
 
 Memory: 128 GB
+
 Processor: 24 x Intel(R) Xeon(R) CPU E5-2630 v2 @ 2.60GHz (2 Sockets)
+
 Disk capacity: 3.25 TB (Mix of SSD and HDDs)
 
 #### V for Vagrant
