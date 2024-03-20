@@ -85,7 +85,7 @@ Processor: 24 x Intel(R) Xeon(R) CPU E5-2630 v2 @ 2.60GHz (2 Sockets)
 
 Disk capacity: 3.25 TB (Mix of SSD and HDDs)
 
-ဒီ hardware platform တွေကို server အသွင်နဲ့အသုံးပြုရတာ တော်တော်လေးကိုအားရပါတယ်။ ပြဿနာက သူ့ရဲ့ power consumption ကြောင့်အမြဲတန်း run ထားဖို့သိပ်တော့အဆင်မပြေမယ်မထင်ပါ။ ဒါ့အပြင် Dell နဲ့ Lenovo က PC case တွေက အတွင်းမှာ hardware ထပ်တိုးထည့်ချင်တာတို့၊ လဲချင်တာတို့ ဆိုရင်တော့ ဖြုတ်ရတပ်ရတာ customise လုပ်ထားတဲ့ case လောက်မရိုးရှင်းလှပါဘူး။ အရမ်းတော့လည်း မခက်လှပါ။ သို့သော်... သူ့ hardware တွေနဲ့ အလုပ်မလုပ်ဘူးရင် နည်းနည်းတော့တိုင်ပတ်နိုင်ပါတယ်။ Lenovo ရဲ့ ThinkStation E32 နဲ့ ThinkStation C30 ဟာ စာရေးသူအတွက် home lab လုပ်သမျှထဲမှာ အဆင်ပြေတဲ့ platform တွေဖြစ်တဲ့အတွက်၊ rackable server တွေနဲ့ နှိုင်းယှဉ်လိုက်ရင် power consumption အတွက်ကော၊ noise အတွက်ပါ သက်သာတဲ့ option တခုပါ။ ဒါမှမဟုတ်ပဲနဲ့ ကိုယ်က အဲ့ဒီနှစ်ခုလုံးမှာ conscious ဖြစ်တဲ့ နည်းပညာသမားဆိုရင်တော့ ဒီထက်ကောင်းတဲ့ ရွေးချယ်စရာတွေရှိပါသေးတယ်။ 
+ဒီ hardware platform တွေကို server အသွင်နဲ့အသုံးပြုရတာ တော်တော်လေးကိုအားရပါတယ်။ ပြဿနာက သူ့ရဲ့ power consumption ကြောင့်အမြဲတန်း run ထားဖို့သိပ်တော့အဆင်မပြေမယ်မထင်ပါ။ ဒါ့အပြင် Dell နဲ့ Lenovo က PC case တွေက အတွင်းမှာ hardware ထပ်တိုးထည့်ချင်တာတို့၊ လဲချင်တာတို့ ဆိုရင်တော့ ဖြုတ်ရတပ်ရတာ customise လုပ်ထားတဲ့ case လောက်မရိုးရှင်းလှပါဘူး။ အရမ်းတော့လည်း မခက်လှပါ။ သို့သော်... သူ့ hardware တွေနဲ့ အလုပ်မလုပ်ဘူးရင် နည်းနည်းတော့တိုင်ပတ်နိုင်ပါတယ်။ Lenovo ရဲ့ ThinkStation E32 နဲ့ ThinkStation C30 ဟာ စာရေးသူအတွက် home lab လုပ်သမျှထဲမှာ အဆင်ပြေတဲ့ platform တွေဖြစ်တဲ့အတွက်၊ rackable server တွေနဲ့ နှိုင်းယှဉ်လိုက်ရင် power consumption အတွက်ရော၊ noise အတွက်ပါ သက်သာတဲ့ option တခုပါ။ ဒါမှမဟုတ်ပဲနဲ့ ကိုယ်က အဲ့ဒီနှစ်ခုလုံးမှာ conscious ဖြစ်တဲ့ နည်းပညာသမားဆိုရင်တော့ ဒီထက်ကောင်းတဲ့ ရွေးချယ်စရာတွေရှိပါသေးတယ်။ 
 
 #### V for Vagrant
 
@@ -96,13 +96,25 @@ Vagrant ကိုစတင်ရှာဖွေတွေ့ရှိကတည်
 ### version 3.0
 #### Lazy admin NAS
 
-မကြာသေးခင်ကမှ 
+မကြာသေးခင်ကမှ production environment ကို run ထားတဲ့ Promox host ပေါ်မှာ update လုပ်ရင်း၊ ဘာဖြစ်လို့ဖြစ်မှန်းမသိပဲနဲ့၊ access လုပ်လို့မရဖြစ်သွားပါတယ်။ Troubleshoot လုပ်တာ တစ်ရက်ကနေ နှစ်ရက်ဖြစ်လာပါတယ်။ ရှိသမျှ data တွေကိုတော့ backup လုပ်ထားတဲ့အတွက် နောက်ဆုံးစိတ်ပိုင်းဖျက်လိုက်ပြီး Synology NAS တလုံးဝယ်ဖြစ်သွားပါတယ်။ စာရေးသူ အနေနဲ့ အသက်လေးလည်းနည်းနည်းရလာ၊ စိတ်လည်းအရင်လောက် သိပ်မရှည်ဖြစ်လာပါတယ်။ ရှိပြီးသား WD Red NAS drive တွေကိုပဲ Synology NAS မှာပြန်သုံးဖြစ်ပါတယ်။ အရင်တုန်းကလည်း customer တွေရဲ့ environment မှာ Synology NAS တော်တော်များကို setup / maintain လုပ်ပေးဖူးပါတယ်။ ဒီတော့ အသုံးပြုရတာလွယ်ကူပြီး၊ feature မှာလည်း တော်တော်စုံလင်တာမို့ Synology ကိုပဲရွေးဖြစ်သွားပါတယ်။ အောက်မှာတော့ အဲ့ဒီ NAS ရဲ့ specs ကို ဖော်ပြပေးထားပါတယ်။ 
 
+**Synology DiskStation DS923+**
+
+Memory: 4 GB
+
+Processor: AMD Ryzen R1600 2-core 2.6 (base) / 3.1 (turbo) GHz
+
+Disk configuration: 4 x 2 TB
+
+RAID configuration: Synology Hybrid RAID (SHR / With data protection for 2-drive fault tolerance)
+
+Disk capacity: 3.6 TB
+
+Local backup အတွက် 5 TB external hard disk တခုကို USB 3.0 နဲ့သုံးပါတယ်။ Remote backup အတွက်တော့ Backblaze B2 ကိုသုံးပါတယ်။ ညတိုင်း local backup နဲ့၊ remote backup ကို run ဖို့ schedule လုပ်ဖို့ အတွက် Synology NAS မှာလိုအပ်တဲ့ package တွေအကုန်ရှိပါတယ်။ တကယ့်ကို lazy admin တစ်ယောက်အတွက် အံဝင်ခွင်ကျတဲ့ NAS setup လို့ပြောရမှာဖြစ်ပါတယ်။ ဒီ NAS နဲ့ပဲ လိုအပ်တဲ့ storage ပြဿနာကို ဖြေရှင်းနိုင်ခဲ့ပါတယ်။
 
 #### Small is mini PC
 
-Atom 
-
+အထက်မှာပြောသလိုပဲ pfSense / OPNsense နဲ့တွဲပြီးသုံးလို့ ရမယ့် hardware ကိုရှာကြည့်တဲ့အခါမှာ Qotom ဆိုတဲ့ mini PC တွေထုတ်တဲ့ company တခုကိုတွေ့ပါတယ်။ Intel Celeron Processor J1900 ကိုသုံးပြီးတော့ nano ITX form factor မှာ Ethernet port ၄ခုနဲ့လာပါတယ်။ 
 
 #### Love of my Net
 
