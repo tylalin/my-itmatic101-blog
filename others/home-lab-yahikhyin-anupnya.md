@@ -96,7 +96,7 @@ Vagrant ကိုစတင်ရှာဖွေတွေ့ရှိကတည်
 ### version 3.0
 #### Lazy admin NAS
 
-Synology 
+မကြာသေးခင်ကမှ 
 
 
 #### Small is mini PC
