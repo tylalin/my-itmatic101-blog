@@ -114,7 +114,7 @@ Local backup အတွက် 5 TB external hard disk တခုကို USB 3.0 
 
 #### Small is mini PC
 
-အထက်မှာပြောသလိုပဲ pfSense / OPNsense နဲ့တွဲပြီးသုံးလို့ ရမယ့် hardware ကိုရှာကြည့်တဲ့အခါမှာ Qotom ဆိုတဲ့ mini PC တွေထုတ်တဲ့ company တခုကိုတွေ့ပါတယ်။ Intel Celeron Processor J1900 ကိုသုံးပြီးတော့ nano ITX form factor မှာ Ethernet port ၄ခုနဲ့လာပါတယ်။ 
+အထက်မှာပြောသလိုပဲ pfSense / OPNsense နဲ့တွဲပြီးသုံးလို့ ရမယ့် hardware ကိုရှာကြည့်တဲ့အခါမှာ Qotom ဆိုတဲ့ mini PC တွေထုတ်တဲ့ company တခုကိုတွေ့ပါတယ်။ Intel Celeron Processor J1900 ကိုသုံးပြီးတော့ nano ITX form factor မှာ Ethernet port ၄ခုနဲ့လာပါတယ်။ Internet gateway / firewall လုပ်ဖို့အတွက် လူကြိုက်များတဲ့ hardware platform တခုပါ။
 
 #### Love of my Net
 
